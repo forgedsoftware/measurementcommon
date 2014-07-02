@@ -481,7 +481,7 @@
 			"units": {
 				"candela": {
 					"symbol": "cd",
-					"type": "si",
+					"type": "si"
 				},
 				"candlepowerNew": {
 					"symbol": "cp",
@@ -640,7 +640,7 @@
 				"metrePerSecond": {
 					"symbol": "m/s",
 					"type": "si"
-				},
+				}
 			}
 		},
 		"acceleration": {
