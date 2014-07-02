@@ -50,11 +50,11 @@ Systems and units have the following properties. All properties are strings unle
   - *symbol* - The symbol that is most commonlly used to represent the unit
   - *type* - The type of unit it is: si, customary, or range.
     - **customary** - Can be displayed as a raw value only. SI calls this "off-system"
-    - ** si ** - Part of the SI system, as such may use SI prefixes (e.g. milli, micro, kilo, mega etc)
-    - ** range ** - The unit is a set of ranges, the name of the range must be displayed rather than a value. (e.g. oven temperature of 'Medium')
-    - ** binary ** - (undecided) Either true or false in representation
-    - ** fractional ** - (undecided) May only be displayed as a fraction
-    - ** whole ** - (undecided) May only be displayed as a whole number
+    - **si** - Part of the SI system, as such may use SI prefixes (e.g. milli, micro, kilo, mega etc)
+    - **range** - The unit is a set of ranges, the name of the range must be displayed rather than a value. (e.g. oven temperature of 'Medium')
+    - **binary** - (undecided) Either true or false in representation
+    - **fractional** - (undecided) May only be displayed as a fraction
+    - **whole** - (undecided) May only be displayed as a whole number
   - *otherSymbols* - (optional, array) The strings of other symbols that represent the unit
   - *otherNames* - (optional, array) The strings of other names of the unit - e.g. a 'bit' can also be called a 'shannon'
   - *multiplier* - (optional, number) This should be defined on any unit that is not the base unit. Provides a linear multiplier for conversions. (baseUnit amount x multiplier) + offset = convertedUnit amount
