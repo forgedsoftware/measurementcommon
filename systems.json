@@ -918,10 +918,170 @@
 			}
 		}
 	},
-	"siPrefixes": [
-
-	],
-	"siBinaryPrefixes": [
-
-	]
+	"prefixes": {
+		"yotta": {
+			"symbol": "Y",
+			"type": "si",
+			"multiplier": 1e24
+		},
+		"zetta": {
+			"symbol": "Z",
+			"type": "si",
+			"multiplier": 1e21
+		},
+		"exa": {
+			"symbol": "E",
+			"type": "si",
+			"multiplier": 1e18
+		},
+		"peta": {
+			"symbol": "P",
+			"type": "si",
+			"multiplier": 1e15
+		},
+		"tera": {
+			"symbol": "T",
+			"type": "si",
+			"multiplier": 1e12
+		},
+		"giga": {
+			"symbol": "G",
+			"type": "si",
+			"multiplier": 1e9
+		},
+		"mega": {
+			"symbol": "M",
+			"type": "si",
+			"multiplier": 1e6
+		},
+		"kilo": {
+			"symbol": "k",
+			"type": "si",
+			"multiplier": 1e3
+		},
+		"hecto": {
+			"symbol": "h",
+			"type": "si",
+			"multiplier": 100,
+			"isRare": true
+		},
+		"deca": {
+			"symbol": "da",
+			"type": "si",
+			"multiplier": 10,
+			"isRare": true
+		},
+		"deci": {
+			"symbol": "d",
+			"type": "si",
+			"multiplier": 0.1,
+			"isRare": true
+		},
+		"centi": {
+			"symbol": "c",
+			"type": "si",
+			"multiplier": 0.01,
+			"isRare": true,
+			"notes": "Is rare for systems other than length"
+		},
+		"milli": {
+			"symbol": "m",
+			"type": "si",
+			"multiplier": 1e-3
+		},
+		"micro": {
+			"symbol": "µ",
+			"type": "si",
+			"multiplier": 1e-6
+		},
+		"nano": {
+			"symbol": "n",
+			"type": "si",
+			"multiplier": 1e-9
+		},
+		"pico": {
+			"symbol": "p",
+			"type": "si",
+			"multiplier": 1e-12
+		},
+		"femto": {
+			"symbol": "f",
+			"type": "si",
+			"multiplier": 1e-15
+		},
+		"atto": {
+			"symbol": "a",
+			"type": "si",
+			"multiplier": 1e-18
+		},
+		"zepto": {
+			"symbol": "z",
+			"type": "si",
+			"multiplier": 1e-21
+		},
+		"yocto": {
+			"symbol": "y",
+			"type": "si",
+			"multiplier": 1e-24
+		},
+		"yobi": {
+			"symbol": "Yi",
+			"type": "siBinary",
+			"base": 2,
+			"power": 80
+		},
+		"zebi": {
+			"symbol": "Zi",
+			"type": "siBinary",
+			"base": 2,
+			"power": 70
+		},
+		"exbi": {
+			"symbol": "Ei",
+			"type": "siBinary",
+			"base": 2,
+			"power": 60
+		},
+		"pebi": {
+			"symbol": "Pi",
+			"type": "siBinary",
+			"base": 2,
+			"power": 50
+		},
+		"tebi": {
+			"symbol": "Ti",
+			"type": "siBinary",
+			"base": 2,
+			"power": 40
+		},
+		"gibi": {
+			"symbol": "Gi",
+			"type": "siBinary",
+			"base": 2,
+			"power": 30
+		},
+		"mebi": {
+			"symbol": "Mi",
+			"type": "siBinary",
+			"base": 2,
+			"power": 20
+		},
+		"kibi": {
+			"symbol": "Ki",
+			"type": "siBinary",
+			"base": 2,
+			"power": 10
+		},
+		"hella": {
+			"symbol": "H",
+			"type": "siUnofficial",
+			"multiplier": 1e27
+		},
+		"bronto": {
+			"symbol": "B",
+			"type": "siUnofficial",
+			"multiplier": 1e27,
+			"isRare": true
+		}
+	}
 }
