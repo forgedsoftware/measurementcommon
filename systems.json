@@ -945,14 +945,24 @@
 			"units": {
 				"metresPerSecondSquared": {
 					"symbol": "m/s²",
-					"type": "si"
+					"type": "customary"
 				},
-				"gravity": {
-					"symbol": "g",
-					"otherSymbols": ["g₀"],
+				"footPerHourPerSecond": {
+					"symbol": "fph/s",
 					"type": "customary",
-					"otherNames": ["standard gravity"],
-					"multiplier": 9.80665
+					"multiplier": 8.466667e-5
+				},
+				"footPerMinutePerSecond": {
+					"symbol": "fpm/s",
+					"type": "customary",
+					"multiplier": 5.08e-5
+				},
+				"footPerSecondSquared": {
+					"symbol": "fps²",
+					"otherSymbols": ["ft/s²"],
+					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
+					"multiplier": 0.304800
 				},
 				"gal": {
 					"symbol": "Gal",
@@ -960,12 +970,44 @@
 					"type": "si",
 					"multiplier": 0.01
 				},
-				"feetPerSecondSquared": {
-					"symbol": "fps²",
-					"otherSymbols": ["ft/s²"],
+				"inchPerMinutePerSecond": {
+					"symbol": "ipm/s",
 					"type": "customary",
-					"systems": ["usCustomary", "imperial"],
-					"multiplier": 0.304800
+					"multiplier": 4.233333e-4
+				},
+				"inchPerSecondSquared": {
+					"symbol": "ips²",
+					"otherSymbols": ["in/s²"],
+					"type": "customary",
+					"multiplier": 2.54e-2
+				},
+				"knotPerSecond": {
+					"symbol": "kn/s",
+					"type": "customary",
+					"multiplier": 5.144444e-1
+				},
+				"milePerHourPerSecond": {
+					"symbol": "mph/s",
+					"type": "customary",
+					"multiplier": 4.4704e-1
+				},
+				"milePerMinutePerSecond": {
+					"symbol": "mpm/s",
+					"type": "customary",
+					"multiplier": 26.8224
+				},
+				"milePerSecondSquared": {
+					"symbol": "mps²",
+					"otherSymbols": ["mi/s²"],
+					"type": "customary",
+					"multiplier": 1.609344e3
+				},
+				"gravity": {
+					"symbol": "g",
+					"otherSymbols": ["g₀"],
+					"type": "customary",
+					"otherNames": ["standard gravity"],
+					"multiplier": 9.80665
 				}
 			}
 		},
