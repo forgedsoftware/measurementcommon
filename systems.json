@@ -1133,12 +1133,60 @@
 		},
 		"flowVolume": {
 			"symbol": "Q",
-			"baseUnit": "metreCubedPerSecond",
+			"baseUnit": "cubicMetrePerSecond",
 			"derived": "length*length*length/time",
 			"units": {
-				"metreCubedPerSecond": {
+				"cubicMetrePerSecond": {
 					"symbol": "m³/s",
-					"type": "si"
+					"type": "customary"
+				},
+				"cubicFootPerMinute": {
+					"symbol": "CFM",
+					"otherSymbols": ["ft³/min"],
+					"type": "customary",
+					"multiplier": 4.719474432e-4
+				},
+				"cubicFootPerSecond": {
+					"symbol": "ft³/s",
+					"type": "customary",
+					"multiplier": 0.028316846592
+				},
+				"cubicInchPerMinute": {
+					"symbol": "in³/min",
+					"type": "customary",
+					"multiplier": 2.73117733333333e-7
+				},
+				"cubicInchPerSecond": {
+					"symbol": "in³/s",
+					"type": "customary",
+					"multiplier": 1.6387064e-5
+				},
+				"gallonPerDay": {
+					"symbol": "GPD",
+					"otherSymbols": ["gal/day"],
+					"type": "customary",
+					"multiplier": 4.3812636388889e-8,
+					"notes": "Us Gallon"
+				},
+				"gallonPerHour": {
+					"symbol": "GPH",
+					"otherSymbols": ["gal/h"],
+					"type": "customary",
+					"multiplier": 1.05150327333333e-6,
+					"notes": "Us Gallon"
+				},
+				"gallonPerMinute": {
+					"symbol": "GPM",
+					"otherSymbols": ["gal/min"],
+					"type": "customary",
+					"multiplier": 6.30901964e-5,
+					"notes": "Us Gallon"
+				},
+				"litrePerMinute": {
+					"symbol": "LPM",
+					"otherSymbols": ["L/min"],
+					"type": "customary",
+					"multiplier": 1.6666666666667e-5
 				}
 			}
 		},
@@ -1149,7 +1197,34 @@
 			"units": {
 				"candelaPerMetreSquared":{
 					"symbol": "cd/m²",
-					"type": "si"
+					"otherNames": ["nit"],
+					"type": "customary"
+				},
+				"candelaPerSquareFoot": {
+					"symbol": "cd/ft²",
+					"type": "customary",
+					"multiplier": 10.763910417
+				},
+				"candelaPerSquareInch": {
+					"symbol": "cd/in²",
+					"type": "customary",
+					"multiplier": 1550.0031
+				},
+				"footlambert": {
+					"symbol": "fL",
+					"type": "customary",
+					"multiplier": 3.4262590996
+				},
+				"lambert": {
+					"symbol": "L",
+					"type": "customary",
+					"multiplier": 3183.0988618
+				},
+				"stilb": {
+					"symbol": "sb",
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 1e4
 				}
 			}
 		},
@@ -1180,7 +1255,7 @@
 					"systems": ["cgs"],
 					"multiplier": 1e4
 				},
-				"lumenPerInchSquared": {
+				"lumenPerSquareInch": {
 					"symbol": "lm/in²",
 					"estimation": true,
 					"type": "customary",
@@ -1188,7 +1263,7 @@
 				},
 				"footcandle": {
 					"symbol": "fc",
-					"otherNames": ["lumenPerFootSquared"],
+					"otherNames": ["lumenPerSquareFoot"],
 					"type": "customary",
 					"multiplier": 10.763910417
 				}
