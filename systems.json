@@ -1194,6 +1194,169 @@
 				}
 			}
 		},
+		"magneticFlux": {
+			"symbol": "Φ",
+			"otherSymbols": ["ΦB"],
+			"derived": "mass*length*length/electricCurrent/time/time",
+			"baseUnit": "weber",
+			"units": {
+				"weber": {
+					"symbol": "Wb",
+					"type": "si"
+				},
+				"maxwell": {
+					"symbol": "Mx",
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 1e-8
+				}
+			}
+		},
+		"magneticFluxDensity": {
+			"symbol": "B",
+			"otherNames": ["magnetic field", "magnetic induction", "B-field"],
+			"derived": "mass/electricCurrent/time/time",
+			"baseUnit": "tesla",
+			"units": {
+				"tesla": {
+					"symbol": "T",
+					"type": "si"
+				},
+				"gauss": {
+					"symbol": "G",
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 1e-4
+				}
+			}
+		},
+		"magneticFieldStrength": {
+			"symbol": "H",
+			"otherNames": ["magnetic field intensity", "magnetic field", "magnetizing field", "auxiliary magnetic field", "H-field"],
+			"derived": "electricCurrent/length",
+			"baseUnit": "amperePerMetre",
+			"units": {
+				"amperePerMetre": {
+					"symbol": "A/m",
+					"type": "customary"
+				},
+				"oersteds": {
+					"symbol": "Oe",
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 79.5774715
+				}
+			}
+		},
+		"kinematicViscosity": {
+			"symbol": "ν",
+			"derived": "length*length/time",
+			"baseUnit": "squareMetrePerSecond",
+			"units": {
+				"squareMetrePerSecond": {
+					"symbol": "m²/s",
+					"type": "customary"
+				},
+				"stokes": {
+					"symbol": "St",
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 1e-4
+				},
+				"squareFootPerSecond": {
+					"symbol": "ft²/s",
+					"type": "customary",
+					"multiplier": 0.09290304
+				}
+			}
+		},
+		"dynamicViscosity": {
+			"symbol": "μ",
+			"derived": "mass/length/time",
+			"baseUnit": "pascalSecond",
+			"units": {
+				"pascalSecond": {
+					"symbol": "Pa·s",
+					"type": "customary"
+				},
+				"poise": {
+					"symbol": "P",
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 0.1
+				},
+				"poundPerFootHour": {
+					"symbol": "lb/(ft·h)",
+					"type": "customary",
+					"multiplier": 4.133789e-4
+				},
+				"poundPerFootSecond": {
+					"symbol": "lb/(ft·s)",
+					"type": "customary",
+					"multiplier": 1.488164
+				},
+				"poundForceSecondPerSquareFoot": {
+					"symbol": "lbf·s/ft²",
+					"type": "customary",
+					"multiplier": 47.88026
+				},
+				"poundForceSecondPerSquareInch": {
+					"symbol": "lbf·s/in²",
+					"type": "customary",
+					"multiplier": 6894.757
+				}
+			}
+		},
+		"action": {
+			"symbol": "S",
+			"derived": "mass*length*length/time",
+			"baseUnit": "jouleSecond",
+			"units": {
+				"jouleSecond": {
+					"symbol": "J·s",
+					"type": "customary"
+				},
+				"atomicUnitOfAction": {
+					"symbol": "au",
+					"type": "customary",
+					"multiplier": 1.05457168e-34
+				}
+			}
+		},
+		"torque": {
+			"symbol": "τ",
+			"otherNames": [ "moment", "moment of force" ],
+			"otherSymbols": [ "M" ],
+			"derived": "mass*length*length/time/time",
+			"baseUnit": "newtonMetre",
+			"units": {
+				"newtonMetre": {
+					"symbol": "N m",
+					"otherSymbols": ["N·m"],
+					"type": "customary",
+				},
+				"footPoundForce": {
+					"symbol": "ft lbf",
+					"type": "customary",
+					"multiplier": 1.3558179483314004
+				},
+				"footPoundal": {
+					"symbol": "ft pdl",
+					"type": "customary",
+					"multiplier": 4.21401100938048e-2
+				},
+				"inchPoundForce": {
+					"symbol": "in lbf",
+					"type": "customary",
+					"multiplier": 0.1129848290276167
+				},
+				"metreKilogram": {
+					"symbol": "m kg",
+					"type": "customary",
+					"multiplier": 0.101971621
+				},
+			}
+		},
 		"information": {
 			"symbol": "i",
 			"otherNames": [ "data" ],
