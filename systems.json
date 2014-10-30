@@ -412,52 +412,53 @@
 			"baseUnit": "kelvin",
 			"units": {
 				"kelvin": {
-					"symbol": "K",
+					"symbol": "°K",
 					"type": "si"
 				},
 				"celsius": {
-					"symbol": "C",
+					"symbol": "°C",
 					"type": "si",
 					"offset": 273.15
 				},
 				"fahrenheit": {
-					"symbol": "F",
+					"symbol": "°F",
 					"type": "customary",
 					"multiplier": 0.5555555555555556,
 					"offset": 255.37222222
 				},
 				"rankine": {
-					"symbol": "R",
+					"symbol": "°R",
 					"otherSymbols": ["Ra"],
 					"type": "customary",
 					"multiplier": 1.8,
 					"notes": "Check values"
 				},
 				"romer": {
-					"symbol": "Rø",
-					"otherSymbols": ["R"],
+					"symbol": "°Rø",
+					"otherSymbols": ["°R"],
 					"type": "customary",
 					"multiplier": 0.525,
 					"offset": 135.90375,
 					"notes": "Technically Rømer (or Roemer). Check values"
 				},
 				"newton": {
-					"symbol": "N",
+					"symbol": "°N",
 					"type": "customary",
 					"multiplier": 0.33,
 					"offset": 90.13949999999998,
 					"notes": "May have rounding error. Check values"
 				},
 				"delisle": {
-					"symbol": "D",
+					"symbol": "°D",
+					"otherSymbols": ["°De"],
 					"type": "customary",
 					"multiplier": -1.5,
 					"offset": -559.7249999999999,
 					"notes": "May have rounding error. Check values"
 				},
 				"reaumur": {
-					"symbol": "Ré",
-					"otherSymbols": ["Re", "R"],
+					"symbol": "°Ré",
+					"otherSymbols": ["°Re", "°R"],
 					"type": "customary",
 					"multiplier": -1.5,
 					"offset": -559.7249999999999,
@@ -514,10 +515,10 @@
 		},
 		"volume": {
 			"symbol": "V",
-			"baseUnit": "metreCubed",
+			"baseUnit": "metresCubed",
 			"derived": "length*length*length",
 			"units": {
-				"metreCubed": {
+				"metresCubed": {
 					"symbol": "m³",
 					"type": "si"
 				}
@@ -525,12 +526,90 @@
 		},
 		"area": {
 			"symbol": "A",
-			"baseUnit": "metreSquared",
+			"baseUnit": "metresSquared",
 			"derived": "length*length",
 			"units": {
-				"metreSquared": {
+				"metresSquared": {
 					"symbol": "m²",
-					"type": "si"
+					"otherSymbols": ["ca"],
+					"type": "si",
+					"otherNames": ["centiare"]
+				},
+				"squareInch": {
+					"symbol": "in²",
+					"otherSymbols": ["square in", "sq inches", "sq inch", "sq in", "sq.in"],
+					"type": "customary",
+					"multiplier": 0.00064516
+				},
+				"squareFoot": {
+					"symbol": "ft²",
+					"otherSymbols": ["sq ft", "sq.ft"],
+					"type": "customary",
+					"multiplier": 0.09290304
+				},
+				"squareYard": {
+					"symbol": "yd²",
+					"otherSymbols": ["yds²", "sq yd", "sq.yd"],
+					"type": "customary",
+					"multiplier": 0.83612736
+				},
+				"squareMile": {
+					"symbol": "mi²",
+					"otherSymbols": ["sq mi", "sq.mi"],
+					"type": "customary",
+					"multiplier": 2589988.110336
+				},
+				"are": {
+					"symbol": "a",
+					"type": "customary",
+					"multiplier": 100
+				},
+				"decare": {
+					"symbol": "daa",
+					"type": "customary",
+					"multiplier": 1000
+				},
+				"hectare": {
+					"symbol": "ha",
+					"type": "customary",
+					"multiplier": 10000
+				},
+				"acre": {
+					"symbol": "ac",
+					"type": "customary",
+					"multiplier": 4046.8564224
+				},
+				"squareRod": {
+					"symbol": "sq rd",
+					"otherNames": ["square perch", "square pole"],
+					"type": "customary",
+					"systems": ["historical"],
+					"multiplier": 25.29285264
+				},
+				"squarePerche": {
+					"symbol": "square perche",
+					"type": "customary",
+					"systems": ["historical"],
+					"multiplier": 42.21,
+					"notes": "The french version of a square perch"
+				},
+				"rood": {
+					"symbol": "rood",
+					"otherNames": ["rod"],
+					"type": "customary",
+					"systems": ["historical"],
+					"multiplier": 1011.7141056
+				},
+				"stremma": {
+					"symbol": "stremma",
+					"type": "customary",
+					"systems": ["greek"],
+					"multiplier": 1000
+				},
+				"barn": {
+					"symbol": "b",
+					"type": "si",
+					"multiplier": 1e-28
 				}
 			}
 		},
@@ -542,6 +621,118 @@
 				"pascal": {
 					"symbol": "Pa",
 					"type": "si"
+				},
+				"standardAtmosphere": {
+					"symbol": "atm",
+					"type": "customary",
+					"multiplier": 101325
+				},
+				"technicalAtmosphere": {
+					"symbol": "at",
+					"type": "customary",
+					"multiplier": 9.80665e4
+				},
+				"bar": {
+					"symbol": "bar",
+					"type": "customary",
+					"multiplier": 1e5
+				},
+				"barye": {
+					"symbol": "barye",
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 0.1
+				},
+				"centimetreOfMercury": {
+					"symbol": "cmHg",
+					"type": "customary",
+					"multiplier": 1.33322e3
+				},
+				"centimetreOfWater": {
+					"symbol": "cmH2O",
+					"type": "customary",
+					"multiplier": 98.0638,
+					"notes": "At 4 °C"
+				},
+				"inchOfMercury": {
+					"symbol": "inHg",
+					"type": "customary",
+					"multiplier": 3.386389e3
+				},
+				"inchOfWater": {
+					"symbol": "inH2O",
+					"type": "customary",
+					"multiplier": 249.082,
+					"notes": "At 39.2 °F"
+				},
+				"footOfMercury": {
+					"symbol": "ftHg",
+					"type": "customary",
+					"multiplier": 40.63666e3
+				},
+				"footOfWater": {
+					"symbol": "ftH2O",
+					"type": "customary",
+					"multiplier": 2.98898e3,
+					"notes": "At 39.2 °F"
+				},
+				"kilogramForcePerSquareMillimetre": {
+					"symbol": "kgf/mm²",
+					"type": "customary",
+					"multiplier": 9.80665e6
+				},
+				"kipPerSquareInch": {
+					"symbol": "ksi",
+					"type": "customary",
+					"multiplier": 6.894757e6
+				},
+				"micronOfMercury": {
+					"symbol": "µmHg",
+					"type": "customary",
+					"multiplier": 0.1333224
+				},
+				"millimetreOfMercury": {
+					"symbol": "mmHg",
+					"type": "customary",
+					"multiplier": 133.3224
+				},
+				"millimetreOfWater": {
+					"symbol": "mmH20",
+					"type": "customary",
+					"multiplier": 9.80638,
+					"notes": "At 3.98 °C"
+				},
+				"pieze": {
+					"symbol": "pz",
+					"type": "customary",
+					"otherNames": ["pièze"],
+					"systems": ["mts"],
+					"multiplier": 1e3
+				},
+				"poundPerSquareFoot": {
+					"symbol": "psf",
+					"type": "customary",
+					"multiplier": 47.88026
+				},
+				"poundPerSquareInch": {
+					"symbol": "psi",
+					"type": "customary",
+					"multiplier": 6.894757e3
+				},
+				"poundalPerSquareFoot": {
+					"symbol": "pdl/sq ft",
+					"type": "customary",
+					"multiplier": 1.488164
+				},
+				"shortTonPerSquareFoot": {
+					"symbol": "sh tn/sq ft",
+					"type": "customary",
+					"multiplier": 95.760518e3
+				},
+				"torr": {
+					"symbol": "torr",
+					"type": "customary",
+					"multiplier": 133.3224
 				}
 			}
 		},
@@ -639,7 +830,111 @@
 			"units": {
 				"metrePerSecond": {
 					"symbol": "m/s",
-					"type": "si"
+					"type": "customary",
+					"notes": "This is of type customary NOT si because you can't actually apply prefixes to it"
+				},
+				"footPerHour": {
+					"symbol": "fph",
+					"otherSymbols": ["ft/h"],
+					"type": "customary",
+					"multiplier": 8.466667e-5
+				},
+				"footPerMinute": {
+					"symbol": "fpm",
+					"otherSymbols": ["ft/min"],
+					"type": "customary",
+					"multiplier": 5.08e-3
+				},
+				"footPerSecond": {
+					"symbol": "fps",
+					"otherSymbols": ["ft/s"],
+					"type": "customary",
+					"multiplier": 3.048e-1
+				},
+				"furlongPerFortnight": {
+					"symbol": "furlong/fortnight",
+					"type": "customary",
+					"systems": ["historical"],
+					"multiplier": 1.663095e-4
+				},
+				"inchPerHour": {
+					"symbol": "iph",
+					"otherSymbols": ["in/hr"],
+					"type": "customary",
+					"multiplier": 7.05556-6
+				},
+				"inchPerMinute": {
+					"symbol": "ipm",
+					"otherSymbols": ["in/min"],
+					"type": "customary",
+					"multiplier": 4.23333e-4
+				},
+				"inchPerSecond": {
+					"symbol": "ips",
+					"otherSymbols": ["in/s"],
+					"type": "customary",
+					"multiplier": 2.54e-2
+				},
+				"kilometrePerHour": {
+					"symbol": "km/h",
+					"type": "customary",
+					"multiplier": 2.777778e-1
+				},
+				"knot": {
+					"symbol": "kn",
+					"type": "customary",
+					"multiplier": 0.514444
+				},
+				"knot": {
+					"symbol": "kn",
+					"otherSymbols": ["nmi/h"],
+					"type": "customary",
+					"multiplier": 0.514444
+				},
+				"knotAdmiralty": {
+					"symbol": "kn",
+					"otherSymbols": ["NM (Adm)/h"],
+					"type": "customary",
+					"systems": ["historical"],
+					"multiplier": 0.514773333333
+				},
+				"machNumber": {
+					"symbol": "M",
+					"otherSymbols": ["Ma", "Mach"],
+					"otherNames": ["Sarrau number"],
+					"type": "customary",
+					"multiplier": 340.3,
+					"note": "Based on standard sea level conditions and at 15 °C. Additionally should be written Mach 2.3 (unit name first)"
+				},
+				"milePerHour": {
+					"symbol": "mph",
+					"otherSymbols": ["mi/h"],
+					"type": "customary",
+					"multiplier": 0.44704
+				},
+				"milePerMinute": {
+					"symbol": "mpm",
+					"otherSymbols": ["mi/min"],
+					"type": "customary",
+					"multiplier": 26.8224
+				},
+				"milePerSecond": {
+					"symbol": "mps",
+					"otherSymbols": ["mi/s"],
+					"type": "customary",
+					"multiplier": 1609.344
+				},
+				"speedOfLight": {
+					"symbol": "c",
+					"type": "customary",
+					"multiplier": 299792458,
+					"notes": "In a vacuum"
+				},
+				"speedOfSound": {
+					"symbol": "s",
+					"type": "customary",
+					"multiplier": 340.3,
+					"notes": "Based on standard sea level conditions and at 15 °C."
 				}
 			}
 		},
