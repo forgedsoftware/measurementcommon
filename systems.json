@@ -1031,6 +1031,138 @@
 				"watt": {
 					"symbol": "W",
 					"type": "si"
+				},
+				"atmosphereCubicCentimetrePerMinute": {
+					"symbol": "atm ccm",
+					"type": "customary",
+					"multiplier": 1.68875e-3
+				},
+				"atmosphereCubicCentimetrePerSecond": {
+					"symbol": "atm ccs",
+					"type": "customary",
+					"multiplier": 0.101325
+				},
+				"atmosphereCubicFootPerHour": {
+					"symbol": "atm cfh",
+					"type": "customary",
+					"multiplier": 0.797001244704
+				},
+				"atmosphereCubicFootPerMinute": {
+					"symbol": "atm cfm",
+					"type": "customary",
+					"multiplier": 47.82007468224
+				},
+				"atmosphereCubicFootPerSecond": {
+					"symbol": "atm cfs",
+					"type": "customary",
+					"multiplier": 2.8692044809344e3
+				},
+				"btuPerHour": {
+					"symbol": "BTU/h",
+					"type": "customary",
+					"multiplier": 0.293071
+				},
+				"btuPerMinute": {
+					"symbol": "BTU/min",
+					"type": "customary",
+					"multiplier": 17.584264
+				},
+				"btuPerSecond": {
+					"symbol": "BTU/s",
+					"type": "customary",
+					"multiplier": 1.05505585262e3
+				},
+				"caloriePerSecond": {
+					"symbol": "cal/s",
+					"type": "customary",
+					"multiplier": 4.1868
+				},
+				"ergPerSecond": {
+					"symbol": "erg/s",
+					"type": "customary",
+					"multiplier": 1e-7
+				},
+				"footPoundForcePerHour": {
+					"symbol": "ft lbf/h",
+					"type": "customary",
+					"multiplier": 3.766161e-4
+				},
+				"footPoundForcePerMinute": {
+					"symbol": "ft lbf/min",
+					"type": "customary",
+					"multiplier": 2.259696580552334e-2
+				},
+				"footPoundForcePerSecond": {
+					"symbol": "ft lbf/s",
+					"type": "customary",
+					"multiplier": 1.3558179483314004
+				},
+				"horsepowerBoiler": {
+					"symbol": "bhp",
+					"type": "customary",
+					"multiplier": 9.810657e3
+				},
+				"horsepowerEuropeanElectrical": {
+					"symbol": "hp",
+					"type": "customary",
+					"multiplier": 736
+				},
+				"horsepowerImperialElectrical": {
+					"symbol": "hp",
+					"type": "customary",
+					"multiplier": 746
+				},
+				"horsepowerImperialMechanical": {
+					"symbol": "hp",
+					"type": "customary",
+					"multiplier": 745.69987158227022
+				},
+				"horsepower": {
+					"symbol": "hp",
+					"type": "customary",
+					"multiplier": 735.49875
+				},
+				"litreAtmospherePerMinute": {
+					"symbol": "L·atm/min",
+					"otherSymbols": ["L atm/min"],
+					"type": "customary",
+					"multiplier": 1.68875
+				},
+				"litreAtmospherePerSecond": {
+					"symbol": "L·atm/s",
+					"otherSymbols": ["L atm/s"],
+					"type": "customary",
+					"multiplier": 101.325
+				},
+				"lusec": {
+					"symbol": "lusec",
+					"type": "customary",
+					"multiplier": 1.333e-4
+				},
+				"poncelet": {
+					"symbol": "p",
+					"type": "customary",
+					"multiplier": 980.665
+				},
+				"squareFootEquivalentDirectRadiation": {
+					"symbol": "sq ft EDR",
+					"type": "customary",
+					"multiplier": 70.337057
+				},
+				"tonOfAirConditioning": {
+					"symbol": "ton aircon",
+					"type": "customary",
+					"multiplier": 3504
+				},
+				"tonOfRefrigerationImperial": {
+					"symbol": "ton aircon",
+					"type": "customary",
+					"multiplier": 3.938875e3
+				},
+				"tonOfRefrigeration": {
+					"symbol": "ton aircon",
+					"type": "customary",
+					"multiplier": 3.516853e3
 				}
 			}
 		},
@@ -1164,12 +1296,67 @@
 		},
 		"density": {
 			"symbol": "ρ",
-			"baseUnit": "kilogramPerMetreCubed",
+			"baseUnit": "kilogramPerCubicMetre",
 			"derived": "mass/length/length/length",
 			"units": {
-				"kilogramPerMetreCubed": {
+				"kilogramPerCubicMetre": {
 					"symbol": "kg/m³",
-					"type": "si"
+					"type": "customary"
+				},
+				"gramPerMillilitre": {
+					"symbol": "g/mL",
+					"type": "customary",
+					"multiplier": 1000
+				},
+				"kilogramPerLitre": {
+					"symbol": "kg/L",
+					"type": "customary",
+					"multiplier": 1000
+				},
+				"ouncePerCubicFoot": {
+					"symbol": "oz/ft³",
+					"type": "customary",
+					"multiplier": 1.001153961
+				},
+				"ouncePerCubicInch": {
+					"symbol": "oz/in³",
+					"type": "customary",
+					"multiplier": 1.729994044e3
+				},
+				"ouncePerGallonImperial": {
+					"symbol": "oz/gal",
+					"type": "customary",
+					"multiplier": 6.236023291
+				},
+				"ouncePerGallonUS": {
+					"symbol": "oz/gal",
+					"type": "customary",
+					"multiplier": 7.489151707
+				},
+				"poundPerCubicFoot": {
+					"symbol": "lb/ft³",
+					"type": "customary",
+					"multiplier": 16.01846337
+				},
+				"poundPerCubicInch": {
+					"symbol": "lb/in³",
+					"type": "customary",
+					"multiplier": 2.767990471e4
+				},
+				"poundPerGallonImperial": {
+					"symbol": "lb/gal",
+					"type": "customary",
+					"multiplier": 99.77637266
+				},
+				"poundPerGallonUS": {
+					"symbol": "lb/gal",
+					"type": "customary",
+					"multiplier": 119.8264273
+				},
+				"slugPerCubicFoot": {
+					"symbol": "slug/ft³",
+					"type": "customary",
+					"multiplier": 515.3788184
 				}
 			}
 		},
