@@ -1020,6 +1020,227 @@
 				"joule": {
 					"symbol": "J",
 					"type": "si"
+				},
+				"barrelOfOilEquivalent": {
+					"symbol": "boe",
+					"type": "customary",
+					"multiplier": 6.12e9
+				},
+				"britishThermalUnitIso": {
+					"symbol": "BTU",
+					"otherNames": ["britishThermalUnit", "british thermal unit"],
+					"type": "customary",
+					"multiplier": 1.0545e3
+				},
+				"britishThermalUnitInternationalTable": {
+					"symbol": "BTU",
+					"type": "customary",
+					"multiplier": 1.05505585262e3
+				},
+				"britishThermalUnitMean": {
+					"symbol": "BTU",
+					"type": "customary",
+					"multiplier": 1.05587e3
+				},
+				"britishThermalUnitThermochemical": {
+					"symbol": "BTU",
+					"type": "customary",
+					"multiplier": 1.054350e3
+				},
+				"britishThermalUnit39F": {
+					"symbol": "BTU",
+					"type": "customary",
+					"multiplier": 1.05967e3,
+					"notes": "At 39 °F"
+				},
+				"britishThermalUnit59F": {
+					"symbol": "BTU",
+					"type": "customary",
+					"multiplier": 1.054804e3,
+					"notes": "At 59 °F"
+				},
+				"britishThermalUnit60F": {
+					"symbol": "BTU",
+					"type": "customary",
+					"multiplier": 1.05468e3,
+					"notes": "At 60 °F"
+				},
+				"britishThermalUnit63F": {
+					"symbol": "BTU",
+					"type": "customary",
+					"multiplier": 1.0546e3,
+					"notes": "At 63 °F"
+				},
+				"calorieInternationalTable": {
+					"symbol": "cal",
+					"type": "customary",
+					"multiplier": 4.1868
+				},
+				"calorieMean": {
+					"symbol": "cal",
+					"type": "customary",
+					"multiplier": 4.19002
+				},
+				"calorieThermochemical": {
+					"symbol": "cal",
+					"otherNames": ["calorie"],
+					"type": "customary",
+					"multiplier": 4.184
+				},
+				"calorieUsFda": {
+					"symbol": "Cal",
+					"type": "customary",
+					"multiplier": 4.184
+				},
+				"calorie3_98C": {
+					"symbol": "cal",
+					"type": "customary",
+					"multiplier": 4.2045,
+					"notes": "At 3.98 °C"
+				},
+				"calorie15C": {
+					"symbol": "cal",
+					"type": "customary",
+					"multiplier": 4.1855,
+					"notes": "At 15 °C"
+				},
+				"calorie20C": {
+					"symbol": "cal",
+					"type": "customary",
+					"multiplier": 4.1819,
+					"notes": "At 20 °C"
+				},
+				"celsiusHeatUnit": {
+					"symbol": "CHU",
+					"type": "customary",
+					"multiplier": 1.899100534716e3
+				},
+				"cubicCentimetreOfAtmosphereStandardCubicCentimetre": {
+					"symbol": "cc atm; scc",
+					"type": "customary",
+					"multiplier": 0.101325
+				},
+				"cubicFootOfAtmosphereStandardCubicFoot": {
+					"symbol": "cc ft atm; scf",
+					"type": "customary",
+					"multiplier": 2.8692044809344e3
+				},
+				"cubicFootOfNaturalGas": {
+					"symbol": "cc ft natural gas",
+					"type": "customary",
+					"multiplier": 1.05505585262e6
+				},
+				"cubicYardOfAtmosphereStandardCubicYard": {
+					"symbol": "cu yd atm; scy",
+					"type": "customary",
+					"multiplier": 77.4685209852288e3
+				},
+				"electronvolt": {
+					"symbol": "eV",
+					"type": "si",
+					"multiplier": 1.60217733e-19,
+					"notes": "Uncertainty: ± 4.9×10^−26 J"
+				},
+				"erg": {
+					"symbol": "erg",
+					"type": "si",
+					"systems": ["cgs"],
+					"multiplier": 1e-7
+				},
+				"footPoundForce": {
+					"symbol": "ft lbf",
+					"type": "customary",
+					"multiplier": 1.3558179483314004
+				},
+				"footPoundal": {
+					"symbol": "ft pdl",
+					"type": "customary",
+					"multiplier": 4.21401100938048e-2
+				},
+				"gallonAtmosphereImperial": {
+					"symbol": "imp gal atm",
+					"type": "customary",
+					"multiplier": 460.63256925
+				},
+				"gallonAtmosphereUS": {
+					"symbol": "US gal atm",
+					"type": "customary",
+					"multiplier": 383.5568490138
+				},
+				"hartree": {
+					"symbol": "Eh",
+					"otherNames": ["atomic unit of energy"],
+					"type": "customary",
+					"multiplier": 4.359744e-18
+				},
+				"horsepowerHour": {
+					"symbol": "hp h",
+					"type": "customary",
+					"multiplier": 2.684519537696172792e6
+				},
+				"inchPoundForce": {
+					"symbol": "in lbf",
+					"type": "customary",
+					"multiplier": 0.1129848290276167
+				},
+				"kilocalorie": {
+					"symbol": "kcal",
+					"otherSymbols": ["Cal"],
+					"otherNames": ["large calorie"],
+					"type": "customary",
+					"multiplier": 4.1868e3
+				},
+				"kilowattHour": {
+					"symbol": "kw h",
+					"otherSymbols": ["kw·h", "B.O.T.U."],
+					"otherNames": ["Board of Trade Unit"],
+					"type": "customary",
+					"multiplier": 3.6e6
+				},
+				"litreAtmposhere": {
+					"symbol": "l atm; sl",
+					"type": "customary",
+					"multiplier": 101.325
+				},
+				"quad": {
+					"symbol": "quad",
+					"type": "customary",
+					"multiplier": 1.05505585262e18
+				},
+				"rydberg": {
+					"symbol": "Ry",
+					"type": "customary",
+					"multiplier": 2.179872e-18
+				},
+				"thermEC": {
+					"symbol": "therm",
+					"type": "customary",
+					"multiplier": 105.505585262e6
+				},
+				"thermUS": {
+					"symbol": "therm",
+					"type": "customary",
+					"multiplier": 105.4804e6
+				},
+				"thermie": {
+					"symbol": "th",
+					"type": "customary",
+					"multiplier": 4.1868e6
+				},
+				"tonOfCoalEquivalent": {
+					"symbol": "TCE",
+					"type": "customary",
+					"multiplier": 29.288e9
+				},
+				"tonOfOilEquivalent": {
+					"symbol": "TOE",
+					"type": "customary",
+					"multiplier": 41.84e9
+				},
+				"tonOfTNT": {
+					"symbol": "tTNT",
+					"type": "customary",
+					"multiplier": 4.184e9
 				}
 			}
 		},
