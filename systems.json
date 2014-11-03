@@ -513,6 +513,80 @@
 				}
 			}
 		},
+		"planeAngle": {
+			"symbol": "θ",
+			"otherNames": ["angle"],
+			"otherSymbols": ["α", "β", "γ", "φ", "a", "b", "c", "d", "e"],
+			"baseUnit": "radian",
+			"units": {
+				"radian": {
+					"symbol": "rad",
+					"type": "si",
+					"notes": "Only metric prefixes of milli, micro, and nano are acceptable and not in pure math"
+				},
+				"angularMil": {
+					"symbol": "µ",
+					"type": "customary",
+					"multiplier": 0.981748e-3
+				},
+				"arcminute": {
+					"symbol": "'",
+					"otherNames": ["MOA"],
+					"type": "customary",
+					"multiplier": 0.290888e-3
+				},
+				"arcsecond": {
+					"symbol": "\"",
+					"type": "customary",
+					"multiplier": 4.848137e-6
+				},
+				"centesimalMinuteOfArc": {
+					"symbol": "'",
+					"type": "customary",
+					"multiplier": 0.157080e-3
+				},
+				"centesimalSecondOfArc": {
+					"symbol": "\"",
+					"type": "customary",
+					"multiplier": 1.570796e-6
+				},
+				"degree": {
+					"symbol": "°",
+					"type": "customary",
+					"multiplier": 17.453293e-3
+				},
+				"grad": {
+					"symbol": "grad",
+					"otherNames": ["gradian", "gon"],
+					"type": "customary",
+					"multiplier": 15.707963e-3
+				},
+				"octant": {
+					"symbol": "octant",
+					"type": "customary",
+					"multiplier": 0.785398,
+					"notes": "45°"
+				},
+				"quadrant": {
+					"symbol": "quadrant",
+					"type": "customary",
+					"multiplier": 1.570796,
+					"notes": "90°"
+				},
+				"sextant": {
+					"symbol": "sextant",
+					"type": "customary",
+					"multiplier": 1.047198,
+					"notes": "60°"
+				},
+				"sign": {
+					"symbol": "sign",
+					"type": "customary",
+					"multiplier": 0.523599,
+					"notes": "30°"
+				}
+			}
+		},
 		"volume": {
 			"symbol": "V",
 			"baseUnit": "cubicMetre",
