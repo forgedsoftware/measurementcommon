@@ -515,12 +515,531 @@
 		},
 		"volume": {
 			"symbol": "V",
-			"baseUnit": "metresCubed",
+			"baseUnit": "cubicMetre",
 			"derived": "length*length*length",
 			"units": {
-				"metresCubed": {
+				"cubicMetre": {
 					"symbol": "m³",
-					"type": "si"
+					"type": "customary"
+				},
+				"acreFoot": {
+					"symbol": "ac ft",
+					"type": "customary",
+					"multiplier": 1233.48183754752
+				},
+				"acreInch": {
+					"symbol": "ac in",
+					"type": "customary",
+					"multiplier": 102.79015312896
+				},
+				"barrelImperial": {
+					"symbol": "bl (imp)",
+					"type": "customary",
+					"multiplier": 0.16365924
+				},
+				"barrelPetroleum": {
+					"symbol": "bl; bbl",
+					"type": "customary",
+					"multiplier": 0.158987294928
+				},
+				"barrelUSDry": {
+					"symbol": "bl (US)",
+					"type": "customary",
+					"multiplier": 0.115628198985075
+				},
+				"barrelUSFluid": {
+					"symbol": "fl bl (US)",
+					"type": "customary",
+					"multiplier": 0.119240471196
+				},
+				"boardFoot": {
+					"symbol": "fbm",
+					"type": "customary",
+					"multiplier": 2.359737216e-3
+				},
+				"bucket": {
+					"symbol": "bkt",
+					"type": "customary",
+					"multiplier": 0.01818436
+				},
+				"bushel": {
+					"symbol": "bu",
+					"otherSymbols": ["bu (imp)"],
+					"otherNames": ["bushel imperial"],
+					"type": "customary",
+					"multiplier": 0.03636872
+				},
+				"bushelUSDryHeaped": {
+					"symbol": "bu (US)",
+					"type": "customary",
+					"multiplier": 0.0440488377086
+				},
+				"bushelUSDryLevel": {
+					"symbol": "bu (US lvl)",
+					"type": "customary",
+					"multiplier": 0.03523907016688
+				},
+				"butt": {
+					"symbol": "butt",
+					"otherNames": ["pipe"],
+					"type": "customary",
+					"multiplier": 0.476961884784
+				},
+				"coomb": {
+					"symbol": "coomb",
+					"type": "customary",
+					"multiplier": 0.14547488
+				},
+				"cordFirewood": {
+					"symbol": "cord",
+					"otherNames": ["cord"],
+					"type": "customary",
+					"multiplier": 3.624556363776
+				},
+				"cordFoot": {
+					"symbol": "cord",
+					"type": "customary",
+					"multiplier": 0.453069545472
+				},
+				"cubicFathom": {
+					"symbol": "cu fm",
+					"type": "customary",
+					"multiplier": 6.116438863872
+				},
+				"cubicFoot": {
+					"symbol": "cu ft",
+					"type": "customary",
+					"multiplier": 0.028316846592
+				},
+				"cubicInch": {
+					"symbol": "cu in",
+					"type": "customary",
+					"multiplier": 16.387064e-6
+				},
+				"cubicMile": {
+					"symbol": "cu mi",
+					"type": "customary",
+					"multiplier": 4168181825.440579584
+				},
+				"cubicYard": {
+					"symbol": "cu yd",
+					"type": "customary",
+					"multiplier": 0.764554857984
+				},
+				"cupBreakfast": {
+					"symbol": "c (breakfast)",
+					"type": "customary",
+					"multiplier": 284.130625e-6
+				},
+				"cupCanadian": {
+					"symbol": "c (CA)",
+					"type": "customary",
+					"multiplier": 227.3045e-6
+				},
+				"cup": {
+					"symbol": "c",
+					"otherNames": ["metric cup", "cupMetric"],
+					"type": "customary",
+					"multiplier": 250.0e-6
+				},
+				"cupUSCustomary": {
+					"symbol": "c (US)",
+					"type": "customary",
+					"multiplier": 236.5882365e-6
+				},
+				"cupUSFoodNutritionLabeling": {
+					"symbol": "c (US)",
+					"type": "customary",
+					"multiplier": 240.0e-6
+				},
+				"dashImperial": {
+					"symbol": "dash",
+					"type": "customary",
+					"multiplier": 369.9617513020833333e-9
+				},
+				"dashUS": {
+					"symbol": "dash",
+					"type": "customary",
+					"multiplier": 308.057599609375e-9
+				},
+				"dessertspoon": {
+					"symbol": "dstspn.",
+					"type": "customary",
+					"multiplier": 11.838776041666667e-6
+				},
+				"dropImperial": {
+					"symbol": "gtt",
+					"type": "customary",
+					"multiplier": 98.6564670138888889e-9
+				},
+				"dropImperialAlt": {
+					"symbol": "gtt",
+					"type": "customary",
+					"multiplier": 77.886684e-9
+				},
+				"dropMedical": {
+					"symbol": "drop",
+					"type": "customary",
+					"multiplier": 83.03333333e-9
+				},
+				"dropMedicalAlt": {
+					"symbol": "drop",
+					"type": "customary",
+					"multiplier": 83.33333333e-9
+				},
+				"drop": {
+					"symbol": "drop",
+					"otherNames": ["dropMetric", "drop metric"],
+					"type": "customary",
+					"multiplier": 50.0e-9
+				},
+				"dropUS": {
+					"symbol": "gtt",
+					"type": "customary",
+					"multiplier": 82.14869322916666667e-9
+				},
+				"dropUSAlt": {
+					"symbol": "gtt",
+					"type": "customary",
+					"multiplier": 64.85423149671e-9
+				},
+				"dropUSAlt2": {
+					"symbol": "gtt",
+					"type": "customary",
+					"multiplier": 51.34293326823e-9
+				},
+				"fifth": {
+					"symbol": "fifth",
+					"type": "customary",
+					"multiplier": 757.0823568e-6
+				},
+				"firkin": {
+					"symbol": "firkin",
+					"type": "customary",
+					"multiplier": 0.04091481
+				},
+				"fluidDrachm": {
+					"symbol": "fl dr",
+					"type": "customary",
+					"multiplier": 3.5516328125e-6
+				},
+				"fluidDram": {
+					"symbol": "fl dr",
+					"otherNames": ["US fluidram"],
+					"type": "customary",
+					"multiplier": 3.6966911953125e-6
+				},
+				"fluidScruple": {
+					"symbol": "fl s",
+					"type": "customary",
+					"multiplier": 1.1838776041666667e-6
+				},
+				"gallonBeer": {
+					"symbol": "beer gal",
+					"type": "customary",
+					"multiplier": 4.621152048e-3
+				},
+				"gallonImperial": {
+					"symbol": "gal (imp)",
+					"otherSymbols": ["gal"],
+					"type": "customary",
+					"multiplier": 4.54609e-3
+				},
+				"gallonUSDry": {
+					"symbol": "gal (US)",
+					"otherSymbols": ["gal"],
+					"type": "customary",
+					"multiplier": 4.40488377086e-3
+				},
+				"gallonUSFluid": {
+					"symbol": "gal (US)",
+					"otherSymbols": ["gal"],
+					"type": "customary",
+					"multiplier": 3.785411784e-3
+				},
+				"gillImperial": {
+					"symbol": "gi (imp)",
+					"otherSymbols": ["gi", "nog"],
+					"otherNames": ["noggin"],
+					"type": "customary",
+					"multiplier": 142.0653125e-6
+				},
+				"gillUS": {
+					"symbol": "gi (US)",
+					"otherSymbols": ["gi"],
+					"type": "customary",
+					"multiplier": 118.29411825e-6
+				},
+				"hogsheadImperial": {
+					"symbol": "hhd (imp)",
+					"otherSymbols": ["hhd"],
+					"type": "customary",
+					"multiplier": 0.32731848
+				},
+				"hogsheadUS": {
+					"symbol": "hhd (US)",
+					"otherSymbols": ["hhd"],
+					"type": "customary",
+					"multiplier": 0.238480942392
+				},
+				"jigger": {
+					"symbol": "jigger",
+					"type": "customary",
+					"multiplier": 44.36e-6
+				},
+				"kilderkin": {
+					"symbol": "kilderkin",
+					"type": "customary",
+					"multiplier": 0.08182962
+				},
+				"lambda": {
+					"symbol": "λ",
+					"type": "customary",
+					"systems": ["historical"],
+					"multiplier": 1e-9
+				},
+				"last": {
+					"symbol": "last",
+					"type": "customary",
+					"systems": ["historical"],
+					"multiplier": 2.9094976
+				},
+				"litre": {
+					"symbol": "L",
+					"type": "si",
+					"multiplier": 0.001
+				},
+				"load": {
+					"symbol": "load",
+					"type": "customary",
+					"multiplier": 1.4158423296
+				},
+				"minimImperial": {
+					"symbol": "min",
+					"type": "customary",
+					"multiplier": 59.19388020833333e-9
+				},
+				"minimUS": {
+					"symbol": "min",
+					"type": "customary",
+					"multiplier": 61.611519921875e-9
+				},
+				"ounceImperial": {
+					"symbol": "fl oz (imp)",
+					"otherSymbols": ["fl oz"],
+					"type": "customary",
+					"multiplier": 28.4130625e-6
+				},
+				"ounceUSCustomary": {
+					"symbol": "US fl oz",
+					"otherSymbols": ["fl oz"],
+					"type": "customary",
+					"multiplier": 29.5735295625e-6
+				},
+				"ounceUSFoodNutritionLabeling": {
+					"symbol": "US fl oz",
+					"otherSymbols": ["fl oz"],
+					"type": "customary",
+					"multiplier": 3.0e-5
+				},
+				"peckImperial": {
+					"symbol": "pk",
+					"type": "customary",
+					"multiplier": 9.09218e-3
+				},
+				"peckUSDry": {
+					"symbol": "pk",
+					"type": "customary",
+					"multiplier": 8.80976754172e-3
+				},
+				"perch": {
+					"symbol": "per",
+					"type": "customary",
+					"multiplier": 0.700841953152
+				},
+				"pinchImperial": {
+					"symbol": "pn",
+					"type": "customary",
+					"multiplier": 739.9235026041666667e-9
+				},
+				"pinchUS": {
+					"symbol": "pn",
+					"type": "customary",
+					"multiplier": 616.11519921875e-9
+				},
+				"pintImperial": {
+					"symbol": "pt (imp)",
+					"otherSymbols": ["pt"],
+					"type": "customary",
+					"multiplier": 568.26125e-6
+				},
+				"pintUSDry": {
+					"symbol": "pt (US dry)",
+					"otherSymbols": ["pt"],
+					"type": "customary",
+					"multiplier": 550.6104713575e-6
+				},
+				"pintUSFluid": {
+					"symbol": "pt (US fl)",
+					"otherSymbols": ["pt"],
+					"type": "customary",
+					"multiplier": 473.176473e-6
+				},
+				"pony": {
+					"symbol": "pony",
+					"type": "customary",
+					"multiplier": 22.180147171875e-6
+				},
+				"pottle": {
+					"symbol": "pottle",
+					"otherNames": ["quartern"],
+					"type": "customary",
+					"multiplier": 2.273045e-3
+				},
+				"quartImperial": {
+					"symbol": "qt (imp)",
+					"otherSymbols": ["qt"],
+					"type": "customary",
+					"multiplier": 1.1365225e-3
+				},
+				"quartUSDry": {
+					"symbol": "qt (US dry)",
+					"otherSymbols": ["qt"],
+					"type": "customary",
+					"multiplier": 1.101220942715e-3
+				},
+				"quartUSFluid": {
+					"symbol": "qt (US fl)",
+					"otherSymbols": ["qt"],
+					"type": "customary",
+					"multiplier": 946.352946e-6
+				},
+				"pail": {
+					"symbol": "pail",
+					"otherNames": ["quarter"],
+					"type": "customary",
+					"multiplier": 0.29094976
+				},
+				"registerTon": {
+					"symbol": "register ton",
+					"type": "customary",
+					"multiplier": 2.8316846592
+				},
+				"sackImperial": {
+					"symbol": "sack",
+					"otherNames": ["bag"],
+					"type": "customary",
+					"multiplier": 0.10910616
+				},
+				"sackUS": {
+					"symbol": "sack",
+					"type": "customary",
+					"multiplier": 0.10571721050064
+				},
+				"seam": {
+					"symbol": "seam",
+					"type": "customary",
+					"multiplier": 0.28191256133504
+				},
+				"shot": {
+					"symbol": "shot",
+					"type": "customary",
+					"multiplier": 44e-6
+				},
+				"strikeImperial": {
+					"symbol": "strike",
+					"type": "customary",
+					"multiplier": 0.07273744
+				},
+				"strikeUS": {
+					"symbol": "strike",
+					"type": "customary",
+					"multiplier": 0.07047814033376
+				},
+				"tablespoonAustralian": {
+					"symbol": "tbsp",
+					"type": "customary",
+					"multiplier": 20e-6
+				},
+				"tablespoonCanadian": {
+					"symbol": "tbsp",
+					"type": "customary",
+					"multiplier": 14.20653125e-6
+				},
+				"tablespoonImperial": {
+					"symbol": "tbsp",
+					"type": "customary",
+					"multiplier": 17.7581640625e-6
+				},
+				"tablespoon": {
+					"symbol": "tbsp",
+					"type": "customary",
+					"multiplier": 15e-6
+				},
+				"tablespoonUSCustomary": {
+					"symbol": "tbsp",
+					"type": "customary",
+					"multiplier": 14.7867647825e-6
+				},
+				"tablespoonUSFoodNutritionLabeling": {
+					"symbol": "tbsp",
+					"type": "customary",
+					"multiplier": 1.5e-5
+				},
+				"teaspoonCanadian": {
+					"symbol": "tsp",
+					"type": "customary",
+					"multiplier": 4.73551041666667e-6
+				},
+				"teaspoonImperial": {
+					"symbol": "tsp",
+					"type": "customary",
+					"multiplier": 5.919388020833333e-6
+				},
+				"teaspoon": {
+					"symbol": "tsp",
+					"type": "customary",
+					"multiplier": 5.0e-6
+				},
+				"teaspoonUSCustomary": {
+					"symbol": "tsp",
+					"type": "customary",
+					"multiplier": 4.928921595e-6
+				},
+				"teaspoonUSFoodNutritionLabeling": {
+					"symbol": "tsp",
+					"type": "customary",
+					"multiplier": 5.0e-6
+				},
+				"timberFoot": {
+					"symbol": "timber ft",
+					"type": "customary",
+					"multiplier": 0.028316846592
+				},
+				"tonDisplacement": {
+					"symbol": "ton (disp)",
+					"type": "customary",
+					"multiplier": 0.99108963072
+				},
+				"tonFreight": {
+					"symbol": "ton (freight)",
+					"type": "customary",
+					"multiplier": 1.13267386368
+				},
+				"tonWater": {
+					"symbol": "ton (water)",
+					"type": "customary",
+					"multiplier": 1.01832416
+				},
+				"tun": {
+					"symbol": "tun",
+					"type": "customary",
+					"multiplier": 0.953923769568
+				},
+				"wey": {
+					"symbol": "wey",
+					"type": "customary",
+					"multiplier": 1.4095628066752
 				}
 			}
 		},
