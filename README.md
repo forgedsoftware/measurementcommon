@@ -71,7 +71,7 @@ Systems and units have the following properties. All properties are strings unle
   - *prefixFreeName* - (optional) **Only to be used on base units which are SI and have a prefix (e.g. kilogram)** Name of the unit without prefix
 
 ## Measurement Systems Hierarchy
-We have constructed a hierarchy of measurement systems that represent the usages of units in the real world while minimising the measurement systems needing
+We have constructed a (flattened) hierarchy of measurement systems that represent the usages of units in the real world while minimising the measurement systems needing
 to be detailed against each unit.
 Each unit should be marked with at least one measurement system.
 
