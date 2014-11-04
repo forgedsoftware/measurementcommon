@@ -41,6 +41,10 @@ The json structure defines a set of systems, where each system contains a set of
 ### Fields
 Systems and units have the following properties. All properties are strings unless otherwise defined.
 
+ - **Measurement Systems**
+  - *name* - A formal name for the measurement system
+  - *inherits* - (optional) The key of the measurement system that it inherits from
+  - *historical* - (optional, boolean) Determines if the system is in common usage
  - **Systems**
   - *symbol* - The symbol that is generally used to represent that system
   - *otherNames* - (optional, array) Other names used for the system
@@ -60,19 +64,39 @@ Systems and units have the following properties. All properties are strings unle
   - *multiplier* - (optional, number) This should be defined on any unit that is not the base unit. Provides a linear multiplier for conversions. (baseUnit amount x multiplier) + offset = convertedUnit amount
   - *offset* - (optional) This should be defined on any unit where baseUnit != 0 if convertedUnit = 0.
   - *estimation* - (optional, boolean) This should be set to true if the conversion is not exact
-  - *systems* - (optional, array) This provides a list of the types of systems (e.g. US Customary, CGS etc) where the unit is used.
-    - **historical** - Used prior to a formal system, from any part of the world
-    - **imperial** - Used in the British imperial measurement system
-    - **usCustomary** - Used in the US measurement system
-    - **cgs** - Centimetre–gram–second system of units
-    - **mks** - Metre-kilogram-second system of units
-    - **mts** - Metre-tonne-second system of units
-    - **si** - International System of Units (SI)
+  - *systems* - (array) This provides a list of the types of systems (e.g. US Customary, CGS etc) where the unit is used. See "Measurement Systems".
   - *rare* - (optional, boolean) This should be set to true if the unit is rarely used within the systems it is part of.
   - *notes* - (optional) Any useful additional details
   - *prefixName* - (optional) **Only to be used on base units which are SI and have a prefix (e.g. kilogram)** Name of the existing prefix
   - *prefixFreeName* - (optional) **Only to be used on base units which are SI and have a prefix (e.g. kilogram)** Name of the unit without prefix
 
+## Measurement Systems Hierarchy
+We have constructed a hierarchy of measurement systems that represent the usages of units in the real world while minimising the measurement systems needing
+to be detailed against each unit.
+Each unit should be marked with at least one measurement system.
+
+ - metric
+  - si
+    - siCommon
+      - australia
+      - canada
+    - astronomical
+   - legacyMetric *(H)*
+     - cgs *(H)*
+     - mts *(H)*
+     - mks *(H)*
+     - gravitational *(H)*
+ - imperial
+   - englishEngineering *(H)*
+   - britishGravitational *(H)*
+   - absoluteEnglish *(H)*
+ - usCustomary
+   - avoirdupois
+ - englishUnits *(H)*
+   - apothecaries *(H)*
+   - troy *(H)*
+ - nonStandard
+ - traditionalChinese *(H)*
 
 ## Base Systems
 We utilise the standard SI systems and their base units. All systems *should* be able to be derived from these systems.
@@ -84,6 +108,7 @@ We utilise the standard SI systems and their base units. All systems *should* be
  - Luminous Intensity (candela)
  - Electric Current (ampere)
  - Temperature (kelvin)
+ - Plane Angle (radian)
  - *Solid Angle (steradian)* - This is a bit of an exception, a solid angle is a 2D angle in 3D space that is represented using a dimensionless unit.
 
 ## Sources
