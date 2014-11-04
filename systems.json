@@ -1,4 +1,101 @@
 {
+	"measurementSystems": {
+		"metric": {
+			"name": "Metric System"
+		},
+		"si": {
+			"name": "International System of Units",
+			"inherits": "metric"
+		},
+		"astronomical": {
+			"name": "Astronomical Units",
+			"inherits": "si"
+		},
+		"siCommon": {
+			"name": "Common Non-Scientific Metric (SI)",
+			"inherits": "si"
+		},
+		"australia": {
+			"name": "Common Australian Metric (SI)",
+			"inherits": "siCommon"
+		},
+		"canada": {
+			"name": "Common Canadian Metric (SI)",
+			"inherits": "siCommon"
+		},
+		"legacyMetric": {
+			"name": "Legacy Metric Systems",
+			"historical": true,
+			"inherits": "metric"
+		},
+		"cgs": {
+			"name": "Centimetre-Gram-Second Unit System",
+			"historical": true,
+			"inherits": "legacyMetric"
+		},
+		"mts": {
+			"name": "Metre-Tonne-Second Unit System",
+			"historical": true,
+			"inherits": "legacyMetric"
+		},
+		"mks": {
+			"name": "Metre-Kilogramme-Second Unit System",
+			"historical": true,
+			"inherits": "legacyMetric"
+		},
+		"gravitational": {
+			"name": "Gravitational Metric System",
+			"historical": true,
+			"inherits": "legacyMetric"
+		},
+		"imperial": {
+			"name": "UK Imperial Units"
+		},
+		"englishEngineering": {
+			"name": "English Engineering System",
+			"historical": true,
+			"inherits": "imperial"
+		},
+		"britishGravitational": {
+			"name": "British Gravitational System",
+			"historical": true,
+			"inherits": "imperial"
+		},
+		"absoluteEnglish": {
+			"name": "Absolute English System",
+			"historical": true,
+			"inherits": "imperial"
+		},
+		"usCustomary": {
+			"name": "US Customary Units"
+		},
+		"avoirdupois": {
+			"name": "Avoirdupois Units",
+			"inherits": "usCustomary"
+		},
+		"englishUnits": {
+			"name": "Traditional English Units",
+			"historical": true
+		},
+		"apothecaries": {
+			"name": "Apothecaries' Units",
+			"historical": true,
+			"inherits": "englishUnits"
+		},
+		"troy": {
+			"name": "Troy Weight",
+			"historical": true,
+			"inherits": "englishUnits"
+		},
+		"nonStandard": {
+			"name": "Non-Standard Units",
+			"notes": "Units that don't fit into a specific system"
+		},
+		"traditionalChinese": {
+			"name": "Traditional Chinese Units",
+			"historical": true
+		}
+	},
 	"systems": {
 		"time": {
 			"symbol": "T",
@@ -8,28 +105,33 @@
 				"second": {
 					"symbol": "s",
 					"otherSymbols": ["sec"],
-					"type": "si"
+					"type": "si",
+					"systems": ["metric", "imperial", "usCustomary", "englishUnits"]
 				},
 				"minute": {
 					"symbol": "min",
 					"type": "customary",
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 60
 				},
 				"hour": {
 					"symbol": "h",
 					"otherSymbols": ["hr"],
 					"type": "customary",
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 3600
 				},
 				"day": {
 					"symbol": "day",
 					"type": "customary",
 					"multiplier": 86400,
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"notes": "Possible Base"
 				},
 				"week": {
 					"symbol": "week",
 					"type": "customary",
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 604800
 				},
 				"month": {
@@ -37,33 +139,38 @@
 					"type": "customary",
 					"estimation": true,
 					"multiplier": 2629740,
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"notes": "Possible Base"
 				},
 				"year": {
 					"symbol": "yr",
 					"type": "customary",
 					"multiplier": 31557600,
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"notes": "Possible Base"
 				},
 				"ke": {
 					"symbol": "ke",
 					"type": "customary",
-					"systems": [ "traditional Chinese" ],
+					"systems": ["traditionalChinese"],
 					"multiplier": 864
 				},
 				"decade": {
 					"symbol": "decade",
 					"type": "customary",
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 315576000
 				},
 				"century": {
 					"symbol": "C",
 					"type": "customary",
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 3155760000
 				},
 				"millennium": {
 					"symbol": "M",
 					"type": "customary",
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 31557600000
 				}
 			}
