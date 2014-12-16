@@ -59,12 +59,12 @@ Systems and units have the following properties. All properties are strings unle
     - **binary** - (undecided) Either true or false in representation
     - **fractional** - (undecided) May only be displayed as a fraction
     - **whole** - (undecided) May only be displayed as a whole number
+  - *systems* - (array) This provides a list of the types of systems (e.g. US Customary, CGS etc) where the unit is used. See "Measurement Systems".
   - *otherSymbols* - (optional, array) The strings of other symbols that represent the unit
   - *otherNames* - (optional, array) The strings of other names of the unit - e.g. a 'bit' can also be called a 'shannon'
   - *multiplier* - (optional, number) This should be defined on any unit that is not the base unit. Provides a linear multiplier for conversions. (baseUnit amount x multiplier) + offset = convertedUnit amount
   - *offset* - (optional) This should be defined on any unit where baseUnit != 0 if convertedUnit = 0.
   - *estimation* - (optional, boolean) This should be set to true if the conversion is not exact
-  - *systems* - (array) This provides a list of the types of systems (e.g. US Customary, CGS etc) where the unit is used. See "Measurement Systems".
   - *rare* - (optional, boolean) This should be set to true if the unit is rarely used within the systems it is part of.
   - *notes* - (optional) Any useful additional details
   - *prefixName* - (optional) **Only to be used on base units which are SI and have a prefix (e.g. kilogram)** Name of the existing prefix
@@ -110,6 +110,43 @@ We utilise the standard SI systems and their base units. All systems *should* be
  - Temperature (kelvin)
  - Plane Angle (radian)
  - *Solid Angle (steradian)* - This is a bit of an exception, a solid angle is a 2D angle in 3D space that is represented using a dimensionless unit.
+
+## Derived Systems
+
+ - Volume (cubicMetre)
+ - Area (squareMetre)
+ - Frequency (hertz)
+ - Force (newton)
+ - Speed (metrePerSecond)
+ - Acceleration (metrePerSquareSecond)
+ - Energy (joule)
+ - Power (watt)
+ - Electric Charge (coulomb)
+ - Electric Dipole (coulombMetre)
+ - Electric Potential (volt)
+ - Electric Resistance (ohm)
+ - Capacitance (farad)
+ - Inductance (henry)
+ - Density (kilogramPerCubicMetre)
+ - Flow Volume (cubicMetrePerSecond)
+ - Luminance (candelaPerSquareMetre)
+ - Luminous Flux (lumen)
+ - Illumiance (lux)
+ - Magnetic Flux (weber)
+ - Magnetic Flux Density (tesla)
+ - Magnetic Field Strength (amperePerMetre)
+ - Kinematic Viscosity (squareMetrePerSecond)
+ - Dynamic Viscosity (pascalSecond)
+ - Action (jouleSecond)
+ - Torque (newtonMetre)
+ - Information (bit)
+
+## Adopted Conventions
+
+ - The default spelling is "metre" not "meter", though we try to provide the alternative.
+ - Names of units describe the positive dimensions (numerator) before the negative dimensions (denominator) e.g. xPerY
+ - When a base unit has a absolute power greater than 1, the term "square" or "cubic" should proceed the base unit name.
+ - Unless otherwise specified units described are at a standard atmospheric pressure and room temperature.
 
 ## Sources
 

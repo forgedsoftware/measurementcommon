@@ -183,18 +183,34 @@
 				"metre": {
 					"symbol": "m",
 					"otherNames": ["meter"],
+					"systems": ["si", "mts", "mks", "gravitational"],
 					"type": "si"
+				},
+				"angstrom": {
+					"symbol": "Å",
+					"otherNames": ["ångström"],
+					"systems": ["legacyMetric"],
+					"type": "customary",
+					"multiplier": 1e-10
+				},
+				"centimetre": {
+					"symbol": "cm",
+					"otherNames": ["centimeter"],
+					"systems": ["cgs"],
+					"type": "customary",
+					"multiplier": 0.01
 				},
 				"mile": {
 					"symbol": "mi",
 					"type": "customary",
-					"systems": ["imperial"],
+					"systems": ["imperial", "usCustomary", "englishUnits"],
 					"multiplier": 1609.344
 				},
-				"usSurveyMile": {
+				"mileUSSurvey": {
 					"symbol": "mi",
+					"otherNames": ["statuteMile"],
 					"type": "customary",
-					"systems": ["imperial"],
+					"systems": ["land"],
 					"rare": true,
 					"multiplier": 1609.3472,
 					"notes": "Used exclusively for land survey. Used to be statute mile"
@@ -202,21 +218,21 @@
 				"yard": {
 					"symbol": "yd",
 					"type": "customary",
-					"systems": ["imperial"],
+					"systems": ["imperial", "usCustomary", "englishUnits"],
 					"multiplier": 0.9144
 				},
 				"foot": {
 					"symbol": "ft",
 					"otherSymbols": ["'"],
 					"type": "customary",
-					"systems": ["imperial"],
+					"systems": ["imperial", "usCustomary", "englishUnits"],
 					"multiplier": 0.3048
 				},
 				"usSurveyFoot": {
 					"symbol": "ft",
 					"otherSymbols": ["'"],
 					"type": "customary",
-					"systems": ["imperial"],
+					"systems": ["land"],
 					"rare": true,
 					"multiplier": 0.3048006096,
 					"notes": "Used exclusively for land survey. Used to be statute foot"
@@ -225,7 +241,7 @@
 					"symbol": "in",
 					"otherSymbols": ["\""],
 					"type": "customary",
-					"systems": ["imperial"],
+					"systems": ["imperial", "usCustomary", "englishUnits"],
 					"multiplier": 0.0254
 				},
 				"nauticalMile": {
@@ -239,7 +255,7 @@
 					"symbol": "ftm",
 					"otherSymbols": ["f", "fath", "fm", "fth", "fthm"],
 					"type": "customary",
-					"systems": ["oldImperial", "nautical"],
+					"systems": ["imperial", "usCustomary", "englishUnits"],
 					"multiplier": 1.8288
 				},
 				"cableLengthInternational": {
@@ -701,7 +717,8 @@
 			"units": {
 				"cubicMetre": {
 					"symbol": "m³",
-					"type": "customary"
+					"type": "customary",
+					"otherNames": ["cubicMeter", "metreCubed"]
 				},
 				"acreFoot": {
 					"symbol": "ac ft",
@@ -1226,14 +1243,14 @@
 		},
 		"area": {
 			"symbol": "A",
-			"baseUnit": "metresSquared",
+			"baseUnit": "squareMetre",
 			"derived": "length*length",
 			"units": {
-				"metresSquared": {
+				"squareMetre": {
 					"symbol": "m²",
 					"otherSymbols": ["ca"],
 					"type": "si",
-					"otherNames": ["centiare"]
+					"otherNames": ["centiare", "squareMeter", "metreSquared"]
 				},
 				"squareInch": {
 					"symbol": "in²",
@@ -1531,6 +1548,7 @@
 				"metrePerSecond": {
 					"symbol": "m/s",
 					"type": "customary",
+					"otherNames": ["meterPerSecond", "metresPerSecond", "metersPerSecond"],
 					"notes": "This is of type customary NOT si because you can't actually apply prefixes to it"
 				},
 				"footPerHour": {
@@ -1640,12 +1658,13 @@
 		},
 		"acceleration": {
 			"symbol": "a",
-			"baseUnit": "metresPerSecondSquared",
+			"baseUnit": "metrePerSecondSquared",
 			"derived": "length/time/time",
 			"units": {
-				"metresPerSecondSquared": {
+				"metrePerSecondSquared": {
 					"symbol": "m/s²",
-					"type": "customary"
+					"type": "customary",
+					"otherNames": ["metresPerSecondSquared", "meterPerSecondSquared", "metersPerSecondSquared", "meterPerSquareSecond", "metrePerSquareSecond"]
 				},
 				"footPerHourPerSecond": {
 					"symbol": "fph/s",
@@ -2142,7 +2161,8 @@
 				"coulombMetre": {
 					"symbol": "C.m",
 					"otherSymbols": ["Cm"],
-					"type": "si"
+					"type": "si",
+					"otherNames": ["coulombMeter"]
 				},
 				"debye": {
 					"symbol": "D",
@@ -2222,7 +2242,8 @@
 			"units": {
 				"kilogramPerCubicMetre": {
 					"symbol": "kg/m³",
-					"type": "customary"
+					"type": "customary",
+					"otherNames": ["kilogramsPerCubicMetre", "kilogramPerMetreCubed", "kilogramPerCubicMeter"]
 				},
 				"gramPerMillilitre": {
 					"symbol": "g/mL",
@@ -2288,7 +2309,8 @@
 			"units": {
 				"cubicMetrePerSecond": {
 					"symbol": "m³/s",
-					"type": "customary"
+					"type": "customary",
+					"otherNames": ["metreCubedPerSecond", "cubicMetersPerSecond", "cubicMeterPerSecond", "cubicMetresPerSecond"]
 				},
 				"cubicFootPerMinute": {
 					"symbol": "CFM",
@@ -2342,12 +2364,12 @@
 		},
 		"luminance": {
 			"symbol": "Lᵥ",
-			"baseUnit": "candelaPerMetreSquared",
+			"baseUnit": "candelaPerSquareMetre",
 			"derived": "luminousIntensity/length/length",
 			"units": {
-				"candelaPerMetreSquared":{
+				"candelaPerSquareMetre":{
 					"symbol": "cd/m²",
-					"otherNames": ["nit"],
+					"otherNames": ["nit", "candelaPerMetreSquared", "candelaPerSquareMeter", "candelaPerMeterSquared"],
 					"type": "customary"
 				},
 				"candelaPerSquareFoot": {
@@ -2463,7 +2485,8 @@
 			"units": {
 				"amperePerMetre": {
 					"symbol": "A/m",
-					"type": "customary"
+					"type": "customary",
+					"otherNames": ["amperePerMeter", "ampsPerMetre"]
 				},
 				"oersteds": {
 					"symbol": "Oe",
@@ -2480,7 +2503,8 @@
 			"units": {
 				"squareMetrePerSecond": {
 					"symbol": "m²/s",
-					"type": "customary"
+					"type": "customary",
+					"otherNames": ["meterSquaredPerSecond", "squareMeterPerSecond", "metreSquaredPerSecond"]
 				},
 				"stokes": {
 					"symbol": "St",
@@ -2559,6 +2583,7 @@
 					"symbol": "N m",
 					"otherSymbols": ["N·m"],
 					"type": "customary",
+					"otherNames": ["newtonMeter"]
 				},
 				"footPoundForce": {
 					"symbol": "ft lbf",
