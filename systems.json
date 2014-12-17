@@ -259,26 +259,31 @@
 					"multiplier": 1.8288
 				},
 				"cableLengthInternational": {
+					"symbol": "cable",
 					"type": "customary",
 					"systems": ["nautical"],
 					"multiplier": 185.2					
 				},
 				"cableLengthImperial": {
+					"symbol": "cable",
 					"type": "customary",
 					"systems": ["nautical"],
 					"multiplier": 185.32
 				},
 				"cableLengthUS": {
+					"symbol": "cable",
 					"type": "customary",
 					"systems": ["nautical"],
 					"multiplier": 219.456
 				},
 				"furlong": {
+					"symbol": "fur",
 					"type": "customary",
 					"systems": ["imperial", "usCustomary", "nautical"],
 					"multiplier": 201.168
 				},
 				"cubit": {
+					"symbol": "cubit",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["historical"],
@@ -286,6 +291,7 @@
 					"notes": "Distance from fingers to elbow"
 				},
 				"ell": {
+					"symbol": "ell",
 					"type": "customary",
 					"rare": true,
 					"systems": ["historical"],
@@ -293,6 +299,7 @@
 					"notes": "This is the English ell, lengths vary from 0.5m (cubit) to 1.372m"
 				},
 				"ellScotish": {
+					"symbol": "ell",
 					"type": "customary",
 					"rare": true,
 					"systems": ["historical"],
@@ -300,21 +307,25 @@
 					"notes": "This is the Scotish ell, lengths vary from 0.5m (cubit) to 1.372m"
 				},
 				"chain": {
+					"symbol": "ch",
 					"type": "customary",
 					"systems": ["historical"],
 					"multiplier": 20.1168
 				},
 				"finger": {
+					"symbol": "finger",
 					"type": "customary",
 					"systems": ["historical"],
 					"multiplier": 0.022225
 				},
 				"fingerCloth": {
+					"symbol": "finger",
 					"type": "customary",
 					"systems": ["historical"],
 					"multiplier": 0.1143
 				},
 				"hand": {
+					"symbol": "hand",
 					"type": "customary",
 					"systems": ["historical"],
 					"multiplier": 0.1016
@@ -327,22 +338,26 @@
 					"multiplier": 5.0292
 				},
 				"rope": {
+					"symbol": "rope",
 					"type": "customary",
 					"systems": ["historical"],
 					"multiplier": 6.096
 				},
 				"span": {
+					"symbol": "span",
 					"type": "customary",
 					"systems": ["historical"],
 					"multiplier": 0.2286
 				},
 				"league": {
+					"symbol": "lea",
 					"type": "customary",
 					"systems": ["historical"],
 					"multiplier": 4828.02,
 					"notes": "Originally meant the distance a person could walk in an hour"
 				},
 				"leagueNautical": {
+					"symbol": "lea",
 					"type": "customary",
 					"systems": ["historical", "nautical"],
 					"multiplier": 5556
@@ -355,6 +370,7 @@
 					"multiplier": 1.4960e11
 				},
 				"lightSecond": {
+					"symbol": "light-second",
 					"otherNames": ["light-second"],
 					"type": "customary",
 					"systems": ["astronomicalUnits"],
@@ -362,6 +378,7 @@
 					"notes": "Distance light travels in vacuum in 1 second"
 				},
 				"lightMinute": {
+					"symbol": "light-minute",
 					"otherNames": ["light-minute"],
 					"type": "customary",
 					"systems": ["astronomicalUnits"],
@@ -369,6 +386,7 @@
 					"notes": "Distance light travels in vacuum in 60 seconds"
 				},
 				"lightHour": {
+					"symbol": "light-hour",
 					"otherNames": ["light-hour"],
 					"type": "customary",
 					"systems": ["astronomicalUnits"],
@@ -376,6 +394,7 @@
 					"notes": "Distance light travels in vacuum in 3600 seconds"
 				},
 				"lightDay": {
+					"symbol": "light-day",
 					"otherNames": ["light-day"],
 					"type": "customary",
 					"systems": ["astronomicalUnits"],
@@ -383,6 +402,7 @@
 					"notes": "Distance light travels in vacuum in 24 light-hours, 86,400 light-seconds"
 				},
 				"lightWeek": {
+					"symbol": "light-week",
 					"otherNames": ["light-week"],
 					"type": "customary",
 					"systems": ["astronomicalUnits"],
@@ -464,6 +484,7 @@
 					"multiplier": 64.79891e-6
 				},
 				"mite": {
+					"symbol": "mite",
 					"type": "customary",
 					"systems": ["historical"],
 					"multiplier": 3.2399455e-6,
@@ -499,6 +520,7 @@
 					"multiplier": 45.359237
 				},
 				"kip": {
+					"symbol": "kip",
 					"rare": true,
 					"type": "customary",
 					"multiplier": 453.59237
@@ -609,11 +631,13 @@
 				},
 				"candlepowerNew": {
 					"symbol": "cp",
+					"type": "customary",
 					"rare": true,
 					"multiplier": 1
 				},
 				"candlepowerOld": {
 					"symbol": "cp",
+					"type": "customary",
 					"systems": ["historical"],
 					"estimation": true,
 					"multiplier": 0.981
@@ -630,6 +654,7 @@
 				},
 				"squareDegree": {
 					"symbol": "deg²",
+					"type": "customary",
 					"otherSymbols": ["sq.deg.", "(°)²"],
 					"estimation": true,
 					"multiplier": 0.30462e-3
@@ -1480,6 +1505,7 @@
 					"type": "si"
 				},
 				"atomicUnitOfForce": {
+					"symbol": "Eh/a0",
 					"type": "customary",
 					"estimation": true,
 					"multiplier": 8.23872206e-8
@@ -1579,7 +1605,7 @@
 					"symbol": "iph",
 					"otherSymbols": ["in/hr"],
 					"type": "customary",
-					"multiplier": 7.05556-6
+					"multiplier": 7.05556e-6
 				},
 				"inchPerMinute": {
 					"symbol": "ipm",
@@ -1622,7 +1648,7 @@
 					"otherNames": ["Sarrau number"],
 					"type": "customary",
 					"multiplier": 340.3,
-					"note": "Based on standard sea level conditions and at 15 °C. Additionally should be written Mach 2.3 (unit name first)"
+					"notes": "Based on standard sea level conditions and at 15 °C. Additionally should be written Mach 2.3 (unit name first)"
 				},
 				"milePerHour": {
 					"symbol": "mph",
@@ -1658,13 +1684,13 @@
 		},
 		"acceleration": {
 			"symbol": "a",
-			"baseUnit": "metrePerSecondSquared",
+			"baseUnit": "metrePerSquareSecond",
 			"derived": "length/time/time",
 			"units": {
 				"metrePerSecondSquared": {
 					"symbol": "m/s²",
 					"type": "customary",
-					"otherNames": ["metresPerSecondSquared", "meterPerSecondSquared", "metersPerSecondSquared", "meterPerSquareSecond", "metrePerSquareSecond"]
+					"otherNames": ["metresPerSecondSquared", "meterPerSecondSquared", "metersPerSecondSquared", "meterPerSquareSecond", "metrePerSecondSquared"]
 				},
 				"footPerHourPerSecond": {
 					"symbol": "fph/s",
@@ -2126,7 +2152,7 @@
 					"symbol": "mAh",
 					"otherSymbols": ["mA.h"],
 					"type": "customary",
-					"multiplier": "3.6"
+					"multiplier": 3.6
 				},
 				"statcoulomb": {
 					"symbol": "statC",
@@ -2604,7 +2630,7 @@
 					"symbol": "m kg",
 					"type": "customary",
 					"multiplier": 0.101971621
-				},
+				}
 			}
 		},
 		"information": {
@@ -2671,25 +2697,25 @@
 			"symbol": "h",
 			"type": "si",
 			"multiplier": 100,
-			"isRare": true
+			"rare": true
 		},
 		"deca": {
 			"symbol": "da",
 			"type": "si",
 			"multiplier": 10,
-			"isRare": true
+			"rare": true
 		},
 		"deci": {
 			"symbol": "d",
 			"type": "si",
 			"multiplier": 0.1,
-			"isRare": true
+			"rare": true
 		},
 		"centi": {
 			"symbol": "c",
 			"type": "si",
 			"multiplier": 0.01,
-			"isRare": true,
+			"rare": true,
 			"notes": "Is rare for systems other than length"
 		},
 		"milli": {
@@ -2789,7 +2815,7 @@
 			"symbol": "B",
 			"type": "siUnofficial",
 			"multiplier": 1e27,
-			"isRare": true
+			"rare": true
 		}
 	}
 }

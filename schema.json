@@ -1,0 +1,191 @@
+{
+	"title": "Systems Schema",
+	"type": "object",
+	"required": true,
+	"additionalProperties": false,
+	"properties": {
+		"measurementSystems": {
+			"type": "object",
+			"patternProperties": {
+				".*": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"name": {
+							"type": "string",
+							"required": true
+						},
+						"inherits": {
+							"type": "string",
+							"required": false
+						},
+						"historical": {
+							"type": "boolean",
+							"required": false
+						},
+						"notes": {
+							"type": "string",
+							"required": false
+						}
+					}
+				}
+			}
+		},
+		"systems": {
+			"type": "object",
+			"required": true,
+			"patternProperties": {
+				".*": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"symbol": {
+							"type": "string",
+							"required": true
+						},
+						"baseUnit": {
+							"type": "string",
+							"required": true
+						},
+						"otherNames": {
+							"type": "array",
+							"required": false,
+							"items": {
+								"type": "string"
+							}
+						},
+						"otherSymbols": {
+							"type": "array",
+							"required": false,
+							"items": {
+								"type": "string"
+							}
+						},
+						"derived": {
+							"type": "string",
+							"required": false
+						},
+						"notes": {
+							"type": "string",
+							"required": false
+						},
+						"units": {
+							"type": "object",
+							"required": true,
+							"patternProperties": {
+								".*": {
+									"type": "object",
+									"required": true,
+									"additionalProperties": false,
+									"properties": {
+										"symbol": {
+											"type": "string",
+											"required": true
+										},
+										"type": {
+											"type": "string",
+											"required": true,
+											"enum": ["customary", "si", "binary"],
+											"description": "range, fractional, whole may be added to enum later..."
+										},
+										"systems": {
+											"type": "array",
+											"required": false,
+											"description": "required needs to be set to true!",
+											"items": {
+												"type": "string"
+											}
+										},
+										"otherNames": {
+											"type": "array",
+											"required": false,
+											"items": {
+												"type": "string"
+											}
+										},
+										"otherSymbols": {
+											"type": "array",
+											"required": false,
+											"items": {
+												"type": "string"
+											}
+										},
+										"multiplier": {
+											"type": "number",
+											"required": false
+										},
+										"offset": {
+											"type": "number",
+											"required": false
+										},
+										"estimation": {
+											"type": "boolean",
+											"required": false
+										},
+										"rare": {
+											"type": "boolean",
+											"required": false
+										},
+										"prefixName": {
+											"type": "string",
+											"required": false
+										},
+										"prefixFreeName": {
+											"type": "string",
+											"required": false
+										},
+										"notes": {
+											"type": "string",
+											"required": false
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"prefixes": {
+			"type": "object",
+			"required": true,
+			"patternProperties": {
+				".*": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"symbol": {
+							"type": "string",
+							"required": true
+						},
+						"type": {
+							"type": "string",
+							"enum": ["si", "siBinary", "siUnofficial"],
+							"required": true
+						},
+						"base": {
+							"type": "number",
+							"required": false
+						},
+						"power": {
+							"type": "number",
+							"required": false
+						},
+						"multiplier": {
+							"type": "number",
+							"required": false
+						},
+						"rare": {
+							"type": "boolean",
+							"required": false
+						},
+						"notes": {
+							"type": "string",
+							"required": false
+						}
+					}
+				}
+			}
+		}
+	}
+}
