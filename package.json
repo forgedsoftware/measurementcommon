@@ -11,7 +11,8 @@
     ],
 	"main": "./validator.js",
 	"dependencies": {
-		"JSV": "latest"
+		"JSV": "latest",
+		"lodash": "latest"
 	},
 	"devDependencies": {
 	},

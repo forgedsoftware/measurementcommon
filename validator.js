@@ -1,20 +1,112 @@
 'use strict';
 
+/**
+ * A tool to validate systems.json.
+ */
+
 console.log('Validating systems.json...');
 
-var JSV = require("JSV").JSV;
-var systems = require('./systems.json');
-var schema = require('./schema.json');
+var JSV = require("JSV").JSV,
+	_ = require("lodash"),
+	systems = require('./systems.json'),
+	schema = require('./schema.json');
 
-var env = JSV.createEnvironment();
-var report = env.validate(systems, schema);
+doValidate('JSON Schema', validateAgainstSchema);
+doValidate('MeasurementSystems Inherits', validateMeasurementSystemInherits);
+doValidate('Systems BaseUnit', validateBaseUnits);
+doValidate('Systems Derived', validateDerived);
+doValidate('Systems UnitMeasurementSystems', validateUnitSystems);
 
-if (report.errors.length === 0) {
-	console.log("Validation of systems.json completed sucessfully...")
-} else {
-	console.log("Validation of systems.json failed...");
-	console.log(report.errors);
-	console.log("Error Count: " + report.errors.length)
+console.log('Validating systems.json succeeded!');
+
+// HELPER FUNCTIONS
+
+function doValidate(sectionName, func) {
+	var errors = func();
+	if (errors.length === 0) {
+		console.log(' - ' + sectionName + ': succeeded');
+	} else {
+		console.log(' - ' + sectionName + ': failed');
+		printErrors(errors);
+		process.exit(1);
+	}
 }
 
-//console.log(report);
+function printErrors(errors) {
+	if (errors.length > 5) {
+		console.log("Showing first 5 errors only.");
+	}
+	console.log(errors.slice(0, 5));
+	console.log("Error Count: " + errors.length);
+}
+
+// VALIDATION
+
+function validateAgainstSchema() {
+	var env = JSV.createEnvironment();
+	var report = env.validate(systems, schema);
+	return report.errors;
+}
+
+function validateMeasurementSystemInherits() {
+	var errors = [];
+	var systemKeys = _.keys(systems.systems);
+	_.each(systems.systems, function (system, key) {
+		if (system.inherits !== undefined) {
+			if (!_.contains(systemKeys, system.inherits)) {
+				errors.push('system \'' + key + '\' inherits from unknown system \'' + system.inherits + '\'');
+			}
+			if (key === system.inherits) {
+				errors.push('system \'' + key + '\' should not inherit from itself');
+			}
+		}
+	});
+	return errors;
+}
+
+function validateBaseUnits() {
+	var errors = [];
+	_.each(systems.dimensions, function (dimension, key) {
+		if(!_.contains(_.keys(dimension.units), dimension.baseUnit)) {
+			errors.push('dimension \'' + key + '\' has a baseUnit \'' + dimension.baseUnit + '\' that does not match any know unit');
+		}
+	});
+	return errors;
+}
+
+function validateUnitSystems() {
+	var errors = [];
+	var systemKeys = _.keys(systems.systems);
+	_.each(systems.dimensions, function (dimension, dimKey) {
+		_.each(dimension.units, function (unit, unitKey) {
+			_.each(unit.systems, function (system) {
+				if (!_.contains(systemKeys, system)) {
+					errors.push('unknown system \'' + system + '\' in ' + dimKey + ':' + unitKey);
+				}
+			});
+		});
+	});
+	return errors;
+}
+
+function validateDerived() {
+	var errors = [];
+	// Can only be derived from base dimensions
+	var dimensionKeys = _.keys(_.pick(systems.dimensions, function (dim) {
+		return (dim.derived === undefined);
+	}));
+	_.each(systems.dimensions, function (dimension, dimensionKey) {
+		if (dimension.derived && dimension.derived.length > 0) {
+			var parts = dimension.derived.split(/([/*|/])/);
+			_.each(parts, function (part, position) {
+				if (position % 2 === 1 && !(part === '*' || part === '/')) {
+					errors.push('unknown operation \'' + part + '\' used in dimension.derived for ' + dimensionKey);
+				}
+				if (position % 2 === 0 && !(_.contains(dimensionKeys, part) || part === '1')) {
+					errors.push('unknown base dimension or placeholder \'' + part + '\' used in dimension.derived for ' + dimensionKey);
+				}
+			})
+		}
+	});
+	return errors;
+}

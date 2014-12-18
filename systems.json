@@ -1,5 +1,5 @@
 {
-	"measurementSystems": {
+	"systems": {
 		"metric": {
 			"name": "Metric System"
 		},
@@ -96,7 +96,7 @@
 			"historical": true
 		}
 	},
-	"systems": {
+	"dimensions": {
 		"time": {
 			"symbol": "T",
 			"otherNames": [ "duration" ],
@@ -1687,7 +1687,7 @@
 			"baseUnit": "metrePerSquareSecond",
 			"derived": "length/time/time",
 			"units": {
-				"metrePerSecondSquared": {
+				"metrePerSquareSecond": {
 					"symbol": "m/s²",
 					"type": "customary",
 					"otherNames": ["metresPerSecondSquared", "meterPerSecondSquared", "metersPerSecondSquared", "meterPerSquareSecond", "metrePerSecondSquared"]

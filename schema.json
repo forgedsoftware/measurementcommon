@@ -4,7 +4,7 @@
 	"required": true,
 	"additionalProperties": false,
 	"properties": {
-		"measurementSystems": {
+		"systems": {
 			"type": "object",
 			"required": true,
 			"additionalProperties": false,
@@ -15,10 +15,12 @@
 					"properties": {
 						"name": {
 							"type": "string",
+							"minLength": 1,
 							"required": true
 						},
 						"inherits": {
 							"type": "string",
+							"minLength": 1,
 							"required": false
 						},
 						"historical": {
@@ -33,7 +35,7 @@
 				}
 			}
 		},
-		"systems": {
+		"dimensions": {
 			"type": "object",
 			"required": true,
 			"additionalProperties": false,
@@ -44,15 +46,18 @@
 					"properties": {
 						"symbol": {
 							"type": "string",
+							"minLength": 1,
 							"required": true
 						},
 						"baseUnit": {
 							"type": "string",
+							"minLength": 1,
 							"required": true
 						},
 						"otherNames": {
 							"type": "array",
 							"required": false,
+							"uniqueItems": true,
 							"items": {
 								"type": "string"
 							}
@@ -60,6 +65,7 @@
 						"otherSymbols": {
 							"type": "array",
 							"required": false,
+							"uniqueItems": true,
 							"items": {
 								"type": "string"
 							}
@@ -84,6 +90,7 @@
 									"properties": {
 										"symbol": {
 											"type": "string",
+											"minLength": 1,
 											"required": true
 										},
 										"type": {
@@ -95,6 +102,7 @@
 										"systems": {
 											"type": "array",
 											"required": false,
+											"uniqueItems": true,
 											"description": "required needs to be set to true!",
 											"items": {
 												"type": "string"
@@ -103,6 +111,7 @@
 										"otherNames": {
 											"type": "array",
 											"required": false,
+											"uniqueItems": true,
 											"items": {
 												"type": "string"
 											}
@@ -110,6 +119,7 @@
 										"otherSymbols": {
 											"type": "array",
 											"required": false,
+											"uniqueItems": true,
 											"items": {
 												"type": "string"
 											}
