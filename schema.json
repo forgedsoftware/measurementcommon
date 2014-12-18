@@ -6,8 +6,10 @@
 	"properties": {
 		"measurementSystems": {
 			"type": "object",
+			"required": true,
+			"additionalProperties": false,
 			"patternProperties": {
-				".*": {
+				".+": {
 					"type": "object",
 					"additionalProperties": false,
 					"properties": {
@@ -34,8 +36,9 @@
 		"systems": {
 			"type": "object",
 			"required": true,
+			"additionalProperties": false,
 			"patternProperties": {
-				".*": {
+				".+": {
 					"type": "object",
 					"additionalProperties": false,
 					"properties": {
@@ -72,8 +75,9 @@
 						"units": {
 							"type": "object",
 							"required": true,
+							"additionalProperties": false,
 							"patternProperties": {
-								".*": {
+								".+": {
 									"type": "object",
 									"required": true,
 									"additionalProperties": false,
@@ -149,8 +153,9 @@
 		"prefixes": {
 			"type": "object",
 			"required": true,
+			"additionalProperties": false,
 			"patternProperties": {
-				".*": {
+				".+": {
 					"type": "object",
 					"additionalProperties": false,
 					"properties": {
