@@ -1,26 +1,39 @@
 Measurement Common
 ==================
 
-A set of common json files for measurement. These detail the systems and units available for conversion.
+A set of common json files for measurement. These detail the dimensions, systems, prefixes and units available.
 
 ## JSON Structure
 
-The json structure defines a set of systems, where each system contains a set of units.
+The json structure defines the following:
+ - A set of systems, which describe man-made systems of units that allow the measurement of dimensions. Systems may be based on another system and thus can inherit from that system.
+ - A set of dimensions in the physical world, where each dimension contains a set of units that can be used to measure it. Each unit belongs to one or more systems.
+ - A set of prefixes used by different units.
 
 ### Example Structure
 ```json
 {
 	"systems": {
 		...
+		"cgs": {
+			"name": "Centimetre-Gram-Second Unit System",
+			"historical": true,
+			"inherits": "legacyMetric"
+		},
+		...
+	},
+	"dimensions": {
+		...
 		"force": {
 			"symbol": "F",
-			"otherNames": [ "weight" ],
+			"otherNames": ["weight"],
 			"baseUnit": "newton",
 			"derived": "mass*length/time/time",
 			"units": {
 				"newton": {
 					"symbol": "N",
-					"type": "si"
+					"type": "si",
+					"systems": ["si"],
 				},
 				...
 				"milligraveForce": {
@@ -28,28 +41,38 @@ The json structure defines a set of systems, where each system contains a set of
 					"otherSymbols": ["gf"],
 					"otherNames": ["gravet-force"],
 					"type": "customary",
+					"systems": ["gravitational"],
 					"multiplier": 9.80665e-3
 				},
 				...
 			}
 		}
 		...
+	},
+	"prefixes": {
+		...
+		"kilo": {
+			"symbol": "k",
+			"type": "si",
+			"multiplier": 1e3
+		},
+		...
 	}
 }
 ```
 
 ### Fields
-Systems and units have the following properties. All properties are strings unless otherwise defined.
+Systems, dimensions, and units have the following properties. All properties are strings unless otherwise defined.
 
- - **Measurement Systems**
-  - *name* - A formal name for the measurement system
-  - *inherits* - (optional) The key of the measurement system that it inherits from
-  - *historical* - (optional, boolean) Determines if the system is in common usage
  - **Systems**
-  - *symbol* - The symbol that is generally used to represent that system
-  - *otherNames* - (optional, array) Other names used for the system
+  - *name* - A formal name for the system
+  - *inherits* - (optional) The key of the system that it inherits from
+  - *historical* - (optional, boolean) Determines if the system is in common usage
+ - **Dimensions**
+  - *symbol* - The symbol that is generally used to represent that dimension
+  - *otherNames* - (optional, array) Other names used for the dimension
   - *baseUnit* - The name of the unit that should be used as the base unit that all multipliers and adjustments are based off
-  - *derived* - (optional) Many systems can be derived from base systems that can't be derived from anything else. e.g. speed is "length/time"
+  - *derived* - (optional) Many dimensions can be derived from base dimensions that can't be derived from anything else. e.g. speed is "length/time"
  - **Units**
   - *symbol* - The symbol that is most commonlly used to represent the unit
   - *type* - The type of unit it is: si, customary, or range.
@@ -59,7 +82,7 @@ Systems and units have the following properties. All properties are strings unle
     - **binary** - (undecided) Either true or false in representation
     - **fractional** - (undecided) May only be displayed as a fraction
     - **whole** - (undecided) May only be displayed as a whole number
-  - *systems* - (array) This provides a list of the types of systems (e.g. US Customary, CGS etc) where the unit is used. See "Measurement Systems".
+  - *systems* - (array) This provides a list of the types of systems (e.g. US Customary, CGS etc) where the unit is used. See "Systems".
   - *otherSymbols* - (optional, array) The strings of other symbols that represent the unit
   - *otherNames* - (optional, array) The strings of other names of the unit - e.g. a 'bit' can also be called a 'shannon'
   - *multiplier* - (optional, number) This should be defined on any unit that is not the base unit. Provides a linear multiplier for conversions. (baseUnit amount x multiplier) + offset = convertedUnit amount
@@ -70,10 +93,10 @@ Systems and units have the following properties. All properties are strings unle
   - *prefixName* - (optional) **Only to be used on base units which are SI and have a prefix (e.g. kilogram)** Name of the existing prefix
   - *prefixFreeName* - (optional) **Only to be used on base units which are SI and have a prefix (e.g. kilogram)** Name of the unit without prefix
 
-## Measurement Systems Hierarchy
-We have constructed a (flattened) hierarchy of measurement systems that represent the usages of units in the real world while minimising the measurement systems needing
+## Systems Hierarchy
+We have constructed a (flattened) hierarchy of systems that represent the usages of units in the real world while minimising the systems needing
 to be detailed against each unit.
-Each unit should be marked with at least one measurement system.
+Each unit should be marked with at least one system.
 
  - metric
   - si
@@ -98,8 +121,8 @@ Each unit should be marked with at least one measurement system.
  - nonStandard
  - traditionalChinese *(H)*
 
-## Base Systems
-We utilise the standard SI systems and their base units. All systems *should* be able to be derived from these systems.
+## Base Dimensions
+We utilise the standard SI dimensions and their base units. All dimensions *should* be able to be derived from these dimensions.
 
  - Time (second)
  - Length (metre)
@@ -111,7 +134,7 @@ We utilise the standard SI systems and their base units. All systems *should* be
  - Plane Angle (radian)
  - *Solid Angle (steradian)* - This is a bit of an exception, a solid angle is a 2D angle in 3D space that is represented using a dimensionless unit.
 
-## Derived Systems
+## Derived Dimensions
 
  - Volume (cubicMetre)
  - Area (squareMetre)
@@ -156,4 +179,4 @@ We utilise the standard SI systems and their base units. All systems *should* be
  - Wikipedia. (2014) *Conversion of units*. Retrieved from: http://en.wikipedia.org/wiki/Conversion_of_units
 
 ## License
-Measurement JS is freely distributable under the terms of the MIT license.
+Measurement Common is freely distributable under the terms of the MIT license.
