@@ -230,19 +230,22 @@
 					"symbol": "decade",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"multiplier": 315360000
+					"multiplier": 315576000,
+					"notes": "10 Julian years"
 				},
 				"century": {
 					"symbol": "C",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"multiplier": 3153600000
+					"multiplier": 3155760000,
+					"notes": "100 Julian years"
 				},
 				"millennium": {
 					"symbol": "M",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"multiplier": 31536000000
+					"multiplier": 31557600000,
+					"notes": "1000 Julian years"
 				},
 				"minuta": {
 					"symbol": "minuta",
