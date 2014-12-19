@@ -177,6 +177,7 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Dresner, Stephen. (1971). *Units of Measurement*. Aylesbury, England: Harvey Miller and Medcalf Ltd
  - Google. (2014). *Unit Conversion Calculator*. Retrieved from: http://www.google.com/intl/en/help/features.html#reference
  - Wikipedia. (2014) *Conversion of units*. Retrieved from: http://en.wikipedia.org/wiki/Conversion_of_units
+ - Wikipedia. (2014) *Ancient Roman units of measurement*. Retrieved from: http://en.wikipedia.org/wiki/Ancient_Roman_units_of_measurement
 
 ## License
 Measurement Common is freely distributable under the terms of the MIT license.

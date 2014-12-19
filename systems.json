@@ -48,8 +48,16 @@
 			"historical": true,
 			"inherits": "legacyMetric"
 		},
+		"internationalNautical": {
+			"name": "International Nautical Measure"
+		},
 		"imperial": {
 			"name": "UK Imperial Units"
+		},
+		"imperialNautical": {
+			"name": "Imperial Nautical Units",
+			"historical": true,
+			"inherits": "imperial"
 		},
 		"englishEngineering": {
 			"name": "English Engineering System",
@@ -67,10 +75,19 @@
 			"inherits": "imperial"
 		},
 		"usCustomary": {
-			"name": "US Customary Units"
+			"name": "US Customary Units",
+			"notes": "The American System of Measures"
 		},
 		"avoirdupois": {
 			"name": "Avoirdupois Units",
+			"inherits": "usCustomary"
+		},
+		"usSurvey": {
+			"name": "US Survey Units",
+			"inherits": "usCustomary"
+		},
+		"usNautical": {
+			"name": "International Nautical Units",
 			"inherits": "usCustomary"
 		},
 		"englishUnits": {
@@ -94,6 +111,20 @@
 		"traditionalChinese": {
 			"name": "Traditional Chinese Units",
 			"historical": true
+		},
+		"ancient": {
+			"name": "Ancient Units",
+			"historical": true
+		},
+		"biblical": {
+			"name": "Biblical Units",
+			"historical": true,
+			"inherits": "ancient"
+		},
+		"ancientRoman": {
+			"name": "Ancient Roman Units",
+			"historical": true,
+			"inherits": "ancient"
 		}
 	},
 	"dimensions": {
@@ -106,48 +137,88 @@
 					"symbol": "s",
 					"otherSymbols": ["sec"],
 					"type": "si",
-					"systems": ["metric", "imperial", "usCustomary", "englishUnits"]
+					"systems": ["metric", "imperial", "usCustomary", "englishUnits"],
+					"notes": "1/60 of minute"
 				},
 				"minute": {
 					"symbol": "min",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"multiplier": 60
+					"multiplier": 60,
+					"notes": "1/60 of hour"
 				},
 				"hour": {
 					"symbol": "h",
+					"otherNames": ["horae"],
 					"otherSymbols": ["hr"],
 					"type": "customary",
-					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"multiplier": 3600
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits", "ancient"],
+					"multiplier": 3600,
+					"notes": "1/24 of day. The hour was developed by astrologers in Classical antiquity."
 				},
 				"day": {
 					"symbol": "day",
 					"type": "customary",
 					"multiplier": 86400,
-					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
+					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits", "ancient"],
 					"notes": "Possible Base"
 				},
 				"week": {
 					"symbol": "week",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"multiplier": 604800
+					"multiplier": 604800,
+					"notes": "7 days"
 				},
 				"month": {
 					"symbol": "month",
 					"type": "customary",
 					"estimation": true,
-					"multiplier": 2629740,
+					"multiplier": 2629800,
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"notes": "Possible Base"
+					"notes": "1/12 of Julian year."
 				},
 				"year": {
 					"symbol": "yr",
-					"type": "customary",
-					"multiplier": 31557600,
+					"otherSymbols": ["y", "a", "aj"],
+					"otherNames": ["annus", "Julian year"],
+					"type": "si",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"notes": "Possible Base"
+					"multiplier": 31557600,
+					"notes": "365.25 days of 86400 seconds"
+				},
+				"commonYear": {
+					"symbol": "common yr",
+					"otherSymbols": ["y"],
+					"type": "customary",
+					"multiplier": 31536000,
+					"systems": ["nonStandard"],
+					"notes": "Common Year - 365 days of 86400 seconds. Maybe si."
+				},
+				"leapYear": {
+					"symbol": "leap yr",
+					"type": "customary",
+					"multiplier": 31622400,
+					"systems": ["nonStandard"],
+					"notes": "Leap Year - 366 days of 86400 seconds"
+				},
+				"gregorianYear": {
+					"symbol": "yr",
+					"otherSymbols": ["y"],
+					"otherNames": ["year"],
+					"type": "customary",
+					"systems": ["nonStandard"],
+					"multiplier": 31556952,
+					"notes": "365.2425 days of 86400 seconds. Maybe si."
+				},
+				"tropicalYear": {
+					"symbol": "yr",
+					"otherSymbols": ["y"],
+					"otherNames": ["year"],
+					"type": "customary",
+					"systems": ["nonStandard"],
+					"multiplier": 31556925.216,
+					"notes": "365.24219 days of 86400 seconds. Maybe si."
 				},
 				"ke": {
 					"symbol": "ke",
@@ -159,19 +230,33 @@
 					"symbol": "decade",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"multiplier": 315576000
+					"multiplier": 315360000
 				},
 				"century": {
 					"symbol": "C",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"multiplier": 3155760000
+					"multiplier": 3153600000
 				},
 				"millennium": {
 					"symbol": "M",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
-					"multiplier": 31557600000
+					"multiplier": 31536000000
+				},
+				"minuta": {
+					"symbol": "minuta",
+					"type": "customary",
+					"systems": ["ancient"],
+					"multiplier": 1440,
+					"notes": "1/60 of day. Used by ancient astrologers."
+				},
+				"secunda": {
+					"symbol": "secunda",
+					"type": "customary",
+					"systems": ["ancient"],
+					"multiplier": 24,
+					"notes": "1/3600 of day. Used by ancient astrologers."
 				}
 			}
 		},
@@ -210,7 +295,7 @@
 					"symbol": "mi",
 					"otherNames": ["statuteMile"],
 					"type": "customary",
-					"systems": ["land"],
+					"systems": ["usSurvey"],
 					"rare": true,
 					"multiplier": 1609.3472,
 					"notes": "Used exclusively for land survey. Used to be statute mile"
@@ -232,7 +317,7 @@
 					"symbol": "ft",
 					"otherSymbols": ["'"],
 					"type": "customary",
-					"systems": ["land"],
+					"systems": ["usSurvey"],
 					"rare": true,
 					"multiplier": 0.3048006096,
 					"notes": "Used exclusively for land survey. Used to be statute foot"
@@ -246,9 +331,9 @@
 				},
 				"nauticalMile": {
 					"symbol": "M",
-					"otherSymbols": ["NM", "nmi"],
+					"otherSymbols": ["NM", "nmi", "naut.mi"],
 					"type": "customary",
-					"systems": ["nautical"],
+					"systems": ["internationalNautical", "usNautical", "imperialNautical"],
 					"multiplier": 1852
 				},
 				"fathom": {
@@ -256,39 +341,159 @@
 					"otherSymbols": ["f", "fath", "fm", "fth", "fthm"],
 					"type": "customary",
 					"systems": ["imperial", "usCustomary", "englishUnits"],
-					"multiplier": 1.8288
+					"multiplier": 1.8288,
+					"notes": "The nautical use and definition of fathom varied widely"
 				},
 				"cableLengthInternational": {
 					"symbol": "cable",
 					"type": "customary",
-					"systems": ["nautical"],
+					"systems": ["internationalNautical"],
 					"multiplier": 185.2					
 				},
 				"cableLengthImperial": {
 					"symbol": "cable",
 					"type": "customary",
-					"systems": ["nautical"],
+					"systems": ["imperialNautical"],
 					"multiplier": 185.32
 				},
 				"cableLengthUS": {
 					"symbol": "cable",
 					"type": "customary",
-					"systems": ["nautical"],
+					"systems": ["usNautical"],
 					"multiplier": 219.456
 				},
 				"furlong": {
 					"symbol": "fur",
 					"type": "customary",
-					"systems": ["imperial", "usCustomary", "nautical"],
+					"systems": ["imperial", "usCustomary", "englishUnits"],
 					"multiplier": 201.168
 				},
-				"cubit": {
+				"cubitBiblical": {
 					"symbol": "cubit",
 					"type": "customary",
 					"estimation": true,
-					"systems": ["historical"],
-					"multiplier": 0.5,
+					"systems": ["biblical"],
+					"multiplier": 0.45,
 					"notes": "Distance from fingers to elbow"
+				},
+				"digitus": {
+					"symbol": "digitus",
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 0.0185,
+					"notes": "finger - 1/16 pes. Based on 1 pes = 0.296m"
+				},
+				"uncia": {
+					"symbol": "uncia",
+					"otherNames": ["pollex"],
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 0.0246,
+					"notes": "inch/thumb - 1/12 pes. Based on 1 pes = 0.296m"
+				},
+				"palmus": {
+					"symbol": "palmus",
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 0.074,
+					"notes": "palm width - 1/4 pes. Based on 1 pes = 0.296m"
+				},
+				"palmusMajor": {
+					"symbol": "palmus major",
+					"type": "customary",
+					"estimation": true,
+					"rare": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 0.222,
+					"notes": "palm length - 3/4 pes - in late period only. Based on 1 pes = 0.296m"
+				},
+				"pes": {
+					"symbol": "pes",
+					"otherNames": ["pedes"],
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 0.296,
+					"notes": "foot. Based on 1 pes = 0.296m"
+				},
+				"palmipes": {
+					"symbol": "palmipes",
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 0.37,
+					"notes": "1 1/4 pedes. Based on 1 pes = 0.296m"
+				},
+				"cubitus": {
+					"symbol": "cubitus",
+					"otherNames": ["cubit"],
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 0.444,
+					"notes": "cubit - 1 1⁄2 pedes. Based on 1 pes = 0.296m"
+				},
+				"gradus": {
+					"symbol": "gradus",
+					"otherNames": ["pes sestertius"],
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 0.74,
+					"notes": "step - 2 1/2 pedes. Based on 1 pes = 0.296m"
+				},
+				"passus": {
+					"symbol": "passus",
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 1.48,
+					"notes": "(double) pace - 5 pedes. Based on 1 pes = 0.296m"
+				},
+				"pertica": {
+					"symbol": "pertica",
+					"otherNames": ["decempeda"],
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 2.96,
+					"notes": "perch - 10 pedes. Based on 1 pes = 0.296m"
+				},
+				"actus": {
+					"symbol": "actus",
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 35.5,
+					"notes": "120 pedes. Based on 1 pes = 0.296m"
+				},
+				"stadium": {
+					"symbol": "stadium",
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 185,
+					"notes": "furlong - 625 pedes. Based on 1 pes = 0.296m"
+				},
+				"millePassuum": {
+					"symbol": "mille passum",
+					"otherNames": ["milliarium"],
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 1480,
+					"notes": "mile - 5000 pedes. Based on 1 pes = 0.296m"
+				},
+				"gallicLeuga": {
+					"symbol": "Gallic leuga",
+					"type": "customary",
+					"estimation": true,
+					"systems": ["ancientRoman"],
+					"multiplier": 2220,
+					"notes": "league - 7500 pedes. Based on 1 pes = 0.296m"
 				},
 				"ell": {
 					"symbol": "ell",
@@ -524,6 +729,187 @@
 					"rare": true,
 					"type": "customary",
 					"multiplier": 453.59237
+				},
+				"siliqua": {
+					"symbol": "siliqua",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 0.19e-3,
+					"notes": "1/144 uncia. Based on 1 libra = 328.9 g"
+				},
+				"obolus": {
+					"symbol": "obolus",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 0.57e-3,
+					"notes": "1/48 uncia. Based on 1 libra = 328.9 g"
+				},
+				"scrupulum": {
+					"symbol": "scrupulum",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 1.14e-3,
+					"notes": "1/24 uncia. Based on 1 libra = 328.9 g"
+				},
+				"semisextula": {
+					"symbol": "semisextula",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 2.28e-3,
+					"notes": "1/12 uncia. Based on 1 libra = 328.9 g"
+				},
+				"sextula": {
+					"symbol": "sextula",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 4.57e-3,
+					"notes": "1/6 uncia. Based on 1 libra = 328.9 g"
+				},
+				"sicilicius": {
+					"symbol": "sicilicius",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 6.85e-3,
+					"notes": "1/4 uncia. Based on 1 libra = 328.9 g"
+				},
+				"duella": {
+					"symbol": "duella",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 9.14e-3,
+					"notes": "1/3 uncia. Based on 1 libra = 328.9 g"
+				},
+				"semuncia": {
+					"symbol": "semuncia",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 13.7e-3,
+					"notes": "1/2 uncia. Based on 1 libra = 328.9 g"
+				},
+				"uncia": {
+					"symbol": "uncia",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 27.4e-3,
+					"notes": "Roman ounce. 1/12 libra. Based on 1 libra = 328.9 g"
+				},
+				"sescuncia": {
+					"symbol": "sescuncia",
+					"otherNames": ["sescunx"],
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 41.1e-3,
+					"notes": "1/8 libra. Based on 1 libra = 328.9 g"
+				},
+				"sextans": {
+					"symbol": "sextans",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 54.8e-3,
+					"notes": "1/6 libra. Based on 1 libra = 328.9 g"
+				},
+				"quadrans": {
+					"symbol": "quadrans",
+					"otherNames": ["teruncius"],
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 82.2e-3,
+					"notes": "1/4 libra. Based on 1 libra = 328.9 g"
+				},
+				"triens": {
+					"symbol": "triens",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 109.6e-3,
+					"notes": "1/3 libra. Based on 1 libra = 328.9 g"
+				},
+				"triens": {
+					"symbol": "triens",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 109.6e-3,
+					"notes": "1/3 libra. Based on 1 libra = 328.9 g"
+				},
+				"quincunx": {
+					"symbol": "quincunx",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 137e-3,
+					"notes": "5/12 libra. Based on 1 libra = 328.9 g"
+				},
+				"semis": {
+					"symbol": "semis",
+					"otherNames": ["semissis"],
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 164.5e-3,
+					"notes": "1/2 libra. Based on 1 libra = 328.9 g"
+				},
+				"septunx": {
+					"symbol": "septunx",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 191.9e-3,
+					"notes": "7/12 libra. Based on 1 libra = 328.9 g"
+				},
+				"bes": {
+					"symbol": "bes",
+					"otherNames": ["bessis"],
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 219.3e-3,
+					"notes": "2/3 libra. Based on 1 libra = 328.9 g"
+				},
+				"dodrans": {
+					"symbol": "dodrans",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 246.7e-3,
+					"notes": "3/4 libra. Based on 1 libra = 328.9 g"
+				},
+				"dextans": {
+					"symbol": "dextans",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 274.1e-3,
+					"notes": "5/6 libra. Based on 1 libra = 328.9 g"
+				},
+				"deunx": {
+					"symbol": "deunx",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 301.5e-3,
+					"notes": "11/12 libra. Based on 1 libra = 328.9 g"
+				},
+				"libra": {
+					"symbol": "libra",
+					"otherNames": ["as"],
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 328.9e-3,
+					"notes": "Roman pound. Based on 1 libra = 328.9 g"
 				}
 			}
 		},
@@ -1263,6 +1649,112 @@
 					"symbol": "wey",
 					"type": "customary",
 					"multiplier": 1.4095628066752
+				},
+				"ligula": {
+					"symbol": "ligula",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 11.4e-6,
+					"notes": "Liquid, Dry. 1/48 sextarius. Based on 1 pes = 0.296m"
+				},
+				"cyathus": {
+					"symbol": "cyathus",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 45e-6,
+					"notes": "Liquid, Dry. 1/12 sextarius. Based on 1 pes = 0.296m"
+				},
+				"acetabulum": {
+					"symbol": "acetabulum",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 68e-6,
+					"notes": "Liquid, Dry. 1/8 sextarius. Based on 1 pes = 0.296m"
+				},
+				"quartarius": {
+					"symbol": "quartarius",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 136e-6,
+					"notes": "Liquid, Dry. 1/4 sextarius. Based on 1 pes = 0.296m"
+				},
+				"hemina": {
+					"symbol": "hemina",
+					"otherNames": ["cotyla"],
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 273e-6,
+					"notes": "Liquid, Dry. 1/2 sextarius. Based on 1 pes = 0.296m"
+				},
+				"sextarius": {
+					"symbol": "sextarius",
+					"otherNames": ["cotyla"],
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 546e-6,
+					"notes": "Liquid, Dry. 1/6 congius. Based on 1 pes = 0.296m"
+				},
+				"congius": {
+					"symbol": "congius",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 3.27e-3,
+					"notes": "Liquid. 6 sextarii. Based on 1 pes = 0.296m"
+				},
+				"urna": {
+					"symbol": "urna",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 13.1e-3,
+					"notes": "Liquid. 4 congii. Based on 1 pes = 0.296m"
+				},
+				"amphoraQuadrantal": {
+					"symbol": "amphora quadrantal",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 26.2e-3,
+					"notes": "Liquid. 8 congii. One cubic pes. Standard amphora size. Based on 1 pes = 0.296m"
+				},
+				"culeus": {
+					"symbol": "culeus",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 524e-3,
+					"notes": "Liquid. 160 congii. Based on 1 pes = 0.296m"
+				},
+				"semimodius": {
+					"symbol": "semimodius",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 4.36e-3,
+					"notes": "Dry. 8 sextarii. Based on 1 pes = 0.296m"
+				},
+				"modius": {
+					"symbol": "modius",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 8.73e-3,
+					"notes": "Dry. 16 sextarii. Alt: 8.62e-3. Based on 1 pes = 0.296m"
+				},
+				"modiusCastrensis": {
+					"symbol": "modius castrensis",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 13.08e-3,
+					"notes": "Dry. 24 sextarii. Alt: 12.93e-3. Based on 1 pes = 0.296m"
 				}
 			}
 		},
@@ -1352,6 +1844,200 @@
 					"symbol": "b",
 					"type": "si",
 					"multiplier": 1e-28
+				},
+				"pesQuadratus": {
+					"symbol": "pes quadratus",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 0.0876,
+					"notes": "square foot - 1 pes^2. Based on 1 pes = 0.296m"
+				},
+				"scrupulum": {
+					"symbol": "scrupulum",
+					"otherNames": ["decempeda quadrata"],
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 8.76,
+					"notes": "the square of the standard 10-foot measuring rod. Jugerum division. 100 pedes^2 - 1/288 jugerum. Based on 1 pes = 0.296m"
+				},
+				"actusSimplex": {
+					"symbol": "actus simplex",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 42.1,
+					"notes": "4 x 120 pedes = 480 pedes^2. Based on 1 pes = 0.296m"
+				},
+				"uncia": {
+					"symbol": "uncia",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 210,
+					"notes": "Jugerum division. 2400 pedes^2 - 1/12 jugerum. Based on 1 pes = 0.296m"
+				},
+				"clima": {
+					"symbol": "clima",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 315,
+					"notes": "60 x 60 pedes = 3600 pedes^2. Based on 1 pes = 0.296m"
+				},
+				"actusQuadratus": {
+					"symbol": "actus quadratus",
+					"otherNames": ["acnua", "arpennis", "semis"],
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 1262,
+					"notes": "Jugerum division. 14400 pedes^2 - 1/2 jugerum. Based on 1 pes = 0.296m"
+				},
+				"jugerum": {
+					"symbol": "jugerum",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 2523,
+					"notes": "28800 pedes^2 - 1 jugerum. Based on 1 pes = 0.296m"
+				},
+				"heredium": {
+					"symbol": "heredium",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 5047,
+					"notes": "2 jugerum. Based on 1 pes = 0.296m"
+				},
+				"centuria": {
+					"symbol": "centuria",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 504700,
+					"notes": "200 jugerum. Was 100 jugera. Based on 1 pes = 0.296m"
+				},
+				"saltus": {
+					"symbol": "saltus",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 2019000,
+					"notes": "800 jugerum. Based on 1 pes = 0.296m"
+				},
+				"dimidiumScrupulum": {
+					"symbol": "dimidium scrupulum",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 4.38,
+					"notes": "Jugerum division. 50 pedes^2 - 1/576 jugerum. Based on 1 pes = 0.296m"
+				},
+				"duoScrupula": {
+					"symbol": "duo scrupula",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 17.5,
+					"notes": "Jugerum division. 200 pedes^2 - 1/144 jugerum. Based on 1 pes = 0.296m"
+				},
+				"sextula": {
+					"symbol": "sextula",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 35,
+					"notes": "Jugerum division. 400 pedes^2 - 1/72 jugerum. Based on 1 pes = 0.296m"
+				},
+				"sicilicus": {
+					"symbol": "sicilicus",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 52.6,
+					"notes": "Jugerum division. 600 pedes^2 - 1/48 jugerum. Based on 1 pes = 0.296m"
+				},
+				"semiuncia": {
+					"symbol": "semiuncia",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 105,
+					"notes": "Jugerum division. 1200 pedes^2 - 1/24 jugerum. Based on 1 pes = 0.296m"
+				},
+				"sextans": {
+					"symbol": "sextans",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 421,
+					"notes": "Jugerum division. 4800 pedes^2 - 1/6 jugerum. Based on 1 pes = 0.296m"
+				},
+				"quadrans": {
+					"symbol": "quadrans",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 631,
+					"notes": "Jugerum division. 7200 pedes^2 - 1/4 jugerum. Based on 1 pes = 0.296m"
+				},
+				"triens": {
+					"symbol": "triens",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 841,
+					"notes": "Jugerum division. 9600 pedes^2 - 1/3 jugerum. Based on 1 pes = 0.296m"
+				},
+				"quincunx": {
+					"symbol": "quincunx",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 1051,
+					"notes": "Jugerum division. 12000 pedes^2 - 5/12 jugerum. Based on 1 pes = 0.296m"
+				},
+				"septunx": {
+					"symbol": "septunx",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 1472,
+					"notes": "Jugerum division. 16800 pedes^2 - 7/12 jugerum. Based on 1 pes = 0.296m"
+				},
+				"bes": {
+					"symbol": "bes",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 1682,
+					"notes": "Jugerum division. 19200 pedes^2 - 2/3 jugerum. Based on 1 pes = 0.296m"
+				},
+				"dodrans": {
+					"symbol": "dodrans",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 1893,
+					"notes": "Jugerum division. 21600 pedes^2 - 3/4 jugerum. Based on 1 pes = 0.296m"
+				},
+				"dextans": {
+					"symbol": "dextans",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 2103,
+					"notes": "Jugerum division. 24000 pedes^2 - 5/6 jugerum. Based on 1 pes = 0.296m"
+				},
+				"deunx": {
+					"symbol": "deunx",
+					"type": "customary",
+					"systems": ["ancientRoman"],
+					"estimation": true,
+					"multiplier": 2313,
+					"notes": "Jugerum division. 26400 pedes^2 - 11/12 jugerum. Based on 1 pes = 0.296m"
 				}
 			}
 		},

@@ -101,7 +101,7 @@
 										},
 										"systems": {
 											"type": "array",
-											"required": false,
+											"required": true,
 											"uniqueItems": true,
 											"description": "required needs to be set to true!",
 											"items": {
