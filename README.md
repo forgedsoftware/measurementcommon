@@ -171,6 +171,16 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Torque (newtonMetre)
  - Information (bit)
 
+## ToDO
+ - Add 'name' property on each unit
+ - Needed Dimensions
+  - radioactivity (becquerel)
+  - absorbedDose (gray)
+  - equivalentDose (sievert)
+  - catalyticActivity (katal)
+  - levelOfFieldQuantity (neper, bel, decibel)
+  - levelOfPowerQuantity (neper, bel, decibel)
+
 ## Adopted Conventions
 
  - The default spelling is "metre" not "meter", though we try to provide the alternative.

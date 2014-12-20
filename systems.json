@@ -336,7 +336,7 @@
 					"symbol": "M",
 					"otherSymbols": ["NM", "nmi", "naut.mi"],
 					"type": "customary",
-					"systems": ["internationalNautical", "usNautical", "imperialNautical"],
+					"systems": ["legacyMetric", "siCommon", "internationalNautical", "usNautical", "imperialNautical"],
 					"multiplier": 1852
 				},
 				"fathom": {
@@ -575,7 +575,8 @@
 					"otherSymbols": ["AU", "a.u.", "ua"],
 					"type": "customary",
 					"systems": ["astronomicalUnits"],
-					"multiplier": 1.4960e11
+					"multiplier": 1.4960e11,
+					"notes": "Non-SI unit accepted for use with the SI, and whose value in SI units must be obtained experimentally"
 				},
 				"lightSecond": {
 					"symbol": "light-second",
@@ -667,21 +668,26 @@
 				},
 				"tonLong": {
 					"symbol": "ton",
-					"otherSymbols": ["long tn"],
+					"otherSymbols": ["long tn", "tn"],
+					"otherNames": ["ton", "long ton", "imperial ton", "weight ton"],
 					"type": "customary",
-					"systems": ["imperial"],
+					"systems": ["imperial", "avoirdupois"],
 					"multiplier": 1016.0469088
 				},
 				"tonShort": {
 					"symbol": "ton",
-					"otherSymbols": ["sh tn"],
+					"otherSymbols": ["sh tn", "tn"],
+					"otherNames": ["ton", "short ton"],
 					"type": "customary",
-					"systems": ["imperial"],
+					"systems": ["usCustomary"],
 					"multiplier": 907.18474
 				},
 				"tonne": {
 					"symbol": "t",
-					"type": "customary",
+					"otherSymbols": ["T", "mT", "MT", "mt", "Te"],
+					"otherNames": ["metric ton"],
+					"type": "si",
+					"systems": ["siCommon", "legacyMetric"],
 					"multiplier": 1000
 				},
 				"grain": {
@@ -732,6 +738,22 @@
 					"rare": true,
 					"type": "customary",
 					"multiplier": 453.59237
+				},
+				"atomicMassUnit": {
+					"symbol": "amu",
+					"otherSymbols": ["Da"],
+					"otherNames": ["dalton", "unified atomic mass unit"],
+					"type": "si",
+					"systems": ["si"],
+					"multiplier": 1.66053892173e-27,
+					"notes": "Non-SI unit accepted for use with the SI, and whose value in SI units must be obtained experimentally"
+				},
+				"electronMass": {
+					"symbol": "mₑ",
+					"otherNames": ["electron rest mass"],
+					"type": "si",
+					"systems": ["si"],
+					"multiplier": 9.1093821545e-31
 				},
 				"siliqua": {
 					"symbol": "siliqua",
@@ -1058,7 +1080,9 @@
 			"units": {
 				"radian": {
 					"symbol": "rad",
+					"otherSymbols": ["㎭", "ᶜ", "ᶜ"],
 					"type": "si",
+					"systems": ["si"],
 					"notes": "Only metric prefixes of milli, micro, and nano are acceptable and not in pure math"
 				},
 				"angularMil": {
@@ -1066,15 +1090,20 @@
 					"type": "customary",
 					"multiplier": 0.981748e-3
 				},
-				"arcminute": {
+				"minute": {
 					"symbol": "'",
-					"otherNames": ["MOA"],
-					"type": "customary",
+					"otherSymbols": ["arcmin", "amin", "am", "MOA"],
+					"otherNames": ["minute of arc", "arcminute", "arc minute"],
+					"type": "si",
+					"systems": ["metric"],
 					"multiplier": 0.290888e-3
 				},
-				"arcsecond": {
+				"second": {
 					"symbol": "\"",
-					"type": "customary",
+					"otherSymbols": ["arcsec", "asec", "as"],
+					"otherNames": ["second of arc", "arc second", "arcsecond"],
+					"type": "si",
+					"systems": ["metric"],
 					"multiplier": 4.848137e-6
 				},
 				"centesimalMinuteOfArc": {
@@ -1089,7 +1118,10 @@
 				},
 				"degree": {
 					"symbol": "°",
+					"otherSymbols": ["deg"],
+					"otherNames": ["degree of arc", "arc degree", "arcdegree"],
 					"type": "customary",
+					"systems": ["ancient", "metric", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 17.453293e-3
 				},
 				"grad": {
@@ -1418,8 +1450,12 @@
 				},
 				"litre": {
 					"symbol": "L",
+					"otherSymbols": ["l"],
+					"otherNames": ["liter", "Cadil"],
 					"type": "si",
-					"multiplier": 0.001
+					"systems": ["siCommon", "legacyMetric"],
+					"multiplier": 0.001,
+					"notes": "A litre was originally the metric base unit for volume. Now non-SI metric."
 				},
 				"load": {
 					"symbol": "load",
@@ -1798,18 +1834,17 @@
 				},
 				"are": {
 					"symbol": "a",
-					"type": "customary",
-					"multiplier": 100
-				},
-				"decare": {
-					"symbol": "daa",
-					"type": "customary",
-					"multiplier": 1000
+					"type": "si",
+					"systems": ["legacyMetric"],
+					"multiplier": 100,
+					"notes": "Commonly only gas centi-, deci-, dec-, hect- prefixes. Not an si unit in it's own right."
 				},
 				"hectare": {
 					"symbol": "ha",
-					"type": "customary",
-					"multiplier": 10000
+					"type": "si",
+					"systems": ["siCommon", "legacyMetric"],
+					"multiplier": 10000,
+					"notes": "Technically and are with hect prefix but is only version of are accepted within broader si context."
 				},
 				"acre": {
 					"symbol": "ac",
@@ -1846,6 +1881,7 @@
 				"barn": {
 					"symbol": "b",
 					"type": "si",
+					"systems": ["metric"],
 					"multiplier": 1e-28
 				},
 				"pesQuadratus": {
@@ -2051,7 +2087,9 @@
 			"units": {
 				"pascal": {
 					"symbol": "Pa",
-					"type": "si"
+					"type": "si",
+					"systems": ["si"],
+					"notes": "Common prefixes: hecto-, kilo-, mega-, giga-"
 				},
 				"standardAtmosphere": {
 					"symbol": "atm",
@@ -2065,8 +2103,10 @@
 				},
 				"bar": {
 					"symbol": "bar",
-					"type": "customary",
-					"multiplier": 1e5
+					"type": "si",
+					"systems": ["legacyMetric", "siCommon"],
+					"multiplier": 1e5,
+					"notes": "Accepted prefixes: mega-, kilo-, deci-, centi-, milli-"
 				},
 				"barye": {
 					"symbol": "barye",
@@ -2077,11 +2117,13 @@
 				"centimetreOfMercury": {
 					"symbol": "cmHg",
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 1.33322e3
 				},
 				"centimetreOfWater": {
 					"symbol": "cmH2O",
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 98.0638,
 					"notes": "At 4 °C"
 				},
@@ -2110,6 +2152,7 @@
 				"kilogramForcePerSquareMillimetre": {
 					"symbol": "kgf/mm²",
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 9.80665e6
 				},
 				"kipPerSquareInch": {
@@ -2125,11 +2168,13 @@
 				"millimetreOfMercury": {
 					"symbol": "mmHg",
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 133.3224
 				},
 				"millimetreOfWater": {
 					"symbol": "mmH20",
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 9.80638,
 					"notes": "At 3.98 °C"
 				},
@@ -2161,9 +2206,11 @@
 					"multiplier": 95.760518e3
 				},
 				"torr": {
-					"symbol": "torr",
-					"type": "customary",
-					"multiplier": 133.3224
+					"symbol": "Torr",
+					"type": "si",
+					"systems": ["legacyMetric"],
+					"multiplier": 133.3224,
+					"notes": "Only commonly used prefix is milli-"
 				}
 			}
 		},
@@ -2315,21 +2362,18 @@
 				},
 				"knot": {
 					"symbol": "kn",
+					"otherSymbols": ["nmi/h", "kt", "NMPH"],
 					"type": "customary",
-					"multiplier": 0.514444
-				},
-				"knot": {
-					"symbol": "kn",
-					"otherSymbols": ["nmi/h"],
-					"type": "customary",
+					"systems": ["metric", "internationalNautical", "imperial", "usCustomary"],
 					"multiplier": 0.514444
 				},
 				"knotAdmiralty": {
 					"symbol": "kn",
 					"otherSymbols": ["NM (Adm)/h"],
 					"type": "customary",
-					"systems": ["historical"],
-					"multiplier": 0.514773333333
+					"systems": ["nonStandard"],
+					"multiplier": 0.514773333333,
+					"notes": "More research needed on systems and origins"
 				},
 				"machNumber": {
 					"symbol": "M",
@@ -2571,7 +2615,9 @@
 				},
 				"electronvolt": {
 					"symbol": "eV",
+					"otherNames": ["electron volt"],
 					"type": "si",
+					"systems": ["si"],
 					"multiplier": 1.60217733e-19,
 					"notes": "Uncertainty: ± 4.9×10^−26 J"
 				},
@@ -3278,12 +3324,24 @@
 			"units": {
 				"jouleSecond": {
 					"symbol": "J·s",
-					"type": "customary"
+					"type": "customary",
+					"systems": ["si"]
 				},
 				"atomicUnitOfAction": {
 					"symbol": "au",
+					"otherSymbols": ["ħ"],
+					"otherNames": ["reducedPlanckConstant"],
 					"type": "customary",
-					"multiplier": 1.05457168e-34
+					"systems": ["si"],
+					"multiplier": 1.05457172647e-34,
+					"notes": "ħ = h/2π"
+				},
+				"planckConstant": {
+					"symbol": "h",
+					"otherNames": ["Planck's constant"],
+					"type": "si",
+					"systems": ["si"],
+					"multiplier": 6.6260695729e-34
 				}
 			}
 		},
