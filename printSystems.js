@@ -58,6 +58,7 @@ function addDescendent(element, system, systemKey) {
 	element.descendents.push({
 		name: system.name,
 		key: systemKey,
+		historical: system.historical,
 		descendents: []
 	});
 }
@@ -65,7 +66,8 @@ function addDescendent(element, system, systemKey) {
 function printTree(tree, indent) {
 	var count = 0;
 	_.each(tree.descendents, function (descendent) {
-		console.log(repeat('    ', indent) + '=> ' + descendent.key + ' (' + descendent.name + ')');
+		var historical = descendent.historical ? ' *(H)*' : '';
+		console.log(repeat(' ', indent + 1) + '- ' + descendent.key + ' (' + descendent.name + ')' + historical);
 		count += 1 + printTree(descendent, indent + 1);
 	});
 	return count;
