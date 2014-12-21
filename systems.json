@@ -90,6 +90,10 @@
 			"name": "International Nautical Units",
 			"inherits": "usCustomary"
 		},
+		"usFoodNutrition": {
+			"name": "US Food Nutrition Labeling Units",
+			"inherits": "usCustomary"
+		},
 		"englishUnits": {
 			"name": "Traditional English Units",
 			"historical": true
@@ -110,6 +114,10 @@
 		},
 		"traditionalChinese": {
 			"name": "Traditional Chinese Units",
+			"historical": true
+		},
+		"oldEuropean":{
+			"name": "Old European Units",
 			"historical": true
 		},
 		"ancient": {
@@ -381,6 +389,7 @@
 				},
 				"digitus": {
 					"symbol": "digitus",
+					"otherNames": ["digitus transversus"],
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -502,7 +511,7 @@
 					"symbol": "ell",
 					"type": "customary",
 					"rare": true,
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 1.143,
 					"notes": "This is the English ell, lengths vary from 0.5m (cubit) to 1.372m"
 				},
@@ -510,71 +519,73 @@
 					"symbol": "ell",
 					"type": "customary",
 					"rare": true,
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 0.941318,
 					"notes": "This is the Scotish ell, lengths vary from 0.5m (cubit) to 1.372m"
 				},
 				"chain": {
 					"symbol": "ch",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean", "englishUnits", "usCustomary"],
 					"multiplier": 20.1168
 				},
 				"finger": {
 					"symbol": "finger",
+					"otherNames": ["fingerbreadth", "finger's breadth"],
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 0.022225
 				},
 				"fingerCloth": {
 					"symbol": "finger",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 0.1143
 				},
 				"hand": {
 					"symbol": "hand",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 0.1016
 				},
 				"rod": {
 					"symbol": "rd",
 					"otherNames": ["pole", "perch"],
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean", "englishUnits", "usCustomary"],
 					"multiplier": 5.0292
 				},
 				"rope": {
 					"symbol": "rope",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 6.096
 				},
 				"span": {
 					"symbol": "span",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 0.2286
 				},
 				"league": {
 					"symbol": "lea",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 4828.02,
 					"notes": "Originally meant the distance a person could walk in an hour"
 				},
 				"leagueNautical": {
 					"symbol": "lea",
+					"otherNames": ["nautical league"],
 					"type": "customary",
-					"systems": ["historical", "nautical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 5556
 				},
 				"astronomicalUnit": {
 					"symbol": "au",
 					"otherSymbols": ["AU", "a.u.", "ua"],
 					"type": "customary",
-					"systems": ["astronomicalUnits"],
+					"systems": ["astronomical"],
 					"multiplier": 1.4960e11,
 					"notes": "Non-SI unit accepted for use with the SI, and whose value in SI units must be obtained experimentally"
 				},
@@ -582,7 +593,7 @@
 					"symbol": "light-second",
 					"otherNames": ["light-second"],
 					"type": "customary",
-					"systems": ["astronomicalUnits"],
+					"systems": ["astronomical"],
 					"multiplier": 299792458,
 					"notes": "Distance light travels in vacuum in 1 second"
 				},
@@ -590,7 +601,7 @@
 					"symbol": "light-minute",
 					"otherNames": ["light-minute"],
 					"type": "customary",
-					"systems": ["astronomicalUnits"],
+					"systems": ["astronomical"],
 					"multiplier": 1.798754748e10,
 					"notes": "Distance light travels in vacuum in 60 seconds"
 				},
@@ -598,7 +609,7 @@
 					"symbol": "light-hour",
 					"otherNames": ["light-hour"],
 					"type": "customary",
-					"systems": ["astronomicalUnits"],
+					"systems": ["astronomical"],
 					"multiplier": 1.079252849e12,
 					"notes": "Distance light travels in vacuum in 3600 seconds"
 				},
@@ -606,7 +617,7 @@
 					"symbol": "light-day",
 					"otherNames": ["light-day"],
 					"type": "customary",
-					"systems": ["astronomicalUnits"],
+					"systems": ["astronomical"],
 					"multiplier": 2.590206837e13,
 					"notes": "Distance light travels in vacuum in 24 light-hours, 86,400 light-seconds"
 				},
@@ -614,7 +625,7 @@
 					"symbol": "light-week",
 					"otherNames": ["light-week"],
 					"type": "customary",
-					"systems": ["astronomicalUnits"],
+					"systems": ["astronomical"],
 					"multiplier": 1.813144786e14,
 					"notes": "Distance light travels in vacuum in 7 light-days, 604,800 light-seconds"
 				},
@@ -622,7 +633,7 @@
 					"symbol": "ly",
 					"otherNames": ["light-year"],
 					"type": "customary",
-					"systems": ["astronomicalUnits"],
+					"systems": ["astronomical"],
 					"multiplier": 9.4607304725808e15,
 					"notes": "Distance light travels in vacuum in 365.25 days"
 				}
@@ -642,7 +653,7 @@
 				"grave": {
 					"symbol": "G",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["legacyMetric"],
 					"multiplier": 1,
 					"notes": "Replaced by the kilogram"
 				},
@@ -694,13 +705,13 @@
 					"symbol": "gr",
 					"otherNames": ["troy grain"],
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 64.79891e-6
 				},
 				"mite": {
 					"symbol": "mite",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 3.2399455e-6,
 					"notes": "1/20 grain"
 				},
@@ -708,14 +719,14 @@
 					"symbol": "ct",
 					"otherNames": ["metric carat"],
 					"type": "customary",
-					"systems": ["jewellery"],
+					"systems": ["oldEuropean"],
 					"multiplier": 200e-6
 				},
 				"pennyweight": {
 					"symbol": "dwt",
 					"otherSymbols": ["pwt", "PW"],
 					"type": "customary",
-					"systems": ["jewellery"],
+					"systems": ["oldEuropean"],
 					"multiplier": 1.55517384e-3
 				},
 				"hundredweightLong": {
@@ -971,16 +982,19 @@
 			"units": {
 				"kelvin": {
 					"symbol": "°K",
-					"type": "si"
+					"type": "si",
+					"systems": ["si"]
 				},
 				"celsius": {
 					"symbol": "°C",
 					"type": "si",
+					"systems": ["siCommon"],
 					"offset": 273.15
 				},
 				"fahrenheit": {
 					"symbol": "°F",
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 0.5555555555555556,
 					"offset": 255.37222222
 				},
@@ -988,6 +1002,8 @@
 					"symbol": "°R",
 					"otherSymbols": ["Ra"],
 					"type": "customary",
+					"systems": ["nonStandard"],
+					"rare": true,
 					"multiplier": 1.8,
 					"notes": "Check values"
 				},
@@ -995,6 +1011,8 @@
 					"symbol": "°Rø",
 					"otherSymbols": ["°R"],
 					"type": "customary",
+					"systems": ["nonStandard"],
+					"rare": true,
 					"multiplier": 0.525,
 					"offset": 135.90375,
 					"notes": "Technically Rømer (or Roemer). Check values"
@@ -1002,6 +1020,8 @@
 				"newton": {
 					"symbol": "°N",
 					"type": "customary",
+					"systems": ["nonStandard"],
+					"rare": true,
 					"multiplier": 0.33,
 					"offset": 90.13949999999998,
 					"notes": "May have rounding error. Check values"
@@ -1010,6 +1030,8 @@
 					"symbol": "°D",
 					"otherSymbols": ["°De"],
 					"type": "customary",
+					"systems": ["nonStandard"],
+					"rare": true,
 					"multiplier": -1.5,
 					"offset": -559.7249999999999,
 					"notes": "May have rounding error. Check values"
@@ -1018,6 +1040,8 @@
 					"symbol": "°Ré",
 					"otherSymbols": ["°Re", "°R"],
 					"type": "customary",
+					"systems": ["nonStandard"],
+					"rare": true,
 					"multiplier": -1.5,
 					"offset": -559.7249999999999,
 					"notes": "Technically Réaumur. Check values"
@@ -1030,7 +1054,8 @@
 			"units": {
 				"mole": {
 					"symbol": "mol",
-					"type": "si"
+					"type": "si",
+					"systems": ["metric"]
 				}
 			}
 		},
@@ -1040,18 +1065,20 @@
 			"units": {
 				"candela": {
 					"symbol": "cd",
-					"type": "si"
+					"type": "si",
+					"systems": ["si"]
 				},
 				"candlepowerNew": {
 					"symbol": "cp",
 					"type": "customary",
+					"systems": ["legacyMetric", "englishUnits"],
 					"rare": true,
 					"multiplier": 1
 				},
 				"candlepowerOld": {
 					"symbol": "cp",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"estimation": true,
 					"multiplier": 0.981
 				}
@@ -1085,7 +1112,7 @@
 			"units": {
 				"radian": {
 					"symbol": "rad",
-					"otherSymbols": ["㎭", "ᶜ", "ᶜ"],
+					"otherSymbols": ["㎭", "ᶜ"],
 					"type": "si",
 					"systems": ["si"],
 					"notes": "Only metric prefixes of milli, micro, and nano are acceptable and not in pure math"
@@ -1431,11 +1458,6 @@
 					"type": "customary",
 					"multiplier": 0.238480942392
 				},
-				"jigger": {
-					"symbol": "jigger",
-					"type": "customary",
-					"multiplier": 44.36e-6
-				},
 				"kilderkin": {
 					"symbol": "kilderkin",
 					"type": "customary",
@@ -1444,13 +1466,13 @@
 				"lambda": {
 					"symbol": "λ",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["legacyMetric"],
 					"multiplier": 1e-9
 				},
 				"last": {
 					"symbol": "last",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 2.9094976
 				},
 				"litre": {
@@ -1465,203 +1487,248 @@
 				"load": {
 					"symbol": "load",
 					"type": "customary",
+					"systems": ["oldEuropean"],
 					"multiplier": 1.4158423296
 				},
 				"minimImperial": {
 					"symbol": "min",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 59.19388020833333e-9
 				},
 				"minimUS": {
 					"symbol": "min",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 61.611519921875e-9
 				},
 				"ounceImperial": {
 					"symbol": "fl oz (imp)",
 					"otherSymbols": ["fl oz"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 28.4130625e-6
 				},
 				"ounceUSCustomary": {
 					"symbol": "US fl oz",
 					"otherSymbols": ["fl oz"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 29.5735295625e-6
 				},
 				"ounceUSFoodNutritionLabeling": {
 					"symbol": "US fl oz",
 					"otherSymbols": ["fl oz"],
 					"type": "customary",
+					"systems": ["usFoodNutrition"],
 					"multiplier": 3.0e-5
 				},
 				"peckImperial": {
 					"symbol": "pk",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 9.09218e-3
 				},
 				"peckUSDry": {
 					"symbol": "pk",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 8.80976754172e-3
 				},
 				"perch": {
 					"symbol": "per",
 					"type": "customary",
+					"systems": ["oldEuropean"],
 					"multiplier": 0.700841953152
 				},
 				"pinchImperial": {
 					"symbol": "pn",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 739.9235026041666667e-9
 				},
 				"pinchUS": {
 					"symbol": "pn",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 616.11519921875e-9
 				},
 				"pintImperial": {
 					"symbol": "pt (imp)",
 					"otherSymbols": ["pt"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 568.26125e-6
 				},
 				"pintUSDry": {
 					"symbol": "pt (US dry)",
 					"otherSymbols": ["pt"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 550.6104713575e-6
 				},
 				"pintUSFluid": {
 					"symbol": "pt (US fl)",
 					"otherSymbols": ["pt"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 473.176473e-6
 				},
 				"pony": {
 					"symbol": "pony",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 22.180147171875e-6
 				},
 				"pottle": {
 					"symbol": "pottle",
 					"otherNames": ["quartern"],
 					"type": "customary",
+					"systems": ["englishUnits"],
 					"multiplier": 2.273045e-3
 				},
 				"quartImperial": {
 					"symbol": "qt (imp)",
 					"otherSymbols": ["qt"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 1.1365225e-3
 				},
 				"quartUSDry": {
 					"symbol": "qt (US dry)",
 					"otherSymbols": ["qt"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 1.101220942715e-3
 				},
 				"quartUSFluid": {
 					"symbol": "qt (US fl)",
 					"otherSymbols": ["qt"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 946.352946e-6
 				},
 				"pail": {
 					"symbol": "pail",
-					"otherNames": ["quarter"],
+					"otherNames": ["quarter", "kenning"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.29094976
 				},
 				"registerTon": {
-					"symbol": "register ton",
+					"symbol": "GRT",
+					"otherNames": ["gross register tonnage"],
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 2.8316846592
 				},
 				"sackImperial": {
 					"symbol": "sack",
 					"otherNames": ["bag"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.10910616
 				},
 				"sackUS": {
 					"symbol": "sack",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 0.10571721050064
 				},
 				"seam": {
 					"symbol": "seam",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.28191256133504
 				},
 				"shot": {
 					"symbol": "shot",
+					"otherNames": ["jigger", "measure"],
 					"type": "customary",
-					"multiplier": 44e-6
+					"systems": ["usCustomary"],
+					"multiplier": 44e-6,
+					"notes": "Shot sizes vary worldwide. In the US shot sizes are between 1.25-1.5 fl. oz. Utah legislates 1.5 fl. oz."
 				},
 				"strikeImperial": {
 					"symbol": "strike",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.07273744
 				},
 				"strikeUS": {
 					"symbol": "strike",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 0.07047814033376
 				},
 				"tablespoonAustralian": {
 					"symbol": "tbsp",
 					"type": "customary",
+					"systems": ["australia"],
 					"multiplier": 20e-6
 				},
 				"tablespoonCanadian": {
 					"symbol": "tbsp",
 					"type": "customary",
+					"systems": ["canada"],
 					"multiplier": 14.20653125e-6
 				},
 				"tablespoonImperial": {
 					"symbol": "tbsp",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 17.7581640625e-6
 				},
 				"tablespoon": {
 					"symbol": "tbsp",
 					"type": "customary",
+					"systems": ["metric"],
+					"excludedSystems": ["australia", "canada"],
 					"multiplier": 15e-6
 				},
 				"tablespoonUSCustomary": {
 					"symbol": "tbsp",
 					"type": "customary",
+					"systems": ["usCustomary"],
+					"excludedSystems": ["usFoodNutrition"],
 					"multiplier": 14.7867647825e-6
 				},
 				"tablespoonUSFoodNutritionLabeling": {
 					"symbol": "tbsp",
 					"type": "customary",
+					"systems": ["usFoodNutrition"],
 					"multiplier": 1.5e-5
 				},
 				"teaspoonCanadian": {
 					"symbol": "tsp",
 					"type": "customary",
+					"systems": ["canada"],
 					"multiplier": 4.73551041666667e-6
 				},
 				"teaspoonImperial": {
 					"symbol": "tsp",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 5.919388020833333e-6
 				},
 				"teaspoon": {
 					"symbol": "tsp",
 					"type": "customary",
+					"systems": ["metric"],
+					"excludedSystems": ["canada"],
 					"multiplier": 5.0e-6
 				},
 				"teaspoonUSCustomary": {
 					"symbol": "tsp",
 					"type": "customary",
+					"systems": ["usCustomary"],
+					"excludedSystems": ["usFoodNutrition"],
 					"multiplier": 4.928921595e-6
 				},
 				"teaspoonUSFoodNutritionLabeling": {
 					"symbol": "tsp",
 					"type": "customary",
+					"systems": ["usFoodNutrition"],
 					"multiplier": 5.0e-6
 				},
 				"timberFoot": {
@@ -1860,13 +1927,13 @@
 					"symbol": "sq rd",
 					"otherNames": ["square perch", "square pole"],
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 25.29285264
 				},
 				"squarePerche": {
 					"symbol": "square perche",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 42.21,
 					"notes": "The french version of a square perch"
 				},
@@ -1874,13 +1941,13 @@
 					"symbol": "rood",
 					"otherNames": ["rod"],
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 1011.7141056
 				},
 				"stremma": {
 					"symbol": "stremma",
 					"type": "customary",
-					"systems": ["greek"],
+					"systems": ["ancient"],
 					"multiplier": 1000
 				},
 				"barn": {
@@ -2345,7 +2412,7 @@
 				"furlongPerFortnight": {
 					"symbol": "furlong/fortnight",
 					"type": "customary",
-					"systems": ["historical"],
+					"systems": ["oldEuropean"],
 					"multiplier": 1.663095e-4
 				},
 				"inchPerHour": {

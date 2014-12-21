@@ -119,11 +119,13 @@ Each unit should be marked with at least one system.
   - avoirdupois (Avoirdupois Units)
   - usSurvey (US Survey Units)
   - usNautical (International Nautical Units)
+  - usFoodNutrition (US Food Nutrition Labeling Units)
  - englishUnits (Traditional English Units) *(H)*
   - apothecaries (Apothecaries' Units) *(H)*
   - troy (Troy Weight) *(H)*
  - nonStandard (Non-Standard Units)
  - traditionalChinese (Traditional Chinese Units) *(H)*
+ - oldEuropean (Old European Units) *(H)*
  - ancient (Ancient Units) *(H)*
   - biblical (Biblical Units) *(H)*
   - ancientRoman (Ancient Roman Units) *(H)*
@@ -177,6 +179,7 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Should atomic units have their own system? sub system of si? i.e. siAtomic
  - Add 'name' property on each unit
  - Add dimension property "dimensionless" to plane angle and solid angle (not technically base dimensions)
+ - Add 'tags' to units - know tags would be dry, fluid, cooking, physics, math etc
  - Needed Dimensions
   - electric flux (ΦE Φₑ - volt metre)
   - electric field strength (E - volt per metre)

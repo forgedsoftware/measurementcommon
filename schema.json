@@ -108,6 +108,14 @@
 												"type": "string"
 											}
 										},
+										"excludedSystems": {
+											"type": "array",
+											"required": false,
+											"uniqueItems": true,
+											"items": {
+												"type": "string"
+											}
+										},
 										"otherNames": {
 											"type": "array",
 											"required": false,
