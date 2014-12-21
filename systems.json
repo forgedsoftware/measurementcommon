@@ -944,7 +944,9 @@
 			"units": {
 				"ampere": {
 					"symbol": "A",
-					"type": "si"
+					"otherNames": ["amp", "amps"],
+					"type": "si",
+					"systems": ["metric"]
 				},
 				"abampere": {
 					"symbol": "abamp",
@@ -1061,14 +1063,17 @@
 			"units": {
 				"steradian": {
 					"symbol": "sr",
-					"type": "si"
+					"type": "si",
+					"systems": ["si"]
 				},
 				"squareDegree": {
 					"symbol": "deg²",
 					"type": "customary",
 					"otherSymbols": ["sq.deg.", "(°)²"],
+					"systems": ["legacyMetric"],
 					"estimation": true,
-					"multiplier": 0.30462e-3
+					"multiplier": 0.30462e-3,
+					"notes": "More information needed on systems"
 				}
 			}
 		},
@@ -2221,11 +2226,16 @@
 			"units": {
 				"hertz": {
 					"symbol": "Hz",
-					"type": "si"
+					"otherNames": ["cycles per second", "revolutions per second"],
+					"type": "si",
+					"systems": ["metric", "imperial", "usCustomary"]
 				},
 				"revolutionsPerMinute": {
 					"symbol": "rpm",
+					"otherSymbols": ["RPM", "rev/min", "r/min", "r·min⁻¹"],
+					"otherNames": ["cycles per minute"],
 					"type": "customary",
+					"systems": ["legacyMetric", "imperial", "usCustomary"],
 					"multiplier": 0.01666666666666667
 				}
 			}
@@ -2238,7 +2248,8 @@
 			"units": {
 				"newton": {
 					"symbol": "N",
-					"type": "si"
+					"type": "si",
+					"systems": ["si"]
 				},
 				"atomicUnitOfForce": {
 					"symbol": "Eh/a0",
@@ -2497,7 +2508,8 @@
 			"units": {
 				"joule": {
 					"symbol": "J",
-					"type": "si"
+					"type": "si",
+					"systems": ["si", "mks"]
 				},
 				"barrelOfOilEquivalent": {
 					"symbol": "boe",
@@ -2731,138 +2743,165 @@
 			"units": {
 				"watt": {
 					"symbol": "W",
-					"type": "si"
+					"type": "si",
+					"systems": ["si", "mks"]
 				},
 				"atmosphereCubicCentimetrePerMinute": {
 					"symbol": "atm ccm",
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 1.68875e-3
 				},
 				"atmosphereCubicCentimetrePerSecond": {
 					"symbol": "atm ccs",
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 0.101325
 				},
 				"atmosphereCubicFootPerHour": {
 					"symbol": "atm cfh",
 					"type": "customary",
+					"systems": ["imperial", "englishUnits"],
 					"multiplier": 0.797001244704
 				},
 				"atmosphereCubicFootPerMinute": {
 					"symbol": "atm cfm",
 					"type": "customary",
+					"systems": ["imperial", "englishUnits"],
 					"multiplier": 47.82007468224
 				},
 				"atmosphereCubicFootPerSecond": {
 					"symbol": "atm cfs",
 					"type": "customary",
+					"systems": ["imperial", "englishUnits"],
 					"multiplier": 2.8692044809344e3
 				},
 				"btuPerHour": {
 					"symbol": "BTU/h",
 					"type": "customary",
+					"systems": ["imperial", "englishUnits"],
 					"multiplier": 0.293071
 				},
 				"btuPerMinute": {
 					"symbol": "BTU/min",
 					"type": "customary",
+					"systems": ["imperial", "englishUnits"],
 					"multiplier": 17.584264
 				},
 				"btuPerSecond": {
 					"symbol": "BTU/s",
 					"type": "customary",
+					"systems": ["imperial", "englishUnits"],
 					"multiplier": 1.05505585262e3
 				},
 				"caloriePerSecond": {
 					"symbol": "cal/s",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 4.1868
 				},
 				"ergPerSecond": {
 					"symbol": "erg/s",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 1e-7
 				},
 				"footPoundForcePerHour": {
 					"symbol": "ft lbf/h",
 					"type": "customary",
+					"systems": ["imperial", "englishUnits"],
 					"multiplier": 3.766161e-4
 				},
 				"footPoundForcePerMinute": {
 					"symbol": "ft lbf/min",
 					"type": "customary",
+					"systems": ["imperial", "englishUnits"],
 					"multiplier": 2.259696580552334e-2
 				},
 				"footPoundForcePerSecond": {
 					"symbol": "ft lbf/s",
 					"type": "customary",
+					"systems": ["imperial", "englishUnits"],
 					"multiplier": 1.3558179483314004
 				},
 				"horsepowerBoiler": {
 					"symbol": "bhp",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 9.810657e3
 				},
 				"horsepowerEuropeanElectrical": {
 					"symbol": "hp",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 736
 				},
 				"horsepowerImperialElectrical": {
 					"symbol": "hp",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 746
 				},
 				"horsepowerImperialMechanical": {
 					"symbol": "hp",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 745.69987158227022
 				},
 				"horsepower": {
 					"symbol": "hp",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 735.49875
 				},
 				"litreAtmospherePerMinute": {
 					"symbol": "L·atm/min",
 					"otherSymbols": ["L atm/min"],
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 1.68875
 				},
 				"litreAtmospherePerSecond": {
 					"symbol": "L·atm/s",
 					"otherSymbols": ["L atm/s"],
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 101.325
 				},
 				"lusec": {
 					"symbol": "lusec",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 1.333e-4
 				},
 				"poncelet": {
 					"symbol": "p",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 980.665
 				},
 				"squareFootEquivalentDirectRadiation": {
 					"symbol": "sq ft EDR",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 70.337057
 				},
 				"tonOfAirConditioning": {
 					"symbol": "ton aircon",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 3504
 				},
 				"tonOfRefrigerationImperial": {
 					"symbol": "ton aircon",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 3.938875e3
 				},
 				"tonOfRefrigeration": {
 					"symbol": "ton aircon",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 3.516853e3
 				}
 			}
@@ -2870,22 +2909,26 @@
 		"electricCharge": {
 			"symbol": "Q",
 			"otherNames": [ "charge" ],
+			"otherSymbols": ["q"],
 			"baseUnit": "coulomb",
 			"derived": "electricCurrent/time",
 			"units": {
 				"coulomb": {
 					"symbol": "C",
-					"type": "si"
+					"type": "si",
+					"systems": ["metric"]
 				},
 				"faraday": {
 					"symbol": "F",
-					"estimation": true,
 					"type": "customary",
+					"estimation": true,
+					"systems": ["legacyMetric"],
 					"multiplier": 96485.3383
 				},
 				"milliampereHour": {
 					"symbol": "mAh",
 					"otherSymbols": ["mA.h"],
+					"systems": ["legacyMetric"],
 					"type": "customary",
 					"multiplier": 3.6
 				},
@@ -2893,8 +2936,8 @@
 					"symbol": "statC",
 					"otherSymbols": ["Fr", "esu"],
 					"otherNames": ["franklin", "electrostaticUnit"],
-					"estimation": true,
 					"type": "customary",
+					"estimation": true,
 					"systems": ["cgs"],
 					"multiplier": 3.335641e-10
 				},
@@ -2909,13 +2952,15 @@
 				"atomicUnitOfCharge": {
 					"symbol": "au",
 					"type": "customary",
+					"systems": ["si"],
 					"estimation": true,
 					"multiplier": 1.602176462e-19
 				}
 			}
 		},
-		"electricDipole": {
+		"electricDipoleMoment": {
 			"symbol": "p",
+			"otherNames": ["electric dipole"],
 			"baseUnit": "coulombMetre",
 			"derived": "electricCurrent*length/time",
 			"units": {
@@ -2923,30 +2968,37 @@
 					"symbol": "C.m",
 					"otherSymbols": ["Cm"],
 					"type": "si",
+					"systems": ["si"],
 					"otherNames": ["coulombMeter"]
 				},
 				"debye": {
 					"symbol": "D",
 					"type": "customary",
-					"multiplier": 3.33564095e-30
+					"systems": ["siCommon", "cgs"],
+					"multiplier": 3.33564095e-30,
+					"notes": "Still used within SI as all SI prefixes are too large for certain applications."
 				},
 				"atomicUnitOfElectricDipoleMoment": {
 					"symbol": "ea₀",
 					"type": "customary",
+					"systems": ["si"],
 					"estimation": true,
 					"multiplier": 8.47835281e-30
 				}
 			}
 		},
 		"electricPotential": {
-			"symbol": "Φ",
-			"otherNames": [ "voltage", "electricFieldPotential", "electrostaticPotential" ],
+			"symbol": "φ",
+			"otherSymbols": ["V", "U", "∆V", "∆U", "Δφ", "E"],
+			"otherNames": [ "voltage", "electricFieldPotential", "electrostaticPotential", "electric potential tension"],
 			"baseUnit": "volt",
 			"derived": "mass*length*length/electricCurrent/time/time/time",
 			"units": {
 				"volt": {
 					"symbol": "V",
-					"type": "si"
+					"otherNames": ["joules per coulomb"],
+					"type": "si",
+					"systems": ["si", "mks"]
 				},
 				"statvolt": {
 					"symbol": "statV",
@@ -2964,13 +3016,71 @@
 		},
 		"electricResistance": {
 			"symbol": "R",
-			"otherNames": [ "resistance" ],
+			"otherSymbols": ["Z", "X"],
+			"otherNames": [ "resistance", "impedance", "reactance" ],
 			"baseUnit": "ohm",
 			"derived": "mass*length*length/time/time/time/electricCurrent/electricCurrent",
+			"notes": "Impedance (Z) and Reactance (X) have the same units as resistance and in this context are considered equivalent",
 			"units": {
 				"ohm": {
 					"symbol": "Ω",
-					"type": "si"
+					"otherSymbols": ["R"],
+					"otherNames": ["legal ohm", "volt/ampere"],
+					"type": "si",
+					"systems": ["si", "mks", "englishUnits"],
+					"excludedPrefixes": ["mega", "micro", "giga"],
+					"notes": "Naming quantities may be done in the form 5.6 Ω => 5R6 to avoid 'rubbing off' decimal place"
+				},
+				"megohm": {
+					"symbol": "MΩ",
+					"otherNames": ["megaohm", "mega ohm"],
+					"type": "customary",
+					"systems": ["si", "mks", "englishUnits"],
+					"multiplier": 1e6,
+					"notes": "Replaces the standard SI prefix mega- for ohms"
+				},
+				"microhm": {
+					"symbol": "μΩ",
+					"otherNames": ["microohm", "micro ohm"],
+					"type": "customary",
+					"systems": ["si", "mks", "englishUnits"],
+					"multiplier": 1e-6,
+					"notes": "Replaces the standard SI prefix micro- for ohms"
+				},
+				"gigohm": {
+					"symbol": "GΩ",
+					"otherNames": ["gigaohm", "giga ohm"],
+					"type": "customary",
+					"systems": ["si", "mks", "englishUnits"],
+					"multiplier": 1e9,
+					"notes": "Replaces the standard SI prefix giga- for ohms"
+				},
+				"reciprocalSiemens": {
+					"symbol": "1/S",
+					"otherNames": ["reciprocal mho"],
+					"type": "customary",
+					"systems": ["nonStandard"],
+					"multiplier": 1
+				},
+				"quantizedHallResistance": {
+					"symbol": "QHR",
+					"type": "customary",
+					"systems": ["nonStandard"],
+					"multiplier": 3.874046143981e-5
+				},
+				"abohm": {
+					"symbol": "abΩ",
+					"otherNames": ["EMU of resistance"],
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 1e-9
+				},
+				"statohm": {
+					"symbol": "statΩ",
+					"otherNames": ["ESU of resistance"],
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 1.11265002973e-12
 				}
 			}
 		},
@@ -2981,18 +3091,33 @@
 			"units": {
 				"farad": {
 					"symbol": "F",
-					"type": "si"
+					"type": "si",
+					"systems": ["si", "mks"]
+				},
+				"abfarad": {
+					"symbol": "abF",
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 1e9
+				},
+				"statfarad": {
+					"symbol": "statF",
+					"type": "customary",
+					"systems": ["cgs"],
+					"multiplier": 1.112650056e-12
 				}
 			}
 		},
 		"inductance": {
 			"symbol": "L",
+			"otherSymbols": ["M"],
 			"baseUnit": "henry",
 			"derived": "mass*length*length/electricCurrent/electricCurrent/time/time",
 			"units": {
 				"henry": {
 					"symbol": "H",
-					"type": "si"
+					"type": "si",
+					"systems": ["metric"]
 				}
 			}
 		},
@@ -3204,13 +3329,14 @@
 		},
 		"magneticFlux": {
 			"symbol": "Φ",
-			"otherSymbols": ["ΦB"],
+			"otherSymbols": ["ΦB", "ΦM", "Φb", "Φm"],
 			"derived": "mass*length*length/electricCurrent/time/time",
 			"baseUnit": "weber",
 			"units": {
 				"weber": {
 					"symbol": "Wb",
-					"type": "si"
+					"type": "si",
+					"systems": ["si", "mts", "mks", "gravitational"]
 				},
 				"maxwell": {
 					"symbol": "Mx",
@@ -3228,7 +3354,8 @@
 			"units": {
 				"tesla": {
 					"symbol": "T",
-					"type": "si"
+					"type": "si",
+					"systems": ["si", "mts", "mks", "gravitational"]
 				},
 				"gauss": {
 					"symbol": "G",
@@ -3246,11 +3373,13 @@
 			"units": {
 				"amperePerMetre": {
 					"symbol": "A/m",
+					"otherNames": ["amperePerMeter", "ampsPerMetre"],
 					"type": "customary",
-					"otherNames": ["amperePerMeter", "ampsPerMetre"]
+					"systems": ["si", "mts", "mks", "gravitational"]
 				},
 				"oersteds": {
 					"symbol": "Oe",
+					"otherNames": ["œrsted"],
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 79.5774715
@@ -3287,7 +3416,8 @@
 			"units": {
 				"pascalSecond": {
 					"symbol": "Pa·s",
-					"type": "customary"
+					"type": "customary",
+					"systems": ["si"]
 				},
 				"poise": {
 					"symbol": "P",

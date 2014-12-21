@@ -140,6 +140,22 @@
 											"type": "boolean",
 											"required": false
 										},
+										"acceptedPrefixes": {
+											"type": "array",
+											"required": false,
+											"uniqueItems": true,
+											"items": {
+												"type": "string"
+											}
+										},
+										"excludedPrefixes": {
+											"type": "array",
+											"required": false,
+											"uniqueItems": true,
+											"items": {
+												"type": "string"
+											}
+										},
 										"prefixName": {
 											"type": "string",
 											"required": false

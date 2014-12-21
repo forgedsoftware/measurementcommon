@@ -152,7 +152,7 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Energy (joule)
  - Power (watt)
  - Electric Charge (coulomb)
- - Electric Dipole (coulombMetre)
+ - Electric Dipole Moment (coulombMetre)
  - Electric Potential (volt)
  - Electric Resistance (ohm)
  - Capacitance (farad)
@@ -172,14 +172,29 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Information (bit)
 
 ## ToDO
+ - Deal with Gaussian cgs a subset of cgs as it's own system
+ - Ability to prefer base units for units like: amperePerMetre, candelaPerSquareMetre, pascalSecond etc
+ - Should atomic units have their own system? sub system of si? i.e. siAtomic
  - Add 'name' property on each unit
+ - Add dimension property "dimensionless" to plane angle and solid angle (not technically base dimensions)
  - Needed Dimensions
+  - electric flux (ΦE Φₑ - volt metre)
+  - electric field strength (E - volt per metre)
+  - electric displacement field (D - coloumb per square metre)
+  - Permittivity (ε - Fara per metre)
+  - Electric susceptibility (χₑ or Xₑ - dimensionless)
+  - Magnetic susceptibility (χ or X - dimensionless)
+  - Resistivity (ρ - ohm metre)
+  - Conductance; Admittance; Susceptance (G; Y; B - siemens)
+  - Conductivity (κ, γ, σ - siemens per metre)
+  - Permeability (μ - henry per metre)
   - radioactivity (becquerel)
   - absorbedDose (gray)
   - equivalentDose (sievert)
   - catalyticActivity (katal)
   - levelOfFieldQuantity (neper, bel, decibel)
   - levelOfPowerQuantity (neper, bel, decibel)
+  - electricQuadrupole (buckingham?)
 
 ## Adopted Conventions
 
@@ -195,6 +210,9 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Google. (2014). *Unit Conversion Calculator*. Retrieved from: http://www.google.com/intl/en/help/features.html#reference
  - Wikipedia. (2014) *Conversion of units*. Retrieved from: http://en.wikipedia.org/wiki/Conversion_of_units
  - Wikipedia. (2014) *Ancient Roman units of measurement*. Retrieved from: http://en.wikipedia.org/wiki/Ancient_Roman_units_of_measurement
+ - Wikipedia (2014) *Ohm*. Retrieved from: http://en.wikipedia.org/wiki/Ohm
+ - Wikipedia (2014) *SI electromagnetism units*. Retrieved from: http://en.wikipedia.org/wiki/SI_electromagnetism_units
+ - TranslatorsCafe.com (2014) *Electrical Resistance*. Retrieved from: http://www.translatorscafe.com/cafe/EN/units-converter/electric-resistance
 
 ## License
 Measurement Common is freely distributable under the terms of the MIT license.
