@@ -88,10 +88,42 @@
 									"required": true,
 									"additionalProperties": false,
 									"properties": {
+										"name": {
+											"type": "string",
+											"minLength": 1,
+											"required": true,
+											"description": "required needs to be set to true!"
+										},
+										"plural": {
+											"type": "string",
+											"minLength": 1,
+											"required": false
+										},
+										"otherNames": {
+											"type": "array",
+											"required": false,
+											"uniqueItems": true,
+											"items": {
+												"type": "string"
+											}
+										},
 										"symbol": {
 											"type": "string",
 											"minLength": 1,
 											"required": true
+										},
+										"otherSymbols": {
+											"type": "array",
+											"required": false,
+											"uniqueItems": true,
+											"items": {
+												"type": "string"
+											}
+										},
+										"symbolFirst": {
+											"type": "boolean",
+											"required": false,
+											"description": "determines if the symbol should appear before the value. Defaults to false."
 										},
 										"type": {
 											"type": "string",
@@ -109,22 +141,6 @@
 											}
 										},
 										"excludedSystems": {
-											"type": "array",
-											"required": false,
-											"uniqueItems": true,
-											"items": {
-												"type": "string"
-											}
-										},
-										"otherNames": {
-											"type": "array",
-											"required": false,
-											"uniqueItems": true,
-											"items": {
-												"type": "string"
-											}
-										},
-										"otherSymbols": {
 											"type": "array",
 											"required": false,
 											"uniqueItems": true,

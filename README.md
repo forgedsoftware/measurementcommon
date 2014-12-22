@@ -174,6 +174,9 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Information (bit)
 
 ## ToDO
+ - Add name property to systems
+ - Check unit keys do not duplicate
+ - Allow not having a symbol in case where the name == symbol
  - Deal with Gaussian cgs a subset of cgs as it's own system
  - Ability to prefer base units for units like: amperePerMetre, candelaPerSquareMetre, pascalSecond etc
  - Should atomic units have their own system? sub system of si? i.e. siAtomic

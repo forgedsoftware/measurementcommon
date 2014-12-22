@@ -142,6 +142,8 @@
 			"baseUnit": "second",
 			"units": {
 				"second": {
+					"name": "second",
+					"plural": "seconds",
 					"symbol": "s",
 					"otherSymbols": ["sec"],
 					"type": "si",
@@ -149,6 +151,8 @@
 					"notes": "1/60 of minute"
 				},
 				"minute": {
+					"name": "minute",
+					"plural": "minutes",
 					"symbol": "min",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
@@ -156,8 +160,10 @@
 					"notes": "1/60 of hour"
 				},
 				"hour": {
-					"symbol": "h",
+					"name": "hour",
+					"plural": "hours",
 					"otherNames": ["horae"],
+					"symbol": "h",
 					"otherSymbols": ["hr"],
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits", "ancient"],
@@ -165,21 +171,30 @@
 					"notes": "1/24 of day. The hour was developed by astrologers in Classical antiquity."
 				},
 				"day": {
+					"name": "day",
+					"plural": "days",
 					"symbol": "day",
+					"otherSymbols": ["d"],
 					"type": "customary",
 					"multiplier": 86400,
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits", "ancient"],
 					"notes": "Possible Base"
 				},
 				"week": {
+					"name": "week",
+					"plural": "weeks",
 					"symbol": "week",
+					"otherSymbols": ["w"],
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 604800,
 					"notes": "7 days"
 				},
 				"month": {
+					"name": "month",
+					"plural": "months",
 					"symbol": "month",
+					"otherSymbols": ["m"],
 					"type": "customary",
 					"estimation": true,
 					"multiplier": 2629800,
@@ -187,15 +202,19 @@
 					"notes": "1/12 of Julian year."
 				},
 				"year": {
+					"name": "year",
+					"plural": "years",
+					"otherNames": ["annus", "Julian year"],
 					"symbol": "yr",
 					"otherSymbols": ["y", "a", "aj"],
-					"otherNames": ["annus", "Julian year"],
 					"type": "si",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 31557600,
 					"notes": "365.25 days of 86400 seconds"
 				},
 				"commonYear": {
+					"name": "common year",
+					"plural": "common years",
 					"symbol": "common yr",
 					"otherSymbols": ["y"],
 					"type": "customary",
@@ -204,6 +223,8 @@
 					"notes": "Common Year - 365 days of 86400 seconds. Maybe si."
 				},
 				"leapYear": {
+					"name": "leap year",
+					"plural": "leap years",
 					"symbol": "leap yr",
 					"type": "customary",
 					"multiplier": 31622400,
@@ -211,30 +232,37 @@
 					"notes": "Leap Year - 366 days of 86400 seconds"
 				},
 				"gregorianYear": {
+					"name": "Gregorian year",
+					"plural": "Gregorian years",
+					"otherNames": ["year"],
 					"symbol": "yr",
 					"otherSymbols": ["y"],
-					"otherNames": ["year"],
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 31556952,
 					"notes": "365.2425 days of 86400 seconds. Maybe si."
 				},
 				"tropicalYear": {
+					"name": "tropical year",
+					"plural": "tropical years",
+					"otherNames": ["year"],
 					"symbol": "yr",
 					"otherSymbols": ["y"],
-					"otherNames": ["year"],
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 31556925.216,
 					"notes": "365.24219 days of 86400 seconds. Maybe si."
 				},
 				"ke": {
+					"name": "ke",
 					"symbol": "ke",
 					"type": "customary",
 					"systems": ["traditionalChinese"],
 					"multiplier": 864
 				},
 				"decade": {
+					"name": "decade",
+					"plural": "decades",
 					"symbol": "decade",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
@@ -242,6 +270,8 @@
 					"notes": "10 Julian years"
 				},
 				"century": {
+					"name": "century",
+					"plural": "centuries",
 					"symbol": "C",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
@@ -249,6 +279,8 @@
 					"notes": "100 Julian years"
 				},
 				"millennium": {
+					"name": "millennium",
+					"plural": "millennia",
 					"symbol": "M",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
@@ -256,6 +288,7 @@
 					"notes": "1000 Julian years"
 				},
 				"minuta": {
+					"name": "minuta",
 					"symbol": "minuta",
 					"type": "customary",
 					"systems": ["ancient"],
@@ -263,6 +296,7 @@
 					"notes": "1/60 of day. Used by ancient astrologers."
 				},
 				"secunda": {
+					"name": "secunda",
 					"symbol": "secunda",
 					"type": "customary",
 					"systems": ["ancient"],
@@ -277,34 +311,45 @@
 			"baseUnit": "metre",
 			"units": {
 				"metre": {
+					"name": "metre",
+					"plural": "metres",
+					"otherNames": ["meter", "meters"],
 					"symbol": "m",
-					"otherNames": ["meter"],
 					"systems": ["si", "mts", "mks", "gravitational"],
 					"type": "si"
 				},
 				"angstrom": {
+					"name": "ångström",
+					"plural": "ångströms",
+					"otherNames": ["angstrom", "angstroms"],
 					"symbol": "Å",
-					"otherNames": ["ångström"],
+					"otherSymbols": ["A"],
 					"systems": ["legacyMetric"],
 					"type": "customary",
 					"multiplier": 1e-10
 				},
 				"centimetre": {
+					"name": "centimetre",
+					"plural": "centimetres",
+					"otherNames": ["centimeter","centimeters"],
 					"symbol": "cm",
-					"otherNames": ["centimeter"],
 					"systems": ["cgs"],
 					"type": "customary",
 					"multiplier": 0.01
 				},
 				"mile": {
+					"name": "mile",
+					"plural": "miles",
 					"symbol": "mi",
 					"type": "customary",
 					"systems": ["imperial", "usCustomary", "englishUnits"],
 					"multiplier": 1609.344
 				},
-				"mileUSSurvey": {
+				"usSurveyMile": {
+					"name": "US Survey mile",
+					"plural": "US Survey miles",
+					"otherNames": ["statute mile", "mile", "miles"],
 					"symbol": "mi",
-					"otherNames": ["statuteMile"],
 					"type": "customary",
 					"systems": ["usSurvey"],
 					"rare": true,
@@ -312,12 +357,16 @@
 					"notes": "Used exclusively for land survey. Used to be statute mile"
 				},
 				"yard": {
+					"name": "yard",
+					"plural": "yards",
 					"symbol": "yd",
 					"type": "customary",
 					"systems": ["imperial", "usCustomary", "englishUnits"],
 					"multiplier": 0.9144
 				},
 				"foot": {
+					"name": "foot",
+					"plural": "feet",
 					"symbol": "ft",
 					"otherSymbols": ["'"],
 					"type": "customary",
@@ -325,6 +374,9 @@
 					"multiplier": 0.3048
 				},
 				"usSurveyFoot": {
+					"name": "US Survey foot",
+					"plural": "US Survey feet",
+					"otherNames": ["foot", "feet"],
 					"symbol": "ft",
 					"otherSymbols": ["'"],
 					"type": "customary",
@@ -334,6 +386,8 @@
 					"notes": "Used exclusively for land survey. Used to be statute foot"
 				},
 				"inch": {
+					"name": "inch",
+					"plural": "inches",
 					"symbol": "in",
 					"otherSymbols": ["\""],
 					"type": "customary",
@@ -341,6 +395,8 @@
 					"multiplier": 0.0254
 				},
 				"nauticalMile": {
+					"name": "nautical mile",
+					"plural": "nautical miles",
 					"symbol": "M",
 					"otherSymbols": ["NM", "nmi", "naut.mi"],
 					"type": "customary",
@@ -348,6 +404,8 @@
 					"multiplier": 1852
 				},
 				"fathom": {
+					"name": "fathom",
+					"plural": "fathoms",
 					"symbol": "ftm",
 					"otherSymbols": ["f", "fath", "fm", "fth", "fthm"],
 					"type": "customary",
@@ -356,30 +414,43 @@
 					"notes": "The nautical use and definition of fathom varied widely"
 				},
 				"cableLengthInternational": {
+					"name": "cable",
+					"plural": "cables",
+					"otherNames": ["cable length", "cable lengths", "cable's length", "cable's lengths"],
 					"symbol": "cable",
 					"type": "customary",
 					"systems": ["internationalNautical"],
 					"multiplier": 185.2					
 				},
 				"cableLengthImperial": {
+					"name": "cable",
+					"plural": "cables",
+					"otherNames": ["cable length", "cable lengths", "cable's length", "cable's lengths"],
 					"symbol": "cable",
 					"type": "customary",
 					"systems": ["imperialNautical"],
 					"multiplier": 185.32
 				},
 				"cableLengthUS": {
+					"name": "cable",
+					"plural": "cables",
+					"otherNames": ["cable length", "cable lengths", "cable's length", "cable's lengths"],
 					"symbol": "cable",
 					"type": "customary",
 					"systems": ["usNautical"],
 					"multiplier": 219.456
 				},
 				"furlong": {
+					"name": "furlong",
+					"plural": "furlongs",
 					"symbol": "fur",
 					"type": "customary",
 					"systems": ["imperial", "usCustomary", "englishUnits"],
 					"multiplier": 201.168
 				},
 				"cubitBiblical": {
+					"name": "cubit",
+					"plural": "cubits",
 					"symbol": "cubit",
 					"type": "customary",
 					"estimation": true,
@@ -388,6 +459,7 @@
 					"notes": "Distance from fingers to elbow"
 				},
 				"digitus": {
+					"name": "digitus",
 					"symbol": "digitus",
 					"otherNames": ["digitus transversus"],
 					"type": "customary",
@@ -397,6 +469,7 @@
 					"notes": "finger - 1/16 pes. Based on 1 pes = 0.296m"
 				},
 				"uncia": {
+					"name": "uncia",
 					"symbol": "uncia",
 					"otherNames": ["pollex"],
 					"type": "customary",
@@ -406,6 +479,7 @@
 					"notes": "inch/thumb - 1/12 pes. Based on 1 pes = 0.296m"
 				},
 				"palmus": {
+					"name": "palmus",
 					"symbol": "palmus",
 					"type": "customary",
 					"estimation": true,
@@ -414,6 +488,7 @@
 					"notes": "palm width - 1/4 pes. Based on 1 pes = 0.296m"
 				},
 				"palmusMajor": {
+					"name": "palmus major",
 					"symbol": "palmus major",
 					"type": "customary",
 					"estimation": true,
@@ -423,8 +498,9 @@
 					"notes": "palm length - 3/4 pes - in late period only. Based on 1 pes = 0.296m"
 				},
 				"pes": {
+					"name": "pes",
+					"plural": "pedes",
 					"symbol": "pes",
-					"otherNames": ["pedes"],
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -432,6 +508,7 @@
 					"notes": "foot. Based on 1 pes = 0.296m"
 				},
 				"palmipes": {
+					"name": "palmipes",
 					"symbol": "palmipes",
 					"type": "customary",
 					"estimation": true,
@@ -440,6 +517,7 @@
 					"notes": "1 1/4 pedes. Based on 1 pes = 0.296m"
 				},
 				"cubitus": {
+					"name": "cubitus",
 					"symbol": "cubitus",
 					"otherNames": ["cubit"],
 					"type": "customary",
@@ -449,6 +527,7 @@
 					"notes": "cubit - 1 1⁄2 pedes. Based on 1 pes = 0.296m"
 				},
 				"gradus": {
+					"name": "gradus",
 					"symbol": "gradus",
 					"otherNames": ["pes sestertius"],
 					"type": "customary",
@@ -458,6 +537,7 @@
 					"notes": "step - 2 1/2 pedes. Based on 1 pes = 0.296m"
 				},
 				"passus": {
+					"name": "passus",
 					"symbol": "passus",
 					"type": "customary",
 					"estimation": true,
@@ -466,6 +546,7 @@
 					"notes": "(double) pace - 5 pedes. Based on 1 pes = 0.296m"
 				},
 				"pertica": {
+					"name": "pertica",
 					"symbol": "pertica",
 					"otherNames": ["decempeda"],
 					"type": "customary",
@@ -475,6 +556,7 @@
 					"notes": "perch - 10 pedes. Based on 1 pes = 0.296m"
 				},
 				"actus": {
+					"name": "actus",
 					"symbol": "actus",
 					"type": "customary",
 					"estimation": true,
@@ -483,6 +565,7 @@
 					"notes": "120 pedes. Based on 1 pes = 0.296m"
 				},
 				"stadium": {
+					"name": "stadium",
 					"symbol": "stadium",
 					"type": "customary",
 					"estimation": true,
@@ -491,8 +574,9 @@
 					"notes": "furlong - 625 pedes. Based on 1 pes = 0.296m"
 				},
 				"millePassuum": {
-					"symbol": "mille passum",
+					"name": "mille passum",
 					"otherNames": ["milliarium"],
+					"symbol": "mille passum",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -500,6 +584,7 @@
 					"notes": "mile - 5000 pedes. Based on 1 pes = 0.296m"
 				},
 				"gallicLeuga": {
+					"name": "Gallic leuga",
 					"symbol": "Gallic leuga",
 					"type": "customary",
 					"estimation": true,
@@ -508,6 +593,8 @@
 					"notes": "league - 7500 pedes. Based on 1 pes = 0.296m"
 				},
 				"ell": {
+					"name": "ell",
+					"plural": "ells",
 					"symbol": "ell",
 					"type": "customary",
 					"rare": true,
@@ -516,6 +603,8 @@
 					"notes": "This is the English ell, lengths vary from 0.5m (cubit) to 1.372m"
 				},
 				"ellScotish": {
+					"name": "ell",
+					"plural": "ells",
 					"symbol": "ell",
 					"type": "customary",
 					"rare": true,
@@ -524,12 +613,16 @@
 					"notes": "This is the Scotish ell, lengths vary from 0.5m (cubit) to 1.372m"
 				},
 				"chain": {
+					"name": "chain",
+					"plural": "chains",
 					"symbol": "ch",
 					"type": "customary",
 					"systems": ["oldEuropean", "englishUnits", "usCustomary"],
 					"multiplier": 20.1168
 				},
 				"finger": {
+					"name": "finger",
+					"plural": "fingers",
 					"symbol": "finger",
 					"otherNames": ["fingerbreadth", "finger's breadth"],
 					"type": "customary",
@@ -537,37 +630,49 @@
 					"multiplier": 0.022225
 				},
 				"fingerCloth": {
+					"name": "finger",
+					"plural": "fingers",
 					"symbol": "finger",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 0.1143
 				},
 				"hand": {
+					"name": "hand",
+					"plural": "hands",
 					"symbol": "hand",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 0.1016
 				},
 				"rod": {
+					"name": "rod",
+					"plural": "rods",
 					"symbol": "rd",
-					"otherNames": ["pole", "perch"],
+					"otherNames": ["pole", "poles", "perch"],
 					"type": "customary",
 					"systems": ["oldEuropean", "englishUnits", "usCustomary"],
 					"multiplier": 5.0292
 				},
 				"rope": {
+					"name": "rope",
+					"plural": "ropes",
 					"symbol": "rope",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 6.096
 				},
 				"span": {
+					"name": "span",
+					"plural": "spans",
 					"symbol": "span",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 0.2286
 				},
 				"league": {
+					"name": "league",
+					"plural": "leagues",
 					"symbol": "lea",
 					"type": "customary",
 					"systems": ["oldEuropean"],
@@ -575,13 +680,17 @@
 					"notes": "Originally meant the distance a person could walk in an hour"
 				},
 				"leagueNautical": {
+					"name": "league",
+					"plural": "leagues",
+					"otherNames": ["nautical league", "nautical leagues"],
 					"symbol": "lea",
-					"otherNames": ["nautical league"],
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 5556
 				},
 				"astronomicalUnit": {
+					"name": "astronomical unit",
+					"name": "astronomical units",
 					"symbol": "au",
 					"otherSymbols": ["AU", "a.u.", "ua"],
 					"type": "customary",
@@ -590,48 +699,60 @@
 					"notes": "Non-SI unit accepted for use with the SI, and whose value in SI units must be obtained experimentally"
 				},
 				"lightSecond": {
+					"name": "light-second",
+					"plural": "light-seconds",
+					"otherNames": ["light second", "light seconds"],
 					"symbol": "light-second",
-					"otherNames": ["light-second"],
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 299792458,
 					"notes": "Distance light travels in vacuum in 1 second"
 				},
 				"lightMinute": {
+					"name": "light-minute",
+					"plural": "light-minutes",
+					"otherNames": ["light minute", "light minutes"],
 					"symbol": "light-minute",
-					"otherNames": ["light-minute"],
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 1.798754748e10,
 					"notes": "Distance light travels in vacuum in 60 seconds"
 				},
 				"lightHour": {
+					"name": "light-hour",
+					"plural": "light-hours",
+					"otherNames": ["light hour", "light hours"],
 					"symbol": "light-hour",
-					"otherNames": ["light-hour"],
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 1.079252849e12,
 					"notes": "Distance light travels in vacuum in 3600 seconds"
 				},
 				"lightDay": {
+					"name": "light-day",
+					"plural": "light-days",
+					"otherNames": ["light day", "light days"],
 					"symbol": "light-day",
-					"otherNames": ["light-day"],
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 2.590206837e13,
 					"notes": "Distance light travels in vacuum in 24 light-hours, 86,400 light-seconds"
 				},
 				"lightWeek": {
+					"name": "light-week",
+					"plural": "light-weeks",
+					"otherNames": ["light week", "light weeks"],
 					"symbol": "light-week",
-					"otherNames": ["light-week"],
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 1.813144786e14,
 					"notes": "Distance light travels in vacuum in 7 light-days, 604,800 light-seconds"
 				},
 				"lightYear": {
+					"name": "light-year",
+					"plural": "light-years",
+					"otherNames": ["light year", "light years"],
 					"symbol": "ly",
-					"otherNames": ["light-year"],
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 9.4607304725808e15,
@@ -644,13 +765,18 @@
 			"baseUnit": "kilogram",
 			"units": {
 				"kilogram": {
+					"name": "kilogram",
+					"plural": "kilograms",
 					"symbol": "kg",
 					"otherNames": ["kilogramme"],
 					"type": "si",
+					"systems": ["si"],
 					"prefixName": "kilo",
 					"prefixFreeName": "gram"
 				},
 				"grave": {
+					"name": "grave",
+					"plural": "graves",
 					"symbol": "G",
 					"type": "customary",
 					"systems": ["legacyMetric"],
@@ -658,6 +784,8 @@
 					"notes": "Replaced by the kilogram"
 				},
 				"ounce": {
+					"name": "ounce",
+					"plural": "ounces",
 					"symbol": "oz",
 					"otherSymbols": ["oz av"],
 					"type": "customary",
@@ -665,6 +793,8 @@
 					"multiplier": 0.028349523125
 				},
 				"pound": {
+					"name": "pound",
+					"plural": "pounds",
 					"symbol": "lb",
 					"otherSymbols": ["lb av"],
 					"type": "customary",
@@ -672,31 +802,39 @@
 					"multiplier": 0.45359237
 				},
 				"stone": {
+					"name": "stone",
 					"symbol": "st",
 					"type": "customary",
 					"systems": ["imperial"],
-					"multiplier": 6.35029318
+					"multiplier": 6.35029318,
+					"note": "The plural 'stones' is not used in representing quantities."
 				},
 				"tonLong": {
+					"name": "ton",
+					"plural": "tons",
+					"otherNames": ["long ton", "long tons", "imperial ton", "weight ton"],
 					"symbol": "ton",
 					"otherSymbols": ["long tn", "tn"],
-					"otherNames": ["ton", "long ton", "imperial ton", "weight ton"],
 					"type": "customary",
 					"systems": ["imperial", "avoirdupois"],
 					"multiplier": 1016.0469088
 				},
 				"tonShort": {
+					"name": "ton",
+					"plural": "tons",
+					"otherNames": ["short ton", "short tons"],
 					"symbol": "ton",
 					"otherSymbols": ["sh tn", "tn"],
-					"otherNames": ["ton", "short ton"],
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 907.18474
 				},
 				"tonne": {
+					"name": "tonne",
+					"plural": "tonnes",
+					"otherNames": ["metric ton", "metric tons"],
 					"symbol": "t",
 					"otherSymbols": ["T", "mT", "MT", "mt", "Te"],
-					"otherNames": ["metric ton"],
 					"type": "si",
 					"systems": ["siCommon", "legacyMetric"],
 					"multiplier": 1000
@@ -709,20 +847,26 @@
 					"multiplier": 64.79891e-6
 				},
 				"mite": {
+					"name": "mite",
+					"plural": "mites",
 					"symbol": "mite",
 					"type": "customary",
-					"systems": ["oldEuropean"],
+					"systems": ["oldEuropean", "troy"],
 					"multiplier": 3.2399455e-6,
 					"notes": "1/20 grain"
 				},
 				"carat": {
-					"symbol": "ct",
+					"name": "carat",
+					"plural": "carats",
 					"otherNames": ["metric carat"],
+					"symbol": "ct",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 200e-6
 				},
 				"pennyweight": {
+					"name": "pennyweight",
+					"plural": "pennyweights",
 					"symbol": "dwt",
 					"otherSymbols": ["pwt", "PW"],
 					"type": "customary",
@@ -730,43 +874,56 @@
 					"multiplier": 1.55517384e-3
 				},
 				"hundredweightLong": {
+					"name": "hundredweight",
+					"plural": "hundredweights",
+					"otherNames": ["long hundredweight", "centum weight"],
 					"symbol": "cwt",
 					"otherSymbols": ["long cwt"],
-					"otherNames": ["centum weight"],
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 50.802345
 				},
 				"hundredweightShort": {
+					"name": "hundredweight",
+					"plural": "hundredweights",
+					"otherNames": ["short hundredweight", "cental", "centum weight"],
 					"symbol": "sh cwt",
-					"otherNames": ["cental", "centum weight"],
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 45.359237
 				},
 				"kip": {
+					"name": "kip",
+					"plural": "kips",
 					"symbol": "kip",
 					"rare": true,
 					"type": "customary",
-					"multiplier": 453.59237
+					"systems": ["usCustomary"],
+					"multiplier": 453.59237,
+					"notes": "Half a short ton"
 				},
 				"atomicMassUnit": {
+					"name": "atomic mass unit",
+					"plural": "atomic mass units",
+					"otherNames": ["dalton", "unified atomic mass unit"],
 					"symbol": "amu",
 					"otherSymbols": ["Da"],
-					"otherNames": ["dalton", "unified atomic mass unit"],
 					"type": "si",
 					"systems": ["si"],
 					"multiplier": 1.66053892173e-27,
 					"notes": "Non-SI unit accepted for use with the SI, and whose value in SI units must be obtained experimentally"
 				},
 				"electronMass": {
-					"symbol": "mₑ",
+					"name": "electron mass",
+					"plural": "electron masses",
 					"otherNames": ["electron rest mass"],
+					"symbol": "mₑ",
 					"type": "si",
 					"systems": ["si"],
 					"multiplier": 9.1093821545e-31
 				},
 				"siliqua": {
+					"name": "siliqua",
 					"symbol": "siliqua",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -775,6 +932,7 @@
 					"notes": "1/144 uncia. Based on 1 libra = 328.9 g"
 				},
 				"obolus": {
+					"name": "obolus",
 					"symbol": "obolus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -783,6 +941,7 @@
 					"notes": "1/48 uncia. Based on 1 libra = 328.9 g"
 				},
 				"scrupulum": {
+					"name": "scrupulum",
 					"symbol": "scrupulum",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -791,6 +950,7 @@
 					"notes": "1/24 uncia. Based on 1 libra = 328.9 g"
 				},
 				"semisextula": {
+					"name": "semisextula",
 					"symbol": "semisextula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -799,6 +959,7 @@
 					"notes": "1/12 uncia. Based on 1 libra = 328.9 g"
 				},
 				"sextula": {
+					"name": "sextula",
 					"symbol": "sextula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -807,6 +968,7 @@
 					"notes": "1/6 uncia. Based on 1 libra = 328.9 g"
 				},
 				"sicilicius": {
+					"name": "sicilicius",
 					"symbol": "sicilicius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -815,6 +977,7 @@
 					"notes": "1/4 uncia. Based on 1 libra = 328.9 g"
 				},
 				"duella": {
+					"name": "duella",
 					"symbol": "duella",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -823,6 +986,7 @@
 					"notes": "1/3 uncia. Based on 1 libra = 328.9 g"
 				},
 				"semuncia": {
+					"name": "semuncia",
 					"symbol": "semuncia",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -831,6 +995,7 @@
 					"notes": "1/2 uncia. Based on 1 libra = 328.9 g"
 				},
 				"uncia": {
+					"name": "uncia",
 					"symbol": "uncia",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -839,6 +1004,7 @@
 					"notes": "Roman ounce. 1/12 libra. Based on 1 libra = 328.9 g"
 				},
 				"sescuncia": {
+					"name": "secuncia",
 					"symbol": "sescuncia",
 					"otherNames": ["sescunx"],
 					"type": "customary",
@@ -848,6 +1014,7 @@
 					"notes": "1/8 libra. Based on 1 libra = 328.9 g"
 				},
 				"sextans": {
+					"name": "sextans",
 					"symbol": "sextans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -856,8 +1023,9 @@
 					"notes": "1/6 libra. Based on 1 libra = 328.9 g"
 				},
 				"quadrans": {
-					"symbol": "quadrans",
+					"name": "quadrans",
 					"otherNames": ["teruncius"],
+					"symbol": "quadrans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -865,14 +1033,7 @@
 					"notes": "1/4 libra. Based on 1 libra = 328.9 g"
 				},
 				"triens": {
-					"symbol": "triens",
-					"type": "customary",
-					"systems": ["ancientRoman"],
-					"estimation": true,
-					"multiplier": 109.6e-3,
-					"notes": "1/3 libra. Based on 1 libra = 328.9 g"
-				},
-				"triens": {
+					"name": "triens",
 					"symbol": "triens",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -881,6 +1042,7 @@
 					"notes": "1/3 libra. Based on 1 libra = 328.9 g"
 				},
 				"quincunx": {
+					"name": "quincunx",
 					"symbol": "quincunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -889,6 +1051,7 @@
 					"notes": "5/12 libra. Based on 1 libra = 328.9 g"
 				},
 				"semis": {
+					"name": "semis",
 					"symbol": "semis",
 					"otherNames": ["semissis"],
 					"type": "customary",
@@ -898,6 +1061,7 @@
 					"notes": "1/2 libra. Based on 1 libra = 328.9 g"
 				},
 				"septunx": {
+					"name": "septunx",
 					"symbol": "septunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -906,6 +1070,7 @@
 					"notes": "7/12 libra. Based on 1 libra = 328.9 g"
 				},
 				"bes": {
+					"name": "bes",
 					"symbol": "bes",
 					"otherNames": ["bessis"],
 					"type": "customary",
@@ -915,6 +1080,7 @@
 					"notes": "2/3 libra. Based on 1 libra = 328.9 g"
 				},
 				"dodrans": {
+					"name": "dodrans",
 					"symbol": "dodrans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -923,6 +1089,7 @@
 					"notes": "3/4 libra. Based on 1 libra = 328.9 g"
 				},
 				"dextans": {
+					"name": "dextans",
 					"symbol": "dextans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -931,6 +1098,7 @@
 					"notes": "5/6 libra. Based on 1 libra = 328.9 g"
 				},
 				"deunx": {
+					"name": "deunx",
 					"symbol": "deunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -939,6 +1107,7 @@
 					"notes": "11/12 libra. Based on 1 libra = 328.9 g"
 				},
 				"libra": {
+					"name": "libra",
 					"symbol": "libra",
 					"otherNames": ["as"],
 					"type": "customary",
@@ -954,22 +1123,29 @@
 			"baseUnit": "ampere",
 			"units": {
 				"ampere": {
-					"symbol": "A",
+					"name": "ampere",
+					"plural": "amperes",
 					"otherNames": ["amp", "amps"],
+					"symbol": "A",
 					"type": "si",
 					"systems": ["metric"]
 				},
 				"abampere": {
+					"name": "abampere",
+					"plural": "abamperes",
+					"otherNames": ["electromagnetic unit"],
 					"symbol": "abamp",
 					"type": "customary",
-					"otherNames": ["electromagneticUnit"],
 					"systems": ["cgs"],
 					"multiplier": 10
 				},
-				"esuPerSecond": {
-					"symbol": "esu/s",
+				"statampere": {
+					"name": "statampere",
+					"plural": "statamperes",
+					"otherNames": ["ESU per second"],
+					"symbol": "statamp",
+					"otherSymbols": ["esu/s"],
 					"type": "customary",
-					"otherNames": ["statampere"],
 					"systems": ["cgs"],
 					"estimation": true,
 					"multiplier": 3.335641e-10
@@ -981,17 +1157,24 @@
 			"baseUnit": "kelvin",
 			"units": {
 				"kelvin": {
+					"name": "kelvin",
+					"otherNames": ["degree kelvin", "degrees kelvin"],
 					"symbol": "°K",
 					"type": "si",
-					"systems": ["si"]
+					"systems": ["si"],
+					"notes": "As a postpositional adjective, the plural kelvin is used instead of kelvins"
 				},
 				"celsius": {
+					"name": "celsius",
+					"otherNames": ["degree celsius", "degrees celsius"],
 					"symbol": "°C",
 					"type": "si",
 					"systems": ["siCommon"],
 					"offset": 273.15
 				},
 				"fahrenheit": {
+					"name": "fahrenheit",
+					"otherNames": ["degree fahrenheit", "degrees fahrenheit"],
 					"symbol": "°F",
 					"type": "customary",
 					"systems": ["englishUnits", "imperial", "usCustomary"],
@@ -999,6 +1182,8 @@
 					"offset": 255.37222222
 				},
 				"rankine": {
+					"name": "rankine",
+					"otherNames": ["degree rankine", "degrees rankine"],
 					"symbol": "°R",
 					"otherSymbols": ["Ra"],
 					"type": "customary",
@@ -1008,6 +1193,8 @@
 					"notes": "Check values"
 				},
 				"romer": {
+					"name": "romer",
+					"otherNames": ["degree romer", "degrees romer"],
 					"symbol": "°Rø",
 					"otherSymbols": ["°R"],
 					"type": "customary",
@@ -1018,6 +1205,8 @@
 					"notes": "Technically Rømer (or Roemer). Check values"
 				},
 				"newton": {
+					"name": "newton",
+					"otherNames": ["degree newton", "degrees newton"],
 					"symbol": "°N",
 					"type": "customary",
 					"systems": ["nonStandard"],
@@ -1027,6 +1216,8 @@
 					"notes": "May have rounding error. Check values"
 				},
 				"delisle": {
+					"name": "delisle",
+					"otherNames": ["degree delisle", "degrees delisle"],
 					"symbol": "°D",
 					"otherSymbols": ["°De"],
 					"type": "customary",
@@ -1037,6 +1228,8 @@
 					"notes": "May have rounding error. Check values"
 				},
 				"reaumur": {
+					"name": "reaumur",
+					"otherNames": ["degree reaumur", "degrees reaumur"],
 					"symbol": "°Ré",
 					"otherSymbols": ["°Re", "°R"],
 					"type": "customary",
@@ -1053,6 +1246,7 @@
 			"baseUnit": "mole",
 			"units": {
 				"mole": {
+					"name": "mole",
 					"symbol": "mol",
 					"type": "si",
 					"systems": ["metric"]
@@ -1064,11 +1258,14 @@
 			"baseUnit": "candela",
 			"units": {
 				"candela": {
+					"name": "candela",
+					"plural": "candelas",
 					"symbol": "cd",
 					"type": "si",
 					"systems": ["si"]
 				},
 				"candlepowerNew": {
+					"name": "candlepower",
 					"symbol": "cp",
 					"type": "customary",
 					"systems": ["legacyMetric", "englishUnits"],
@@ -1076,6 +1273,7 @@
 					"multiplier": 1
 				},
 				"candlepowerOld": {
+					"name": "candlepower",
 					"symbol": "cp",
 					"type": "customary",
 					"systems": ["oldEuropean"],
@@ -1089,11 +1287,15 @@
 			"baseUnit": "steradian",
 			"units": {
 				"steradian": {
+					"name": "steradian",
+					"plural": "steradians",
 					"symbol": "sr",
 					"type": "si",
 					"systems": ["si"]
 				},
 				"squareDegree": {
+					"name": "square degree",
+					"plural": "square degrees",
 					"symbol": "deg²",
 					"type": "customary",
 					"otherSymbols": ["sq.deg.", "(°)²"],
@@ -1111,29 +1313,41 @@
 			"baseUnit": "radian",
 			"units": {
 				"radian": {
+					"name": "radian",
+					"plural": "radians",
 					"symbol": "rad",
 					"otherSymbols": ["㎭", "ᶜ"],
 					"type": "si",
 					"systems": ["si"],
-					"notes": "Only metric prefixes of milli, micro, and nano are acceptable and not in pure math"
+					"acceptedPrefixes": ["milli", "micro", "nano"],
+					"notes": "Accepted prefixes still not accepted in pure math"
 				},
-				"angularMil": {
+				"mil": {
+					"name": "mil",
+					"plural": "mils",
+					"otherNames": ["angular mil", "angular mils"],
 					"symbol": "µ",
 					"type": "customary",
-					"multiplier": 0.981748e-3
+					"systems": ["notStandard"],
+					"multiplier": 0.981748e-3,
+					"notes": "More information needed on systems"
 				},
 				"minute": {
+					"name": "minute",
+					"plural": "minutes",
+					"otherNames": ["minute of arc", "arcminute", "arcminutes", "arc minute", "arc minutes"],
 					"symbol": "'",
 					"otherSymbols": ["arcmin", "amin", "am", "MOA"],
-					"otherNames": ["minute of arc", "arcminute", "arc minute"],
 					"type": "si",
 					"systems": ["metric"],
 					"multiplier": 0.290888e-3
 				},
 				"second": {
+					"name": "second",
+					"plural": "seconds",
+					"otherNames": ["second of arc", "arc second", "arcsecond", "arc seconds", "arcseconds"],
 					"symbol": "\"",
 					"otherSymbols": ["arcsec", "asec", "as"],
-					"otherNames": ["second of arc", "arc second", "arcsecond"],
 					"type": "si",
 					"systems": ["metric"],
 					"multiplier": 4.848137e-6
@@ -1877,39 +2091,51 @@
 				"squareMetre": {
 					"symbol": "m²",
 					"otherSymbols": ["ca"],
+					"otherNames": ["centiare", "squareMeter", "metreSquared"],
 					"type": "si",
-					"otherNames": ["centiare", "squareMeter", "metreSquared"]
+					"systems": ["metric"]
 				},
 				"squareInch": {
 					"symbol": "in²",
 					"otherSymbols": ["square in", "sq inches", "sq inch", "sq in", "sq.in"],
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 0.00064516
 				},
 				"squareFoot": {
 					"symbol": "ft²",
 					"otherSymbols": ["sq ft", "sq.ft"],
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 0.09290304
 				},
 				"squareYard": {
 					"symbol": "yd²",
 					"otherSymbols": ["yds²", "sq yd", "sq.yd"],
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 0.83612736
 				},
 				"squareMile": {
 					"symbol": "mi²",
 					"otherSymbols": ["sq mi", "sq.mi"],
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 2589988.110336
 				},
 				"are": {
 					"symbol": "a",
 					"type": "si",
 					"systems": ["legacyMetric"],
+					"acceptedPrefixes": ["centi", "deci"],
 					"multiplier": 100,
-					"notes": "Commonly only gas centi-, deci-, dec-, hect- prefixes. Not an si unit in it's own right."
+					"notes": "Not an si unit in it's own right."
+				},
+				"decare": {
+					"symbol": "daa",
+					"type": "si",
+					"systems": ["legacyMetric"],
+					"multiplier": 1000
 				},
 				"hectare": {
 					"symbol": "ha",
@@ -1921,6 +2147,7 @@
 				"acre": {
 					"symbol": "ac",
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 4046.8564224
 				},
 				"squareRod": {
@@ -1948,7 +2175,8 @@
 					"symbol": "stremma",
 					"type": "customary",
 					"systems": ["ancient"],
-					"multiplier": 1000
+					"multiplier": 1000,
+					"notes": "Ancient Greek"
 				},
 				"barn": {
 					"symbol": "b",
@@ -2166,11 +2394,13 @@
 				"standardAtmosphere": {
 					"symbol": "atm",
 					"type": "customary",
+					"systems": ["metric"],
 					"multiplier": 101325
 				},
 				"technicalAtmosphere": {
 					"symbol": "at",
 					"type": "customary",
+					"systems": ["oldEuropean"],
 					"multiplier": 9.80665e4
 				},
 				"bar": {
@@ -2202,22 +2432,26 @@
 				"inchOfMercury": {
 					"symbol": "inHg",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 3.386389e3
 				},
 				"inchOfWater": {
 					"symbol": "inH2O",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 249.082,
 					"notes": "At 39.2 °F"
 				},
 				"footOfMercury": {
 					"symbol": "ftHg",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 40.63666e3
 				},
 				"footOfWater": {
 					"symbol": "ftH2O",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 2.98898e3,
 					"notes": "At 39.2 °F"
 				},
@@ -2230,11 +2464,13 @@
 				"kipPerSquareInch": {
 					"symbol": "ksi",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 6.894757e6
 				},
 				"micronOfMercury": {
 					"symbol": "µmHg",
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 0.1333224
 				},
 				"millimetreOfMercury": {
@@ -2260,21 +2496,33 @@
 				"poundPerSquareFoot": {
 					"symbol": "psf",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 47.88026
 				},
 				"poundPerSquareInch": {
 					"symbol": "psi",
+					"otherNames": ["pound-force per square inch"],
+					"otherSymbols": ["lbf/in²", "lbf/in²", "lbf/sq in", "lbf/sq in"],
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 6.894757e3
+				},
+				"kilopoundPerSquareInch": {
+					"symbol": "ksi",
+					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
+					"multiplier": 6.894757e6
 				},
 				"poundalPerSquareFoot": {
 					"symbol": "pdl/sq ft",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 1.488164
 				},
 				"shortTonPerSquareFoot": {
 					"symbol": "sh tn/sq ft",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 95.760518e3
 				},
 				"torr": {
@@ -2314,69 +2562,90 @@
 			"derived": "mass*length/time/time",
 			"units": {
 				"newton": {
+					"name": "newton",
 					"symbol": "N",
 					"type": "si",
 					"systems": ["si"]
 				},
 				"atomicUnitOfForce": {
+					"name": "atomic unit of force",
 					"symbol": "Eh/a0",
 					"type": "customary",
+					"systems": ["si"],
 					"estimation": true,
 					"multiplier": 8.23872206e-8
 				},
 				"dyne": {
+					"name": "dyne",
 					"symbol": "dyn",
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 1e-5
 				},
 				"kilogramForce": {
+					"name": "kilogram force",
+					"otherNames": ["kilopond", "grave-force"],
 					"symbol": "kgf",
 					"otherSymbols": ["kp", "Gf"],
-					"otherNames": ["kilopond", "grave-force"],
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 9.80665
 				},
 				"kip": {
+					"name": "kip",
+					"otherNames": ["kip-force"],
 					"symbol": "kip",
 					"otherSymbols": ["kipf", "klbf"],
-					"otherNames": ["kip-force"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 4.4482216152605e3
 				},
 				"milligraveForce": {
+					"name": "milligrave force",
 					"symbol": "mGf",
 					"otherSymbols": ["gf"],
 					"otherNames": ["gravet-force"],
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 9.80665e-3
 				},
 				"ounceForce": {
+					"name": "ounce force",
 					"symbol": "ozf",
 					"type": "customary",
+					"systems": ["englishEngineering", "britishGravitational"],
 					"multiplier": 0.27801385095378125
 				},
 				"poundForce": {
+					"name": "pound force",
+					"otherNames": ["pound"],
 					"symbol": "lbf",
+					"otherSymbols": ["lb"],
 					"type": "customary",
+					"systems": ["englishEngineering", "britishGravitational"],
 					"multiplier": 4.4482216152605
 				},
 				"poundal": {
+					"name": "poundal",
 					"symbol": "pdl",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.138254954376
 				},
 				"sthene": {
+					"name": "sthene",
 					"symbol": "sn",
 					"type": "customary",
 					"systems": ["mts"],
 					"multiplier": 1e3
 				},
-				"tonForce": {
-					"symbol": "tnf",
+				"shortTonForce": {
+					"name": "short ton-force",
+					"plural": "short tons-force",
+					"symbol": "tf",
 					"type": "customary",
-					"multiplier": 8.896443230521e3,
-					"notes": "Based on short ton"
+					"systems": ["usCustomary"],
+					"multiplier": 8.896443230521e3
 				}
 			}
 		},
@@ -2386,59 +2655,88 @@
 			"derived": "length/time",
 			"units": {
 				"metrePerSecond": {
+					"name": "metre per second",
+					"otherNames": ["meter per second", "meters per second"],
+					"plural": "metres per second",
 					"symbol": "m/s",
 					"type": "customary",
-					"otherNames": ["meterPerSecond", "metresPerSecond", "metersPerSecond"],
+					"systems": "metric",
 					"notes": "This is of type customary NOT si because you can't actually apply prefixes to it"
 				},
 				"footPerHour": {
+					"name": "foot per hour",
+					"plural": "feet per hour",
 					"symbol": "fph",
 					"otherSymbols": ["ft/h"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 8.466667e-5
 				},
 				"footPerMinute": {
+					"name": "foot per minute",
+					"plural": "feet per minute",
 					"symbol": "fpm",
 					"otherSymbols": ["ft/min"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 5.08e-3
 				},
 				"footPerSecond": {
+					"name": "foot per second",
+					"plural": "feet per second",
 					"symbol": "fps",
 					"otherSymbols": ["ft/s"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 3.048e-1
 				},
 				"furlongPerFortnight": {
+					"name": "furlong per fortnight",
 					"symbol": "furlong/fortnight",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 1.663095e-4
 				},
 				"inchPerHour": {
+					"name": "inch per hour",
+					"plural": "inches per hour",
 					"symbol": "iph",
 					"otherSymbols": ["in/hr"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 7.05556e-6
 				},
 				"inchPerMinute": {
+					"name": "inch per minute",
+					"plural": "inches per minute",
 					"symbol": "ipm",
 					"otherSymbols": ["in/min"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 4.23333e-4
 				},
 				"inchPerSecond": {
+					"name": "inch per second",
+					"plural": "inches per second",
 					"symbol": "ips",
 					"otherSymbols": ["in/s"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 2.54e-2
 				},
 				"kilometrePerHour": {
+					"name": "kilometre per hour",
+					"plural": "kilometres per hour",
+					"otherNames": ["kilometer per hour", "kilometers per hour"],
 					"symbol": "km/h",
+					"otherSymbols": ["kph"],
 					"type": "customary",
+					"systems": ["siCommon"],
 					"multiplier": 2.777778e-1
 				},
 				"knot": {
+					"name": "knot",
+					"plural": "knots",
 					"symbol": "kn",
 					"otherSymbols": ["nmi/h", "kt", "NMPH"],
 					"type": "customary",
@@ -2446,6 +2744,8 @@
 					"multiplier": 0.514444
 				},
 				"knotAdmiralty": {
+					"name": "knot",
+					"plural": "knots",
 					"symbol": "kn",
 					"otherSymbols": ["NM (Adm)/h"],
 					"type": "customary",
@@ -2454,42 +2754,58 @@
 					"notes": "More research needed on systems and origins"
 				},
 				"machNumber": {
+					"name": "mach number",
+					"otherNames": ["Sarrau number"],
 					"symbol": "M",
 					"otherSymbols": ["Ma", "Mach"],
-					"otherNames": ["Sarrau number"],
+					"symbolFirst": true,
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 340.3,
 					"notes": "Based on standard sea level conditions and at 15 °C. Additionally should be written Mach 2.3 (unit name first)"
 				},
 				"milePerHour": {
+					"name": "mile per hour",
+					"plural": "miles per hour",
 					"symbol": "mph",
 					"otherSymbols": ["mi/h"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 0.44704
 				},
 				"milePerMinute": {
+					"name": "mile per minute",
+					"plural": "miles per minute",
 					"symbol": "mpm",
 					"otherSymbols": ["mi/min"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 26.8224
 				},
 				"milePerSecond": {
+					"name": "mile per second",
+					"plural": "miles per second",
 					"symbol": "mps",
 					"otherSymbols": ["mi/s"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 1609.344
 				},
 				"speedOfLight": {
+					"name": "speed of light",
 					"symbol": "c",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 299792458,
-					"notes": "In a vacuum"
+					"notes": "Constant. In a vacuum"
 				},
 				"speedOfSound": {
+					"name": "speed of sound",
 					"symbol": "s",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 340.3,
-					"notes": "Based on standard sea level conditions and at 15 °C."
+					"notes": "Constant. Based on standard sea level conditions and at 15 °C."
 				}
 			}
 		},
@@ -2499,21 +2815,33 @@
 			"derived": "length/time/time",
 			"units": {
 				"metrePerSquareSecond": {
+					"name": "metre per square second",
+					"plural": "metres per square second",
+					"otherNames": ["meter per square second", "meters per square second", "metre per second squared", "metres per second squared", "meter per second squared", "meters per second squared"],
 					"symbol": "m/s²",
 					"type": "customary",
-					"otherNames": ["metresPerSecondSquared", "meterPerSecondSquared", "metersPerSecondSquared", "meterPerSquareSecond", "metrePerSecondSquared"]
+					"systems": ["metric"]
 				},
 				"footPerHourPerSecond": {
+					"name": "foot per hour per second",
+					"plural": "feet per hour per second",
 					"symbol": "fph/s",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 8.466667e-5
 				},
 				"footPerMinutePerSecond": {
+					"name": "foot per minute per second",
+					"plural": "feet per minute per second",
 					"symbol": "fpm/s",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 5.08e-5
 				},
-				"footPerSecondSquared": {
+				"footPerSquareSecond": {
+					"name": "foot per square second",
+					"plural": "feet per square second",
+					"otherNames": ["foot per second squared", "feet per second squared"],
 					"symbol": "fps²",
 					"otherSymbols": ["ft/s²"],
 					"type": "customary",
@@ -2521,48 +2849,72 @@
 					"multiplier": 0.304800
 				},
 				"gal": {
-					"symbol": "Gal",
+					"name": "gal",
 					"otherNames": ["galileo"],
+					"symbol": "Gal",
 					"type": "si",
+					"systems": ["legacyMetric"],
 					"multiplier": 0.01
 				},
 				"inchPerMinutePerSecond": {
+					"name": "inch per minute per second",
+					"plural": "inches per minute per second",
 					"symbol": "ipm/s",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 4.233333e-4
 				},
-				"inchPerSecondSquared": {
+				"inchPerSquareSecond": {
+					"name": "inch per square second",
+					"plural": "inches per square second",
+					"otherNames": ["inch per second squared", "inches per second squared"],
 					"symbol": "ips²",
 					"otherSymbols": ["in/s²"],
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 2.54e-2
 				},
 				"knotPerSecond": {
+					"name": "knot per second",
+					"plural": "knots per second",
 					"symbol": "kn/s",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 5.144444e-1
 				},
 				"milePerHourPerSecond": {
+					"name": "mile per hour per second",
+					"plural": "miles per hour per second",
 					"symbol": "mph/s",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 4.4704e-1
 				},
 				"milePerMinutePerSecond": {
+					"name": "mile per minute per second",
+					"plural": "miles per minute per second",
 					"symbol": "mpm/s",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 26.8224
 				},
-				"milePerSecondSquared": {
+				"milePerSquareSecond": {
+					"name": "mile per square second",
+					"plural": "miles per square second",
+					"otherNames": ["mile per second squared", "miles per second squared"],
 					"symbol": "mps²",
 					"otherSymbols": ["mi/s²"],
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 1.609344e3
 				},
 				"gravity": {
+					"name": "gravity",
+					"otherNames": ["standard gravity", "standard acceleration due to gravity"],
 					"symbol": "g",
-					"otherSymbols": ["g₀"],
+					"otherSymbols": ["g₀", "g₀", "gn"],
 					"type": "customary",
-					"otherNames": ["standard gravity"],
+					"systems": ["metric"],
 					"multiplier": 9.80665
 				}
 			}
@@ -2574,231 +2926,222 @@
 			"derived": "mass*length*length/time/time",
 			"units": {
 				"joule": {
+					"name": "joule",
+					"plural": "joules",
 					"symbol": "J",
 					"type": "si",
 					"systems": ["si", "mks"]
 				},
 				"barrelOfOilEquivalent": {
-					"symbol": "boe",
+					"name": "barrel of oil equivalent",
+					"symbol": "BOE",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 6.12e9
 				},
-				"britishThermalUnitIso": {
+				"britishThermalUnit": {
+					"name": "British thermal unit",
+					"plural": "British thermal units",
 					"symbol": "BTU",
-					"otherNames": ["britishThermalUnit", "british thermal unit"],
+					"otherSymbols": ["Btu"],
 					"type": "customary",
-					"multiplier": 1.0545e3
+					"systems": ["imperial", "usCustomary", "canada"],
+					"multiplier": 1.05505585262e3,
+					"notes": "Using International Steam Table (IT) calorie. Many other definitions of BTU exist."
 				},
-				"britishThermalUnitInternationalTable": {
-					"symbol": "BTU",
-					"type": "customary",
-					"multiplier": 1.05505585262e3
-				},
-				"britishThermalUnitMean": {
-					"symbol": "BTU",
-					"type": "customary",
-					"multiplier": 1.05587e3
-				},
-				"britishThermalUnitThermochemical": {
-					"symbol": "BTU",
-					"type": "customary",
-					"multiplier": 1.054350e3
-				},
-				"britishThermalUnit39F": {
-					"symbol": "BTU",
-					"type": "customary",
-					"multiplier": 1.05967e3,
-					"notes": "At 39 °F"
-				},
-				"britishThermalUnit59F": {
-					"symbol": "BTU",
-					"type": "customary",
-					"multiplier": 1.054804e3,
-					"notes": "At 59 °F"
-				},
-				"britishThermalUnit60F": {
-					"symbol": "BTU",
-					"type": "customary",
-					"multiplier": 1.05468e3,
-					"notes": "At 60 °F"
-				},
-				"britishThermalUnit63F": {
-					"symbol": "BTU",
-					"type": "customary",
-					"multiplier": 1.0546e3,
-					"notes": "At 63 °F"
-				},
-				"calorieInternationalTable": {
+				"calorie": {
+					"name": "calorie",
+					"plural": "calories",
 					"symbol": "cal",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
+					"excludedSystems": ["usFoodNutrition"],
 					"multiplier": 4.1868
 				},
-				"calorieMean": {
-					"symbol": "cal",
-					"type": "customary",
-					"multiplier": 4.19002
-				},
-				"calorieThermochemical": {
-					"symbol": "cal",
-					"otherNames": ["calorie"],
-					"type": "customary",
-					"multiplier": 4.184
-				},
 				"calorieUsFda": {
+					"name": "calorie",
+					"plural": "calories",
 					"symbol": "Cal",
 					"type": "customary",
+					"systems": ["usFoodNutrition"],
 					"multiplier": 4.184
 				},
-				"calorie3_98C": {
-					"symbol": "cal",
-					"type": "customary",
-					"multiplier": 4.2045,
-					"notes": "At 3.98 °C"
-				},
-				"calorie15C": {
-					"symbol": "cal",
-					"type": "customary",
-					"multiplier": 4.1855,
-					"notes": "At 15 °C"
-				},
-				"calorie20C": {
-					"symbol": "cal",
-					"type": "customary",
-					"multiplier": 4.1819,
-					"notes": "At 20 °C"
-				},
 				"celsiusHeatUnit": {
+					"name": "Celsius heat unit",
+					"plural": "Celsius heat units",
 					"symbol": "CHU",
 					"type": "customary",
-					"multiplier": 1.899100534716e3
-				},
-				"cubicCentimetreOfAtmosphereStandardCubicCentimetre": {
-					"symbol": "cc atm; scc",
-					"type": "customary",
-					"multiplier": 0.101325
-				},
-				"cubicFootOfAtmosphereStandardCubicFoot": {
-					"symbol": "cc ft atm; scf",
-					"type": "customary",
-					"multiplier": 2.8692044809344e3
+					"systems": ["nonStandard"],
+					"multiplier": 1.899100534716e3,
+					"notes": "International Table"
 				},
 				"cubicFootOfNaturalGas": {
+					"name": "cubic foot of natural gas",
+					"plural": "cubic feet of natural gas",
 					"symbol": "cc ft natural gas",
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 1.05505585262e6
 				},
-				"cubicYardOfAtmosphereStandardCubicYard": {
-					"symbol": "cu yd atm; scy",
-					"type": "customary",
-					"multiplier": 77.4685209852288e3
-				},
 				"electronvolt": {
+					"name": "electronvolt",
+					"plural": "electronvolts",
+					"otherNames": ["electron volt", "electron volts"],
 					"symbol": "eV",
-					"otherNames": ["electron volt"],
 					"type": "si",
 					"systems": ["si"],
 					"multiplier": 1.60217733e-19,
 					"notes": "Uncertainty: ± 4.9×10^−26 J"
 				},
 				"erg": {
+					"name": "erg",
 					"symbol": "erg",
 					"type": "si",
 					"systems": ["cgs"],
 					"multiplier": 1e-7
 				},
 				"footPoundForce": {
+					"name": "foot-pound force",
+					"otherNames": ["foot-pound"],
 					"symbol": "ft lbf",
+					"otherSymbols": ["ft lb", "ft·lb", "ft·lbf"],
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 1.3558179483314004
 				},
 				"footPoundal": {
+					"name": "Foot-poundal",
 					"symbol": "ft pdl",
+					"otherSymbols": ["ft-pdl"],
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 4.21401100938048e-2
 				},
 				"gallonAtmosphereImperial": {
+					"name": "gallon atmosphere",
 					"symbol": "imp gal atm",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 460.63256925
 				},
 				"gallonAtmosphereUS": {
+					"name": "gallon atmosphere",
 					"symbol": "US gal atm",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 383.5568490138
 				},
 				"hartree": {
-					"symbol": "Eh",
+					"name": "hartree",
 					"otherNames": ["atomic unit of energy"],
+					"symbol": "Eh",
 					"type": "customary",
+					"systems": ["si"],
 					"multiplier": 4.359744e-18
 				},
 				"horsepowerHour": {
+					"name": "horsepower hour",
 					"symbol": "hp h",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 2.684519537696172792e6
 				},
 				"inchPoundForce": {
+					"name": "inch-pound force",
+					"otherNames": ["inch-pound"],
 					"symbol": "in lbf",
+					"otherSymbols": ["in lb", "in·lb", "in·lbf"],
 					"type": "customary",
+					"systems": ["usCustomary", "imperial"],
 					"multiplier": 0.1129848290276167
 				},
 				"kilocalorie": {
-					"symbol": "kcal",
-					"otherSymbols": ["Cal"],
+					"name": "kilocalorie",
+					"plural": "kilocalories",
 					"otherNames": ["large calorie"],
+					"symbol": "kcal",
+					"otherSymbols": ["kCal", "Cal"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
+					"excludedSystems": ["usFoodNutrition"],
 					"multiplier": 4.1868e3
 				},
 				"kilowattHour": {
-					"symbol": "kw h",
-					"otherSymbols": ["kw·h", "B.O.T.U."],
-					"otherNames": ["Board of Trade Unit"],
+					"name": "kilowatt hour",
+					"otherNames": ["kilowatt-hour", "Board of Trade Unit"],
+					"symbol": "kWh",
+					"otherSymbols": ["kw·h", "B.O.T.U.", "KWH", "kW h", "kW·h"],
 					"type": "customary",
-					"multiplier": 3.6e6
-				},
-				"litreAtmposhere": {
-					"symbol": "l atm; sl",
-					"type": "customary",
-					"multiplier": 101.325
+					"systems": ["imperial", "usCustomary", "legacyMetric"],
+					"multiplier": 3.6e6,
+					"notes": "This is a non-SI unit"
 				},
 				"quad": {
+					"name": "quad",
+					"plural": "quads",
 					"symbol": "quad",
 					"type": "customary",
-					"multiplier": 1.05505585262e18
+					"systems": ["imperial", "usCustomary", "canada"],
+					"multiplier": 1.05505585262e18,
+					"notes": "10^15 BTU"
 				},
 				"rydberg": {
+					"name": "Rydberg unit of energy",
 					"symbol": "Ry",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary", "metric"],
 					"multiplier": 2.179872e-18
 				},
 				"thermEC": {
-					"symbol": "therm",
+					"name": "therm",
+					"symbol": "thm",
 					"type": "customary",
-					"multiplier": 105.505585262e6
+					"systems": ["usCustomary"],
+					"multiplier": 105.506000e6
 				},
 				"thermUS": {
-					"symbol": "therm",
+					"name": "therm",
+					"symbol": "thm",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 105.4804e6
 				},
+				"thermUK": {
+					"name": "therm",
+					"symbol": "thm",
+					"type": "customary",
+					"systems": ["imperial"],
+					"multiplier": 105.505585257348e6
+				},
 				"thermie": {
+					"name": "thermie",
 					"symbol": "th",
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 4.1868e6
 				},
 				"tonOfCoalEquivalent": {
+					"name": "ton of coal equivalent",
+					"otherNames": ["tonne of coal equivalent"],
 					"symbol": "TCE",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 29.288e9
 				},
 				"tonOfOilEquivalent": {
+					"name": "ton of oil equivalent",
+					"otherNames": ["tonne of oil equivalent"],
 					"symbol": "TOE",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 41.84e9
 				},
 				"tonOfTNT": {
+					"name": "ton of TNT",
+					"otherNames": ["tonne of TNT"],
 					"symbol": "tTNT",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 4.184e9
 				}
 			}
@@ -2809,113 +3152,143 @@
 			"derived": "mass*length*length/time/time/time",
 			"units": {
 				"watt": {
+					"name": "watt",
+					"plural": "watts",
 					"symbol": "W",
 					"type": "si",
 					"systems": ["si", "mks"]
 				},
 				"atmosphereCubicCentimetrePerMinute": {
+					"name": "atmosphere cubic centimetre per minute",
+					"plural": "atmosphere cubic centimetres per minute",
 					"symbol": "atm ccm",
 					"type": "customary",
 					"systems": ["legacyMetric"],
 					"multiplier": 1.68875e-3
 				},
 				"atmosphereCubicCentimetrePerSecond": {
+					"name": "atmosphere cubic centimetre per second",
+					"plural": "atmosphere cubic centimetres per second",
 					"symbol": "atm ccs",
 					"type": "customary",
 					"systems": ["legacyMetric"],
 					"multiplier": 0.101325
 				},
 				"atmosphereCubicFootPerHour": {
+					"name": "atmosphere cubic foot per hour",
+					"plural": "atmosphere cubic feet per hour",
 					"symbol": "atm cfh",
 					"type": "customary",
 					"systems": ["imperial", "englishUnits"],
 					"multiplier": 0.797001244704
 				},
 				"atmosphereCubicFootPerMinute": {
+					"name": "atmosphere cubic foot per minute",
+					"plural": "atmosphere cubic feet per minute",
 					"symbol": "atm cfm",
 					"type": "customary",
 					"systems": ["imperial", "englishUnits"],
 					"multiplier": 47.82007468224
 				},
 				"atmosphereCubicFootPerSecond": {
+					"name": "atmosphere cubic foot per second",
+					"plural": "atmosphere cubic feet per second",
 					"symbol": "atm cfs",
 					"type": "customary",
 					"systems": ["imperial", "englishUnits"],
 					"multiplier": 2.8692044809344e3
 				},
 				"btuPerHour": {
+					"name": "BTU per hour",
+					"plural": "BTUs per hour",
 					"symbol": "BTU/h",
 					"type": "customary",
 					"systems": ["imperial", "englishUnits"],
 					"multiplier": 0.293071
 				},
 				"btuPerMinute": {
+					"name": "BTU per minute",
+					"plural": "BTUs per minute",
 					"symbol": "BTU/min",
 					"type": "customary",
 					"systems": ["imperial", "englishUnits"],
 					"multiplier": 17.584264
 				},
 				"btuPerSecond": {
+					"name": "BTU per second",
+					"plural": "BTUs per second",
 					"symbol": "BTU/s",
 					"type": "customary",
 					"systems": ["imperial", "englishUnits"],
 					"multiplier": 1.05505585262e3
 				},
 				"caloriePerSecond": {
+					"name": "calorie per second",
+					"plural": "calories per second",
 					"symbol": "cal/s",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 4.1868
 				},
 				"ergPerSecond": {
+					"name": "erg per second",
 					"symbol": "erg/s",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 1e-7
 				},
 				"footPoundForcePerHour": {
+					"name": "foot-pound force per hour",
 					"symbol": "ft lbf/h",
 					"type": "customary",
 					"systems": ["imperial", "englishUnits"],
 					"multiplier": 3.766161e-4
 				},
 				"footPoundForcePerMinute": {
+					"name": "foot-pound force per minute",
 					"symbol": "ft lbf/min",
 					"type": "customary",
 					"systems": ["imperial", "englishUnits"],
 					"multiplier": 2.259696580552334e-2
 				},
 				"footPoundForcePerSecond": {
+					"name": "foot-pound force per second",
 					"symbol": "ft lbf/s",
 					"type": "customary",
 					"systems": ["imperial", "englishUnits"],
 					"multiplier": 1.3558179483314004
 				},
 				"horsepowerBoiler": {
+					"name": "horsepower (boiler)",
+					"otherNames": ["horsepower", "boiler horsepower"],
 					"symbol": "bhp",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 9.810657e3
 				},
 				"horsepowerEuropeanElectrical": {
+					"name": "horsepower",
 					"symbol": "hp",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 736
 				},
 				"horsepowerImperialElectrical": {
+					"name": "horsepower",
 					"symbol": "hp",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 746
 				},
 				"horsepowerImperialMechanical": {
+					"name": "horsepower",
 					"symbol": "hp",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 745.69987158227022
 				},
 				"horsepower": {
+					"name": "horsepower",
 					"symbol": "hp",
 					"type": "customary",
 					"systems": ["nonStandard"],
@@ -2981,11 +3354,13 @@
 			"derived": "electricCurrent/time",
 			"units": {
 				"coulomb": {
+					"name": "coulomb",
 					"symbol": "C",
 					"type": "si",
 					"systems": ["metric"]
 				},
 				"faraday": {
+					"name": "faraday",
 					"symbol": "F",
 					"type": "customary",
 					"estimation": true,
@@ -2993,13 +3368,15 @@
 					"multiplier": 96485.3383
 				},
 				"milliampereHour": {
+					"name": "milliampere hour",
 					"symbol": "mAh",
-					"otherSymbols": ["mA.h"],
+					"otherSymbols": ["mA·h", "mA.h"],
 					"systems": ["legacyMetric"],
 					"type": "customary",
 					"multiplier": 3.6
 				},
 				"statcoulomb": {
+					"name": "statcoulomb",
 					"symbol": "statC",
 					"otherSymbols": ["Fr", "esu"],
 					"otherNames": ["franklin", "electrostaticUnit"],
@@ -3009,6 +3386,7 @@
 					"multiplier": 3.335641e-10
 				},
 				"abcoulomb": {
+					"name": "abcoulomb",
 					"symbol": "abC",
 					"otherSymbols": ["emu"],
 					"otherNames": ["electrostaticUnit"],
@@ -3017,6 +3395,7 @@
 					"multiplier": 10
 				},
 				"atomicUnitOfCharge": {
+					"name": "atomic unit of charge",
 					"symbol": "au",
 					"type": "customary",
 					"systems": ["si"],
@@ -3032,13 +3411,17 @@
 			"derived": "electricCurrent*length/time",
 			"units": {
 				"coulombMetre": {
-					"symbol": "C.m",
-					"otherSymbols": ["Cm"],
+					"name": "coulomb metre",
+					"plural": "coulomb metres",
+					"otherNames": ["coulomb meter", "coulomb meters"],
+					"symbol": "C·m",
+					"otherSymbols": ["C·m", "Cm", "C m"],
 					"type": "si",
 					"systems": ["si"],
 					"otherNames": ["coulombMeter"]
 				},
 				"debye": {
+					"name": "debye",
 					"symbol": "D",
 					"type": "customary",
 					"systems": ["siCommon", "cgs"],
@@ -3046,6 +3429,7 @@
 					"notes": "Still used within SI as all SI prefixes are too large for certain applications."
 				},
 				"atomicUnitOfElectricDipoleMoment": {
+					"name": "atomic unit of electic dipole moment",
 					"symbol": "ea₀",
 					"type": "customary",
 					"systems": ["si"],
@@ -3062,18 +3446,24 @@
 			"derived": "mass*length*length/electricCurrent/time/time/time",
 			"units": {
 				"volt": {
-					"symbol": "V",
+					"name": "volt",
+					"plural": "volts",
 					"otherNames": ["joules per coulomb"],
+					"symbol": "V",
 					"type": "si",
 					"systems": ["si", "mks"]
 				},
 				"statvolt": {
+					"name": "statvolt",
+					"plural": "statvolts",
 					"symbol": "statV",
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 299.792458
 				},
 				"abvolt": {
+					"name": "abvolt",
+					"plural": "abvolts",
 					"symbol": "abV",
 					"type": "customary",
 					"systems": ["cgs"],
@@ -3090,39 +3480,48 @@
 			"notes": "Impedance (Z) and Reactance (X) have the same units as resistance and in this context are considered equivalent",
 			"units": {
 				"ohm": {
+					"name": "ohm",
+					"plural": "ohms",
+					"otherNames": ["legal ohm", "volt/ampere"],
 					"symbol": "Ω",
 					"otherSymbols": ["R"],
-					"otherNames": ["legal ohm", "volt/ampere"],
 					"type": "si",
 					"systems": ["si", "mks", "englishUnits"],
 					"excludedPrefixes": ["mega", "micro", "giga"],
 					"notes": "Naming quantities may be done in the form 5.6 Ω => 5R6 to avoid 'rubbing off' decimal place"
 				},
 				"megohm": {
+					"name": "megohm",
+					"plural": "megohms",
 					"symbol": "MΩ",
-					"otherNames": ["megaohm", "mega ohm"],
+					"otherNames": ["megaohm", "megaohms", "mega ohm", "mega ohms"],
 					"type": "customary",
 					"systems": ["si", "mks", "englishUnits"],
 					"multiplier": 1e6,
 					"notes": "Replaces the standard SI prefix mega- for ohms"
 				},
 				"microhm": {
+					"name": "microhm",
+					"plural": "microhms",
 					"symbol": "μΩ",
-					"otherNames": ["microohm", "micro ohm"],
+					"otherNames": ["microohm", "microohms", "micro ohm", "micro ohms"],
 					"type": "customary",
 					"systems": ["si", "mks", "englishUnits"],
 					"multiplier": 1e-6,
 					"notes": "Replaces the standard SI prefix micro- for ohms"
 				},
 				"gigohm": {
+					"name": "gigohm",
+					"plural": "gigohms",
 					"symbol": "GΩ",
-					"otherNames": ["gigaohm", "giga ohm"],
+					"otherNames": ["gigaohm", "gigaohms", "giga ohm", "giga ohms"],
 					"type": "customary",
 					"systems": ["si", "mks", "englishUnits"],
 					"multiplier": 1e9,
 					"notes": "Replaces the standard SI prefix giga- for ohms"
 				},
 				"reciprocalSiemens": {
+					"name": "reciprocal Siemens",
 					"symbol": "1/S",
 					"otherNames": ["reciprocal mho"],
 					"type": "customary",
@@ -3130,12 +3529,15 @@
 					"multiplier": 1
 				},
 				"quantizedHallResistance": {
+					"name": "quantized Hall resistance",
 					"symbol": "QHR",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 3.874046143981e-5
 				},
 				"abohm": {
+					"name": "abohm",
+					"plural": "abohms",
 					"symbol": "abΩ",
 					"otherNames": ["EMU of resistance"],
 					"type": "customary",
@@ -3143,6 +3545,8 @@
 					"multiplier": 1e-9
 				},
 				"statohm": {
+					"name": "statohm",
+					"plural": "statohms",
 					"symbol": "statΩ",
 					"otherNames": ["ESU of resistance"],
 					"type": "customary",
@@ -3157,17 +3561,23 @@
 			"derived": "time*time*time*time*electricCurrent*electricCurrent/length/length/mass",
 			"units": {
 				"farad": {
+					"name": "farad",
+					"plural": "farads",
 					"symbol": "F",
 					"type": "si",
 					"systems": ["si", "mks"]
 				},
 				"abfarad": {
+					"name": "abfarad",
+					"plural": "abfarads",
 					"symbol": "abF",
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 1e9
 				},
 				"statfarad": {
+					"name": "statfarad",
+					"plural": "statfarads",
 					"symbol": "statF",
 					"type": "customary",
 					"systems": ["cgs"],
@@ -3182,6 +3592,8 @@
 			"derived": "mass*length*length/electricCurrent/electricCurrent/time/time",
 			"units": {
 				"henry": {
+					"name": "henry",
+					"plural": "henries",
 					"symbol": "H",
 					"type": "si",
 					"systems": ["metric"]
@@ -3194,63 +3606,104 @@
 			"derived": "mass/length/length/length",
 			"units": {
 				"kilogramPerCubicMetre": {
+					"name": "kilogram per cubic metre",
+					"plural": "kilograms per cubic metre",
+					"otherNames": ["kilogram per cubic meter", "kilograms per cubic meter", "kilogram per metre cubed", "kilograms per metre cubed", "kilogram per meter cubed", "kilograms per meter cubed"],
 					"symbol": "kg/m³",
 					"type": "customary",
-					"otherNames": ["kilogramsPerCubicMetre", "kilogramPerMetreCubed", "kilogramPerCubicMeter"]
+					"systems": ["si"]
 				},
 				"gramPerMillilitre": {
+					"name": "gram per millilitre",
+					"plural": "grams per millilitre",
 					"symbol": "g/mL",
 					"type": "customary",
+					"systems": ["siCommon"],
 					"multiplier": 1000
 				},
 				"kilogramPerLitre": {
+					"name": "kilogram per litre",
+					"plural": "kilograms per litre",
 					"symbol": "kg/L",
 					"type": "customary",
+					"systems": ["siCommon"],
 					"multiplier": 1000
 				},
 				"ouncePerCubicFoot": {
+					"name": "ounce per cubic foot",
+					"plural": "ounces per cubic foot",
+					"otherNames": ["ounce per foot cubed", "ounces per foot cubed"],
 					"symbol": "oz/ft³",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 1.001153961
 				},
 				"ouncePerCubicInch": {
+					"name": "ounce per cubic inch",
+					"plural": "ounces per cubic inch",
+					"otherNames": ["ounce per inch cubed", "ounces per inch cubed"],
 					"symbol": "oz/in³",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 1.729994044e3
 				},
 				"ouncePerGallonImperial": {
+					"name": "ounce per gallon",
+					"plural": "ounces per gallon",
 					"symbol": "oz/gal",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 6.236023291
 				},
 				"ouncePerGallonUS": {
+					"name": "ounce per gallon",
+					"plural": "ounces per gallon",
 					"symbol": "oz/gal",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 7.489151707
 				},
 				"poundPerCubicFoot": {
+					"name": "pound per cubic foot",
+					"plural": "pounds per cubic foot",
+					"otherNames": ["pound per foot cubed", "pounds per foot cubed"],
 					"symbol": "lb/ft³",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 16.01846337
 				},
 				"poundPerCubicInch": {
+					"name": "pound per cubic inch",
+					"plural": "pounds per cubic inch",
+					"otherNames": ["pound per inch cubed", "pounds per inch cubed"],
 					"symbol": "lb/in³",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 2.767990471e4
 				},
 				"poundPerGallonImperial": {
+					"name": "pound per gallon",
+					"plural": "pounds per gallon",
 					"symbol": "lb/gal",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 99.77637266
 				},
 				"poundPerGallonUS": {
+					"name": "pound per gallon",
+					"plural": "pounds per gallon",
 					"symbol": "lb/gal",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 119.8264273
 				},
 				"slugPerCubicFoot": {
+					"name": "slug per cubic foot",
+					"plural": "slugs per cubic foot",
+					"otherNames": ["slug per foot cubed", "slugs per foot cubed"],
 					"symbol": "slug/ft³",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 515.3788184
 				}
 			}
