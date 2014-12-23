@@ -1353,52 +1353,78 @@
 					"multiplier": 4.848137e-6
 				},
 				"centesimalMinuteOfArc": {
+					"name": "centesimal minute of arc",
+					"plural": "centesimal minutes of arc",
 					"symbol": "'",
 					"type": "customary",
-					"multiplier": 0.157080e-3
+					"systems": ["nonStandard"],
+					"multiplier": 0.157080e-3,
+					"notes": "More details on systems needed"
 				},
 				"centesimalSecondOfArc": {
+					"name": "centesimal second of arc",
+					"plural": "centesimal seconds of arc",
 					"symbol": "\"",
 					"type": "customary",
-					"multiplier": 1.570796e-6
+					"systems": ["nonStandard"],
+					"multiplier": 1.570796e-6,
+					"notes": "More details on systems needed"
 				},
 				"degree": {
+					"name": "degree",
+					"plural": "degrees",
+					"otherNames": ["degrees of arc", "degree of arc", "arc degree", "arc degrees", "arcdegree", "arcdegrees"],
 					"symbol": "°",
 					"otherSymbols": ["deg"],
-					"otherNames": ["degree of arc", "arc degree", "arcdegree"],
 					"type": "customary",
 					"systems": ["ancient", "metric", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 17.453293e-3
 				},
 				"grad": {
-					"symbol": "grad",
+					"name": "grad",
+					"plural": "grads",
 					"otherNames": ["gradian", "gon"],
+					"symbol": "grad",
 					"type": "customary",
-					"multiplier": 15.707963e-3
+					"systems": ["imperial"],
+					"multiplier": 15.707963e-3,
+					"notes": "More details on systems needed"
 				},
 				"octant": {
+					"name": "octant",
+					"plural": "octants",
 					"symbol": "octant",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.785398,
-					"notes": "45°"
+					"notes": "45° More details on systems needed"
 				},
 				"quadrant": {
+					"name": "quadrant",
+					"plural": "quadrants",
 					"symbol": "quadrant",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 1.570796,
-					"notes": "90°"
+					"notes": "90° More details on systems needed"
 				},
 				"sextant": {
+					"name": "sextant",
+					"plural": "sextants",
 					"symbol": "sextant",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 1.047198,
-					"notes": "60°"
+					"notes": "60° More details on systems needed"
 				},
 				"sign": {
+					"name": "sign",
+					"plural": "signs",
 					"symbol": "sign",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.523599,
-					"notes": "30°"
+					"notes": "30° More details on systems needed"
 				}
 			}
 		},
@@ -1408,492 +1434,733 @@
 			"derived": "length*length*length",
 			"units": {
 				"cubicMetre": {
+					"name": "cubic metre",
+					"plural": "cubic metres",
+					"otherNames": ["cubic meter", "cubic meters", "metre cubed", "metres cubed", "meter cubed", "meters cubed"],
 					"symbol": "m³",
 					"type": "customary",
-					"otherNames": ["cubicMeter", "metreCubed"]
+					"systems": ["si"]
 				},
 				"acreFoot": {
+					"name": "acre-foot",
+					"plural": "acre-feet",
+					"otherNames": ["acre foot", "acre feet"],
 					"symbol": "ac ft",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 1233.48183754752
 				},
 				"acreInch": {
+					"name": "acre-inch",
+					"plural": "acre-inches",
+					"otherNames": ["acre inch", "acre inches"],
 					"symbol": "ac in",
 					"type": "customary",
 					"multiplier": 102.79015312896
 				},
 				"barrelImperial": {
-					"symbol": "bl (imp)",
+					"name": "barrel",
+					"plural": "barrels",
+					"symbol": "bl",
+					"otherSymbols": ["bl (imp)"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.16365924
 				},
 				"barrelPetroleum": {
-					"symbol": "bl; bbl",
+					"name": "barrel",
+					"plural": "barrels",
+					"otherNames": ["barrel of petroleum", "barrels of petroleum"],
+					"symbol": "bl",
+					"otherSymbols": ["bbl"],
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 0.158987294928
 				},
 				"barrelUSDry": {
-					"symbol": "bl (US)",
+					"name": "barrel",
+					"plural": "barrels",
+					"symbol": "bl",
+					"otherSymbols": ["bl (US)"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 0.115628198985075
 				},
 				"barrelUSFluid": {
-					"symbol": "fl bl (US)",
+					"name": "barrel",
+					"plural": "barrels",
+					"otherNames": ["fluid barrel", "fluid barrels"],
+					"symbol": "fl bl",
+					"otherSymbols": ["bl", "fl bl (US)"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 0.119240471196
 				},
 				"boardFoot": {
-					"symbol": "fbm",
+					"name": "board-foot",
+					"plural": "board-feet",
+					"otherNames": ["foot, board measure"],
+					"symbol": "FBM",
+					"otherSymbols": ["fbm", "BDFT", "BF"],
 					"type": "customary",
+					"systems": ["usCustomary", "canada"],
 					"multiplier": 2.359737216e-3
 				},
-				"bucket": {
-					"symbol": "bkt",
+				"thousandBoardFoot": {
+					"name": "thousand board-foot",
+					"plural": "thousand board-feet",
+					"symbol": "MFBM",
+					"otherSymbols": ["Mfbm", "MBFT", "MBF"],
 					"type": "customary",
+					"systems": ["usCustomary", "canada"],
+					"multiplier": 2.359737216
+				},
+				"millionBoardFoot": {
+					"name": "million board-foot",
+					"plural": "million board-feet",
+					"symbol": "MMFBM",
+					"otherSymbols": ["MMfbm", "MMBFT", "MMBF"],
+					"type": "customary",
+					"systems": ["usCustomary", "canada"],
+					"multiplier": 2.359737216e3
+				},
+				"bucket": {
+					"name": "bucket",
+					"plural": "buckets",
+					"symbol": "bkt",
+					"otherSymbols": ["bk", "UK bk"],
+					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.01818436
 				},
-				"bushel": {
+				"bushelImperial": {
+					"name": "bushel",
+					"plural": "bushels",
+					"otherNames": ["bushel imperial"],
 					"symbol": "bu",
 					"otherSymbols": ["bu (imp)"],
-					"otherNames": ["bushel imperial"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.03636872
 				},
 				"bushelUSDryHeaped": {
-					"symbol": "bu (US)",
+					"name": "bushel",
+					"plural": "bushels",
+					"symbol": "bu",
+					"otherSymbols": ["bu (US)"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 0.0440488377086
 				},
 				"bushelUSDryLevel": {
-					"symbol": "bu (US lvl)",
+					"name": "bushel",
+					"plural": "bushels",
+					"symbol": "bu",
+					"otherSymbols": ["bu (US lvl)"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 0.03523907016688
 				},
 				"butt": {
+					"name": "butt",
+					"plural": "butts",
 					"symbol": "butt",
-					"otherNames": ["pipe"],
+					"otherNames": ["pipe", "pipes"],
 					"type": "customary",
+					"systems": ["englishUnits", "imperial"],
 					"multiplier": 0.476961884784
 				},
 				"coomb": {
+					"name": "coomb",
+					"plural": "coombs",
 					"symbol": "coomb",
 					"type": "customary",
+					"systems": ["oldEuropean", "nonStandard"],
 					"multiplier": 0.14547488
 				},
 				"cordFirewood": {
+					"name": "cord",
+					"plural": "cords",
+					"otherNames": ["cord of firewood", "cords of firewood", "cord (timber)", "cords (timber)"],
 					"symbol": "cord",
-					"otherNames": ["cord"],
 					"type": "customary",
+					"systems": ["usCustomary", "canada", "nonStandard"],
 					"multiplier": 3.624556363776
 				},
 				"cordFoot": {
-					"symbol": "cord",
+					"name": "cord foot",
+					"plural": "cord feet",
+					"otherNames": ["cord foot (timber)", "cord feet (timber)"],
+					"symbol": "cord foot",
 					"type": "customary",
+					"systems": ["usCustomary", "nonStandard"],
 					"multiplier": 0.453069545472
 				},
 				"cubicFathom": {
+					"name": "cubic fathom",
+					"plural": "cubic fathoms",
+					"otherNames": ["fathom cubed", "fathoms cubed"],
 					"symbol": "cu fm",
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 6.116438863872
 				},
 				"cubicFoot": {
+					"name": "cubic foot",
+					"plural": "cubic feet",
+					"otherNames": ["foot cubed", "feet cubed"],
 					"symbol": "cu ft",
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 0.028316846592
 				},
 				"cubicInch": {
+					"name": "cubic inch",
+					"plural": "cubic inches",
+					"otherNames": ["inch cubed", "inches cubed"],
 					"symbol": "cu in",
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 16.387064e-6
 				},
 				"cubicMile": {
+					"name": "cubic mile",
+					"plural": "cubic miles",
+					"otherNames": ["mile cubed", "miles cubed"],
 					"symbol": "cu mi",
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 4168181825.440579584
 				},
 				"cubicYard": {
+					"name": "cubic yard",
+					"plural": "cubic yards",
+					"otherNames": ["yard cubed", "yards cubed"],
 					"symbol": "cu yd",
 					"type": "customary",
 					"multiplier": 0.764554857984
 				},
 				"cupBreakfast": {
-					"symbol": "c (breakfast)",
+					"name": "cup",
+					"plural": "cups",
+					"otherNames": ["breakfast cup", "breakfast cups"],
+					"symbol": "c",
+					"otherSymbols": ["c (breakfast)"],
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 284.130625e-6
 				},
 				"cupCanadian": {
-					"symbol": "c (CA)",
+					"name": "cup",
+					"plural": "cups",
+					"symbol": "c",
+					"otherSymbols": ["c (CA)"],
 					"type": "customary",
+					"systems": ["canada"],
 					"multiplier": 227.3045e-6
 				},
 				"cup": {
+					"name": "cup",
+					"plural": "cups",
+					"otherNames": ["metric cup", "metric cups"],
 					"symbol": "c",
-					"otherNames": ["metric cup", "cupMetric"],
 					"type": "customary",
+					"systems": ["metric"],
+					"excludedSystems": ["canada"],
 					"multiplier": 250.0e-6
 				},
 				"cupUSCustomary": {
-					"symbol": "c (US)",
+					"name": "cup",
+					"plural": "cups",
+					"symbol": "c",
+					"otherSymbols": ["c (US)"],
 					"type": "customary",
+					"systems": ["usCustomary"],
+					"excludedSystems": ["usFoodNutrition"],
 					"multiplier": 236.5882365e-6
 				},
 				"cupUSFoodNutritionLabeling": {
-					"symbol": "c (US)",
+					"name": "cup",
+					"plural": "cups",
+					"symbol": "c",
+					"otherSymbols": ["c (US)"],
 					"type": "customary",
+					"systems": ["usFoodNutrition"],
 					"multiplier": 240.0e-6
 				},
 				"dashImperial": {
+					"name": "dash",
+					"plural": "dashes",
 					"symbol": "dash",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 369.9617513020833333e-9
 				},
 				"dashUS": {
+					"name": "dash",
+					"plural": "dashes",
 					"symbol": "dash",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 308.057599609375e-9
 				},
 				"dessertspoon": {
+					"name": "dessertspoon",
+					"plural": "dessertspoons",
+					"otherNames": ["dessert spoon", "dessert spoons"],
 					"symbol": "dstspn.",
 					"type": "customary",
-					"multiplier": 11.838776041666667e-6
+					"rare": true,
+					"systems": ["metric", "imperial", "usCustomary"],
+					"multiplier": 10.0e-6
 				},
 				"dropImperial": {
-					"symbol": "gtt",
+					"name": "drop",
+					"plural": "drops",
+					"symbol": "drop",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 98.6564670138888889e-9
 				},
-				"dropImperialAlt": {
-					"symbol": "gtt",
-					"type": "customary",
-					"multiplier": 77.886684e-9
-				},
 				"dropMedical": {
+					"name": "drop",
+					"plural": "drops",
 					"symbol": "drop",
 					"type": "customary",
+					"systems": ["nonStandard"],
 					"multiplier": 83.03333333e-9
 				},
-				"dropMedicalAlt": {
-					"symbol": "drop",
-					"type": "customary",
-					"multiplier": 83.33333333e-9
-				},
 				"drop": {
+					"name": "drop",
+					"plural": "drops",
 					"symbol": "drop",
-					"otherNames": ["dropMetric", "drop metric"],
+					"otherNames": ["metric drop", "metric drops"],
 					"type": "customary",
+					"systems": ["metric"],
 					"multiplier": 50.0e-9
 				},
 				"dropUS": {
-					"symbol": "gtt",
+					"name": "drop",
+					"plural": "drops",
+					"symbol": "drop",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 82.14869322916666667e-9
 				},
-				"dropUSAlt": {
-					"symbol": "gtt",
-					"type": "customary",
-					"multiplier": 64.85423149671e-9
-				},
-				"dropUSAlt2": {
-					"symbol": "gtt",
-					"type": "customary",
-					"multiplier": 51.34293326823e-9
-				},
 				"fifth": {
+					"name": "fifth",
+					"plural": "fifths",
 					"symbol": "fifth",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 757.0823568e-6
 				},
 				"firkin": {
+					"name": "firkin",
+					"plural": "firkins",
+					"otherNames": ["rundlet", "rundlets"],
 					"symbol": "firkin",
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.04091481
 				},
 				"fluidDrachm": {
+					"name": "fluid drachm",
+					"plural": "fluid drachms",
+					"otherNames": ["fluidrachm", "fluidrachms"],
 					"symbol": "fl dr",
+					"otherSymbols": ["ƒ 3", "fʒ"],
 					"type": "customary",
+					"systems": ["imperial", "apothecaries"],
 					"multiplier": 3.5516328125e-6
 				},
 				"fluidDram": {
+					"name": "fluid dram",
+					"plural": "fluid drams",
+					"otherNames": ["fluidram", "fluidrams"],
 					"symbol": "fl dr",
-					"otherNames": ["US fluidram"],
+					"otherSymbols": ["ƒ 3", "fʒ"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 3.6966911953125e-6
 				},
 				"fluidScruple": {
+					"name": "fluid scruple",
+					"plural": "fluid scruples",
 					"symbol": "fl s",
+					"otherSymbols": ["fl. scruple"],
 					"type": "customary",
+					"systems": ["imperial", "apothecaries"],
 					"multiplier": 1.1838776041666667e-6
 				},
 				"gallonBeer": {
+					"name": "beer gallon",
+					"plural": "beer gallons",
+					"otherNames": ["ale gallon", "ale gallons"],
 					"symbol": "beer gal",
 					"type": "customary",
+					"systems": ["englishUnits"],
 					"multiplier": 4.621152048e-3
 				},
 				"gallonImperial": {
-					"symbol": "gal (imp)",
-					"otherSymbols": ["gal"],
+					"name": "gallon",
+					"plural": "gallons",
+					"symbol": "gal",
+					"otherSymbols": ["gal (imp)"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 4.54609e-3
 				},
 				"gallonUSDry": {
-					"symbol": "gal (US)",
-					"otherSymbols": ["gal"],
+					"name": "gallon",
+					"plural": "gallons",
+					"symbol": "gal",
+					"otherSymbols": ["gal (US)"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 4.40488377086e-3
 				},
 				"gallonUSFluid": {
-					"symbol": "gal (US)",
-					"otherSymbols": ["gal"],
+					"name": "gallon",
+					"plural": "gallons",
+					"symbol": "gal",
+					"otherSymbols": ["gal (US)"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 3.785411784e-3
 				},
 				"gillImperial": {
-					"symbol": "gi (imp)",
-					"otherSymbols": ["gi", "nog"],
+					"name": "gill",
+					"plural": "gills",
 					"otherNames": ["noggin"],
+					"symbol": "gi",
+					"otherSymbols": ["gi (imp)", "nog"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 142.0653125e-6
 				},
 				"gillUS": {
-					"symbol": "gi (US)",
-					"otherSymbols": ["gi"],
+					"name": "gill",
+					"plural": "gills",
+					"symbol": "gi",
+					"otherSymbols": ["gi (US)"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 118.29411825e-6
 				},
 				"hogsheadImperial": {
-					"symbol": "hhd (imp)",
-					"otherSymbols": ["hhd"],
+					"name": "hogshead",
+					"plural": "hogsheads",
+					"symbol": "hhd",
+					"otherSymbols": ["hhd (imp)"],
 					"type": "customary",
+					"systems": ["imperial"],
 					"multiplier": 0.32731848
 				},
 				"hogsheadUS": {
-					"symbol": "hhd (US)",
-					"otherSymbols": ["hhd"],
+					"name": "hogshead",
+					"plural": "hogsheads",
+					"symbol": "hhd",
+					"otherSymbols": ["hhd (US)"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 0.238480942392
 				},
 				"kilderkin": {
+					"name": "kilderkin",
+					"plural": "kilderkins",
 					"symbol": "kilderkin",
 					"type": "customary",
-					"multiplier": 0.08182962
+					"systems": ["imperial"],
+					"multiplier": 0.08182962,
+					"note": "Name from Dutch for 'small cask'"
 				},
 				"lambda": {
+					"name": "lambda",
+					"plural": "lambdas",
 					"symbol": "λ",
 					"type": "customary",
 					"systems": ["legacyMetric"],
 					"multiplier": 1e-9
 				},
 				"last": {
+					"name": "last",
+					"otherNames": ["łaszt"],
 					"symbol": "last",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 2.9094976
 				},
 				"litre": {
+					"name": "litre",
+					"plural": "litres",
+					"otherNames": ["liter", "liters", "Cadil"],
 					"symbol": "L",
 					"otherSymbols": ["l"],
-					"otherNames": ["liter", "Cadil"],
 					"type": "si",
 					"systems": ["siCommon", "legacyMetric"],
 					"multiplier": 0.001,
 					"notes": "A litre was originally the metric base unit for volume. Now non-SI metric."
 				},
 				"load": {
+					"name": "load",
+					"plural": "loads",
 					"symbol": "load",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 1.4158423296
 				},
 				"minimImperial": {
+					"name": "minim",
+					"plural": "minims",
 					"symbol": "min",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 59.19388020833333e-9
 				},
 				"minimUS": {
+					"name": "minim",
+					"plural": "minims",
 					"symbol": "min",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 61.611519921875e-9
 				},
-				"ounceImperial": {
-					"symbol": "fl oz (imp)",
-					"otherSymbols": ["fl oz"],
+				"fluidOunceImperial": {
+					"name": "fluid ounce",
+					"plural": "fluid ounces",
+					"symbol": "fl oz",
+					"otherSymbols": ["fl oz (imp)"],
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 28.4130625e-6
 				},
-				"ounceUSCustomary": {
-					"symbol": "US fl oz",
-					"otherSymbols": ["fl oz"],
+				"fluidOunceUSCustomary": {
+					"name": "fluid ounce",
+					"plural": "fluid ounces",
+					"symbol": "fl oz",
+					"otherSymbols": ["fl oz (US)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"excludedSystems": ["usFoodNutrition"],
 					"multiplier": 29.5735295625e-6
 				},
 				"ounceUSFoodNutritionLabeling": {
-					"symbol": "US fl oz",
-					"otherSymbols": ["fl oz"],
+					"name": "fluid ounce",
+					"plural": "fluid ounces",
+					"symbol": "fl oz",
+					"otherSymbols": ["fl oz (US)"],
 					"type": "customary",
 					"systems": ["usFoodNutrition"],
 					"multiplier": 3.0e-5
 				},
 				"peckImperial": {
+					"name": "peck",
+					"plural": "pecks",
 					"symbol": "pk",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 9.09218e-3
 				},
 				"peckUSDry": {
+					"name": "peck",
+					"plural": "pecks",
 					"symbol": "pk",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 8.80976754172e-3
 				},
 				"perch": {
+					"name": "perch",
+					"plural": "perches",
 					"symbol": "per",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 0.700841953152
 				},
 				"pinchImperial": {
+					"name": "pinch",
+					"plural": "pinches",
 					"symbol": "pn",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 739.9235026041666667e-9
 				},
 				"pinchUS": {
+					"name": "pinch",
+					"plural": "pinches",
 					"symbol": "pn",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 616.11519921875e-9
 				},
 				"pintImperial": {
-					"symbol": "pt (imp)",
-					"otherSymbols": ["pt"],
+					"name": "pint",
+					"plural": "pints",
+					"symbol": "pt",
+					"otherSymbols": ["pt (imp)"],
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 568.26125e-6
 				},
 				"pintUSDry": {
-					"symbol": "pt (US dry)",
-					"otherSymbols": ["pt"],
+					"name": "pint",
+					"plural": "pints",
+					"symbol": "pt",
+					"otherSymbols": ["pt (US dry)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 550.6104713575e-6
 				},
 				"pintUSFluid": {
-					"symbol": "pt (US fl)",
-					"otherSymbols": ["pt"],
+					"name": "pint",
+					"plural": "pints",
+					"symbol": "pt",
+					"otherSymbols": ["pt (US fl)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 473.176473e-6
 				},
 				"pony": {
+					"name": "pony",
+					"plural": "ponies",
 					"symbol": "pony",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 22.180147171875e-6
 				},
 				"pottle": {
+					"name": "pottle",
+					"plural": "pottles",
+					"otherNames": ["quartern", "quarterns"],
 					"symbol": "pottle",
-					"otherNames": ["quartern"],
 					"type": "customary",
 					"systems": ["englishUnits"],
 					"multiplier": 2.273045e-3
 				},
 				"quartImperial": {
-					"symbol": "qt (imp)",
-					"otherSymbols": ["qt"],
+					"name": "quart",
+					"plural": "quart",
+					"symbol": "qt",
+					"otherSymbols": ["qt (imp)"],
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 1.1365225e-3
 				},
 				"quartUSDry": {
-					"symbol": "qt (US dry)",
-					"otherSymbols": ["qt"],
+					"name": "quart",
+					"plural": "quart",
+					"symbol": "qt",
+					"otherSymbols": ["qt (US dry)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 1.101220942715e-3
 				},
 				"quartUSFluid": {
-					"symbol": "qt (US fl)",
-					"otherSymbols": ["qt"],
+					"name": "quart",
+					"plural": "quart",
+					"symbol": "qt",
+					"otherSymbols": ["qt (US fl)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 946.352946e-6
 				},
 				"pail": {
+					"name": "pail",
+					"plural": "pails",
+					"otherNames": ["quarter", "quarters", "kenning", "kennings"],
 					"symbol": "pail",
-					"otherNames": ["quarter", "kenning"],
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.29094976
 				},
 				"registerTon": {
-					"symbol": "GRT",
+					"name": "register ton",
+					"plural": "register tons",
 					"otherNames": ["gross register tonnage"],
+					"symbol": "GRT",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 2.8316846592
 				},
 				"sackImperial": {
+					"name": "sack",
+					"plural": "sacks",
+					"otherNames": ["bag", "bags"],
 					"symbol": "sack",
-					"otherNames": ["bag"],
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.10910616
 				},
 				"sackUS": {
+					"name": "sack",
+					"plural": "sacks",
 					"symbol": "sack",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 0.10571721050064
 				},
 				"seam": {
+					"name": "seam",
+					"plural": "seams",
 					"symbol": "seam",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.28191256133504
 				},
 				"shot": {
+					"name": "shot",
+					"plural": "shots",
 					"symbol": "shot",
-					"otherNames": ["jigger", "measure"],
+					"otherNames": ["jigger", "jiggers", "measure", "measures"],
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 44e-6,
 					"notes": "Shot sizes vary worldwide. In the US shot sizes are between 1.25-1.5 fl. oz. Utah legislates 1.5 fl. oz."
 				},
 				"strikeImperial": {
+					"name": "strike",
+					"plural": "strikes",
 					"symbol": "strike",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.07273744
 				},
 				"strikeUS": {
+					"name": "strike",
+					"plural": "strikes",
 					"symbol": "strike",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 0.07047814033376
 				},
 				"tablespoonAustralian": {
+					"name": "tablespoon",
+					"plural": "tablespoons",
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["australia"],
 					"multiplier": 20e-6
 				},
 				"tablespoonCanadian": {
+					"name": "tablespoon",
+					"plural": "tablespoons",
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["canada"],
 					"multiplier": 14.20653125e-6
 				},
 				"tablespoonImperial": {
+					"name": "tablespoon",
+					"plural": "tablespoons",
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 17.7581640625e-6
 				},
 				"tablespoon": {
+					"name": "tablespoon",
+					"plural": "tablespoons",
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["metric"],
@@ -1901,6 +2168,8 @@
 					"multiplier": 15e-6
 				},
 				"tablespoonUSCustomary": {
+					"name": "tablespoon",
+					"plural": "tablespoons",
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["usCustomary"],
@@ -1908,24 +2177,32 @@
 					"multiplier": 14.7867647825e-6
 				},
 				"tablespoonUSFoodNutritionLabeling": {
+					"name": "tablespoon",
+					"plural": "tablespoons",
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["usFoodNutrition"],
 					"multiplier": 1.5e-5
 				},
 				"teaspoonCanadian": {
+					"name": "teaspoon",
+					"plural": "teaspoons",
 					"symbol": "tsp",
 					"type": "customary",
 					"systems": ["canada"],
 					"multiplier": 4.73551041666667e-6
 				},
 				"teaspoonImperial": {
+					"name": "teaspoon",
+					"plural": "teaspoons",
 					"symbol": "tsp",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 5.919388020833333e-6
 				},
 				"teaspoon": {
+					"name": "teaspoon",
+					"plural": "teaspoons",
 					"symbol": "tsp",
 					"type": "customary",
 					"systems": ["metric"],
@@ -1933,6 +2210,8 @@
 					"multiplier": 5.0e-6
 				},
 				"teaspoonUSCustomary": {
+					"name": "teaspoon",
+					"plural": "teaspoons",
 					"symbol": "tsp",
 					"type": "customary",
 					"systems": ["usCustomary"],
@@ -1940,6 +2219,8 @@
 					"multiplier": 4.928921595e-6
 				},
 				"teaspoonUSFoodNutritionLabeling": {
+					"name": "teaspoon",
+					"plural": "teaspoons",
 					"symbol": "tsp",
 					"type": "customary",
 					"systems": ["usFoodNutrition"],
