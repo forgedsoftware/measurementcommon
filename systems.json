@@ -807,7 +807,7 @@
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 6.35029318,
-					"note": "The plural 'stones' is not used in representing quantities."
+					"notes": "The plural 'stones' is not used in representing quantities."
 				},
 				"tonLong": {
 					"name": "ton",
@@ -840,6 +840,8 @@
 					"multiplier": 1000
 				},
 				"grain": {
+					"name": "grain",
+					"plural": "grains",
 					"symbol": "gr",
 					"otherNames": ["troy grain"],
 					"type": "customary",
@@ -1328,7 +1330,7 @@
 					"otherNames": ["angular mil", "angular mils"],
 					"symbol": "µ",
 					"type": "customary",
-					"systems": ["notStandard"],
+					"systems": ["nonStandard"],
 					"multiplier": 0.981748e-3,
 					"notes": "More information needed on systems"
 				},
@@ -1456,6 +1458,7 @@
 					"otherNames": ["acre inch", "acre inches"],
 					"symbol": "ac in",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 102.79015312896
 				},
 				"barrelImperial": {
@@ -1608,7 +1611,7 @@
 				"cubicFoot": {
 					"name": "cubic foot",
 					"plural": "cubic feet",
-					"otherNames": ["foot cubed", "feet cubed"],
+					"otherNames": ["foot cubed", "feet cubed", "timber foot", "timber feet"],
 					"symbol": "cu ft",
 					"type": "customary",
 					"systems": ["englishUnits", "imperial", "usCustomary"],
@@ -1638,6 +1641,7 @@
 					"otherNames": ["yard cubed", "yards cubed"],
 					"symbol": "cu yd",
 					"type": "customary",
+					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 0.764554857984
 				},
 				"cupBreakfast": {
@@ -1873,7 +1877,7 @@
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.08182962,
-					"note": "Name from Dutch for 'small cask'"
+					"notes": "Name from Dutch for 'small cask'"
 				},
 				"lambda": {
 					"name": "lambda",
@@ -2226,37 +2230,54 @@
 					"systems": ["usFoodNutrition"],
 					"multiplier": 5.0e-6
 				},
-				"timberFoot": {
-					"symbol": "timber ft",
-					"type": "customary",
-					"multiplier": 0.028316846592
-				},
 				"tonDisplacement": {
+					"name": "ton displacement",
 					"symbol": "ton (disp)",
 					"type": "customary",
-					"multiplier": 0.99108963072
+					"systems": ["nonStandard"],
+					"multiplier": 0.99108963072,
+					"notes": "More details needed on systems"
 				},
 				"tonFreight": {
-					"symbol": "ton (freight)",
+					"name": "ton of freight",
+					"otherNames": ["ton"],
+					"symbol": "ton",
+					"otherSymbols": ["ton (freight)"],
 					"type": "customary",
-					"multiplier": 1.13267386368
+					"systems": ["nonStandard"],
+					"multiplier": 1.13267386368,
+					"notes": "More details needed on systems"
 				},
 				"tonWater": {
-					"symbol": "ton (water)",
+					"name": "ton of water",
+					"otherNames": ["ton"],
+					"symbol": "ton",
+					"otherSymbols": ["ton (water)"],
 					"type": "customary",
-					"multiplier": 1.01832416
+					"systems": ["nonStandard"],
+					"multiplier": 1.01832416,
+					"notes": "More details needed on systems"
 				},
 				"tun": {
-					"symbol": "tun",
+					"name": "tun",
+					"plural": "tuns",
+					"symbol": "tu",
+					"otherSymbols": ["US tu"],
 					"type": "customary",
-					"multiplier": 0.953923769568
+					"systems": ["usCustomary"],
+					"multiplier": 0.953923769568,
+					"notes": "Fluid only"
 				},
 				"wey": {
+					"name": "wey",
+					"plural": "weys",
 					"symbol": "wey",
 					"type": "customary",
+					"systems": ["oldEuropean"],
 					"multiplier": 1.4095628066752
 				},
 				"ligula": {
+					"name": "ligula",
 					"symbol": "ligula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2265,6 +2286,7 @@
 					"notes": "Liquid, Dry. 1/48 sextarius. Based on 1 pes = 0.296m"
 				},
 				"cyathus": {
+					"name": "cyathus",
 					"symbol": "cyathus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2273,6 +2295,7 @@
 					"notes": "Liquid, Dry. 1/12 sextarius. Based on 1 pes = 0.296m"
 				},
 				"acetabulum": {
+					"name": "acetabulum",
 					"symbol": "acetabulum",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2281,6 +2304,7 @@
 					"notes": "Liquid, Dry. 1/8 sextarius. Based on 1 pes = 0.296m"
 				},
 				"quartarius": {
+					"name": "quartarius",
 					"symbol": "quartarius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2289,6 +2313,7 @@
 					"notes": "Liquid, Dry. 1/4 sextarius. Based on 1 pes = 0.296m"
 				},
 				"hemina": {
+					"name": "hemina",
 					"symbol": "hemina",
 					"otherNames": ["cotyla"],
 					"type": "customary",
@@ -2298,6 +2323,7 @@
 					"notes": "Liquid, Dry. 1/2 sextarius. Based on 1 pes = 0.296m"
 				},
 				"sextarius": {
+					"name": "sextarius",
 					"symbol": "sextarius",
 					"otherNames": ["cotyla"],
 					"type": "customary",
@@ -2307,6 +2333,7 @@
 					"notes": "Liquid, Dry. 1/6 congius. Based on 1 pes = 0.296m"
 				},
 				"congius": {
+					"name": "congius",
 					"symbol": "congius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2315,6 +2342,7 @@
 					"notes": "Liquid. 6 sextarii. Based on 1 pes = 0.296m"
 				},
 				"urna": {
+					"name": "urna",
 					"symbol": "urna",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2323,6 +2351,7 @@
 					"notes": "Liquid. 4 congii. Based on 1 pes = 0.296m"
 				},
 				"amphoraQuadrantal": {
+					"name": "amphora quadrantal",
 					"symbol": "amphora quadrantal",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2331,6 +2360,7 @@
 					"notes": "Liquid. 8 congii. One cubic pes. Standard amphora size. Based on 1 pes = 0.296m"
 				},
 				"culeus": {
+					"name": "culeus",
 					"symbol": "culeus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2339,6 +2369,7 @@
 					"notes": "Liquid. 160 congii. Based on 1 pes = 0.296m"
 				},
 				"semimodius": {
+					"name": "semimodius",
 					"symbol": "semimodius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2347,6 +2378,7 @@
 					"notes": "Dry. 8 sextarii. Based on 1 pes = 0.296m"
 				},
 				"modius": {
+					"name": "modius",
 					"symbol": "modius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2355,6 +2387,7 @@
 					"notes": "Dry. 16 sextarii. Alt: 8.62e-3. Based on 1 pes = 0.296m"
 				},
 				"modiusCastrensis": {
+					"name": "modius castrensis",
 					"symbol": "modius castrensis",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2370,13 +2403,17 @@
 			"derived": "length*length",
 			"units": {
 				"squareMetre": {
+					"name": "square metre",
+					"plural": "square metres",
+					"otherNames": ["centiare", "square meter", "square meters", "metre squared", "metres squared", "meter squared", "meters squared"],
 					"symbol": "m²",
 					"otherSymbols": ["ca"],
-					"otherNames": ["centiare", "squareMeter", "metreSquared"],
 					"type": "si",
 					"systems": ["metric"]
 				},
 				"squareInch": {
+					"name": "square inch",
+					"plural": "square inches",
 					"symbol": "in²",
 					"otherSymbols": ["square in", "sq inches", "sq inch", "sq in", "sq.in"],
 					"type": "customary",
@@ -2384,6 +2421,8 @@
 					"multiplier": 0.00064516
 				},
 				"squareFoot": {
+					"name": "square foot",
+					"plural": "square feet",
 					"symbol": "ft²",
 					"otherSymbols": ["sq ft", "sq.ft"],
 					"type": "customary",
@@ -2391,6 +2430,8 @@
 					"multiplier": 0.09290304
 				},
 				"squareYard": {
+					"name": "square yard",
+					"plural": "square yards",
 					"symbol": "yd²",
 					"otherSymbols": ["yds²", "sq yd", "sq.yd"],
 					"type": "customary",
@@ -2398,6 +2439,8 @@
 					"multiplier": 0.83612736
 				},
 				"squareMile": {
+					"name": "square mile",
+					"plural": "square miles",
 					"symbol": "mi²",
 					"otherSymbols": ["sq mi", "sq.mi"],
 					"type": "customary",
@@ -2405,6 +2448,8 @@
 					"multiplier": 2589988.110336
 				},
 				"are": {
+					"name": "are",
+					"plural": "ares",
 					"symbol": "a",
 					"type": "si",
 					"systems": ["legacyMetric"],
@@ -2413,12 +2458,16 @@
 					"notes": "Not an si unit in it's own right."
 				},
 				"decare": {
+					"name": "decare",
+					"plural": "decares",
 					"symbol": "daa",
 					"type": "si",
 					"systems": ["legacyMetric"],
 					"multiplier": 1000
 				},
 				"hectare": {
+					"name": "hectare",
+					"plural": "hectares",
 					"symbol": "ha",
 					"type": "si",
 					"systems": ["siCommon", "legacyMetric"],
@@ -2426,19 +2475,24 @@
 					"notes": "Technically and are with hect prefix but is only version of are accepted within broader si context."
 				},
 				"acre": {
+					"name": "acre",
+					"plural": "acres",
 					"symbol": "ac",
 					"type": "customary",
 					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"multiplier": 4046.8564224
 				},
 				"squareRod": {
+					"name": "square rod",
+					"plural": "square rods",
 					"symbol": "sq rd",
-					"otherNames": ["square perch", "square pole"],
+					"otherNames": ["square perch", "square perches", "square pole", "square poles"],
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 25.29285264
 				},
 				"squarePerche": {
+					"name": "square perche",
 					"symbol": "square perche",
 					"type": "customary",
 					"systems": ["oldEuropean"],
@@ -2446,13 +2500,16 @@
 					"notes": "The french version of a square perch"
 				},
 				"rood": {
+					"name": "rood",
+					"plural": "roods",
 					"symbol": "rood",
-					"otherNames": ["rod"],
+					"otherNames": ["rod", "rods"],
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 1011.7141056
 				},
 				"stremma": {
+					"name": "stremma",
 					"symbol": "stremma",
 					"type": "customary",
 					"systems": ["ancient"],
@@ -2460,12 +2517,14 @@
 					"notes": "Ancient Greek"
 				},
 				"barn": {
+					"name": "barn",
 					"symbol": "b",
 					"type": "si",
 					"systems": ["metric"],
 					"multiplier": 1e-28
 				},
 				"pesQuadratus": {
+					"name": "pes quadratus",
 					"symbol": "pes quadratus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2474,6 +2533,7 @@
 					"notes": "square foot - 1 pes^2. Based on 1 pes = 0.296m"
 				},
 				"scrupulum": {
+					"name": "scrupulum",
 					"symbol": "scrupulum",
 					"otherNames": ["decempeda quadrata"],
 					"type": "customary",
@@ -2483,6 +2543,7 @@
 					"notes": "the square of the standard 10-foot measuring rod. Jugerum division. 100 pedes^2 - 1/288 jugerum. Based on 1 pes = 0.296m"
 				},
 				"actusSimplex": {
+					"name": "actus simplex",
 					"symbol": "actus simplex",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2491,6 +2552,7 @@
 					"notes": "4 x 120 pedes = 480 pedes^2. Based on 1 pes = 0.296m"
 				},
 				"uncia": {
+					"name": "uncia",
 					"symbol": "uncia",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2499,6 +2561,7 @@
 					"notes": "Jugerum division. 2400 pedes^2 - 1/12 jugerum. Based on 1 pes = 0.296m"
 				},
 				"clima": {
+					"name": "clima",
 					"symbol": "clima",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2507,8 +2570,9 @@
 					"notes": "60 x 60 pedes = 3600 pedes^2. Based on 1 pes = 0.296m"
 				},
 				"actusQuadratus": {
-					"symbol": "actus quadratus",
+					"name": "actus quadratus",
 					"otherNames": ["acnua", "arpennis", "semis"],
+					"symbol": "actus quadratus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2516,6 +2580,7 @@
 					"notes": "Jugerum division. 14400 pedes^2 - 1/2 jugerum. Based on 1 pes = 0.296m"
 				},
 				"jugerum": {
+					"name": "jugerum",
 					"symbol": "jugerum",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2524,6 +2589,7 @@
 					"notes": "28800 pedes^2 - 1 jugerum. Based on 1 pes = 0.296m"
 				},
 				"heredium": {
+					"name": "heredium",
 					"symbol": "heredium",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2532,6 +2598,7 @@
 					"notes": "2 jugerum. Based on 1 pes = 0.296m"
 				},
 				"centuria": {
+					"name": "centuria",
 					"symbol": "centuria",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2540,6 +2607,7 @@
 					"notes": "200 jugerum. Was 100 jugera. Based on 1 pes = 0.296m"
 				},
 				"saltus": {
+					"name": "saltus",
 					"symbol": "saltus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2548,6 +2616,7 @@
 					"notes": "800 jugerum. Based on 1 pes = 0.296m"
 				},
 				"dimidiumScrupulum": {
+					"name": "dimidium scrupulum",
 					"symbol": "dimidium scrupulum",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2556,6 +2625,7 @@
 					"notes": "Jugerum division. 50 pedes^2 - 1/576 jugerum. Based on 1 pes = 0.296m"
 				},
 				"duoScrupula": {
+					"name": "duo scrupula",
 					"symbol": "duo scrupula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2564,6 +2634,7 @@
 					"notes": "Jugerum division. 200 pedes^2 - 1/144 jugerum. Based on 1 pes = 0.296m"
 				},
 				"sextula": {
+					"name": "sextula",
 					"symbol": "sextula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2572,6 +2643,7 @@
 					"notes": "Jugerum division. 400 pedes^2 - 1/72 jugerum. Based on 1 pes = 0.296m"
 				},
 				"sicilicus": {
+					"name": "sicilicus",
 					"symbol": "sicilicus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2580,6 +2652,7 @@
 					"notes": "Jugerum division. 600 pedes^2 - 1/48 jugerum. Based on 1 pes = 0.296m"
 				},
 				"semiuncia": {
+					"name": "semiuncia",
 					"symbol": "semiuncia",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2588,6 +2661,7 @@
 					"notes": "Jugerum division. 1200 pedes^2 - 1/24 jugerum. Based on 1 pes = 0.296m"
 				},
 				"sextans": {
+					"name": "sextans",
 					"symbol": "sextans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2596,6 +2670,7 @@
 					"notes": "Jugerum division. 4800 pedes^2 - 1/6 jugerum. Based on 1 pes = 0.296m"
 				},
 				"quadrans": {
+					"name": "quadrans",
 					"symbol": "quadrans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2604,6 +2679,7 @@
 					"notes": "Jugerum division. 7200 pedes^2 - 1/4 jugerum. Based on 1 pes = 0.296m"
 				},
 				"triens": {
+					"name": "triens",
 					"symbol": "triens",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2612,6 +2688,7 @@
 					"notes": "Jugerum division. 9600 pedes^2 - 1/3 jugerum. Based on 1 pes = 0.296m"
 				},
 				"quincunx": {
+					"name": "quincunx",
 					"symbol": "quincunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2620,6 +2697,7 @@
 					"notes": "Jugerum division. 12000 pedes^2 - 5/12 jugerum. Based on 1 pes = 0.296m"
 				},
 				"septunx": {
+					"name": "septunx",
 					"symbol": "septunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2628,6 +2706,7 @@
 					"notes": "Jugerum division. 16800 pedes^2 - 7/12 jugerum. Based on 1 pes = 0.296m"
 				},
 				"bes": {
+					"name": "bes",
 					"symbol": "bes",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2636,6 +2715,7 @@
 					"notes": "Jugerum division. 19200 pedes^2 - 2/3 jugerum. Based on 1 pes = 0.296m"
 				},
 				"dodrans": {
+					"name": "dodrans",
 					"symbol": "dodrans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2644,6 +2724,7 @@
 					"notes": "Jugerum division. 21600 pedes^2 - 3/4 jugerum. Based on 1 pes = 0.296m"
 				},
 				"dextans": {
+					"name": "dextans",
 					"symbol": "dextans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2652,6 +2733,7 @@
 					"notes": "Jugerum division. 24000 pedes^2 - 5/6 jugerum. Based on 1 pes = 0.296m"
 				},
 				"deunx": {
+					"name": "deunx",
 					"symbol": "deunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2667,24 +2749,32 @@
 			"derived": "mass/length/time/time",
 			"units": {
 				"pascal": {
+					"name": "pascal",
+					"plural": "pascals",
 					"symbol": "Pa",
 					"type": "si",
 					"systems": ["si"],
 					"notes": "Common prefixes: hecto-, kilo-, mega-, giga-"
 				},
 				"standardAtmosphere": {
+					"name": "standard atmosphere",
+					"plural": "standard atmospheres",
 					"symbol": "atm",
 					"type": "customary",
 					"systems": ["metric"],
 					"multiplier": 101325
 				},
 				"technicalAtmosphere": {
+					"name": "technical atmosphere",
+					"plural": "technical atmospheres",
 					"symbol": "at",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 9.80665e4
 				},
 				"bar": {
+					"name": "bar",
+					"plural": "bars",
 					"symbol": "bar",
 					"type": "si",
 					"systems": ["legacyMetric", "siCommon"],
@@ -2692,126 +2782,169 @@
 					"notes": "Accepted prefixes: mega-, kilo-, deci-, centi-, milli-"
 				},
 				"barye": {
-					"symbol": "barye",
+					"name": "barye",
+					"plural": "baryes",
+					"otherNames": ["barad", "barrie", "bary", "baryd", "baryed", "barie"],
+					"symbol": "Ba",
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 0.1
 				},
 				"centimetreOfMercury": {
+					"name": "centimetre of mercury",
+					"plural": "centimetres of mercury",
 					"symbol": "cmHg",
 					"type": "customary",
 					"systems": ["legacyMetric"],
 					"multiplier": 1.33322e3
 				},
 				"centimetreOfWater": {
-					"symbol": "cmH2O",
+					"name": "centimetre of water",
+					"plural": "centimetres of water",
+					"symbol": "cmH₂O",
+					"otherSymbols": ["cmH2O"],
 					"type": "customary",
 					"systems": ["legacyMetric"],
 					"multiplier": 98.0638,
 					"notes": "At 4 °C"
 				},
 				"inchOfMercury": {
+					"name": "inch of mercury",
+					"plural": "inches of mercury",
 					"symbol": "inHg",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 3.386389e3
 				},
 				"inchOfWater": {
-					"symbol": "inH2O",
+					"name": "inch of water",
+					"plural": "inches of water",
+					"symbol": "inH₂O",
+					"otherSymbols": ["inH2O"],
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 249.082,
 					"notes": "At 39.2 °F"
 				},
 				"footOfMercury": {
+					"name": "foot of mercury",
+					"plural": "feet of mercury",
 					"symbol": "ftHg",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 40.63666e3
 				},
 				"footOfWater": {
-					"symbol": "ftH2O",
+					"name": "foot of water",
+					"plural": "feet of water",
+					"symbol": "ftH₂O",
+					"otherSymbols": ["ftH2O"],
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 2.98898e3,
 					"notes": "At 39.2 °F"
 				},
 				"kilogramForcePerSquareMillimetre": {
+					"name": "kilogram force per square millimetre",
 					"symbol": "kgf/mm²",
 					"type": "customary",
 					"systems": ["legacyMetric"],
 					"multiplier": 9.80665e6
 				},
 				"kipPerSquareInch": {
+					"name": "kip per square inch",
+					"plural": "kips per square inch",
 					"symbol": "ksi",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 6.894757e6
 				},
 				"micronOfMercury": {
+					"name": "micron of mercury",
+					"plural": "microns of mercury",
 					"symbol": "µmHg",
 					"type": "customary",
 					"systems": ["legacyMetric"],
 					"multiplier": 0.1333224
 				},
 				"millimetreOfMercury": {
+					"name": "millimetre of mercury",
+					"plural": "millimetres of mercury",
 					"symbol": "mmHg",
 					"type": "customary",
 					"systems": ["legacyMetric"],
 					"multiplier": 133.3224
 				},
 				"millimetreOfWater": {
-					"symbol": "mmH20",
+					"name": "millimetre of water",
+					"plural": "millimetres of water",
+					"symbol": "mmH₂O",
+					"otherSymbols": ["mmH2O"],
 					"type": "customary",
 					"systems": ["legacyMetric"],
 					"multiplier": 9.80638,
 					"notes": "At 3.98 °C"
 				},
 				"pieze": {
+					"name": "pièze",
+					"plural": "pièzes",
+					"otherNames": ["pieze", "piezes"],
 					"symbol": "pz",
 					"type": "customary",
-					"otherNames": ["pièze"],
 					"systems": ["mts"],
 					"multiplier": 1e3
 				},
 				"poundPerSquareFoot": {
+					"name": "pound per square foot",
+					"plural": "pounds per square foot",
 					"symbol": "psf",
 					"type": "customary",
 					"systems": ["usCustomary", "imperial"],
 					"multiplier": 47.88026
 				},
 				"poundPerSquareInch": {
-					"symbol": "psi",
+					"name": "pound per square inch",
+					"plural": "pounds per square inch",
 					"otherNames": ["pound-force per square inch"],
-					"otherSymbols": ["lbf/in²", "lbf/in²", "lbf/sq in", "lbf/sq in"],
+					"symbol": "psi",
+					"otherSymbols": ["lbf/in²", "lbf/sq in"],
 					"type": "customary",
 					"systems": ["usCustomary", "imperial"],
 					"multiplier": 6.894757e3
 				},
 				"kilopoundPerSquareInch": {
+					"name": "kilopound per square inch",
+					"plural": "kilopounds per square inch",
 					"symbol": "ksi",
 					"type": "customary",
 					"systems": ["usCustomary", "imperial"],
 					"multiplier": 6.894757e6
 				},
 				"poundalPerSquareFoot": {
+					"name": "poundal per square foot",
+					"plural": "poundals per square foot",
 					"symbol": "pdl/sq ft",
 					"type": "customary",
 					"systems": ["usCustomary", "imperial"],
 					"multiplier": 1.488164
 				},
 				"shortTonPerSquareFoot": {
+					"name": "short ton per square foot",
+					"plural": "short tons per square foot",
 					"symbol": "sh tn/sq ft",
 					"type": "customary",
 					"systems": ["usCustomary", "imperial"],
 					"multiplier": 95.760518e3
 				},
 				"torr": {
+					"name": "torr",
 					"symbol": "Torr",
+					"otherSymbols": ["Tor"],
 					"type": "si",
 					"systems": ["legacyMetric"],
+					"acceptedPrefixes": ["milli"],
 					"multiplier": 133.3224,
-					"notes": "Only commonly used prefix is milli-"
+					"notes": "Tor symbol common but incorrect"
 				}
 			}
 		},
@@ -2821,15 +2954,18 @@
 			"derived": "1/time",
 			"units": {
 				"hertz": {
+					"name": "hertz",
+					"otherNames": ["cycle per second", "cycles per second", "revolution per second", "revolutions per second"],
 					"symbol": "Hz",
-					"otherNames": ["cycles per second", "revolutions per second"],
 					"type": "si",
 					"systems": ["metric", "imperial", "usCustomary"]
 				},
-				"revolutionsPerMinute": {
+				"revolutionPerMinute": {
+					"name": "revolution per minute",
+					"plural": "revolutions per minute",
+					"otherNames": ["cycle per minute", "cycles per minute"],
 					"symbol": "rpm",
 					"otherSymbols": ["RPM", "rev/min", "r/min", "r·min⁻¹"],
-					"otherNames": ["cycles per minute"],
 					"type": "customary",
 					"systems": ["legacyMetric", "imperial", "usCustomary"],
 					"multiplier": 0.01666666666666667
@@ -2844,6 +2980,7 @@
 			"units": {
 				"newton": {
 					"name": "newton",
+					"plural": "newtons",
 					"symbol": "N",
 					"type": "si",
 					"systems": ["si"]
@@ -2914,7 +3051,8 @@
 					"multiplier": 0.138254954376
 				},
 				"sthene": {
-					"name": "sthene",
+					"name": "sthène",
+					"otherNames": ["sthene"],
 					"symbol": "sn",
 					"type": "customary",
 					"systems": ["mts"],
@@ -2937,11 +3075,11 @@
 			"units": {
 				"metrePerSecond": {
 					"name": "metre per second",
-					"otherNames": ["meter per second", "meters per second"],
 					"plural": "metres per second",
+					"otherNames": ["meter per second", "meters per second"],
 					"symbol": "m/s",
 					"type": "customary",
-					"systems": "metric",
+					"systems": ["metric"],
 					"notes": "This is of type customary NOT si because you can't actually apply prefixes to it"
 				},
 				"footPerHour": {
@@ -3193,7 +3331,7 @@
 					"name": "gravity",
 					"otherNames": ["standard gravity", "standard acceleration due to gravity"],
 					"symbol": "g",
-					"otherSymbols": ["g₀", "g₀", "gn"],
+					"otherSymbols": ["g₀", "gn"],
 					"type": "customary",
 					"systems": ["metric"],
 					"multiplier": 9.80665
@@ -3576,6 +3714,7 @@
 					"multiplier": 735.49875
 				},
 				"litreAtmospherePerMinute": {
+					"name": "litre-atmosphere per minute",
 					"symbol": "L·atm/min",
 					"otherSymbols": ["L atm/min"],
 					"type": "customary",
@@ -3583,6 +3722,7 @@
 					"multiplier": 1.68875
 				},
 				"litreAtmospherePerSecond": {
+					"name": "litre-atmosphere per second",
 					"symbol": "L·atm/s",
 					"otherSymbols": ["L atm/s"],
 					"type": "customary",
@@ -3590,39 +3730,53 @@
 					"multiplier": 101.325
 				},
 				"lusec": {
+					"name": "lusec",
 					"symbol": "lusec",
 					"type": "customary",
 					"systems": ["nonStandard"],
-					"multiplier": 1.333e-4
+					"multiplier": 1.333e-4,
+					"notes": "Metrology, French, Contraction of symbols L·μmHg/s"
 				},
 				"poncelet": {
+					"name": "poncelet",
 					"symbol": "p",
 					"type": "customary",
-					"systems": ["nonStandard"],
-					"multiplier": 980.665
+					"systems": ["oldEuropean"],
+					"multiplier": 980.665,
+					"notes": "French. Now obsolete. Replaced by horsepower."
 				},
 				"squareFootEquivalentDirectRadiation": {
+					"name": "square foot equivalent direct radiation",
 					"symbol": "sq ft EDR",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 70.337057
 				},
 				"tonOfAirConditioning": {
+					"name": "ton of air conditioning",
+					"plural": "tons of air conditioning",
 					"symbol": "ton aircon",
+					"otherSymbols": ["ton"],
 					"type": "customary",
-					"systems": ["nonStandard"],
+					"systems": ["usCustomary"],
 					"multiplier": 3504
 				},
 				"tonOfRefrigerationImperial": {
-					"symbol": "ton aircon",
+					"name": "ton of refrigeration",
+					"plural": "tons of air refrigeration",
+					"symbol": "ton refrigeration",
+					"otherSymbols": ["ton"],
 					"type": "customary",
-					"systems": ["nonStandard"],
+					"systems": ["imperial"],
 					"multiplier": 3.938875e3
 				},
 				"tonOfRefrigeration": {
-					"symbol": "ton aircon",
+					"name": "ton of refrigeration",
+					"plural": "tons of air refrigeration",
+					"symbol": "ton refrigeration",
+					"otherSymbols": ["ton"],
 					"type": "customary",
-					"systems": ["nonStandard"],
+					"systems": ["usCustomary"],
 					"multiplier": 3.516853e3
 				}
 			}
@@ -3636,12 +3790,14 @@
 			"units": {
 				"coulomb": {
 					"name": "coulomb",
+					"plural": "coulombs",
 					"symbol": "C",
 					"type": "si",
 					"systems": ["metric"]
 				},
 				"faraday": {
 					"name": "faraday",
+					"name": "faradays",
 					"symbol": "F",
 					"type": "customary",
 					"estimation": true,
@@ -3995,56 +4151,88 @@
 			"derived": "length*length*length/time",
 			"units": {
 				"cubicMetrePerSecond": {
+					"name": "cubic metre per second",
+					"plural": "cubic metres per second",
+					"otherNames": ["cubic meter per second", "cubic meters per second", "metre cubed per second", "metres cubed per second", "meter cubed per second", "meters cubed per second"],
 					"symbol": "m³/s",
-					"type": "customary",
-					"otherNames": ["metreCubedPerSecond", "cubicMetersPerSecond", "cubicMeterPerSecond", "cubicMetresPerSecond"]
+					"systems": ["si"],
+					"type": "customary"
 				},
 				"cubicFootPerMinute": {
+					"name": "cubic foot per minute",
+					"plural": "cubic feet per minute",
+					"otherNames": ["foot cubed per minute", "feet cubed per minute"],
 					"symbol": "CFM",
 					"otherSymbols": ["ft³/min"],
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 4.719474432e-4
 				},
 				"cubicFootPerSecond": {
+					"name": "cubic foot per second",
+					"plural": "cubic feet per second",
+					"otherNames": ["foot cubed per second", "feet cubed per second"],
 					"symbol": "ft³/s",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 0.028316846592
 				},
 				"cubicInchPerMinute": {
+					"name": "cubic inch per minute",
+					"plural": "cubic inches per minute",
+					"otherNames": ["inch cubed per minute", "inches cubed per minute"],
 					"symbol": "in³/min",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 2.73117733333333e-7
 				},
 				"cubicInchPerSecond": {
+					"name": "cubic inch per second",
+					"plural": "cubic inches per second",
+					"otherNames": ["inch cubed per second", "inches cubed per second"],
 					"symbol": "in³/s",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 1.6387064e-5
 				},
 				"gallonPerDay": {
+					"name": "gallon per day",
+					"plural": "gallons per day",
 					"symbol": "GPD",
 					"otherSymbols": ["gal/day"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 4.3812636388889e-8,
 					"notes": "Us Gallon"
 				},
 				"gallonPerHour": {
+					"name": "gallon per hour",
+					"plural": "gallons per hour",
 					"symbol": "GPH",
 					"otherSymbols": ["gal/h"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 1.05150327333333e-6,
 					"notes": "Us Gallon"
 				},
 				"gallonPerMinute": {
+					"name": "gallon per minute",
+					"plural": "gallons per minute",
 					"symbol": "GPM",
 					"otherSymbols": ["gal/min"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 6.30901964e-5,
 					"notes": "Us Gallon"
 				},
 				"litrePerMinute": {
+					"name": "litre per minute",
+					"plural": "litres per minute",
+					"otherNames": ["liter per minute", "litres per minute"],
 					"symbol": "LPM",
 					"otherSymbols": ["L/min"],
 					"type": "customary",
+					"systems": ["legacyMetric"],
 					"multiplier": 1.6666666666667e-5
 				}
 			}
@@ -4055,31 +4243,54 @@
 			"derived": "luminousIntensity/length/length",
 			"units": {
 				"candelaPerSquareMetre":{
+					"name": "candela per square metre",
+					"plural": "candelas per square metre",
+					"otherNames": ["nit", "nits", "candela per square meter", "candelas per square meter", "candela per metre squared", "candelas per metre squared", "candela per meter squared", "candelas per meter squared"],
 					"symbol": "cd/m²",
-					"otherNames": ["nit", "candelaPerMetreSquared", "candelaPerSquareMeter", "candelaPerMeterSquared"],
-					"type": "customary"
+					"type": "customary",
+					"systems": ["si"]
 				},
 				"candelaPerSquareFoot": {
+					"name": "candela per square foot",
+					"plural": "candelas per square foot",
+					"otherNames": ["candela per foot squared", "candelas per foot squared"],
 					"symbol": "cd/ft²",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 10.763910417
 				},
 				"candelaPerSquareInch": {
+					"name": "candela per square inch",
+					"plural": "candelas per square inch",
+					"otherNames": ["candela per inch squared", "candelas per inch squared"],
 					"symbol": "cd/in²",
 					"type": "customary",
+					"systems": ["imperial", "usCustomary"],
 					"multiplier": 1550.0031
 				},
 				"footlambert": {
+					"name": "foot-lambert",
+					"plural": "foot-lamberts",
+					"otherNames": ["footlambert", "footlamberts"],
 					"symbol": "fL",
+					"otherSymbols": ["fl", "ft-L"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 3.4262590996
 				},
 				"lambert": {
+					"name": "lambert",
+					"plural": "lamberts",
 					"symbol": "L",
+					"otherSymbols": ["la", "Lb"],
 					"type": "customary",
-					"multiplier": 3183.0988618
+					"systems": ["usCustomary"],
+					"multiplier": 3183.0988618,
+					"notes": "More information on systems needed"
 				},
 				"stilb": {
+					"name": "stilb",
+					"plural": "stilbs",
 					"symbol": "sb",
 					"type": "customary",
 					"systems": ["cgs"],
@@ -4094,8 +4305,11 @@
 			"derived": "luminousIntensity*solidAngle",
 			"units": {
 				"lumen": {
+					"name": "lumen",
+					"plural": "lumens",
 					"symbol": "lm",
-					"type": "si"
+					"type": "si",
+					"systems": ["metric", "imperial", "usCustomary"]
 				}
 			}
 		},
@@ -4105,25 +4319,37 @@
 			"derived": "luminousIntensity*solidAngle/length/length",
 			"units": {
 				"lux": {
+					"name": "lux",
 					"symbol": "lx",
-					"type": "si"
+					"type": "si",
+					"systems": ["si"]
 				},
 				"phot": {
+					"name": "phot",
+					"plural": "phots",
 					"symbol": "ph",
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 1e4
 				},
 				"lumenPerSquareInch": {
+					"name": "lumen per square inch",
+					"plural": "lumens per square inch",
+					"otherNames": ["lumen per inch squared", "lumens per inch squared"],
 					"symbol": "lm/in²",
 					"estimation": true,
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 1550.0031
 				},
-				"footcandle": {
+				"footCandle": {
+					"name": "foot-candle",
+					"plural": "foot-candles",
+					"otherNames": ["foot candle", "foot candles", "lumen per square foot"],
 					"symbol": "fc",
-					"otherNames": ["lumenPerSquareFoot"],
+					"otherSymbols": ["lm/ft²", "ft-c"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 10.763910417
 				}
 			}
@@ -4135,11 +4361,15 @@
 			"baseUnit": "weber",
 			"units": {
 				"weber": {
+					"name": "weber",
+					"plural": "webers",
 					"symbol": "Wb",
 					"type": "si",
 					"systems": ["si", "mts", "mks", "gravitational"]
 				},
 				"maxwell": {
+					"name": "maxwell",
+					"plural": "maxwells",
 					"symbol": "Mx",
 					"type": "customary",
 					"systems": ["cgs"],
@@ -4154,11 +4384,14 @@
 			"baseUnit": "tesla",
 			"units": {
 				"tesla": {
+					"name": "tesla",
+					"plural": "teslas",
 					"symbol": "T",
 					"type": "si",
 					"systems": ["si", "mts", "mks", "gravitational"]
 				},
 				"gauss": {
+					"name": "gauss",
 					"symbol": "G",
 					"type": "customary",
 					"systems": ["cgs"],
@@ -4173,14 +4406,18 @@
 			"baseUnit": "amperePerMetre",
 			"units": {
 				"amperePerMetre": {
+					"name": "ampere per metre",
+					"plural": "amperes per metre",
+					"otherNames": ["ampere per meter", "amperes per meter", "amp per metre", "amps per metre", "amp per meter", "amps per meter"],
 					"symbol": "A/m",
-					"otherNames": ["amperePerMeter", "ampsPerMetre"],
 					"type": "customary",
 					"systems": ["si", "mts", "mks", "gravitational"]
 				},
-				"oersteds": {
+				"oersted": {
+					"name": "œrsted",
+					"plural": "œrsteds",
+					"otherNames": ["oersted", "oersteds"],
 					"symbol": "Oe",
-					"otherNames": ["œrsted"],
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 79.5774715
@@ -4193,19 +4430,27 @@
 			"baseUnit": "squareMetrePerSecond",
 			"units": {
 				"squareMetrePerSecond": {
+					"name": "square metre per second",
+					"plural": "square metres per second",
+					"otherNames": ["square meter per second", "square meters per second", "metre squared per second", "metres squared per second", "meter squared per second", "meters squared per second"],
 					"symbol": "m²/s",
 					"type": "customary",
-					"otherNames": ["meterSquaredPerSecond", "squareMeterPerSecond", "metreSquaredPerSecond"]
+					"systems": ["si"]
 				},
 				"stokes": {
+					"name": "stokes",
 					"symbol": "St",
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 1e-4
 				},
 				"squareFootPerSecond": {
+					"name": "square foot per second",
+					"plural": "square feet per second",
+					"otherNames": ["foot squared per second", "feet squared per second"],
 					"symbol": "ft²/s",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 0.09290304
 				}
 			}
@@ -4216,34 +4461,50 @@
 			"baseUnit": "pascalSecond",
 			"units": {
 				"pascalSecond": {
+					"name": "pascal-second",
+					"plural": "pascal-seconds",
+					"otherNames": ["pascal second", "pascal seconds"],
 					"symbol": "Pa·s",
 					"type": "customary",
 					"systems": ["si"]
 				},
 				"poise": {
+					"name": "poise",
 					"symbol": "P",
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 0.1
 				},
 				"poundPerFootHour": {
+					"name": "pound per foot hour",
+					"plural": "pounds per foot hour",
 					"symbol": "lb/(ft·h)",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 4.133789e-4
 				},
 				"poundPerFootSecond": {
+					"name": "pound per foot second",
+					"plural": "pounds per foot second",
 					"symbol": "lb/(ft·s)",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 1.488164
 				},
 				"poundForceSecondPerSquareFoot": {
+					"name": "pound-force second per square foot",
+					"plural": "pound-force seconds per square foot",
 					"symbol": "lbf·s/ft²",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 47.88026
 				},
 				"poundForceSecondPerSquareInch": {
+					"name": "pound-force second per square inch",
+					"plural": "pound-force seconds per square inch",
 					"symbol": "lbf·s/in²",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 6894.757
 				}
 			}
@@ -4254,22 +4515,28 @@
 			"baseUnit": "jouleSecond",
 			"units": {
 				"jouleSecond": {
+					"name": "joule-second",
+					"plural": "joule-seconds",
+					"otherNames": ["joule second", "joule seconds"],
 					"symbol": "J·s",
+					"otherSymbols": ["J s"],
 					"type": "customary",
 					"systems": ["si"]
 				},
 				"atomicUnitOfAction": {
+					"name": "atomic unit of action",
+					"otherNames": ["reduced Planck constant"],
 					"symbol": "au",
 					"otherSymbols": ["ħ"],
-					"otherNames": ["reducedPlanckConstant"],
 					"type": "customary",
 					"systems": ["si"],
 					"multiplier": 1.05457172647e-34,
 					"notes": "ħ = h/2π"
 				},
 				"planckConstant": {
-					"symbol": "h",
+					"name": "Planck constant",
 					"otherNames": ["Planck's constant"],
+					"symbol": "h",
 					"type": "si",
 					"systems": ["si"],
 					"multiplier": 6.6260695729e-34
@@ -4278,35 +4545,51 @@
 		},
 		"torque": {
 			"symbol": "τ",
-			"otherNames": [ "moment", "moment of force" ],
-			"otherSymbols": [ "M" ],
+			"otherNames": ["moment", "moment of force"],
+			"otherSymbols": ["M"],
 			"derived": "mass*length*length/time/time",
 			"baseUnit": "newtonMetre",
 			"units": {
 				"newtonMetre": {
-					"symbol": "N m",
-					"otherSymbols": ["N·m"],
+					"name": "newton metre",
+					"plural": "newton metres",
+					"otherNames": ["newton-metre", "newton-metres", "newton meter", "newton meters"],
+					"symbol": "N·m",
+					"otherSymbols": ["N m"],
 					"type": "customary",
-					"otherNames": ["newtonMeter"]
+					"systems": ["si"]
 				},
 				"footPoundForce": {
+					"name": "foot-pound force",
+					"otherNames": ["foot-pound"],
 					"symbol": "ft lbf",
+					"otherSymbols": ["ft·lbf", "ft·lb"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 1.3558179483314004
 				},
 				"footPoundal": {
+					"name": "foot-poundal",
 					"symbol": "ft pdl",
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 4.21401100938048e-2
 				},
 				"inchPoundForce": {
+					"name": "inch-pound force",
+					"otherNames": ["inch-pound"],
 					"symbol": "in lbf",
+					"otherSymbols": ["in·lbf", "in·lb"],
 					"type": "customary",
+					"systems": ["usCustomary"],
 					"multiplier": 0.1129848290276167
 				},
 				"metreKilogram": {
-					"symbol": "m kg",
+					"name": "metre-kilogram",
+					"symbol": "m·kg",
+					"otherSymbols": ["m kg", "mkg"],
 					"type": "customary",
+					"systems": ["mks"],
 					"multiplier": 0.101971621
 				}
 			}
@@ -4317,14 +4600,20 @@
 			"baseUnit": "bit",
 			"units": {
 				"bit": {
+					"name": "bit",
+					"plural": "bits",
 					"symbol": "b",
 					"otherSymbols": ["Sh"],
 					"otherNames": ["shannon"],
-					"type": "binary"
+					"type": "binary",
+					"systems": ["nonStandard"]
 				},
 				"byte": {
+					"name": "byte",
+					"plural": "bytes",
 					"symbol": "B",
 					"type": "binary",
+					"systems": ["nonStandard"],
 					"multiplier": 8
 				}
 			}
