@@ -179,6 +179,16 @@
 												"type": "string"
 											}
 										},
+										"tags": {
+											"description": "A set of tags to describe additional properties of a unit",
+											"type": "array",
+											"required": false,
+											"uniqueItems": true,
+											"items": {
+												"type": "string",
+												"enum": ["dry-only", "fluid-only", "cooking"]
+											}
+										},
 										"multiplier": {
 											"description": "A scale factor to multiply by when converting from the base unit to this unit. Default is 1",
 											"type": "number",

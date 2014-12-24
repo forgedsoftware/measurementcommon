@@ -149,6 +149,7 @@
 					"otherSymbols": ["sec"],
 					"type": "si",
 					"systems": ["metric", "imperial", "usCustomary", "englishUnits"],
+					"tags": ["cooking"],
 					"notes": "1/60 of minute"
 				},
 				"minute": {
@@ -157,6 +158,7 @@
 					"symbol": "min",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
+					"tags": ["cooking"],
 					"multiplier": 60,
 					"notes": "1/60 of hour"
 				},
@@ -168,6 +170,7 @@
 					"otherSymbols": ["hr"],
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits", "ancient"],
+					"tags": ["cooking"],
 					"multiplier": 3600,
 					"notes": "1/24 of day. The hour was developed by astrologers in Classical antiquity."
 				},
@@ -317,8 +320,9 @@
 					"plural": "metres",
 					"otherNames": ["meter", "meters"],
 					"symbol": "m",
+					"type": "si",
 					"systems": ["si", "mts", "mks", "gravitational"],
-					"type": "si"
+					"tags": ["cooking"]
 				},
 				"angstrom": {
 					"name": "ångström",
@@ -774,6 +778,7 @@
 					"otherNames": ["kilogramme"],
 					"type": "si",
 					"systems": ["si"],
+					"tags": ["cooking"],
 					"prefixName": "kilo",
 					"prefixFreeName": "gram"
 				},
@@ -793,6 +798,7 @@
 					"otherSymbols": ["oz av"],
 					"type": "customary",
 					"systems": ["imperial", "avoirdupois"],
+					"tags": ["cooking"],
 					"multiplier": 0.028349523125
 				},
 				"pound": {
@@ -802,6 +808,7 @@
 					"otherSymbols": ["lb av"],
 					"type": "customary",
 					"systems": ["imperial", "avoirdupois"],
+					"tags": ["cooking"],
 					"multiplier": 0.45359237
 				},
 				"stone": {
@@ -1177,6 +1184,7 @@
 					"symbol": "°C",
 					"type": "si",
 					"systems": ["siCommon"],
+					"tags": ["cooking"],
 					"offset": 273.15
 				},
 				"fahrenheit": {
@@ -1185,6 +1193,7 @@
 					"symbol": "°F",
 					"type": "customary",
 					"systems": ["englishUnits", "imperial", "usCustomary"],
+					"tags": ["cooking"],
 					"multiplier": 0.5555555555555556,
 					"offset": 255.37222222
 				},
@@ -1490,6 +1499,7 @@
 					"otherSymbols": ["bbl"],
 					"type": "customary",
 					"systems": ["nonStandard"],
+					"tags": ["fluid-only"],
 					"multiplier": 0.158987294928
 				},
 				"barrelUSDry": {
@@ -1499,6 +1509,7 @@
 					"otherSymbols": ["bl (US)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["dry-only"],
 					"multiplier": 0.115628198985075
 				},
 				"barrelUSFluid": {
@@ -1509,6 +1520,7 @@
 					"otherSymbols": ["bl", "fl bl (US)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["fluid-only"],
 					"multiplier": 0.119240471196
 				},
 				"boardFoot": {
@@ -1565,6 +1577,7 @@
 					"otherSymbols": ["bu (US)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["dry-only"],
 					"multiplier": 0.0440488377086
 				},
 				"bushelUSDryLevel": {
@@ -1574,6 +1587,7 @@
 					"otherSymbols": ["bu (US lvl)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["dry-only"],
 					"multiplier": 0.03523907016688
 				},
 				"butt": {
@@ -1618,6 +1632,7 @@
 					"symbol": "cu fm",
 					"type": "customary",
 					"systems": ["englishUnits", "imperial", "usCustomary"],
+					"tags": ["fluid-only"],
 					"multiplier": 6.116438863872
 				},
 				"cubicFoot": {
@@ -1664,6 +1679,7 @@
 					"otherSymbols": ["c (breakfast)"],
 					"type": "customary",
 					"systems": ["nonStandard"],
+					"tags": ["cooking"],
 					"multiplier": 284.130625e-6
 				},
 				"cupCanadian": {
@@ -1673,6 +1689,7 @@
 					"otherSymbols": ["c (CA)"],
 					"type": "customary",
 					"systems": ["canada"],
+					"tags": ["cooking"],
 					"multiplier": 227.3045e-6
 				},
 				"cup": {
@@ -1683,6 +1700,7 @@
 					"type": "customary",
 					"systems": ["metric"],
 					"excludedSystems": ["canada"],
+					"tags": ["cooking"],
 					"multiplier": 250.0e-6
 				},
 				"cupUSCustomary": {
@@ -1693,6 +1711,7 @@
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"excludedSystems": ["usFoodNutrition"],
+					"tags": ["cooking"],
 					"multiplier": 236.5882365e-6
 				},
 				"cupUSFoodNutritionLabeling": {
@@ -1702,6 +1721,7 @@
 					"otherSymbols": ["c (US)"],
 					"type": "customary",
 					"systems": ["usFoodNutrition"],
+					"tags": ["cooking"],
 					"multiplier": 240.0e-6
 				},
 				"dashImperial": {
@@ -1728,6 +1748,7 @@
 					"type": "customary",
 					"rare": true,
 					"systems": ["metric", "imperial", "usCustomary"],
+					"tags": ["cooking"],
 					"multiplier": 10.0e-6
 				},
 				"dropImperial": {
@@ -1753,6 +1774,7 @@
 					"otherNames": ["metric drop", "metric drops"],
 					"type": "customary",
 					"systems": ["metric"],
+					"tags": ["cooking"],
 					"multiplier": 50.0e-9
 				},
 				"dropUS": {
@@ -1761,6 +1783,7 @@
 					"symbol": "drop",
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["cooking"],
 					"multiplier": 82.14869322916666667e-9
 				},
 				"fifth": {
@@ -1825,6 +1848,7 @@
 					"otherSymbols": ["gal (imp)"],
 					"type": "customary",
 					"systems": ["imperial"],
+					"tags": ["cooking"],
 					"multiplier": 4.54609e-3
 				},
 				"gallonUSDry": {
@@ -1834,6 +1858,7 @@
 					"otherSymbols": ["gal (US)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["cooking", "dry-only"],
 					"multiplier": 4.40488377086e-3
 				},
 				"gallonUSFluid": {
@@ -1843,6 +1868,7 @@
 					"otherSymbols": ["gal (US)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["cooking", "fluid-only"],
 					"multiplier": 3.785411784e-3
 				},
 				"gillImperial": {
@@ -1915,6 +1941,7 @@
 					"otherSymbols": ["l"],
 					"type": "si",
 					"systems": ["siCommon", "legacyMetric"],
+					"tags": ["cooking"],
 					"multiplier": 0.001,
 					"notes": "A litre was originally the metric base unit for volume. Now non-SI metric."
 				},
@@ -1949,6 +1976,7 @@
 					"otherSymbols": ["fl oz (imp)"],
 					"type": "customary",
 					"systems": ["imperial"],
+					"tags": ["cooking", "fluid-only"],
 					"multiplier": 28.4130625e-6
 				},
 				"fluidOunceUSCustomary": {
@@ -1959,15 +1987,17 @@
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"excludedSystems": ["usFoodNutrition"],
+					"tags": ["cooking", "fluid-only"],
 					"multiplier": 29.5735295625e-6
 				},
-				"ounceUSFoodNutritionLabeling": {
+				"fluidOunceUSFoodNutritionLabeling": {
 					"name": "fluid ounce",
 					"plural": "fluid ounces",
 					"symbol": "fl oz",
 					"otherSymbols": ["fl oz (US)"],
 					"type": "customary",
 					"systems": ["usFoodNutrition"],
+					"tags": ["cooking", "fluid-only"],
 					"multiplier": 3.0e-5
 				},
 				"peckImperial": {
@@ -2000,6 +2030,7 @@
 					"symbol": "pn",
 					"type": "customary",
 					"systems": ["imperial"],
+					"tags": ["cooking"],
 					"multiplier": 739.9235026041666667e-9
 				},
 				"pinchUS": {
@@ -2008,6 +2039,7 @@
 					"symbol": "pn",
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["cooking"],
 					"multiplier": 616.11519921875e-9
 				},
 				"pintImperial": {
@@ -2017,6 +2049,7 @@
 					"otherSymbols": ["pt (imp)"],
 					"type": "customary",
 					"systems": ["imperial"],
+					"tags": ["cooking"],
 					"multiplier": 568.26125e-6
 				},
 				"pintUSDry": {
@@ -2026,6 +2059,7 @@
 					"otherSymbols": ["pt (US dry)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["cooking", "dry-only"],
 					"multiplier": 550.6104713575e-6
 				},
 				"pintUSFluid": {
@@ -2035,6 +2069,7 @@
 					"otherSymbols": ["pt (US fl)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["cooking", "fluid-only"],
 					"multiplier": 473.176473e-6
 				},
 				"pony": {
@@ -2061,6 +2096,7 @@
 					"otherSymbols": ["qt (imp)"],
 					"type": "customary",
 					"systems": ["imperial"],
+					"tags": ["cooking"],
 					"multiplier": 1.1365225e-3
 				},
 				"quartUSDry": {
@@ -2070,6 +2106,7 @@
 					"otherSymbols": ["qt (US dry)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["cooking", "dry-only"],
 					"multiplier": 1.101220942715e-3
 				},
 				"quartUSFluid": {
@@ -2079,6 +2116,7 @@
 					"otherSymbols": ["qt (US fl)"],
 					"type": "customary",
 					"systems": ["usCustomary"],
+					"tags": ["cooking", "fluid-only"],
 					"multiplier": 946.352946e-6
 				},
 				"pail": {
@@ -2156,6 +2194,7 @@
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["australia"],
+					"tags": ["cooking"],
 					"multiplier": 20e-6
 				},
 				"tablespoonCanadian": {
@@ -2164,6 +2203,7 @@
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["canada"],
+					"tags": ["cooking"],
 					"multiplier": 14.20653125e-6
 				},
 				"tablespoonImperial": {
@@ -2172,6 +2212,7 @@
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["imperial"],
+					"tags": ["cooking"],
 					"multiplier": 17.7581640625e-6
 				},
 				"tablespoon": {
@@ -2181,6 +2222,7 @@
 					"type": "customary",
 					"systems": ["metric"],
 					"excludedSystems": ["australia", "canada"],
+					"tags": ["cooking"],
 					"multiplier": 15e-6
 				},
 				"tablespoonUSCustomary": {
@@ -2190,6 +2232,7 @@
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"excludedSystems": ["usFoodNutrition"],
+					"tags": ["cooking"],
 					"multiplier": 14.7867647825e-6
 				},
 				"tablespoonUSFoodNutritionLabeling": {
@@ -2198,6 +2241,7 @@
 					"symbol": "tbsp",
 					"type": "customary",
 					"systems": ["usFoodNutrition"],
+					"tags": ["cooking"],
 					"multiplier": 1.5e-5
 				},
 				"teaspoonCanadian": {
@@ -2206,6 +2250,7 @@
 					"symbol": "tsp",
 					"type": "customary",
 					"systems": ["canada"],
+					"tags": ["cooking"],
 					"multiplier": 4.73551041666667e-6
 				},
 				"teaspoonImperial": {
@@ -2214,6 +2259,7 @@
 					"symbol": "tsp",
 					"type": "customary",
 					"systems": ["imperial"],
+					"tags": ["cooking"],
 					"multiplier": 5.919388020833333e-6
 				},
 				"teaspoon": {
@@ -2223,6 +2269,7 @@
 					"type": "customary",
 					"systems": ["metric"],
 					"excludedSystems": ["canada"],
+					"tags": ["cooking"],
 					"multiplier": 5.0e-6
 				},
 				"teaspoonUSCustomary": {
@@ -2232,6 +2279,7 @@
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"excludedSystems": ["usFoodNutrition"],
+					"tags": ["cooking"],
 					"multiplier": 4.928921595e-6
 				},
 				"teaspoonUSFoodNutritionLabeling": {
@@ -2240,6 +2288,7 @@
 					"symbol": "tsp",
 					"type": "customary",
 					"systems": ["usFoodNutrition"],
+					"tags": ["cooking"],
 					"multiplier": 5.0e-6
 				},
 				"tonDisplacement": {
@@ -2351,6 +2400,7 @@
 					"systems": ["ancientRoman"],
 					"estimation": true,
 					"multiplier": 3.27e-3,
+					"tags": ["fluid-only"],
 					"notes": "Liquid. 6 sextarii. Based on 1 pes = 0.296m"
 				},
 				"urna": {
@@ -2360,6 +2410,7 @@
 					"systems": ["ancientRoman"],
 					"estimation": true,
 					"multiplier": 13.1e-3,
+					"tags": ["fluid-only"],
 					"notes": "Liquid. 4 congii. Based on 1 pes = 0.296m"
 				},
 				"amphoraQuadrantal": {
@@ -2369,6 +2420,7 @@
 					"systems": ["ancientRoman"],
 					"estimation": true,
 					"multiplier": 26.2e-3,
+					"tags": ["fluid-only"],
 					"notes": "Liquid. 8 congii. One cubic pes. Standard amphora size. Based on 1 pes = 0.296m"
 				},
 				"culeus": {
@@ -2378,6 +2430,7 @@
 					"systems": ["ancientRoman"],
 					"estimation": true,
 					"multiplier": 524e-3,
+					"tags": ["fluid-only"],
 					"notes": "Liquid. 160 congii. Based on 1 pes = 0.296m"
 				},
 				"semimodius": {
@@ -2387,6 +2440,7 @@
 					"systems": ["ancientRoman"],
 					"estimation": true,
 					"multiplier": 4.36e-3,
+					"tags": ["dry-only"],
 					"notes": "Dry. 8 sextarii. Based on 1 pes = 0.296m"
 				},
 				"modius": {
@@ -2396,6 +2450,7 @@
 					"systems": ["ancientRoman"],
 					"estimation": true,
 					"multiplier": 8.73e-3,
+					"tags": ["dry-only"],
 					"notes": "Dry. 16 sextarii. Alt: 8.62e-3. Based on 1 pes = 0.296m"
 				},
 				"modiusCastrensis": {
@@ -2405,6 +2460,7 @@
 					"systems": ["ancientRoman"],
 					"estimation": true,
 					"multiplier": 13.08e-3,
+					"tags": ["dry-only"],
 					"notes": "Dry. 24 sextarii. Alt: 12.93e-3. Based on 1 pes = 0.296m"
 				}
 			}
