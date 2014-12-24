@@ -16,20 +16,24 @@
 					"additionalProperties": false,
 					"properties": {
 						"name": {
+							"description": "A formal name for the unit system",
 							"type": "string",
 							"minLength": 1,
 							"required": true
 						},
 						"inherits": {
+							"description": "The key of the system it inherits from, if any",
 							"type": "string",
 							"minLength": 1,
 							"required": false
 						},
 						"historical": {
+							"description": "True if the unit system is not in current usage, else false",
 							"type": "boolean",
 							"required": false
 						},
 						"notes": {
+							"description": "Addtional notes as required",
 							"type": "string",
 							"required": false
 						}
@@ -38,6 +42,7 @@
 			}
 		},
 		"dimensions": {
+			"description": "A set of types of recognized physical dimensions that can be measured",
 			"type": "object",
 			"required": true,
 			"additionalProperties": false,
@@ -47,16 +52,19 @@
 					"additionalProperties": false,
 					"properties": {
 						"symbol": {
+							"description": "The standard symbol of the dimension",
 							"type": "string",
 							"minLength": 1,
 							"required": true
 						},
 						"baseUnit": {
+							"description": "The key of the unit that is other units can convert to/from",
 							"type": "string",
 							"minLength": 1,
 							"required": true
 						},
 						"otherNames": {
+							"description": "Other names that are used to describe the dimension",
 							"type": "array",
 							"required": false,
 							"uniqueItems": true,
@@ -65,6 +73,7 @@
 							}
 						},
 						"otherSymbols": {
+							"description": "Other symbols that are used to signify the dimension",
 							"type": "array",
 							"required": false,
 							"uniqueItems": true,
@@ -73,14 +82,17 @@
 							}
 						},
 						"derived": {
+							"description": "Describes how this dimension is derived from base dimensions. Multiple dimensions or a placeholder ('1') may be used, separated my * (multiplication) or / (division) symbols",
 							"type": "string",
 							"required": false
 						},
 						"notes": {
+							"description": "Additional notes as required",
 							"type": "string",
 							"required": false
 						},
 						"units": {
+							"description": "A set of units that can be used to describe the dimension",
 							"type": "object",
 							"required": true,
 							"additionalProperties": false,
@@ -91,17 +103,19 @@
 									"additionalProperties": false,
 									"properties": {
 										"name": {
+											"description": "The standard name of the unit",
 											"type": "string",
 											"minLength": 1,
-											"required": true,
-											"description": "required needs to be set to true!"
+											"required": true
 										},
 										"plural": {
+											"description": "The plural form of the standard name of the unit",
 											"type": "string",
 											"minLength": 1,
 											"required": false
 										},
 										"otherNames": {
+											"description": "A set of other names that the unit is known by",
 											"type": "array",
 											"required": false,
 											"uniqueItems": true,
@@ -110,11 +124,13 @@
 											}
 										},
 										"symbol": {
+											"description": "The standard symbol of the dimension",
 											"type": "string",
 											"minLength": 1,
 											"required": true
 										},
 										"otherSymbols": {
+											"description": "Other symbols used to signify the unit",
 											"type": "array",
 											"required": false,
 											"uniqueItems": true,
@@ -123,17 +139,18 @@
 											}
 										},
 										"symbolFirst": {
+											"description": "Determines if the symbol should appear before the value. Defaults to false",
 											"type": "boolean",
-											"required": false,
-											"description": "determines if the symbol should appear before the value. Defaults to false."
+											"required": false
 										},
 										"type": {
+											"description": "An enum describing the type of a unit and how it should be treated. range, fractional, whole may be added later",
 											"type": "string",
 											"required": true,
-											"enum": ["customary", "si", "binary"],
-											"description": "range, fractional, whole may be added to enum later..."
+											"enum": ["customary", "si", "binary"]
 										},
 										"systems": {
+											"description": "A set of unit systems that use this unit",
 											"type": "array",
 											"required": true,
 											"uniqueItems": true,
@@ -143,6 +160,7 @@
 											}
 										},
 										"excludedSystems": {
+											"description": "A set of unit systems that are not allowed to use this unit. Useful for excluding specific systems classified lower in the system tree",
 											"type": "array",
 											"required": false,
 											"uniqueItems": true,
@@ -151,22 +169,27 @@
 											}
 										},
 										"multiplier": {
+											"description": "A scale factor to multiply by when converting from the base unit to this unit. Default is 1",
 											"type": "number",
 											"required": false
 										},
 										"offset": {
+											"description": "A constant offset to add when converting from base unit to this unit",
 											"type": "number",
 											"required": false
 										},
 										"estimation": {
+											"description": "True if the multiplier and/or offset are estimated or not exact",
 											"type": "boolean",
 											"required": false
 										},
 										"rare": {
+											"description": "True if the unit rarely used within the unit systems it is part of, else false. Defaults to false",
 											"type": "boolean",
 											"required": false
 										},
 										"acceptedPrefixes": {
+											"description": "A set of the names of acceptable prefixes to apply to this unit",
 											"type": "array",
 											"required": false,
 											"uniqueItems": true,
@@ -175,6 +198,7 @@
 											}
 										},
 										"excludedPrefixes": {
+											"description": "A set of names of unacceptable prefixes to apply to this unit",
 											"type": "array",
 											"required": false,
 											"uniqueItems": true,
@@ -183,14 +207,17 @@
 											}
 										},
 										"prefixName": {
+											"description": "The prefix already applied to this unit.",
 											"type": "string",
 											"required": false
 										},
 										"prefixFreeName": {
+											"description": "The name of the unit without prefix applied.",
 											"type": "string",
 											"required": false
 										},
 										"notes": {
+											"description": "Additional notes as required",
 											"type": "string",
 											"required": false
 										}
