@@ -137,8 +137,9 @@
 	},
 	"dimensions": {
 		"time": {
-			"symbol": "T",
+			"name": "time",
 			"otherNames": [ "duration" ],
+			"symbol": "T",
 			"baseUnit": "second",
 			"units": {
 				"second": {
@@ -306,8 +307,9 @@
 			}
 		},
 		"length": {
-			"symbol": "L",
+			"name": "length",
 			"otherNames": [ "distance", "radius", "wavelength" ],
+			"symbol": "L",
 			"baseUnit": "metre",
 			"units": {
 				"metre": {
@@ -761,6 +763,7 @@
 			}
 		},
 		"mass": {
+			"name": "mass",
 			"symbol": "M",
 			"baseUnit": "kilogram",
 			"units": {
@@ -1121,6 +1124,7 @@
 			}
 		},
 		"electricCurrent": {
+			"name": "electric current",
 			"symbol": "I",
 			"baseUnit": "ampere",
 			"units": {
@@ -1155,6 +1159,7 @@
 			}
 		},
 		"temperature": {
+			"name": "temperature",
 			"symbol": "Θ",
 			"baseUnit": "kelvin",
 			"units": {
@@ -1244,6 +1249,7 @@
 			}
 		},
 		"amountOfSubstance": {
+			"name": "amount of substance",
 			"symbol": "N",
 			"baseUnit": "mole",
 			"units": {
@@ -1256,6 +1262,7 @@
 			}
 		},
 		"luminousIntensity": {
+			"name": "luminous intensity",
 			"symbol": "J",
 			"baseUnit": "candela",
 			"units": {
@@ -1285,6 +1292,7 @@
 			}
 		},
 		"solidAngle": {
+			"name": "solid angle",
 			"symbol": "Ω",
 			"baseUnit": "steradian",
 			"units": {
@@ -1309,8 +1317,9 @@
 			}
 		},
 		"planeAngle": {
-			"symbol": "θ",
+			"name": "plane angle",
 			"otherNames": ["angle"],
+			"symbol": "θ",
 			"otherSymbols": ["α", "β", "γ", "φ", "a", "b", "c", "d", "e"],
 			"baseUnit": "radian",
 			"units": {
@@ -1431,6 +1440,7 @@
 			}
 		},
 		"volume": {
+			"name": "volume",
 			"symbol": "V",
 			"baseUnit": "cubicMetre",
 			"derived": "length*length*length",
@@ -2398,6 +2408,7 @@
 			}
 		},
 		"area": {
+			"name": "area",
 			"symbol": "A",
 			"baseUnit": "squareMetre",
 			"derived": "length*length",
@@ -2744,6 +2755,7 @@
 			}
 		},
 		"pressure": {
+			"name": "pressure",
 			"symbol": "P",
 			"baseUnit": "pascal",
 			"derived": "mass/length/time/time",
@@ -2949,6 +2961,7 @@
 			}
 		},
 		"frequency": {
+			"name": "frequency",
 			"symbol": "f",
 			"baseUnit": "hertz",
 			"derived": "1/time",
@@ -2973,8 +2986,9 @@
 			}
 		},
 		"force": {
-			"symbol": "F",
+			"name": "force",
 			"otherNames": [ "weight" ],
+			"symbol": "F",
 			"baseUnit": "newton",
 			"derived": "mass*length/time/time",
 			"units": {
@@ -3069,6 +3083,7 @@
 			}
 		},
 		"speed": {
+			"name": "speed",
 			"symbol": "v",
 			"baseUnit": "metrePerSecond",
 			"derived": "length/time",
@@ -3229,6 +3244,7 @@
 			}
 		},
 		"acceleration": {
+			"name": "acceleration",
 			"symbol": "a",
 			"baseUnit": "metrePerSquareSecond",
 			"derived": "length/time/time",
@@ -3339,8 +3355,9 @@
 			}
 		},
 		"energy": {
-			"symbol": "E",
+			"name": "energy",
 			"otherNames": [ "work", "heat" ],
+			"symbol": "E",
 			"baseUnit": "joule",
 			"derived": "mass*length*length/time/time",
 			"units": {
@@ -3566,6 +3583,7 @@
 			}
 		},
 		"power": {
+			"name": "power",
 			"symbol": "P",
 			"baseUnit": "watt",
 			"derived": "mass*length*length/time/time/time",
@@ -3782,8 +3800,9 @@
 			}
 		},
 		"electricCharge": {
-			"symbol": "Q",
+			"name": "electric charge",
 			"otherNames": [ "charge" ],
+			"symbol": "Q",
 			"otherSymbols": ["q"],
 			"baseUnit": "coulomb",
 			"derived": "electricCurrent/time",
@@ -3842,8 +3861,9 @@
 			}
 		},
 		"electricDipoleMoment": {
-			"symbol": "p",
+			"name": "electric dipole moment",
 			"otherNames": ["electric dipole"],
+			"symbol": "p",
 			"baseUnit": "coulombMetre",
 			"derived": "electricCurrent*length/time",
 			"units": {
@@ -3875,9 +3895,10 @@
 			}
 		},
 		"electricPotential": {
+			"name": "electric potential",
+			"otherNames": [ "voltage", "electric field potential", "electrostatic potential", "electric potential tension"],
 			"symbol": "φ",
 			"otherSymbols": ["V", "U", "∆V", "∆U", "Δφ", "E"],
-			"otherNames": [ "voltage", "electricFieldPotential", "electrostaticPotential", "electric potential tension"],
 			"baseUnit": "volt",
 			"derived": "mass*length*length/electricCurrent/time/time/time",
 			"units": {
@@ -3908,9 +3929,10 @@
 			}
 		},
 		"electricResistance": {
+			"name": "electric resistance",
+			"otherNames": [ "resistance", "impedance", "reactance" ],
 			"symbol": "R",
 			"otherSymbols": ["Z", "X"],
-			"otherNames": [ "resistance", "impedance", "reactance" ],
 			"baseUnit": "ohm",
 			"derived": "mass*length*length/time/time/time/electricCurrent/electricCurrent",
 			"notes": "Impedance (Z) and Reactance (X) have the same units as resistance and in this context are considered equivalent",
@@ -3992,6 +4014,7 @@
 			}
 		},
 		"capacitance": {
+			"name": "capacitance",
 			"symbol": "C",
 			"baseUnit": "farad",
 			"derived": "time*time*time*time*electricCurrent*electricCurrent/length/length/mass",
@@ -4022,6 +4045,7 @@
 			}
 		},
 		"inductance": {
+			"name": "inductance",
 			"symbol": "L",
 			"otherSymbols": ["M"],
 			"baseUnit": "henry",
@@ -4037,6 +4061,7 @@
 			}
 		},
 		"density": {
+			"name": "density",
 			"symbol": "ρ",
 			"baseUnit": "kilogramPerCubicMetre",
 			"derived": "mass/length/length/length",
@@ -4145,6 +4170,8 @@
 			}
 		},
 		"flowVolume": {
+			"name": "flow volume",
+			"otherNames": ["volumetric flow rate", "volume flow rate", "rate of fluid flow", "volume velocity"],
 			"symbol": "Q",
 			"baseUnit": "cubicMetrePerSecond",
 			"derived": "length*length*length/time",
@@ -4237,6 +4264,7 @@
 			}
 		},
 		"luminance": {
+			"name": "luminance",
 			"symbol": "Lᵥ",
 			"baseUnit": "candelaPerSquareMetre",
 			"derived": "luminousIntensity/length/length",
@@ -4298,6 +4326,7 @@
 			}
 		},
 		"luminousFlux": {
+			"name": "luminous flux",
 			"symbol": "Φᵥ",
 			"baseUnit": "lumen",
 			"otherNames": [ "luminousPower" ],
@@ -4313,6 +4342,7 @@
 			}
 		},
 		"illuminance": {
+			"name": "illuminance",
 			"symbol": "Eᵥ",
 			"baseUnit": "lux",
 			"derived": "luminousIntensity*solidAngle/length/length",
@@ -4354,6 +4384,7 @@
 			}
 		},
 		"magneticFlux": {
+			"name": "magnetic flux",
 			"symbol": "Φ",
 			"otherSymbols": ["ΦB", "ΦM", "Φb", "Φm"],
 			"derived": "mass*length*length/electricCurrent/time/time",
@@ -4377,8 +4408,9 @@
 			}
 		},
 		"magneticFluxDensity": {
+			"name": "magnetic flux density",
+			"otherNames": ["magnetic field", "magnetic induction", "B-field", "magnetic B field"],
 			"symbol": "B",
-			"otherNames": ["magnetic field", "magnetic induction", "B-field"],
 			"derived": "mass/electricCurrent/time/time",
 			"baseUnit": "tesla",
 			"units": {
@@ -4399,8 +4431,9 @@
 			}
 		},
 		"magneticFieldStrength": {
+			"name": "magnetic field strength",
+			"otherNames": ["magnetic field intensity", "magnetic field", "magnetizing field", "auxiliary magnetic field", "H-field", "magnetic H field"],
 			"symbol": "H",
-			"otherNames": ["magnetic field intensity", "magnetic field", "magnetizing field", "auxiliary magnetic field", "H-field"],
 			"derived": "electricCurrent/length",
 			"baseUnit": "amperePerMetre",
 			"units": {
@@ -4424,6 +4457,7 @@
 			}
 		},
 		"kinematicViscosity": {
+			"name": "kinematic viscosity",
 			"symbol": "ν",
 			"derived": "length*length/time",
 			"baseUnit": "squareMetrePerSecond",
@@ -4455,6 +4489,7 @@
 			}
 		},
 		"dynamicViscosity": {
+			"name": "dynamic viscosity",
 			"symbol": "μ",
 			"derived": "mass/length/time",
 			"baseUnit": "pascalSecond",
@@ -4509,6 +4544,7 @@
 			}
 		},
 		"action": {
+			"name": "action",
 			"symbol": "S",
 			"derived": "mass*length*length/time",
 			"baseUnit": "jouleSecond",
@@ -4543,8 +4579,9 @@
 			}
 		},
 		"torque": {
-			"symbol": "τ",
+			"name": "torque",
 			"otherNames": ["moment", "moment of force"],
+			"symbol": "τ",
 			"otherSymbols": ["M"],
 			"derived": "mass*length*length/time/time",
 			"baseUnit": "newtonMetre",
@@ -4594,8 +4631,9 @@
 			}
 		},
 		"information": {
-			"symbol": "i",
+			"name": "information",
 			"otherNames": [ "data" ],
+			"symbol": "i",
 			"baseUnit": "bit",
 			"units": {
 				"bit": {
