@@ -1294,6 +1294,7 @@
 		"solidAngle": {
 			"name": "solid angle",
 			"symbol": "Ω",
+			"dimensionless": true,
 			"baseUnit": "steradian",
 			"units": {
 				"steradian": {
@@ -1321,6 +1322,7 @@
 			"otherNames": ["angle"],
 			"symbol": "θ",
 			"otherSymbols": ["α", "β", "γ", "φ", "a", "b", "c", "d", "e"],
+			"dimensionless": true,
 			"baseUnit": "radian",
 			"units": {
 				"radian": {
@@ -4639,9 +4641,9 @@
 				"bit": {
 					"name": "bit",
 					"plural": "bits",
+					"otherNames": ["shannon"],
 					"symbol": "b",
 					"otherSymbols": ["Sh"],
-					"otherNames": ["shannon"],
 					"type": "binary",
 					"systems": ["nonStandard"]
 				},

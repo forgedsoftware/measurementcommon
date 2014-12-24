@@ -92,6 +92,11 @@
 							"type": "string",
 							"required": false
 						},
+						"dimensionless": {
+							"description": "True if the dimension is dimensionless, else false. Defaults to false.",
+							"type": "boolean",
+							"required": false
+						},
 						"notes": {
 							"description": "Additional notes as required",
 							"type": "string",

@@ -179,7 +179,6 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Deal with Gaussian cgs a subset of cgs as it's own system
  - Ability to prefer base units for units like: amperePerMetre, candelaPerSquareMetre, pascalSecond etc
  - Should atomic units have their own system? sub system of si? i.e. siAtomic
- - Add dimension property "dimensionless" to plane angle and solid angle (not technically base dimensions)
  - Add 'tags' to units - know tags would be dry, fluid, cooking, physics, math etc
  - Needed Dimensions
   - electric flux (ΦE Φₑ - volt metre)
