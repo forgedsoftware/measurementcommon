@@ -690,7 +690,7 @@
 				},
 				"astronomicalUnit": {
 					"name": "astronomical unit",
-					"name": "astronomical units",
+					"plural": "astronomical units",
 					"symbol": "au",
 					"otherSymbols": ["AU", "a.u.", "ua"],
 					"type": "customary",
@@ -3797,7 +3797,7 @@
 				},
 				"faraday": {
 					"name": "faraday",
-					"name": "faradays",
+					"plural": "faradays",
 					"symbol": "F",
 					"type": "customary",
 					"estimation": true,
@@ -3854,8 +3854,7 @@
 					"symbol": "C·m",
 					"otherSymbols": ["C·m", "Cm", "C m"],
 					"type": "si",
-					"systems": ["si"],
-					"otherNames": ["coulombMeter"]
+					"systems": ["si"]
 				},
 				"debye": {
 					"name": "debye",

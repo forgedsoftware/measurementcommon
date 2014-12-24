@@ -7,10 +7,13 @@
 console.log('Validating systems.json...');
 
 var JSV = require("JSV").JSV,
+	fs = require("fs"),
+	JSON2 = require('JSON2'),
 	_ = require("lodash"),
 	systems = require('./systems.json'),
 	schema = require('./schema.json');
 
+doValidate('Strict Parse', validateParse);
 doValidate('JSON Schema', validateAgainstSchema);
 doValidate('MeasurementSystems Inherits', validateMeasurementSystemInherits);
 doValidate('Systems BaseUnit', validateBaseUnits);
@@ -41,6 +44,12 @@ function printErrors(errors) {
 }
 
 // VALIDATION
+
+function validateParse() {
+	// Don't catch the errors here to preserve details
+	JSON2.parse(fs.readFileSync("./systems.json", "utf8"));
+	return [];
+}
 
 function validateAgainstSchema() {
 	var env = JSV.createEnvironment();
