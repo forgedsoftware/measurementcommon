@@ -6,6 +6,7 @@
 	"additionalProperties": false,
 	"properties": {
 		"systems": {
+			"description": "A set of different systems of units in the form of a flattened tree",
 			"type": "object",
 			"required": true,
 			"additionalProperties": false,
