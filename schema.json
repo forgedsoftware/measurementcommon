@@ -1,5 +1,6 @@
 {
 	"title": "Systems Schema",
+	"description": "A validation schema for systems.json",
 	"type": "object",
 	"required": true,
 	"additionalProperties": false,
