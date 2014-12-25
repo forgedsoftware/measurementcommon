@@ -177,8 +177,7 @@
 				"day": {
 					"name": "day",
 					"plural": "days",
-					"symbol": "day",
-					"otherSymbols": ["d"],
+					"symbol": "d",
 					"type": "customary",
 					"multiplier": 86400,
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits", "ancient"],
@@ -187,7 +186,7 @@
 				"week": {
 					"name": "week",
 					"plural": "weeks",
-					"symbol": "week",
+					"symbol": "wk",
 					"otherSymbols": ["w"],
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
@@ -197,8 +196,6 @@
 				"month": {
 					"name": "month",
 					"plural": "months",
-					"symbol": "month",
-					"otherSymbols": ["m"],
 					"type": "customary",
 					"estimation": true,
 					"multiplier": 2629800,
@@ -259,7 +256,6 @@
 				},
 				"ke": {
 					"name": "ke",
-					"symbol": "ke",
 					"type": "customary",
 					"systems": ["traditionalChinese"],
 					"multiplier": 864
@@ -267,7 +263,6 @@
 				"decade": {
 					"name": "decade",
 					"plural": "decades",
-					"symbol": "decade",
 					"type": "customary",
 					"systems": ["siCommon", "imperial", "usCustomary", "englishUnits"],
 					"multiplier": 315576000,
@@ -293,7 +288,6 @@
 				},
 				"minuta": {
 					"name": "minuta",
-					"symbol": "minuta",
 					"type": "customary",
 					"systems": ["ancient"],
 					"multiplier": 1440,
@@ -301,7 +295,6 @@
 				},
 				"secunda": {
 					"name": "secunda",
-					"symbol": "secunda",
 					"type": "customary",
 					"systems": ["ancient"],
 					"multiplier": 24,
@@ -423,7 +416,6 @@
 					"name": "cable",
 					"plural": "cables",
 					"otherNames": ["cable length", "cable lengths", "cable's length", "cable's lengths"],
-					"symbol": "cable",
 					"type": "customary",
 					"systems": ["internationalNautical"],
 					"multiplier": 185.2					
@@ -432,7 +424,6 @@
 					"name": "cable",
 					"plural": "cables",
 					"otherNames": ["cable length", "cable lengths", "cable's length", "cable's lengths"],
-					"symbol": "cable",
 					"type": "customary",
 					"systems": ["imperialNautical"],
 					"multiplier": 185.32
@@ -441,7 +432,6 @@
 					"name": "cable",
 					"plural": "cables",
 					"otherNames": ["cable length", "cable lengths", "cable's length", "cable's lengths"],
-					"symbol": "cable",
 					"type": "customary",
 					"systems": ["usNautical"],
 					"multiplier": 219.456
@@ -457,7 +447,6 @@
 				"cubitBiblical": {
 					"name": "cubit",
 					"plural": "cubits",
-					"symbol": "cubit",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["biblical"],
@@ -466,7 +455,6 @@
 				},
 				"digitus": {
 					"name": "digitus",
-					"symbol": "digitus",
 					"otherNames": ["digitus transversus"],
 					"type": "customary",
 					"estimation": true,
@@ -476,7 +464,6 @@
 				},
 				"uncia": {
 					"name": "uncia",
-					"symbol": "uncia",
 					"otherNames": ["pollex"],
 					"type": "customary",
 					"estimation": true,
@@ -486,7 +473,6 @@
 				},
 				"palmus": {
 					"name": "palmus",
-					"symbol": "palmus",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -495,7 +481,6 @@
 				},
 				"palmusMajor": {
 					"name": "palmus major",
-					"symbol": "palmus major",
 					"type": "customary",
 					"estimation": true,
 					"rare": true,
@@ -506,7 +491,6 @@
 				"pes": {
 					"name": "pes",
 					"plural": "pedes",
-					"symbol": "pes",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -515,7 +499,6 @@
 				},
 				"palmipes": {
 					"name": "palmipes",
-					"symbol": "palmipes",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -524,7 +507,6 @@
 				},
 				"cubitus": {
 					"name": "cubitus",
-					"symbol": "cubitus",
 					"otherNames": ["cubit"],
 					"type": "customary",
 					"estimation": true,
@@ -534,7 +516,6 @@
 				},
 				"gradus": {
 					"name": "gradus",
-					"symbol": "gradus",
 					"otherNames": ["pes sestertius"],
 					"type": "customary",
 					"estimation": true,
@@ -544,7 +525,6 @@
 				},
 				"passus": {
 					"name": "passus",
-					"symbol": "passus",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -553,7 +533,6 @@
 				},
 				"pertica": {
 					"name": "pertica",
-					"symbol": "pertica",
 					"otherNames": ["decempeda"],
 					"type": "customary",
 					"estimation": true,
@@ -563,7 +542,6 @@
 				},
 				"actus": {
 					"name": "actus",
-					"symbol": "actus",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -572,7 +550,6 @@
 				},
 				"stadium": {
 					"name": "stadium",
-					"symbol": "stadium",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -582,7 +559,6 @@
 				"millePassuum": {
 					"name": "mille passum",
 					"otherNames": ["milliarium"],
-					"symbol": "mille passum",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -591,7 +567,6 @@
 				},
 				"gallicLeuga": {
 					"name": "Gallic leuga",
-					"symbol": "Gallic leuga",
 					"type": "customary",
 					"estimation": true,
 					"systems": ["ancientRoman"],
@@ -601,7 +576,6 @@
 				"ell": {
 					"name": "ell",
 					"plural": "ells",
-					"symbol": "ell",
 					"type": "customary",
 					"rare": true,
 					"systems": ["oldEuropean"],
@@ -611,7 +585,6 @@
 				"ellScotish": {
 					"name": "ell",
 					"plural": "ells",
-					"symbol": "ell",
 					"type": "customary",
 					"rare": true,
 					"systems": ["oldEuropean"],
@@ -629,7 +602,6 @@
 				"finger": {
 					"name": "finger",
 					"plural": "fingers",
-					"symbol": "finger",
 					"otherNames": ["fingerbreadth", "finger's breadth"],
 					"type": "customary",
 					"systems": ["oldEuropean"],
@@ -638,7 +610,6 @@
 				"fingerCloth": {
 					"name": "finger",
 					"plural": "fingers",
-					"symbol": "finger",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 0.1143
@@ -646,7 +617,6 @@
 				"hand": {
 					"name": "hand",
 					"plural": "hands",
-					"symbol": "hand",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 0.1016
@@ -663,7 +633,6 @@
 				"rope": {
 					"name": "rope",
 					"plural": "ropes",
-					"symbol": "rope",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 6.096
@@ -671,7 +640,6 @@
 				"span": {
 					"name": "span",
 					"plural": "spans",
-					"symbol": "span",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 0.2286
@@ -708,7 +676,6 @@
 					"name": "light-second",
 					"plural": "light-seconds",
 					"otherNames": ["light second", "light seconds"],
-					"symbol": "light-second",
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 299792458,
@@ -718,7 +685,6 @@
 					"name": "light-minute",
 					"plural": "light-minutes",
 					"otherNames": ["light minute", "light minutes"],
-					"symbol": "light-minute",
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 1.798754748e10,
@@ -728,7 +694,6 @@
 					"name": "light-hour",
 					"plural": "light-hours",
 					"otherNames": ["light hour", "light hours"],
-					"symbol": "light-hour",
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 1.079252849e12,
@@ -738,7 +703,6 @@
 					"name": "light-day",
 					"plural": "light-days",
 					"otherNames": ["light day", "light days"],
-					"symbol": "light-day",
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 2.590206837e13,
@@ -748,7 +712,6 @@
 					"name": "light-week",
 					"plural": "light-weeks",
 					"otherNames": ["light week", "light weeks"],
-					"symbol": "light-week",
 					"type": "customary",
 					"systems": ["astronomical"],
 					"multiplier": 1.813144786e14,
@@ -861,7 +824,6 @@
 				"mite": {
 					"name": "mite",
 					"plural": "mites",
-					"symbol": "mite",
 					"type": "customary",
 					"systems": ["oldEuropean", "troy"],
 					"multiplier": 3.2399455e-6,
@@ -936,7 +898,6 @@
 				},
 				"siliqua": {
 					"name": "siliqua",
-					"symbol": "siliqua",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -945,7 +906,6 @@
 				},
 				"obolus": {
 					"name": "obolus",
-					"symbol": "obolus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -954,7 +914,6 @@
 				},
 				"scrupulum": {
 					"name": "scrupulum",
-					"symbol": "scrupulum",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -963,7 +922,6 @@
 				},
 				"semisextula": {
 					"name": "semisextula",
-					"symbol": "semisextula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -972,7 +930,6 @@
 				},
 				"sextula": {
 					"name": "sextula",
-					"symbol": "sextula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -981,7 +938,6 @@
 				},
 				"sicilicius": {
 					"name": "sicilicius",
-					"symbol": "sicilicius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -990,7 +946,6 @@
 				},
 				"duella": {
 					"name": "duella",
-					"symbol": "duella",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -999,7 +954,6 @@
 				},
 				"semuncia": {
 					"name": "semuncia",
-					"symbol": "semuncia",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1008,7 +962,6 @@
 				},
 				"uncia": {
 					"name": "uncia",
-					"symbol": "uncia",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1017,7 +970,6 @@
 				},
 				"sescuncia": {
 					"name": "secuncia",
-					"symbol": "sescuncia",
 					"otherNames": ["sescunx"],
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -1027,7 +979,6 @@
 				},
 				"sextans": {
 					"name": "sextans",
-					"symbol": "sextans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1037,7 +988,6 @@
 				"quadrans": {
 					"name": "quadrans",
 					"otherNames": ["teruncius"],
-					"symbol": "quadrans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1046,7 +996,6 @@
 				},
 				"triens": {
 					"name": "triens",
-					"symbol": "triens",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1055,7 +1004,6 @@
 				},
 				"quincunx": {
 					"name": "quincunx",
-					"symbol": "quincunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1064,7 +1012,6 @@
 				},
 				"semis": {
 					"name": "semis",
-					"symbol": "semis",
 					"otherNames": ["semissis"],
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -1074,7 +1021,6 @@
 				},
 				"septunx": {
 					"name": "septunx",
-					"symbol": "septunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1083,7 +1029,6 @@
 				},
 				"bes": {
 					"name": "bes",
-					"symbol": "bes",
 					"otherNames": ["bessis"],
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -1093,7 +1038,6 @@
 				},
 				"dodrans": {
 					"name": "dodrans",
-					"symbol": "dodrans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1102,7 +1046,6 @@
 				},
 				"dextans": {
 					"name": "dextans",
-					"symbol": "dextans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1111,7 +1054,6 @@
 				},
 				"deunx": {
 					"name": "deunx",
-					"symbol": "deunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -1120,7 +1062,6 @@
 				},
 				"libra": {
 					"name": "libra",
-					"symbol": "libra",
 					"otherNames": ["as"],
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -1406,7 +1347,6 @@
 					"name": "grad",
 					"plural": "grads",
 					"otherNames": ["gradian", "gon"],
-					"symbol": "grad",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 15.707963e-3,
@@ -1415,7 +1355,6 @@
 				"octant": {
 					"name": "octant",
 					"plural": "octants",
-					"symbol": "octant",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.785398,
@@ -1424,7 +1363,6 @@
 				"quadrant": {
 					"name": "quadrant",
 					"plural": "quadrants",
-					"symbol": "quadrant",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 1.570796,
@@ -1433,7 +1371,6 @@
 				"sextant": {
 					"name": "sextant",
 					"plural": "sextants",
-					"symbol": "sextant",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 1.047198,
@@ -1442,7 +1379,6 @@
 				"sign": {
 					"name": "sign",
 					"plural": "signs",
-					"symbol": "sign",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.523599,
@@ -1593,7 +1529,6 @@
 				"butt": {
 					"name": "butt",
 					"plural": "butts",
-					"symbol": "butt",
 					"otherNames": ["pipe", "pipes"],
 					"type": "customary",
 					"systems": ["englishUnits", "imperial"],
@@ -1602,7 +1537,6 @@
 				"coomb": {
 					"name": "coomb",
 					"plural": "coombs",
-					"symbol": "coomb",
 					"type": "customary",
 					"systems": ["oldEuropean", "nonStandard"],
 					"multiplier": 0.14547488
@@ -1611,7 +1545,6 @@
 					"name": "cord",
 					"plural": "cords",
 					"otherNames": ["cord of firewood", "cords of firewood", "cord (timber)", "cords (timber)"],
-					"symbol": "cord",
 					"type": "customary",
 					"systems": ["usCustomary", "canada", "nonStandard"],
 					"multiplier": 3.624556363776
@@ -1620,7 +1553,6 @@
 					"name": "cord foot",
 					"plural": "cord feet",
 					"otherNames": ["cord foot (timber)", "cord feet (timber)"],
-					"symbol": "cord foot",
 					"type": "customary",
 					"systems": ["usCustomary", "nonStandard"],
 					"multiplier": 0.453069545472
@@ -1727,7 +1659,6 @@
 				"dashImperial": {
 					"name": "dash",
 					"plural": "dashes",
-					"symbol": "dash",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 369.9617513020833333e-9
@@ -1735,7 +1666,6 @@
 				"dashUS": {
 					"name": "dash",
 					"plural": "dashes",
-					"symbol": "dash",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 308.057599609375e-9
@@ -1762,7 +1692,6 @@
 				"dropMedical": {
 					"name": "drop",
 					"plural": "drops",
-					"symbol": "drop",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 83.03333333e-9
@@ -1770,7 +1699,6 @@
 				"drop": {
 					"name": "drop",
 					"plural": "drops",
-					"symbol": "drop",
 					"otherNames": ["metric drop", "metric drops"],
 					"type": "customary",
 					"systems": ["metric"],
@@ -1780,7 +1708,6 @@
 				"dropUS": {
 					"name": "drop",
 					"plural": "drops",
-					"symbol": "drop",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"tags": ["cooking"],
@@ -1789,7 +1716,6 @@
 				"fifth": {
 					"name": "fifth",
 					"plural": "fifths",
-					"symbol": "fifth",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 757.0823568e-6
@@ -1798,7 +1724,6 @@
 					"name": "firkin",
 					"plural": "firkins",
 					"otherNames": ["rundlet", "rundlets"],
-					"symbol": "firkin",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.04091481
@@ -1911,7 +1836,6 @@
 				"kilderkin": {
 					"name": "kilderkin",
 					"plural": "kilderkins",
-					"symbol": "kilderkin",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.08182962,
@@ -1928,7 +1852,6 @@
 				"last": {
 					"name": "last",
 					"otherNames": ["łaszt"],
-					"symbol": "last",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 2.9094976
@@ -1948,7 +1871,6 @@
 				"load": {
 					"name": "load",
 					"plural": "loads",
-					"symbol": "load",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 1.4158423296
@@ -2075,7 +1997,6 @@
 				"pony": {
 					"name": "pony",
 					"plural": "ponies",
-					"symbol": "pony",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 22.180147171875e-6
@@ -2084,7 +2005,6 @@
 					"name": "pottle",
 					"plural": "pottles",
 					"otherNames": ["quartern", "quarterns"],
-					"symbol": "pottle",
 					"type": "customary",
 					"systems": ["englishUnits"],
 					"multiplier": 2.273045e-3
@@ -2123,7 +2043,6 @@
 					"name": "pail",
 					"plural": "pails",
 					"otherNames": ["quarter", "quarters", "kenning", "kennings"],
-					"symbol": "pail",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.29094976
@@ -2141,7 +2060,6 @@
 					"name": "sack",
 					"plural": "sacks",
 					"otherNames": ["bag", "bags"],
-					"symbol": "sack",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.10910616
@@ -2149,7 +2067,6 @@
 				"sackUS": {
 					"name": "sack",
 					"plural": "sacks",
-					"symbol": "sack",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 0.10571721050064
@@ -2157,7 +2074,6 @@
 				"seam": {
 					"name": "seam",
 					"plural": "seams",
-					"symbol": "seam",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.28191256133504
@@ -2165,7 +2081,6 @@
 				"shot": {
 					"name": "shot",
 					"plural": "shots",
-					"symbol": "shot",
 					"otherNames": ["jigger", "jiggers", "measure", "measures"],
 					"type": "customary",
 					"systems": ["usCustomary"],
@@ -2175,7 +2090,6 @@
 				"strikeImperial": {
 					"name": "strike",
 					"plural": "strikes",
-					"symbol": "strike",
 					"type": "customary",
 					"systems": ["imperial"],
 					"multiplier": 0.07273744
@@ -2183,7 +2097,6 @@
 				"strikeUS": {
 					"name": "strike",
 					"plural": "strikes",
-					"symbol": "strike",
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 0.07047814033376
@@ -2332,14 +2245,12 @@
 				"wey": {
 					"name": "wey",
 					"plural": "weys",
-					"symbol": "wey",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 1.4095628066752
 				},
 				"ligula": {
 					"name": "ligula",
-					"symbol": "ligula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2348,7 +2259,6 @@
 				},
 				"cyathus": {
 					"name": "cyathus",
-					"symbol": "cyathus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2357,7 +2267,6 @@
 				},
 				"acetabulum": {
 					"name": "acetabulum",
-					"symbol": "acetabulum",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2366,7 +2275,6 @@
 				},
 				"quartarius": {
 					"name": "quartarius",
-					"symbol": "quartarius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2375,7 +2283,6 @@
 				},
 				"hemina": {
 					"name": "hemina",
-					"symbol": "hemina",
 					"otherNames": ["cotyla"],
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2385,8 +2292,6 @@
 				},
 				"sextarius": {
 					"name": "sextarius",
-					"symbol": "sextarius",
-					"otherNames": ["cotyla"],
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2395,7 +2300,6 @@
 				},
 				"congius": {
 					"name": "congius",
-					"symbol": "congius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2405,7 +2309,6 @@
 				},
 				"urna": {
 					"name": "urna",
-					"symbol": "urna",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2415,7 +2318,6 @@
 				},
 				"amphoraQuadrantal": {
 					"name": "amphora quadrantal",
-					"symbol": "amphora quadrantal",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2425,7 +2327,6 @@
 				},
 				"culeus": {
 					"name": "culeus",
-					"symbol": "culeus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2435,7 +2336,6 @@
 				},
 				"semimodius": {
 					"name": "semimodius",
-					"symbol": "semimodius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2445,7 +2345,6 @@
 				},
 				"modius": {
 					"name": "modius",
-					"symbol": "modius",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2455,7 +2354,6 @@
 				},
 				"modiusCastrensis": {
 					"name": "modius castrensis",
-					"symbol": "modius castrensis",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2562,7 +2460,6 @@
 				},
 				"squarePerche": {
 					"name": "square perche",
-					"symbol": "square perche",
 					"type": "customary",
 					"systems": ["oldEuropean"],
 					"multiplier": 42.21,
@@ -2571,7 +2468,6 @@
 				"rood": {
 					"name": "rood",
 					"plural": "roods",
-					"symbol": "rood",
 					"otherNames": ["rod", "rods"],
 					"type": "customary",
 					"systems": ["oldEuropean"],
@@ -2579,7 +2475,6 @@
 				},
 				"stremma": {
 					"name": "stremma",
-					"symbol": "stremma",
 					"type": "customary",
 					"systems": ["ancient"],
 					"multiplier": 1000,
@@ -2594,7 +2489,6 @@
 				},
 				"pesQuadratus": {
 					"name": "pes quadratus",
-					"symbol": "pes quadratus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2603,7 +2497,6 @@
 				},
 				"scrupulum": {
 					"name": "scrupulum",
-					"symbol": "scrupulum",
 					"otherNames": ["decempeda quadrata"],
 					"type": "customary",
 					"systems": ["ancientRoman"],
@@ -2613,7 +2506,6 @@
 				},
 				"actusSimplex": {
 					"name": "actus simplex",
-					"symbol": "actus simplex",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2622,7 +2514,6 @@
 				},
 				"uncia": {
 					"name": "uncia",
-					"symbol": "uncia",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2631,7 +2522,6 @@
 				},
 				"clima": {
 					"name": "clima",
-					"symbol": "clima",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2641,7 +2531,6 @@
 				"actusQuadratus": {
 					"name": "actus quadratus",
 					"otherNames": ["acnua", "arpennis", "semis"],
-					"symbol": "actus quadratus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2650,7 +2539,6 @@
 				},
 				"jugerum": {
 					"name": "jugerum",
-					"symbol": "jugerum",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2659,7 +2547,6 @@
 				},
 				"heredium": {
 					"name": "heredium",
-					"symbol": "heredium",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2668,7 +2555,6 @@
 				},
 				"centuria": {
 					"name": "centuria",
-					"symbol": "centuria",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2677,7 +2563,6 @@
 				},
 				"saltus": {
 					"name": "saltus",
-					"symbol": "saltus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2686,7 +2571,6 @@
 				},
 				"dimidiumScrupulum": {
 					"name": "dimidium scrupulum",
-					"symbol": "dimidium scrupulum",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2695,7 +2579,6 @@
 				},
 				"duoScrupula": {
 					"name": "duo scrupula",
-					"symbol": "duo scrupula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2704,7 +2587,6 @@
 				},
 				"sextula": {
 					"name": "sextula",
-					"symbol": "sextula",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2713,7 +2595,6 @@
 				},
 				"sicilicus": {
 					"name": "sicilicus",
-					"symbol": "sicilicus",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2722,7 +2603,6 @@
 				},
 				"semiuncia": {
 					"name": "semiuncia",
-					"symbol": "semiuncia",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2731,7 +2611,6 @@
 				},
 				"sextans": {
 					"name": "sextans",
-					"symbol": "sextans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2740,7 +2619,6 @@
 				},
 				"quadrans": {
 					"name": "quadrans",
-					"symbol": "quadrans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2749,7 +2627,6 @@
 				},
 				"triens": {
 					"name": "triens",
-					"symbol": "triens",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2758,7 +2635,6 @@
 				},
 				"quincunx": {
 					"name": "quincunx",
-					"symbol": "quincunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2767,7 +2643,6 @@
 				},
 				"septunx": {
 					"name": "septunx",
-					"symbol": "septunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2776,7 +2651,6 @@
 				},
 				"bes": {
 					"name": "bes",
-					"symbol": "bes",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2785,7 +2659,6 @@
 				},
 				"dodrans": {
 					"name": "dodrans",
-					"symbol": "dodrans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2794,7 +2667,6 @@
 				},
 				"dextans": {
 					"name": "dextans",
-					"symbol": "dextans",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -2803,7 +2675,6 @@
 				},
 				"deunx": {
 					"name": "deunx",
-					"symbol": "deunx",
 					"type": "customary",
 					"systems": ["ancientRoman"],
 					"estimation": true,
@@ -3573,7 +3444,6 @@
 				"quad": {
 					"name": "quad",
 					"plural": "quads",
-					"symbol": "quad",
 					"type": "customary",
 					"systems": ["imperial", "usCustomary", "canada"],
 					"multiplier": 1.05505585262e18,
@@ -3807,7 +3677,6 @@
 				},
 				"lusec": {
 					"name": "lusec",
-					"symbol": "lusec",
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 1.333e-4,

@@ -135,10 +135,10 @@
 											}
 										},
 										"symbol": {
-											"description": "The standard symbol of the dimension",
+											"description": "The standard symbol of the dimension. Only optional if unit does not have a symbol",
 											"type": "string",
 											"minLength": 1,
-											"required": true
+											"required": false
 										},
 										"otherSymbols": {
 											"description": "Other symbols used to signify the unit",
