@@ -27,6 +27,11 @@
 							"minLength": 1,
 							"required": false
 						},
+						"category": {
+							"description": "True if a category of systems and not a system in its own right, else false. Defaults to false",
+							"type": "boolean",
+							"required": false
+						},
 						"historical": {
 							"description": "True if the unit system is not in current usage, else false",
 							"type": "boolean",
@@ -191,6 +196,11 @@
 										},
 										"multiplier": {
 											"description": "A scale factor to multiply by when converting from the base unit to this unit. Default is 1",
+											"type": "number",
+											"required": false
+										},
+										"uncertainty": {
+											"description": "The absolute uncertainty within a conversion between this unit and the base unit.",
 											"type": "number",
 											"required": false
 										},

@@ -152,7 +152,9 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Speed (metrePerSecond)
  - Acceleration (metrePerSquareSecond)
  - Energy (joule)
+ - Momentum (kilogramMetrePerSecond)
  - Power (watt)
+ - Intensity (metrePerCubicSecond)
  - Electric Charge (coulomb)
  - Electric Dipole Moment (coulombMetre)
  - Electric Potential (volt)
@@ -178,6 +180,7 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Deal with Gaussian cgs a subset of cgs as it's own system
  - Ability to prefer base units for units like: amperePerMetre, candelaPerSquareMetre, pascalSecond etc
  - Should atomic units have their own system? sub system of si? i.e. siAtomic
+ - Add 'constant' flag on units to denote universal constants
  - Needed Dimensions
   - electric flux (ΦE Φₑ - volt metre)
   - electric field strength (E - volt per metre)
@@ -213,6 +216,8 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Wikipedia. (2014) *Ancient Roman units of measurement*. Retrieved from: http://en.wikipedia.org/wiki/Ancient_Roman_units_of_measurement
  - Wikipedia (2014) *Ohm*. Retrieved from: http://en.wikipedia.org/wiki/Ohm
  - Wikipedia (2014) *SI electromagnetism units*. Retrieved from: http://en.wikipedia.org/wiki/SI_electromagnetism_units
+ - Wikipedia (2014) * Natural units *. Retrieved from: http://en.wikipedia.org/wiki/Natural_units
+ - Wikipedia (2014) * Planck units *. Retrieved from: http://en.wikipedia.org/wiki/Planck_units
  - TranslatorsCafe.com (2014) *Electrical Resistance*. Retrieved from: http://www.translatorscafe.com/cafe/EN/units-converter/electric-resistance
 
 ## License

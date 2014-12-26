@@ -1,7 +1,8 @@
 {
 	"systems": {
 		"metric": {
-			"name": "Metric System"
+			"name": "Metric System",
+			"notes": "Should become a category!"
 		},
 		"si": {
 			"name": "International System of Units",
@@ -47,6 +48,41 @@
 			"name": "Gravitational Metric System",
 			"historical": true,
 			"inherits": "legacyMetric"
+		},
+		"naturalUnitSystems": {
+			"name": "Natural Unit Systems",
+			"category": true,
+			"notes": "A set of systems that hold certain universal constants to 1"
+		},
+		"planck": {
+			"name": "Planck Units",
+			"inherits": "naturalUnitSystems",
+			"notes": "Sets c = G = ħ = kB = 1"
+		},
+		"natural": {
+			"name": "Natural Units",
+			"inherits": "naturalUnitSystems",
+			"notes": "Sets c = ħ = kB = 1"
+		},
+		"stoney": {
+			"name": "Stoney Units",
+			"inherits": "naturalUnitSystems",
+			"notes": "Sets c = G = e = kB = 1; c = 1/α"
+		},
+		"hartree": {
+			"name": "Hartree Atomic Units",
+			"inherits": "naturalUnitSystems",
+			"notes": "Sets e = mₑ = ħ = kB = 1; c = 1/α"
+		},
+		"rydberg": {
+			"name": "Rydberg Atomic Units",
+			"inherits": "naturalUnitSystems",
+			"notes": "Sets e/√2 = 2mₑ = ħ = kB = 1; c = 2/α"
+		},
+		"qcd": {
+			"name": "Quantum Chromodynamics Units (QCD)",
+			"inherits": "naturalUnitSystems",
+			"notes": "Sets c = mp = ħ = kB = 1"
 		},
 		"internationalNautical": {
 			"name": "International Nautical Measure"
@@ -299,6 +335,14 @@
 					"systems": ["ancient"],
 					"multiplier": 24,
 					"notes": "1/3600 of day. Used by ancient astrologers."
+				},
+				"planckTime": {
+					"name": "Planck time",
+					"symbol": "t\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"multiplier": 5.39106e-44,
+					"uncertainty": 0.00032e-44
 				}
 			}
 		},
@@ -726,6 +770,14 @@
 					"systems": ["astronomical"],
 					"multiplier": 9.4607304725808e15,
 					"notes": "Distance light travels in vacuum in 365.25 days"
+				},
+				"planckLength": {
+					"name": "Planck length",
+					"symbol": "l\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"multiplier": 1.616199e-35,
+					"uncertainty": 0.000097e-35
 				}
 			}
 		},
@@ -1068,6 +1120,14 @@
 					"estimation": true,
 					"multiplier": 328.9e-3,
 					"notes": "Roman pound. Based on 1 libra = 328.9 g"
+				},
+				"planckMass": {
+					"name": "Planck mass",
+					"symbol": "m\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"multiplier": 2.17651e-8,
+					"uncertainty": 0.00013e-8
 				}
 			}
 		},
@@ -1103,6 +1163,15 @@
 					"systems": ["cgs"],
 					"estimation": true,
 					"multiplier": 3.335641e-10
+				},
+				"planckCurrent": {
+					"name": "Planck current",
+					"symbol": "I\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 3.4789e25,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
 		},
@@ -1195,6 +1264,14 @@
 					"multiplier": -1.5,
 					"offset": -559.7249999999999,
 					"notes": "Technically Réaumur. Check values"
+				},
+				"planckTemperature": {
+					"name": "Planck temperature",
+					"symbol": "T\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"multiplier": 1.416833e32,
+					"uncertainty": 0.000085e32
 				}
 			}
 		},
@@ -2360,6 +2437,15 @@
 					"multiplier": 13.08e-3,
 					"tags": ["dry-only"],
 					"notes": "Dry. 24 sextarii. Alt: 12.93e-3. Based on 1 pes = 0.296m"
+				},
+				"planckVolume": {
+					"name": "Planck volume",
+					"symbol": "l³\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 4.2217e-105,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
 		},
@@ -2680,11 +2766,21 @@
 					"estimation": true,
 					"multiplier": 2313,
 					"notes": "Jugerum division. 26400 pedes^2 - 11/12 jugerum. Based on 1 pes = 0.296m"
+				},
+				"planckArea": {
+					"name": "Planck area",
+					"symbol": "l²\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 2.6121e-70,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
 		},
 		"pressure": {
 			"name": "pressure",
+			"otherNames": ["energy density"],
 			"symbol": "P",
 			"baseUnit": "pascal",
 			"derived": "mass/length/time/time",
@@ -2886,6 +2982,17 @@
 					"acceptedPrefixes": ["milli"],
 					"multiplier": 133.3224,
 					"notes": "Tor symbol common but incorrect"
+				},
+				"planckPressure": {
+					"name": "Planck pressure",
+					"otherNames": ["Planck energy density"],
+					"symbol": "ρ\u209A",
+					"otherSymbols": ["ρE\u209A", "P\u209A"],
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 4.63309e113,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
 		},
@@ -2911,6 +3018,15 @@
 					"type": "customary",
 					"systems": ["legacyMetric", "imperial", "usCustomary"],
 					"multiplier": 0.01666666666666667
+				},
+				"planckAngularFrequency": {
+					"name": "Planck angular frequency",
+					"symbol": "ω\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 1.85487e43,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
 		},
@@ -3008,6 +3124,15 @@
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 8.896443230521e3
+				},
+				"planckForce": {
+					"name": "Planck force",
+					"symbol": "F\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 1.21027e44,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
 		},
@@ -3507,6 +3632,41 @@
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"multiplier": 4.184e9
+				},
+				"planckEnergy": {
+					"name": "Planck energy",
+					"symbol": "E\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 1.9561e9,
+					"notes": "Derived from fundamental planck units. Not exact."
+				}
+			}
+		},
+		"momentum": {
+			"name": "momentum",
+			"symbol": "p",
+			"baseUnit": "kilogramMetrePerSecond",
+			"derived": "mass*length/time",
+			"units": {
+				"kilogramMetrePerSecond": {
+					"name": "kilogram metre per second",
+					"plural": "kilogram metres per second",
+					"otherNames": ["kilogram meter per second", "kilogram meters per second"],
+					"symbol": "kg·m/s",
+					"otherSymbols": ["kg m/s"],
+					"type": "customary",
+					"systems": ["si"]
+				},
+				"planckMomentum": {
+					"name": "Planck momentum",
+					"symbol": "m\u209Ac",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 6.52485,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
 		},
@@ -3723,8 +3883,44 @@
 					"type": "customary",
 					"systems": ["usCustomary"],
 					"multiplier": 3.516853e3
+				},
+				"planckPower": {
+					"name": "Planck power",
+					"symbol": "P\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 3.62831e52,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
+		},
+		"intensity": {
+			"name": "intensity",
+			"symbol": "I",
+			"baseUnit": "wattPerSquareMetre",
+			"derived": "mass/time/time/time",
+			"units": {
+				"wattPerSquareMetre": {
+					"name": "watt per square metre",
+					"plural": "watts per square metre",
+					"otherNames": ["watt per metre squared", "watts per metre squared", "watt per square meter", "watts per square meter", "watt per meter squared", "watts per meter squared", "kilogram per cubic second", "kilograms per cubic second", "kilogram per second cubed", "kilograms per second cubed"],
+					"symbol": "W/m²",
+					"otherSymbols": ["kg/s³"],
+					"type": "customary",
+					"systems": ["si"]
+				},
+				"planckIntensity": {
+					"name": "Planck intensity",
+					"symbol": "I\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 1.38893e122,
+					"notes": "Derived from fundamental planck units. Not exact."
+				}
+			}
+
 		},
 		"electricCharge": {
 			"name": "electric charge",
@@ -3784,6 +3980,14 @@
 					"systems": ["si"],
 					"estimation": true,
 					"multiplier": 1.602176462e-19
+				},
+				"planckCharge": {
+					"name": "Planck charge",
+					"symbol": "q\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"multiplier": 1.875545956e-18,
+					"uncertainty": 0.000000041e-18
 				}
 			}
 		},
@@ -3852,6 +4056,15 @@
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 1e-8
+				},
+				"planckVoltage": {
+					"name": "Planck voltage",
+					"symbol": "V\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 1.04295e27,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
 		},
@@ -3937,6 +4150,14 @@
 					"type": "customary",
 					"systems": ["cgs"],
 					"multiplier": 1.11265002973e-12
+				},
+				"planckImpedance": {
+					"name": "Planck impedance",
+					"symbol": "Z\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"multiplier": 29.9792458,
+					"notes": "Derived from fundamental planck units. Reasonably exact as does not rely on Gravitational constant (G)."
 				}
 			}
 		},
@@ -4093,6 +4314,15 @@
 					"type": "customary",
 					"systems": ["imperial", "usCustomary"],
 					"multiplier": 515.3788184
+				},
+				"planckDensity": {
+					"name": "Planck density",
+					"symbol": "ρ\u209A",
+					"type": "customary",
+					"systems": ["planck"],
+					"estimation": true,
+					"multiplier": 5.15500e96,
+					"notes": "Derived from fundamental planck units. Not exact."
 				}
 			}
 		},
