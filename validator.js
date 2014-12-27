@@ -76,7 +76,11 @@ function validateMeasurementSystemInherits() {
 function validateBaseUnits() {
 	var errors = [];
 	_.each(systems.dimensions, function (dimension, key) {
-		if(!_.contains(_.keys(dimension.units), dimension.baseUnit)) {
+		var unitKeys = _.keys(dimension.units);
+		if (dimension.inheritedUnits) {
+			unitKeys = _.union(unitKeys, _.keys(systems.dimensions[dimension.inheritedUnits].units));
+		}
+		if(!_.contains(unitKeys, dimension.baseUnit)) {
 			errors.push('dimension \'' + key + '\' has a baseUnit \'' + dimension.baseUnit + '\' that does not match any know unit');
 		}
 	});

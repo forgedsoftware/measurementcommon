@@ -216,9 +216,10 @@ We utilise the standard SI dimensions and their base units. All dimensions *shou
  - Wikipedia. (2014) *Ancient Roman units of measurement*. Retrieved from: http://en.wikipedia.org/wiki/Ancient_Roman_units_of_measurement
  - Wikipedia (2014) *Ohm*. Retrieved from: http://en.wikipedia.org/wiki/Ohm
  - Wikipedia (2014) *SI electromagnetism units*. Retrieved from: http://en.wikipedia.org/wiki/SI_electromagnetism_units
- - Wikipedia (2014) * Natural units *. Retrieved from: http://en.wikipedia.org/wiki/Natural_units
- - Wikipedia (2014) * Planck units *. Retrieved from: http://en.wikipedia.org/wiki/Planck_units
+ - Wikipedia (2014) *Natural units*. Retrieved from: http://en.wikipedia.org/wiki/Natural_units
+ - Wikipedia (2014) *Planck units*. Retrieved from: http://en.wikipedia.org/wiki/Planck_units
  - TranslatorsCafe.com (2014) *Electrical Resistance*. Retrieved from: http://www.translatorscafe.com/cafe/EN/units-converter/electric-resistance
+ - NASA (2014) *Scalars and Vectors*. Retrieved from: http://www.grc.nasa.gov/WWW/K-12/airplane/vectors.html
 
 ## License
 Measurement Common is freely distributable under the terms of the MIT license.

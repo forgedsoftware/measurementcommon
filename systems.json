@@ -177,6 +177,7 @@
 			"otherNames": [ "duration" ],
 			"symbol": "T",
 			"baseUnit": "second",
+			"vector": false,
 			"units": {
 				"second": {
 					"name": "second",
@@ -343,6 +344,16 @@
 					"systems": ["planck"],
 					"multiplier": 5.39106e-44,
 					"uncertainty": 0.00032e-44
+				},
+				"naturalTime": {
+					"name": "inverse electron volt of time",
+					"plural": "inverse electron volts of time",
+					"symbol": "1/E",
+					"otherSymbols": ["E⁻¹", "eV⁻¹", "eV⁻¹ of time"],
+					"type": "customary",
+					"systems": ["natural"],
+					"multiplier": 6.58e-16,
+					"uncertainty": 0.01e-16
 				}
 			}
 		},
@@ -351,6 +362,7 @@
 			"otherNames": [ "distance", "radius", "wavelength" ],
 			"symbol": "L",
 			"baseUnit": "metre",
+			"vector": false,
 			"units": {
 				"metre": {
 					"name": "metre",
@@ -778,6 +790,16 @@
 					"systems": ["planck"],
 					"multiplier": 1.616199e-35,
 					"uncertainty": 0.000097e-35
+				},
+				"naturalLength": {
+					"name": "inverse electron volt of length",
+					"plural": "inverse electron volts of length",
+					"symbol": "1/E",
+					"otherSymbols": ["E⁻¹", "eV⁻¹", "eV⁻¹ of length"],
+					"type": "customary",
+					"systems": ["natural"],
+					"multiplier": 1.97e-7,
+					"uncertainty": 0.01e-7
 				}
 			}
 		},
@@ -785,6 +807,7 @@
 			"name": "mass",
 			"symbol": "M",
 			"baseUnit": "kilogram",
+			"vector": false,
 			"units": {
 				"kilogram": {
 					"name": "kilogram",
@@ -1128,6 +1151,16 @@
 					"systems": ["planck"],
 					"multiplier": 2.17651e-8,
 					"uncertainty": 0.00013e-8
+				},
+				"naturalMass": {
+					"name": "electron volt of mass",
+					"plural": "electron volts of mass",
+					"symbol": "E",
+					"otherSymbols": ["E", "eV", "eV of mass"],
+					"type": "customary",
+					"systems": ["natural"],
+					"multiplier": 1.78e-36,
+					"uncertainty": 0.01e-36
 				}
 			}
 		},
@@ -1135,6 +1168,7 @@
 			"name": "electric current",
 			"symbol": "I",
 			"baseUnit": "ampere",
+			"vector": false,
 			"units": {
 				"ampere": {
 					"name": "ampere",
@@ -1179,6 +1213,7 @@
 			"name": "temperature",
 			"symbol": "Θ",
 			"baseUnit": "kelvin",
+			"vector": false,
 			"units": {
 				"kelvin": {
 					"name": "kelvin",
@@ -1272,6 +1307,16 @@
 					"systems": ["planck"],
 					"multiplier": 1.416833e32,
 					"uncertainty": 0.000085e32
+				},
+				"naturalTemperature": {
+					"name": "electron volt of temperature",
+					"plural": "electron volts of temperature",
+					"symbol": "E",
+					"otherSymbols": ["E", "eV", "eV of temperature"],
+					"type": "customary",
+					"systems": ["natural"],
+					"multiplier": 1.16e4,
+					"uncertainty": 0.01e4
 				}
 			}
 		},
@@ -1279,6 +1324,7 @@
 			"name": "amount of substance",
 			"symbol": "N",
 			"baseUnit": "mole",
+			"vector": false,
 			"units": {
 				"mole": {
 					"name": "mole",
@@ -1292,6 +1338,7 @@
 			"name": "luminous intensity",
 			"symbol": "J",
 			"baseUnit": "candela",
+			"vector": false,
 			"units": {
 				"candela": {
 					"name": "candela",
@@ -1323,6 +1370,7 @@
 			"symbol": "Ω",
 			"dimensionless": true,
 			"baseUnit": "steradian",
+			"vector": false,
 			"units": {
 				"steradian": {
 					"name": "steradian",
@@ -1351,6 +1399,7 @@
 			"otherSymbols": ["α", "β", "γ", "φ", "a", "b", "c", "d", "e"],
 			"dimensionless": true,
 			"baseUnit": "radian",
+			"vector": false,
 			"units": {
 				"radian": {
 					"name": "radian",
@@ -1468,6 +1517,7 @@
 			"symbol": "V",
 			"baseUnit": "cubicMetre",
 			"derived": "length*length*length",
+			"vector": false,
 			"units": {
 				"cubicMetre": {
 					"name": "cubic metre",
@@ -2454,6 +2504,7 @@
 			"symbol": "A",
 			"baseUnit": "squareMetre",
 			"derived": "length*length",
+			"vector": false,
 			"units": {
 				"squareMetre": {
 					"name": "square metre",
@@ -2784,6 +2835,7 @@
 			"symbol": "P",
 			"baseUnit": "pascal",
 			"derived": "mass/length/time/time",
+			"vector": false,
 			"units": {
 				"pascal": {
 					"name": "pascal",
@@ -3001,6 +3053,7 @@
 			"symbol": "f",
 			"baseUnit": "hertz",
 			"derived": "1/time",
+			"vector": false,
 			"units": {
 				"hertz": {
 					"name": "hertz",
@@ -3036,6 +3089,7 @@
 			"symbol": "F",
 			"baseUnit": "newton",
 			"derived": "mass*length/time/time",
+			"vector": true,
 			"units": {
 				"newton": {
 					"name": "newton",
@@ -3141,6 +3195,7 @@
 			"symbol": "v",
 			"baseUnit": "metrePerSecond",
 			"derived": "length/time",
+			"vector": false,
 			"units": {
 				"metrePerSecond": {
 					"name": "metre per second",
@@ -3297,11 +3352,31 @@
 				}
 			}
 		},
+		"velocity": {
+			"name": "velocity",
+			"symbol": "v",
+			"baseUnit": "metrePerSecond",
+			"derived": "length/time",
+			"vector": true,
+			"inheritedUnits": "speed",
+			"units": {
+				"naturalVelocity": {
+					"name": "unit of velocity",
+					"plural": "units of velocity",
+					"otherNames": ["unit of speed", "units of speed"],
+					"type": "customary",
+					"systems": ["natural"],
+					"multiplier": 299792458,
+					"notes": "Unit does not have a symbol"
+				}
+			}
+		},
 		"acceleration": {
 			"name": "acceleration",
 			"symbol": "a",
 			"baseUnit": "metrePerSquareSecond",
 			"derived": "length/time/time",
+			"vector": true,
 			"units": {
 				"metrePerSquareSecond": {
 					"name": "metre per square second",
@@ -3414,6 +3489,7 @@
 			"symbol": "E",
 			"baseUnit": "joule",
 			"derived": "mass*length*length/time/time",
+			"vector": false,
 			"units": {
 				"joule": {
 					"name": "joule",
@@ -3641,6 +3717,16 @@
 					"estimation": true,
 					"multiplier": 1.9561e9,
 					"notes": "Derived from fundamental planck units. Not exact."
+				},
+				"naturalEnergy": {
+					"name": "electron volt of energy",
+					"plural": "electron volts of energy",
+					"symbol": "E",
+					"otherSymbols": ["E", "eV", "eV of energy"],
+					"type": "customary",
+					"systems": ["natural"],
+					"multiplier": 1.6e-10,
+					"uncertainty": 0.1e-10
 				}
 			}
 		},
@@ -3649,6 +3735,7 @@
 			"symbol": "p",
 			"baseUnit": "kilogramMetrePerSecond",
 			"derived": "mass*length/time",
+			"vector": true,
 			"units": {
 				"kilogramMetrePerSecond": {
 					"name": "kilogram metre per second",
@@ -3667,6 +3754,16 @@
 					"estimation": true,
 					"multiplier": 6.52485,
 					"notes": "Derived from fundamental planck units. Not exact."
+				},
+				"naturalMomentum": {
+					"name": "electron volt of momentum",
+					"plural": "electron volts of momentum",
+					"symbol": "E",
+					"otherSymbols": ["E", "eV", "eV of momentum"],
+					"type": "customary",
+					"systems": ["natural"],
+					"multiplier": 5.39e-19,
+					"uncertainty": 0.01e-19
 				}
 			}
 		},
@@ -3675,6 +3772,7 @@
 			"symbol": "P",
 			"baseUnit": "watt",
 			"derived": "mass*length*length/time/time/time",
+			"vector": false,
 			"units": {
 				"watt": {
 					"name": "watt",
@@ -3900,6 +3998,7 @@
 			"symbol": "I",
 			"baseUnit": "wattPerSquareMetre",
 			"derived": "mass/time/time/time",
+			"vector": true,
 			"units": {
 				"wattPerSquareMetre": {
 					"name": "watt per square metre",
@@ -3929,6 +4028,7 @@
 			"otherSymbols": ["q"],
 			"baseUnit": "coulomb",
 			"derived": "electricCurrent/time",
+			"vector": false,
 			"units": {
 				"coulomb": {
 					"name": "coulomb",
@@ -3988,6 +4088,24 @@
 					"systems": ["planck"],
 					"multiplier": 1.875545956e-18,
 					"uncertainty": 0.000000041e-18
+				},
+				"naturalChargeGaussian": {
+					"name": "unit of electric charge",
+					"plural": "units of electric charge",
+					"type": "customary",
+					"systems": ["natural"],
+					"multiplier": 1.88e-18,
+					"uncertainty": 0.01e-18,
+					"notes": "Unit does not have a symbol"
+				},
+				"naturalChargeLorentzHeaviside": {
+					"name": "unit of electric charge",
+					"plural": "units of electric charge",
+					"type": "customary",
+					"systems": ["natural"],
+					"multiplier": 5.29e-19,
+					"uncertainty": 0.01e-19,
+					"notes": "Unit does not have a symbol"
 				}
 			}
 		},
@@ -3997,6 +4115,7 @@
 			"symbol": "p",
 			"baseUnit": "coulombMetre",
 			"derived": "electricCurrent*length/time",
+			"vector": true,
 			"units": {
 				"coulombMetre": {
 					"name": "coulomb metre",
@@ -4032,6 +4151,7 @@
 			"otherSymbols": ["V", "U", "∆V", "∆U", "Δφ", "E"],
 			"baseUnit": "volt",
 			"derived": "mass*length*length/electricCurrent/time/time/time",
+			"vector": false,
 			"units": {
 				"volt": {
 					"name": "volt",
@@ -4076,6 +4196,7 @@
 			"baseUnit": "ohm",
 			"derived": "mass*length*length/time/time/time/electricCurrent/electricCurrent",
 			"notes": "Impedance (Z) and Reactance (X) have the same units as resistance and in this context are considered equivalent",
+			"vector": false,
 			"units": {
 				"ohm": {
 					"name": "ohm",
@@ -4166,6 +4287,7 @@
 			"symbol": "C",
 			"baseUnit": "farad",
 			"derived": "time*time*time*time*electricCurrent*electricCurrent/length/length/mass",
+			"vector": false,
 			"units": {
 				"farad": {
 					"name": "farad",
@@ -4198,6 +4320,7 @@
 			"otherSymbols": ["M"],
 			"baseUnit": "henry",
 			"derived": "mass*length*length/electricCurrent/electricCurrent/time/time",
+			"vector": false,
 			"units": {
 				"henry": {
 					"name": "henry",
@@ -4213,6 +4336,7 @@
 			"symbol": "ρ",
 			"baseUnit": "kilogramPerCubicMetre",
 			"derived": "mass/length/length/length",
+			"vector": false,
 			"units": {
 				"kilogramPerCubicMetre": {
 					"name": "kilogram per cubic metre",
@@ -4332,6 +4456,7 @@
 			"symbol": "Q",
 			"baseUnit": "cubicMetrePerSecond",
 			"derived": "length*length*length/time",
+			"vector": false,
 			"units": {
 				"cubicMetrePerSecond": {
 					"name": "cubic metre per second",
@@ -4425,6 +4550,7 @@
 			"symbol": "Lᵥ",
 			"baseUnit": "candelaPerSquareMetre",
 			"derived": "luminousIntensity/length/length",
+			"vector": true,
 			"units": {
 				"candelaPerSquareMetre":{
 					"name": "candela per square metre",
@@ -4488,6 +4614,7 @@
 			"baseUnit": "lumen",
 			"otherNames": [ "luminousPower" ],
 			"derived": "luminousIntensity*solidAngle",
+			"vector": false,
 			"units": {
 				"lumen": {
 					"name": "lumen",
@@ -4503,6 +4630,7 @@
 			"symbol": "Eᵥ",
 			"baseUnit": "lux",
 			"derived": "luminousIntensity*solidAngle/length/length",
+			"vector": true,
 			"units": {
 				"lux": {
 					"name": "lux",
@@ -4546,6 +4674,7 @@
 			"otherSymbols": ["ΦB", "ΦM", "Φb", "Φm"],
 			"derived": "mass*length*length/electricCurrent/time/time",
 			"baseUnit": "weber",
+			"vector": false,
 			"units": {
 				"weber": {
 					"name": "weber",
@@ -4570,6 +4699,7 @@
 			"symbol": "B",
 			"derived": "mass/electricCurrent/time/time",
 			"baseUnit": "tesla",
+			"vector": true,
 			"units": {
 				"tesla": {
 					"name": "tesla",
@@ -4593,6 +4723,7 @@
 			"symbol": "H",
 			"derived": "electricCurrent/length",
 			"baseUnit": "amperePerMetre",
+			"vector": true,
 			"units": {
 				"amperePerMetre": {
 					"name": "ampere per metre",
@@ -4618,6 +4749,7 @@
 			"symbol": "ν",
 			"derived": "length*length/time",
 			"baseUnit": "squareMetrePerSecond",
+			"vector": false,
 			"units": {
 				"squareMetrePerSecond": {
 					"name": "square metre per second",
@@ -4650,6 +4782,7 @@
 			"symbol": "μ",
 			"derived": "mass/length/time",
 			"baseUnit": "pascalSecond",
+			"vector": false,
 			"units": {
 				"pascalSecond": {
 					"name": "pascal-second",
@@ -4702,9 +4835,11 @@
 		},
 		"action": {
 			"name": "action",
+			"otherNames": ["angular momentum"],
 			"symbol": "S",
 			"derived": "mass*length*length/time",
 			"baseUnit": "jouleSecond",
+			"vector": true,
 			"units": {
 				"jouleSecond": {
 					"name": "joule-second",
@@ -4742,6 +4877,7 @@
 			"otherSymbols": ["M"],
 			"derived": "mass*length*length/time/time",
 			"baseUnit": "newtonMetre",
+			"vector": true,
 			"units": {
 				"newtonMetre": {
 					"name": "newton metre",
@@ -4792,6 +4928,7 @@
 			"otherNames": [ "data" ],
 			"symbol": "i",
 			"baseUnit": "bit",
+			"vector": false,
 			"units": {
 				"bit": {
 					"name": "bit",

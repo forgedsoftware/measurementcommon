@@ -102,8 +102,18 @@
 							"type": "boolean",
 							"required": false
 						},
+						"vector": {
+							"description": "True if the dimension should be represented as a vector, else false if it should be a scalar",
+							"type": "boolean",
+							"required": true
+						},
 						"notes": {
 							"description": "Additional notes as required",
+							"type": "string",
+							"required": false
+						},
+						"inheritedUnits": {
+							"description": "The name of another dimension to inherit the units from.",
 							"type": "string",
 							"required": false
 						},
