@@ -3349,17 +3349,7 @@
 					"systems": ["nonStandard"],
 					"multiplier": 340.3,
 					"notes": "Constant. Based on standard sea level conditions and at 15 °C."
-				}
-			}
-		},
-		"velocity": {
-			"name": "velocity",
-			"symbol": "v",
-			"baseUnit": "metrePerSecond",
-			"derived": "length/time",
-			"vector": true,
-			"inheritedUnits": "speed",
-			"units": {
+				},
 				"naturalVelocity": {
 					"name": "unit of velocity",
 					"plural": "units of velocity",
@@ -3370,6 +3360,15 @@
 					"notes": "Unit does not have a symbol"
 				}
 			}
+		},
+		"velocity": {
+			"name": "velocity",
+			"symbol": "v",
+			"baseUnit": "metrePerSecond",
+			"derived": "length/time",
+			"vector": true,
+			"inheritedUnits": "speed",
+			"units": {}
 		},
 		"acceleration": {
 			"name": "acceleration",
