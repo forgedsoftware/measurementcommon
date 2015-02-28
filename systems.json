@@ -132,7 +132,8 @@
 		},
 		"englishUnits": {
 			"name": "Traditional English Units",
-			"historical": true
+			"historical": true,
+			"notes": "..."
 		},
 		"apothecaries": {
 			"name": "Apothecaries' Units",
@@ -150,15 +151,18 @@
 		},
 		"traditionalChinese": {
 			"name": "Traditional Chinese Units",
-			"historical": true
+			"historical": true,
+			"notes": "..."
 		},
 		"oldEuropean":{
 			"name": "Old European Units",
-			"historical": true
+			"historical": true,
+			"notes": "..."
 		},
 		"ancient": {
 			"name": "Ancient Units",
-			"historical": true
+			"historical": true,
+			"notes": "..."
 		},
 		"biblical": {
 			"name": "Biblical Units",
@@ -4994,19 +4998,22 @@
 			"symbol": "h",
 			"type": "si",
 			"multiplier": 100,
-			"rare": true
+			"rare": true,
+			"notes": "..."
 		},
 		"deca": {
 			"symbol": "da",
 			"type": "si",
 			"multiplier": 10,
-			"rare": true
+			"rare": true,
+			"notes": "..."
 		},
 		"deci": {
 			"symbol": "d",
 			"type": "si",
 			"multiplier": 0.1,
-			"rare": true
+			"rare": true,
+			"notes": "..."
 		},
 		"centi": {
 			"symbol": "c",
@@ -5112,7 +5119,8 @@
 			"symbol": "B",
 			"type": "siUnofficial",
 			"multiplier": 1e27,
-			"rare": true
+			"rare": true,
+			"notes": "..."
 		}
 	}
 }
