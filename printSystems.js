@@ -67,7 +67,7 @@ function printTree(tree, indent) {
 	var count = 0;
 	_.each(tree.descendents, function (descendent) {
 		var historical = descendent.historical ? ' *(H)*' : '';
-		console.log(repeat(' ', indent + 1) + '- ' + descendent.key + ' (' + descendent.name + ')' + historical);
+		console.log(repeat('  ', indent + 1) + '- ' + descendent.key + ' (' + descendent.name + ')' + historical);
 		count += 1 + printTree(descendent, indent + 1);
 	});
 	return count;

@@ -62,7 +62,7 @@ function validateMeasurementSystemInherits() {
 	var systemKeys = _.keys(systems.systems);
 	_.each(systems.systems, function (system, key) {
 		if (system.inherits !== undefined) {
-			if (!_.contains(systemKeys, system.inherits)) {
+			if (!_.includes(systemKeys, system.inherits)) {
 				errors.push('system \'' + key + '\' inherits from unknown system \'' + system.inherits + '\'');
 			}
 			if (key === system.inherits) {
@@ -80,7 +80,7 @@ function validateBaseUnits() {
 		if (dimension.inheritedUnits) {
 			unitKeys = _.union(unitKeys, _.keys(systems.dimensions[dimension.inheritedUnits].units));
 		}
-		if(!_.contains(unitKeys, dimension.baseUnit)) {
+		if(!_.includes(unitKeys, dimension.baseUnit)) {
 			errors.push('dimension \'' + key + '\' has a baseUnit \'' + dimension.baseUnit + '\' that does not match any know unit');
 		}
 	});
@@ -93,7 +93,7 @@ function validateUnitSystems() {
 	_.each(systems.dimensions, function (dimension, dimKey) {
 		_.each(dimension.units, function (unit, unitKey) {
 			_.each(unit.systems, function (system) {
-				if (!_.contains(systemKeys, system)) {
+				if (!_.includes(systemKeys, system)) {
 					errors.push('unknown system \'' + system + '\' in ' + dimKey + ':' + unitKey);
 				}
 			});
@@ -105,9 +105,8 @@ function validateUnitSystems() {
 function validateDerived() {
 	var errors = [];
 	// Can only be derived from base dimensions
-	var dimensionKeys = _.keys(_.pick(systems.dimensions, function (dim) {
-		return (dim.derived === undefined);
-	}));
+	var baseDimensionKeys = _.keys(_.pickBy(systems.dimensions, dim => !dim.derived));
+	
 	_.each(systems.dimensions, function (dimension, dimensionKey) {
 		if (dimension.derived && dimension.derived.length > 0) {
 			var parts = dimension.derived.split(/([/*|/])/);
@@ -115,7 +114,7 @@ function validateDerived() {
 				if (position % 2 === 1 && !(part === '*' || part === '/')) {
 					errors.push('unknown operation \'' + part + '\' used in dimension.derived for ' + dimensionKey);
 				}
-				if (position % 2 === 0 && !(_.contains(dimensionKeys, part) || part === '1')) {
+				if (position % 2 === 0 && !(_.includes(baseDimensionKeys, part) || part === '1')) {
 					errors.push('unknown base dimension or placeholder \'' + part + '\' used in dimension.derived for ' + dimensionKey);
 				}
 			})

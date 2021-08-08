@@ -98,6 +98,45 @@ We have constructed a (flattened) hierarchy of systems that represent the usages
 to be detailed against each unit.
 Each unit should be marked with at least one system.
 
+ - metric (Metric System)
+  - si (International System of Units)
+   - astronomical (Astronomical Units)
+   - siCommon (Common Non-Scientific Metric (SI))
+    - australia (Common Australian Metric (SI))
+    - canada (Common Canadian Metric (SI))
+  - legacyMetric (Legacy Metric Systems) *(H)*
+   - cgs (Centimetre-Gram-Second Unit System) *(H)*
+   - mts (Metre-Tonne-Second Unit System) *(H)*
+   - mks (Metre-Kilogramme-Second Unit System) *(H)*
+   - gravitational (Gravitational Metric System) *(H)*
+ - naturalUnitSystems (Natural Unit Systems)
+  - planck (Planck Units)
+  - natural (Natural Units)
+  - stoney (Stoney Units)
+  - hartree (Hartree Atomic Units)
+  - rydberg (Rydberg Atomic Units)
+  - qcd (Quantum Chromodynamics Units (QCD))
+ - internationalNautical (International Nautical Measure)
+ - imperial (UK Imperial Units)
+  - imperialNautical (Imperial Nautical Units) *(H)*
+  - englishEngineering (English Engineering System) *(H)*
+  - britishGravitational (British Gravitational System) *(H)*
+  - absoluteEnglish (Absolute English System) *(H)*
+ - usCustomary (US Customary Units)
+  - avoirdupois (Avoirdupois Units)
+  - usNautical (International Nautical Units)
+  - usFoodNutrition (US Food Nutrition Labeling Units)
+ - englishUnits (Traditional English Units) *(H)*
+  - apothecaries (Apothecaries' Units) *(H)*
+  - troy (Troy Weight) *(H)*
+ - nonStandard (Non-Standard Units)
+ - traditionalChinese (Traditional Chinese Units) *(H)*
+ - oldEuropean (Old European Units) *(H)*
+ - ancient (Ancient Units) *(H)*
+  - biblical (Biblical Units) *(H)*
+  - ancientRoman (Ancient Roman Units) *(H)*
+System Count: 38
+PS C:\Users\Harwa\source\repos\measurementcommon> node .\printSystems.js
   - metric (Metric System)
     - si (International System of Units)
       - astronomical (Astronomical Units)
@@ -109,6 +148,13 @@ Each unit should be marked with at least one system.
       - mts (Metre-Tonne-Second Unit System) *(H)*
       - mks (Metre-Kilogramme-Second Unit System) *(H)*
       - gravitational (Gravitational Metric System) *(H)*
+  - naturalUnitSystems (Natural Unit Systems)
+    - planck (Planck Units)
+    - natural (Natural Units)
+    - stoney (Stoney Units)
+    - hartree (Hartree Atomic Units)
+    - rydberg (Rydberg Atomic Units)
+    - qcd (Quantum Chromodynamics Units (QCD))
   - internationalNautical (International Nautical Measure)
   - imperial (UK Imperial Units)
     - imperialNautical (Imperial Nautical Units) *(H)*

@@ -2,27 +2,26 @@
 	"name": "measurement-common",
 	"version": "0.1.1",
 	"author": {
-        "name": "Forged Software",
-        "url": "http://www.forgedsoftware.com"
-    },
+		"name": "Forged Software",
+		"url": "http://www.forgedsoftware.com"
+	},
 	"description": "A tool to validate systems.json",
 	"contributors": [
-        "Matthew Harward"
-    ],
+		"Matthew Harward"
+	],
 	"main": "./validator.js",
 	"dependencies": {
 		"JSV": "latest",
 		"lodash": "latest",
 		"JSON2": "latest"
 	},
-	"devDependencies": {
-	},
+	"devDependencies": {},
 	"engines": {
 		"node": ">=0.10"
 	},
 	"repository": {
-        "type": "git",
-        "url": "http://github.com/forgedsoftware/measurementcommon.git"
-    },
+		"type": "git",
+		"url": "http://github.com/forgedsoftware/measurementcommon.git"
+	},
 	"licenses": "MIT"
 }
