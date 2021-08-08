@@ -4,24 +4,19 @@
  * A tool for printing out the systems in a tree form.
  */
 
-var _ = require("lodash"),
-	systems = require('./systems.json');
+import { readFile } from 'fs/promises';
 
-var treeSystems = { descendents: [] };
+const json = JSON.parse(await readFile(new URL('./systems.json', import.meta.url)));
+const treeSystems = { descendents: [] };
 
-(function printSystems() {
-	_.each(systems.systems, function (system) {
-		system.processed = false;
-	});
+unflatten();
 
-	unflatten();
-	var count = printTree(treeSystems, 0);
-	console.log('System Count: ' + count);
-})();
+const count = printTree(treeSystems, 0);
+console.log('System Count: ' + count);
 
 function unflatten() {
 	var processedNode = false;
-	_.each(systems.systems, function (system, systemKey) {
+	for (const [systemKey, system] of Object.entries(json.systems)) {
 		if (!system.processed) {
 			if (system.inherits) {
 				processedNode = searchDescendents(treeSystems, system, systemKey);
@@ -31,7 +26,7 @@ function unflatten() {
 				processedNode = true;
 			}
 		}
-	});
+	}
 	if (processedNode) {
 		unflatten();
 	}
@@ -39,13 +34,13 @@ function unflatten() {
 
 function searchDescendents(curElement, system, systemKey) {
 	var processedNode = false;
-	var foundElement = _.find(curElement.descendents, { 'key': system.inherits });
+	var foundElement = curElement.descendents.find(descendent => descendent.key === system.inherits);
 	if (foundElement) {
 		addDescendent(foundElement, system, systemKey);
 		system.processed = true;
 		processedNode = true;
 	} else {
-		_.each(curElement.descendents, function (descendent) {
+		curElement.descendents.forEach(descendent => {
 			if (!processedNode) {
 				processedNode = searchDescendents(descendent, system, systemKey);
 			}
@@ -65,18 +60,10 @@ function addDescendent(element, system, systemKey) {
 
 function printTree(tree, indent) {
 	var count = 0;
-	_.each(tree.descendents, function (descendent) {
+	tree.descendents.forEach(descendent => {
 		var historical = descendent.historical ? ' *(H)*' : '';
-		console.log(repeat('  ', indent + 1) + '- ' + descendent.key + ' (' + descendent.name + ')' + historical);
+		console.log('  '.repeat(indent + 1) + '- ' + descendent.key + ' (' + descendent.name + ')' + historical);
 		count += 1 + printTree(descendent, indent + 1);
 	});
 	return count;
-}
-
-function repeat(s, n) {
-    var a = [];
-    while (a.length < n) {
-        a.push(s);
-    }
-    return a.join('');
 }

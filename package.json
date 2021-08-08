@@ -9,15 +9,12 @@
 	"contributors": [
 		"Matthew Harward"
 	],
+	"type": "module",
 	"main": "./validator.js",
 	"dependencies": {
 		"JSV": "latest",
 		"lodash": "latest",
 		"JSON2": "latest"
-	},
-	"devDependencies": {},
-	"engines": {
-		"node": ">=0.10"
 	},
 	"repository": {
 		"type": "git",

@@ -4,16 +4,14 @@
  * A tool to validate systems.json.
  */
 
+import { readFile } from 'fs/promises';
+import { JSV } from 'JSV'
+
 console.log('Validating systems.json...');
 
-var JSV = require("JSV").JSV,
-	fs = require("fs"),
-	JSON2 = require('JSON2'),
-	_ = require("lodash"),
-	systems = require('./systems.json'),
-	schema = require('./schema.json');
+const schema = JSON.parse(await readFile(new URL('./schema.json', import.meta.url)));
+const json = JSON.parse(await readFile(new URL('./systems.json', import.meta.url)));
 
-doValidate('Strict Parse', validateParse);
 doValidate('JSON Schema', validateAgainstSchema);
 doValidate('MeasurementSystems Inherits', validateMeasurementSystemInherits);
 doValidate('Systems BaseUnit', validateBaseUnits);
@@ -45,80 +43,76 @@ function printErrors(errors) {
 
 // VALIDATION
 
-function validateParse() {
-	// Don't catch the errors here to preserve details
-	JSON2.parse(fs.readFileSync("./systems.json", "utf8"));
-	return [];
-}
-
 function validateAgainstSchema() {
 	var env = JSV.createEnvironment();
-	var report = env.validate(systems, schema);
+	var report = env.validate(json, schema);
 	return report.errors;
 }
 
 function validateMeasurementSystemInherits() {
 	var errors = [];
-	var systemKeys = _.keys(systems.systems);
-	_.each(systems.systems, function (system, key) {
-		if (system.inherits !== undefined) {
-			if (!_.includes(systemKeys, system.inherits)) {
+	var systemKeys = Object.keys(json.systems);
+	for (const [key, system] of Object.entries(json.systems)) {
+		if (system.inherits) {
+			if (!systemKeys.includes(system.inherits)) {
 				errors.push('system \'' + key + '\' inherits from unknown system \'' + system.inherits + '\'');
 			}
 			if (key === system.inherits) {
 				errors.push('system \'' + key + '\' should not inherit from itself');
 			}
 		}
-	});
+	};
 	return errors;
 }
 
 function validateBaseUnits() {
 	var errors = [];
-	_.each(systems.dimensions, function (dimension, key) {
-		var unitKeys = _.keys(dimension.units);
+	for (const [key, dimension] of Object.entries(json.dimensions)) {
+		var unitKeys = Object.keys(dimension.units);
 		if (dimension.inheritedUnits) {
-			unitKeys = _.union(unitKeys, _.keys(systems.dimensions[dimension.inheritedUnits].units));
+			unitKeys = [...unitKeys, ...Object.keys(json.dimensions[dimension.inheritedUnits].units)];
 		}
-		if(!_.includes(unitKeys, dimension.baseUnit)) {
+		if (!unitKeys.includes(dimension.baseUnit)) {
 			errors.push('dimension \'' + key + '\' has a baseUnit \'' + dimension.baseUnit + '\' that does not match any know unit');
 		}
-	});
+	}
 	return errors;
 }
 
 function validateUnitSystems() {
 	var errors = [];
-	var systemKeys = _.keys(systems.systems);
-	_.each(systems.dimensions, function (dimension, dimKey) {
-		_.each(dimension.units, function (unit, unitKey) {
-			_.each(unit.systems, function (system) {
-				if (!_.includes(systemKeys, system)) {
+	var systemKeys = Object.keys(json.systems);
+	for (const [dimKey, dimension] of Object.entries(json.dimensions)) {
+		for (const [unitKey, unit] of Object.entries(dimension.units)) {
+			for (const system of Object.values(unit.systems)) {
+				if (!systemKeys.includes(system)) {
 					errors.push('unknown system \'' + system + '\' in ' + dimKey + ':' + unitKey);
 				}
-			});
-		});
-	});
+			}
+		}
+	}
 	return errors;
 }
 
 function validateDerived() {
 	var errors = [];
 	// Can only be derived from base dimensions
-	var baseDimensionKeys = _.keys(_.pickBy(systems.dimensions, dim => !dim.derived));
-	
-	_.each(systems.dimensions, function (dimension, dimensionKey) {
+	var baseDimensionKeys = Object.entries(json.dimensions)
+		.filter(([, value]) => !value.derived)
+		.map(([key]) => key);
+		
+	for (const [dimensionKey, dimension] of Object.entries(json.dimensions)) {
 		if (dimension.derived && dimension.derived.length > 0) {
 			var parts = dimension.derived.split(/([/*|/])/);
-			_.each(parts, function (part, position) {
+			parts.forEach((part, position) => {
 				if (position % 2 === 1 && !(part === '*' || part === '/')) {
 					errors.push('unknown operation \'' + part + '\' used in dimension.derived for ' + dimensionKey);
 				}
-				if (position % 2 === 0 && !(_.includes(baseDimensionKeys, part) || part === '1')) {
+				if (position % 2 === 0 && !(baseDimensionKeys.includes(part) || part === '1')) {
 					errors.push('unknown base dimension or placeholder \'' + part + '\' used in dimension.derived for ' + dimensionKey);
 				}
-			})
+			});
 		}
-	});
+	}
 	return errors;
 }
