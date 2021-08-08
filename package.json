@@ -3,7 +3,7 @@
 	"version": "0.1.1",
 	"author": {
 		"name": "Forged Software",
-		"url": "http://www.forgedsoftware.com"
+		"url": "https://www.forgedsoftware.com"
 	},
 	"description": "A tool to validate systems.json",
 	"contributors": [
@@ -21,7 +21,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/forgedsoftware/measurementcommon.git"
+		"url": "https://github.com/forgedsoftware/measurementcommon.git"
 	},
 	"licenses": "MIT"
 }
