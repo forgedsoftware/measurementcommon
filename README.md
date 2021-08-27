@@ -99,16 +99,20 @@ Within a dimension, units can be converted by converting an amount from the init
 
 ### Converting to a base unit
 
-(initial unit amount - offset) / multiplier = base unit amount
+`(initial unit amount - offset) / multiplier = base unit amount`
+
 e.g. (10 inches - 0) / 0.0254 = 0.254 metres
+
 e.g. (28 celsius - -273.15) / 1 = 301.15 kelvin
 
 (note, the operation here is merely the inverse of converting from a base unit)
 
 ### Converting from a base unit
 
-(base unit amount x multiplier) + offset = converted unit amount
+`(base unit amount x multiplier) + offset = converted unit amount`
+
 e.g. (0.254 metres x 0.9144) + 0 = 0.2322576 yards
+
 e.g. (301.15 kelvin x 1.8) + -459.67 = 82.4 fahrenheit
 
 ## Systems Hierarchy
