@@ -85,58 +85,36 @@ Systems, dimensions, and units have the following properties. All properties are
     - *systems* - (array) This provides a list of the types of systems (e.g. US Customary, CGS etc) where the unit is used. See "Systems".
     - *otherSymbols* - (optional, array) The strings of other symbols that represent the unit
     - *otherNames* - (optional, array) The strings of other names of the unit - e.g. a 'bit' can also be called a 'shannon'
-    - *multiplier* - (optional, number) This should be defined on any unit that is not the base unit. Provides a linear multiplier for conversions. (baseUnit amount x multiplier) + offset = convertedUnit amount
-    - *offset* - (optional) This should be defined on any unit where it is not the baseUnit for the system and a zero value on this unit does not correspond to a zero on the base unit. In technical parlance when the linear function is not homogeneous
+    - *multiplier* - (optional, number) This should be defined on any unit that is not the base unit. Provides a linear multiplier for conversions. Defaults to 1.
+    - *offset* - (optional) This should be defined on any unit where it is not the baseUnit for the system and a zero value on this unit does not correspond to a zero on the base unit. In technical parlance when the linear function is not homogeneous. Defaults to 0.
     - *estimation* - (optional, boolean) This should be set to true if the conversion is not exact
     - *rare* - (optional, boolean) This should be set to true if the unit is rarely used within the systems it is part of.
     - *notes* - (optional) Any useful additional details
     - *prefixName* - (optional) **Only to be used on base units which are SI and have a prefix (e.g. kilogram)** Name of the existing prefix
     - *prefixFreeName* - (optional) **Only to be used on base units which are SI and have a prefix (e.g. kilogram)** Name of the unit without prefix
 
+## Simple Conversion
+
+Within a dimension, units can be converted by converting an amount from the initial unit, to the base unit, then to the desired final unit. If the starting or finishing unit is the base unit then either the first or latter conversion can be skipped. Additional calculation is needed to handle cases where the unit uses SI prefixes as multipliers, uncertainity, rounding, vectors, or where the dimension is derived from others.
+
+### Converting to a base unit
+
+(initial unit amount - offset) / multiplier = base unit amount
+e.g. (10 inches - 0) / 0.0254 = 0.254 metres
+e.g. (28 celsius - -273.15) / 1 = 301.15 kelvin
+
+(note, the operation here is merely the inverse of converting from a base unit)
+
+### Converting from a base unit
+
+(base unit amount x multiplier) + offset = converted unit amount
+e.g. (0.254 metres x 0.9144) + 0 = 0.2322576 yards
+e.g. (301.15 kelvin x 1.8) + -459.67 = 82.4 fahrenheit
+
 ## Systems Hierarchy
-We have constructed a (flattened) hierarchy of systems that represent the usages of units in the real world while minimising the systems needing
-to be detailed against each unit.
+We have constructed a (flattened) hierarchy of systems that represent the usages of units in the real world while minimising the systems needing to be detailed against each unit.
 Each unit should be marked with at least one system.
 
- - metric (Metric System)
-  - si (International System of Units)
-   - astronomical (Astronomical Units)
-   - siCommon (Common Non-Scientific Metric (SI))
-    - australia (Common Australian Metric (SI))
-    - canada (Common Canadian Metric (SI))
-  - legacyMetric (Legacy Metric Systems) *(H)*
-   - cgs (Centimetre-Gram-Second Unit System) *(H)*
-   - mts (Metre-Tonne-Second Unit System) *(H)*
-   - mks (Metre-Kilogramme-Second Unit System) *(H)*
-   - gravitational (Gravitational Metric System) *(H)*
- - naturalUnitSystems (Natural Unit Systems)
-  - planck (Planck Units)
-  - natural (Natural Units)
-  - stoney (Stoney Units)
-  - hartree (Hartree Atomic Units)
-  - rydberg (Rydberg Atomic Units)
-  - qcd (Quantum Chromodynamics Units (QCD))
- - internationalNautical (International Nautical Measure)
- - imperial (UK Imperial Units)
-  - imperialNautical (Imperial Nautical Units) *(H)*
-  - englishEngineering (English Engineering System) *(H)*
-  - britishGravitational (British Gravitational System) *(H)*
-  - absoluteEnglish (Absolute English System) *(H)*
- - usCustomary (US Customary Units)
-  - avoirdupois (Avoirdupois Units)
-  - usNautical (International Nautical Units)
-  - usFoodNutrition (US Food Nutrition Labeling Units)
- - englishUnits (Traditional English Units) *(H)*
-  - apothecaries (Apothecaries' Units) *(H)*
-  - troy (Troy Weight) *(H)*
- - nonStandard (Non-Standard Units)
- - traditionalChinese (Traditional Chinese Units) *(H)*
- - oldEuropean (Old European Units) *(H)*
- - ancient (Ancient Units) *(H)*
-  - biblical (Biblical Units) *(H)*
-  - ancientRoman (Ancient Roman Units) *(H)*
-System Count: 38
-PS C:\Users\Harwa\source\repos\measurementcommon> node .\printSystems.js
   - metric (Metric System)
     - si (International System of Units)
       - astronomical (Astronomical Units)
@@ -175,6 +153,7 @@ PS C:\Users\Harwa\source\repos\measurementcommon> node .\printSystems.js
   - ancient (Ancient Units) *(H)*
     - biblical (Biblical Units) *(H)*
     - ancientRoman (Ancient Roman Units) *(H)*
+System Count: 38
 
 ## Base Dimensions
 We utilise the standard SI dimensions and their base units. All dimensions *should* be able to be derived from these dimensions.
