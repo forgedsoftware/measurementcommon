@@ -1234,7 +1234,7 @@
 					"type": "si",
 					"systems": ["siCommon"],
 					"tags": ["cooking"],
-					"offset": 273.15
+					"offset": -273.15
 				},
 				"fahrenheit": {
 					"name": "fahrenheit",
@@ -1243,8 +1243,8 @@
 					"type": "customary",
 					"systems": ["englishUnits", "imperial", "usCustomary"],
 					"tags": ["cooking"],
-					"multiplier": 0.5555555555555556,
-					"offset": 255.37222222
+					"multiplier": 1.8,
+					"offset": -459.67
 				},
 				"rankine": {
 					"name": "rankine",
@@ -1254,8 +1254,7 @@
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"rare": true,
-					"multiplier": 1.8,
-					"notes": "Check values"
+					"multiplier": 1.8
 				},
 				"romer": {
 					"name": "romer",
@@ -1266,8 +1265,8 @@
 					"systems": ["nonStandard"],
 					"rare": true,
 					"multiplier": 0.525,
-					"offset": 135.90375,
-					"notes": "Technically Rømer (or Roemer). Check values"
+					"offset": -135.90375,
+					"notes": "Technically Rømer"
 				},
 				"newton": {
 					"name": "newton",
@@ -1277,8 +1276,7 @@
 					"systems": ["nonStandard"],
 					"rare": true,
 					"multiplier": 0.33,
-					"offset": 90.13949999999998,
-					"notes": "May have rounding error. Check values"
+					"offset": -90.1395
 				},
 				"delisle": {
 					"name": "delisle",
@@ -1289,20 +1287,19 @@
 					"systems": ["nonStandard"],
 					"rare": true,
 					"multiplier": -1.5,
-					"offset": -559.7249999999999,
-					"notes": "May have rounding error. Check values"
+					"offset": 559.725
 				},
 				"reaumur": {
 					"name": "reaumur",
 					"otherNames": ["degree reaumur", "degrees reaumur"],
 					"symbol": "°Ré",
-					"otherSymbols": ["°Re", "°R"],
+					"otherSymbols": ["°Re", "°r"],
 					"type": "customary",
 					"systems": ["nonStandard"],
 					"rare": true,
-					"multiplier": -1.5,
-					"offset": -559.7249999999999,
-					"notes": "Technically Réaumur. Check values"
+					"multiplier": 0.8,
+					"offset": -218.52,
+					"notes": "Technically Réaumur"
 				},
 				"planckTemperature": {
 					"name": "Planck temperature",

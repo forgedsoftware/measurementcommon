@@ -86,7 +86,7 @@ Systems, dimensions, and units have the following properties. All properties are
     - *otherSymbols* - (optional, array) The strings of other symbols that represent the unit
     - *otherNames* - (optional, array) The strings of other names of the unit - e.g. a 'bit' can also be called a 'shannon'
     - *multiplier* - (optional, number) This should be defined on any unit that is not the base unit. Provides a linear multiplier for conversions. (baseUnit amount x multiplier) + offset = convertedUnit amount
-    - *offset* - (optional) This should be defined on any unit where baseUnit != 0 if convertedUnit = 0.
+    - *offset* - (optional) This should be defined on any unit where it is not the baseUnit for the system and a zero value on this unit does not correspond to a zero on the base unit. In technical parlance when the linear function is not homogeneous
     - *estimation* - (optional, boolean) This should be set to true if the conversion is not exact
     - *rare* - (optional, boolean) This should be set to true if the unit is rarely used within the systems it is part of.
     - *notes* - (optional) Any useful additional details
